@@ -1,0 +1,3 @@
+[submodule "docs"]
+	path = docs
+	url = https://github.com/clubcapra/clubcapra.github.io-wiki.git
