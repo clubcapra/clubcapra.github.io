@@ -464,7 +464,7 @@ CHAKRA.map = function(){
 			map.mapTypes.set('map_style', styledMap);
   			map.setMapTypeId('map_style');
 			
-			var contentString = '<p><strong>Company Name</strong><br>Address here</p>';
+			var contentString = '<p><strong>Club Capra</strong><br>1100 Rue Notre-Dame Ouest<br>Local: A-1746<br>Montr&eacute;al, Qu&eacute;bec<br>H3C 1K3</p>';
        
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString
