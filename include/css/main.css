@@ -1735,3 +1735,24 @@ footer .credits {
        -o-transition: none;
           transition: none;
 }
+
+#partners{
+	background: #F4F4F4;
+}
+
+.dark{
+	color: #2F3238;
+}
+
+.dark-title{
+	font-size: 48px;
+	margin: 0 0 5px 0;
+	color: #2F3238;
+}
+
+.dark-description{
+	font-size: 24px;
+	font-weight: 200;
+	margin: 0 0 30px 0;
+	color: #7F8289;
+}
