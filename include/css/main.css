@@ -945,6 +945,10 @@ nav#menu #menu-nav li a:hover {
 	line-height: 160px;	
 }
 
+.services-box  img{
+	padding: 20px;
+}
+
 
 /* ==================================================
    Map
