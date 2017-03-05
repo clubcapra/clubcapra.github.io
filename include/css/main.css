@@ -252,6 +252,7 @@ h3.spec {
 }
 
 
+
 /* ==================================================
    Margin Bottom Sets
 ================================================== */
@@ -532,7 +533,7 @@ header #logo {
 
 header #logo a {
 	background: url(../img/logo.png) no-repeat;
-	width: 75px;
+	width: 80px;
 	height: 30px;
 	text-indent: -9999px;
 	display: block;
@@ -1746,7 +1747,7 @@ footer .credits {
           transition: none;
 }
 
-#partners, #post{
+#partners, #team, #post{
 	background: #F4F4F4;
 }
 
@@ -1765,4 +1766,63 @@ footer .credits {
 	font-weight: 200;
 	margin: 0 0 30px 0;
 	color: #7F8289;
+}
+
+
+.post-left-image {
+	width: 300px;
+	height: auto;
+	margin: 10px;
+	float: left;
+}
+
+.post-right-image {
+	width: 300px;
+	height: auto;
+	margin: 10px;
+	float: right;
+}
+.post-full-image {
+	width: 100%;
+}
+
+hr {
+	clear: both;
+}
+
+.list-unstyled {
+	list-style: none;
+}
+
+.team-list > li 
+{
+	text-align: center;
+}
+.two-columns-md {
+	-moz-column-count: 2;
+-moz-column-gap: 5px;
+-webkit-column-count: 2;
+-webkit-column-gap: 5px;
+column-count: 2;
+column-gap: 5px;
+}
+
+.no-break-inside {
+	-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+          page-break-inside: avoid; /* Firefox */
+               break-inside: avoid; /* IE 10+ */
+}
+@media (max-width: 767px) {
+  .flexbox.flex-md {
+		display: block;
+	}
+
+	.two-columns-md {
+	-moz-column-count: 1;
+-moz-column-gap: 5px;
+-webkit-column-count: 1;
+-webkit-column-gap: 5px;
+column-count: 1;
+column-gap: 5px;
+	}
 }

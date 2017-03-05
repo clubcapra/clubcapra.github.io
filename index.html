@@ -1,3 +1,6 @@
+---
+# this is an empty front matter
+---
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
@@ -148,57 +151,34 @@
         <div class="span12">
             <div class="title-page">
                 <h2 class="title">À propos de Capra</h2>
-                <h3 class="title-description">Qui sommes-nous?</h3>
-                
-                <div class="page-description">
-                    <p>Bienvenue sur le site officiel du club scientifique CAPRA.</p>
-            <p>Le club Capra conçoit et réalise des véhicules terrestres autonomes. Ces robots sont capables de se diriger et de s’orienter dans un environnement qui leur est inconnu. Une multitude de capteurs leur permettent de sonder leur environnement et leur état: des GPS, des télémètres, des caméras, des IMU (Inertial Measurement Unit), des encodeurs, etc. Faire partie d’un club étudiant est l’une des expériences des plus enrichissantes à l’ÉTS. C’est l’occasion idéale d’approfondir des connaissances dans un domaine d’études et même d’élargir un champ de compétence en explorant d’autres domaines. Nous recrutons sans arrêt de nouveaux étudiants de MEC, ELE, LOG/TI, GPA, GOL et CTN. N’hésitez pas à venir nous rencontrer au local A-1746!</p>
+                <div class="row">
+                    <div class="span8">
+                        <h3 class="title-description">Qui sommes-nous?</h3>
+                        
+                        <div class="page-description">
+                            <p>Bienvenue sur le site officiel du club scientifique CAPRA.</p>
+                            <p>Le club Capra conçoit et réalise des véhicules terrestres autonomes. Ces robots sont capables de se diriger et de s’orienter dans un environnement qui leur est inconnu. Une multitude de capteurs leur permettent de sonder leur environnement et leur état: des GPS, des télémètres, des caméras, des IMU (Inertial Measurement Unit), des encodeurs, etc. Faire partie d’un club étudiant est l’une des expériences des plus enrichissantes à l’ÉTS. C’est l’occasion idéale d’approfondir des connaissances dans un domaine d’études et même d’élargir un champ de compétence en explorant d’autres domaines. Nous recrutons sans arrêt de nouveaux étudiants de MEC, ELE, LOG/TI, GPA, GOL et CTN. N’hésitez pas à venir nous rencontrer au local A-1746!</p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <h3 class="title-description">Dernières nouvelles</h3>
+                        
+                        <div class="page-description">
+                            {% for post in site.categories.news limit:10 %}
+                            <li>
+                              <span>{{ post.date | date_to_string }}</span>
+                              &raquo;
+                              <a href='{{ post.url }}'>{{ post.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
-                <!--
-                <h3 class="title-description">Nos compétitions</h3>
-                
-                <div class="page-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. 
-                    Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. 
-                    <a href="#">Suspendisse consectetur</a> consectetur bibendum. Pellentesque posuere, ligula volutpat elementum interdum, diam arcu elementum ipsum, vel ultricies est mauris ut nisi.</p>
-                </div>
-        -->
+           
             </div>
         </div>
     </div>
-    <!-- End Title Page -->
-    <!--
-    <div class="row margin-40">
-        <div class="span4">
-            <h3>&Eacute;quipe M&eacute;canique</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. 
-            Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. </p>
-            
-            <p>Duis in tortor scelerisque felis mattis imperdiet. Donec at <a href="#">libero tellus</a>. Suspendisse consectetur consectetur bibendum.</p>
-        </div>
-        
-        <div class="span4">
-            <h3>&Eacute;quipe Logicielle</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut <strong>pretium nisl</strong> non justo condimentum id tincidunt nunc faucibus. 
-            Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. </p>
-            
-            <p>Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. Suspendisse consectetur consectetur bibendum.</p>
-        </div>
-        
-        <div class="span4">
-            <h3>&Eacute;quipe &eacute;l&eacute;ctrique</h3>
 
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut <strong>pretium nisl</strong> non justo condimentum id tincidunt nunc faucibus. 
-            Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. </p>
-            
-            <p>Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. Suspendisse consectetur consectetur bibendum.</p>  
-        </div>
-        
-    </div>
-    
-    <div class="sep">
-        <span class="separator"></span>
-    </div>-->
 </div>
 </div>
 <!-- End About Section -->
@@ -211,100 +191,25 @@
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">L'équipe</h2>
-                <div class="title-description">
-                    <p>Administration</p>
-                </div>
-                <div class="span12">
-                    <center>
-                        <table class="tg">
-                          <tr>
-                            <th class="tg-031e">Iman Hassanein<br/>Capitaine</th>
-                            <th class="tg-031e">Jean-Luc Montreuil<br/>Assistant-Capitaine</th>
-                          </tr>
-                        </table>
-                    </center>
-                </div>
-                
-                <div class="title-description">
-                    <p>Mécanique</p>
-                </div>
-                <div class="span12">
-                    <center>
-                        <table class="tg">
-                          <tr>
-                            <th class="tg-031e" colspan="2">Laurent Gamache<br/>Responsable mécanique</th>
-                            
-                                                 </tr>
-                                                 <tr>
-                                                 <th class="tg-031e">Jordan Fiset<br/>&nbsp;</th>
-                            <th class="tg-031e">Philippe Delisle<br/>&nbsp;</th>                          </tr>
-                        </table>
-                    </center>
-                </div>
-                
-                <div class="title-description">
-                    <p>Électrique</p>
-                </div>
-                <div class="span12">
-                    <center>
-                        <table class="tg">
-                          <tr>
-                            <th class="tg-031e">Alexandre Blais<br/>Responsable électrique</th>
-                            <th class="tg-031e">Aline Tansery<br/>&nbsp;</th>
-                        </tr>
-                          <tr>
-                            <th class="tg-031e">Mathieu Verschelden<br/>&nbsp;</th>
-                            <th class="tg-031e">Quentin Lambert<br/>&nbsp;</th>
-                        </tr>
-                          <tr>
-                            <th class="tg-031e">Mike Beauséjours<br/>&nbsp;</th>
-                            <th class="tg-031e">Arnold Chan Kao Chung<br/>&nbsp;</th>
-                        </tr>
-                          <tr>
-                            <th class="tg-031e">Rémi Charbonneau<br/>&nbsp;</th>
-                            <th class="tg-031e">Félix Bédard<br/>&nbsp;</th>
-                          </tr>
-                           <tr>
-                            <th class="tg-031e" colspan="2">Francis Robert<br/>&nbsp;</th>
-                           
-                          </tr>
-                        </table>
-                    </center>
-                </div>
-                
-                <div class="title-description">
-                    <p>Logiciel</p>
-                </div>
-                <div class="span12">
-                    <center>
-                        <table class="tg">
-                          <tr>
-                            <th class="tg-031e">Marc-Antoine Dumont<br/>Responsable logiciel</th>
-                            <th class="tg-031e">Benoît Côté-Jodoin<br/>&nbsp;</th>
-                        </tr>
-                          <tr>
-                            <th class="tg-031e">Simon Girard-Bock<br/>&nbsp;</th>
-                            <th class="tg-031e">Philippe Gorley<br/>&nbsp;</th>
-                          </tr>
-                          <tr>
-                            <th class="tg-031e">Simon Landry-Pellerin<br/>&nbsp;</th>
-                            <th class="tg-031e">Marc-Antoine Malépart<br/>&nbsp;</th>
-                          </tr>
-                          <tr>
-                            <th class="tg-031e">Guillaume Ruel<br/>&nbsp;</th>
-                            <th class="tg-031e">Régis Roy<br/>&nbsp;</th>
-                          </tr>
-                           <tr>
-                            <th class="tg-031e">Philippe Audet<br/>&nbsp;</th>
-                            <th class="tg-031e">Francis Labelle<br/>&nbsp;</th>
-                          </tr>
-                          <tr>
-                            <th class="tg-031e" colspan="2">Olivier L. Larouche<br/>&nbsp;</th>
-                          </tr>
-                        </table>
-                    </center>
-                </div>
+                <h2 class="dark-title">L'équipe</h2>
+                {% for d in site.data.team %}
+                    <div class="title-description"><p>{{d.departement}}</p></div>
+                    <div class="two-columns-md">
+                        <ul class="list-unstyled team-list">
+                            {% for m in d.members %}
+                                <li><strong>{{m.name}}</strong><br> 
+                                    {% if m.title %}
+                                        {{m.title}}
+                                    {% else %}
+                                    &nbsp;
+                                    {% endif %}
+
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+
                 
             </div>
         </div>
@@ -461,7 +366,7 @@
             <div class="contact-details">
                 <h3>Coordonn&eacute;es</h3>
                 <ul>
-                    <li><a href="mailto:capra@clubcapra.com">capra@clubcapra.com</a></li>
+                    <li><a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#99;&#x61;&#112;&#114;&#97;&#x40;&#99;&#108;&#117;&#x62;&#x63;&#97;&#x70;&#114;&#97;&#46;&#99;&#111;&#109;">&#99;&#97;&#112;&#x72;&#97;&#64;&#99;&#x6c;&#117;&#x62;&#x63;&#x61;&#x70;&#x72;&#97;&#46;&#99;&#x6f;&#x6d;</a></li>
                     <li>(514) 396-8800  poste: #7779</li>
                     <li>
                         Club Capra
