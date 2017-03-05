@@ -152,7 +152,7 @@
             <div class="title-page">
                 <h2 class="title">À propos de Capra</h2>
                 <div class="row">
-                    <div class="span8">
+                    <div class="span7">
                         <h3 class="title-description">Qui sommes-nous?</h3>
                         
                         <div class="page-description">
@@ -160,10 +160,11 @@
                             <p>Le club Capra conçoit et réalise des véhicules terrestres autonomes. Ces robots sont capables de se diriger et de s’orienter dans un environnement qui leur est inconnu. Une multitude de capteurs leur permettent de sonder leur environnement et leur état: des GPS, des télémètres, des caméras, des IMU (Inertial Measurement Unit), des encodeurs, etc. Faire partie d’un club étudiant est l’une des expériences des plus enrichissantes à l’ÉTS. C’est l’occasion idéale d’approfondir des connaissances dans un domaine d’études et même d’élargir un champ de compétence en explorant d’autres domaines. Nous recrutons sans arrêt de nouveaux étudiants de MEC, ELE, LOG/TI, GPA, GOL et CTN. N’hésitez pas à venir nous rencontrer au local A-1746!</p>
                         </div>
                     </div>
-                    <div class="span4">
+                    <div class="span5">
                         <h3 class="title-description">Dernières nouvelles</h3>
                         
                         <div class="page-description">
+                            <ul class="list-unstyled">
                             {% for post in site.categories.news limit:10 %}
                             <li>
                               <span>{{ post.date | date_to_string }}</span>
@@ -171,6 +172,7 @@
                               <a href='{{ post.url }}'>{{ post.title }}</a>
                             </li>
                             {% endfor %}
+                        </ul>
                         </div>
                     </div>
                 </div>
