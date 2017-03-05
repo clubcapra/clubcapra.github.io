@@ -14,4 +14,4 @@ Cette commandite, d'une valeur de près de 20 000$, permettra à Capra d'acquér
 
 Merci Altium! 
 
-<img src="/img/igvc2016-j4-p1.jpg">
+<img src="/img/igvc2016-j4-p1.jpg" style="max-width: 100%">
