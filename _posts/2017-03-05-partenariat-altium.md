@@ -12,3 +12,4 @@ Capra remercie [Altium](http://www.altium.com/) pour sa contribution au rayonnem
 
 Cette commandite, d'une valeur de près de 20 000$, permettra à Capra d'acquérir Altium Designer et propulser son développement électronique. 
 
+Merci Altium! 
