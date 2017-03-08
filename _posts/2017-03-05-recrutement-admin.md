@@ -7,7 +7,7 @@ category: news
 
 <big>Capra recrute une équipe administrative! Diversifie tes compétences en relevant des nouveaux défis dans les domaines:</big>
 
-**Trésorie**
+**Trésorerie**
 
 * Planification, réalisation et suivi budgétaire
 * Gestion des dépenses opérationnelles
