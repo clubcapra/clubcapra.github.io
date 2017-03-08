@@ -5,7 +5,7 @@ redirect_from: "/recrutement"
 category: news
 ---
 
-<big>Capra recrute une équipe administrative! Diversife tes compétences en relevant des nouveaux défis dans les domaines:</big>
+<big>Capra recrute une équipe administrative! Diversifie tes compétences en relevant des nouveaux défis dans les domaines:</big>
 
 **Trésorie**
 
