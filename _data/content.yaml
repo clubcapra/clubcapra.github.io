@@ -1,0 +1,104 @@
+nouvelles:
+  
+  - nouvelle:
+    titre: Nouveau site web
+    texte: Le site est vraiment sweell
+    url : http://www.etsmtl.ca
+    image: 
+      src: http://i0.kym-cdn.com/photos/images/original/000/589/923/c19.jpg
+      width: 250px
+      heigth: 250px
+  
+  - nouvelle:
+    titre: L'Équipe de capra se lance dans un nouveau projet. 
+    texte: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta lorem eu erat aliquam gravida. Ut metus risus, dictum eleifend leo eu, efficitur pharetra urna. Quisque dictum in ex blandit convallis. Integer viverra luctus molestie. Mauris sed dolor malesuada orci luctus bibendum vitae a ligula. Sed sit amet lacus vel orci lobortis sollicitudin sed sed diam. In hac habitasse platea dictumst. Vestibulum bibendum viverra dapibus. Vestibulum fermentum imperdiet massa. Vestibulum erat sem, pharetra et suscipit vel, sagittis malesuada sapien.
+    url : http://www.etsmtl.ca
+    image: 
+      src: /images/nouvelles/capra_logo.png
+      width: 250px
+      heigth: 250px
+
+equipe:
+  - departement:
+    titre: Admin
+    capitaine: Iman Hassanein
+    membres: 
+      - membre: Jean-Luc Montreuil
+      - membre: Benoit Côté-Jodoin
+      - membre: Simon Pepin
+  
+  - departement:
+    titre: Mecatronique
+    responsables:
+      - responsable:
+        nom: Alexandre Blais
+        titre: Département électrique
+      - responsable: 
+        nom: Alexandre Francoeur
+        titre: Département mécanique
+    membres: 
+      - membre: Aline "Moukda" Tansery
+      - membre: Mike Beauséjours
+      - membre: Félix Bédard-Massicotte
+      - membre: Philippe Urbain
+      - membre: David Olivier
+      - membre: Jeremy Laplante
+      - membre: Maxime Royal
+      - membre: Olivier Fortin
+      - membre: James T. Teasdale
+
+  - departement:
+    titre: Logiciel
+    responsables:
+      - responsable: 
+        nom: Olivier L. Larouche
+        titre: Département logiciel
+    membres: 
+      - membre: Marc-Antoine Malépart
+      - membre: Guillaume Ruel
+      - membre: Marc Antoine Dumont
+      - membre: Francis Labelle
+      - membre: Francis Lemaire
+      - membre: Ludovic Vanasse
+      - membre: Frédéric Paquette
+      - membre: Derek Masson
+      - membre: Florence Girard
+
+partenaires:
+
+  - categorie: Platine
+    partenaires:
+      - partenaire :
+        nom: etsmtl
+        image:  
+          src: /images/partenaires/ETS.png
+          width: 250px
+          heigth: 250px
+        url: http://www.etsmtl.ca/
+      - partenaire:
+        nom: fdets
+        image:  
+          src: /images/partenaires/fdets.png
+          width: 250px
+          heigth: 250px
+        url: http://www.etsmtl.ca/fdets/Accueil
+
+#  - categorie: Or
+#    partenaires:
+#      - partenaire :
+#        nom: sick
+#        image:  
+#          src: /images/partenaires/Sick.png
+#          width: 250px
+#          heigth: 250px
+#        url: https://www.sick.com/fr/fr/?defaultRedirect=true&sourceCountryIso=fr&missingCookie=true&sourceLanguageIso=fr&tail=/
+# 
+#  - categorie: Argent
+#    partenaires:
+#      - partenaire :
+#        nom: ElectroFusion
+#        image:  
+#          src: /images/partenaires/ElectroFusion.png
+#          width: 250px
+#          heigth: 250px
+#        url: http://www.electro-fusion.com/en/

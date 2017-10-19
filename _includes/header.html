@@ -1,0 +1,22 @@
+<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a href="{{ "/" | prepend: site.baseurl }}">Accueil</a></li>
+				<li><a href="{{ "/equipe" | prepend: site.baseurl }}">Equipe</a></li>
+				<li><a href="{{ "/nouvelle" | prepend: site.baseurl }}">Nouvelles</a></li>
+				<li><a href="{{ "/partenaire" | prepend: site.baseurl }}">Partenaires</a></li>
+				{% for page in site.pages %} {% if page.title %}
+				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				{% endif %} {% endfor %}
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<h1><a href="{{ site.baseurl }}" style="font-size:148px">{{ site.title }}</a></h1>
+</header>
+ 
