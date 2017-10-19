@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<h2>Equipe</h2>
+
+<div class="equipe">
+	{% for item in site.data.content.equipe %}
+		
+		<div class="departement-name">{{item.titre}}</div>
+		<div class="responsable">
+			{% if item.responsables %}
+				{% for responsable in item.responsables %}
+					<p> Responsable : {{responsable.nom}} </p>
+					<p class="responsable-titre"> {{responsable.titre}} </p>
+				{% endfor %}
+			{% elsif item.capitaine %}
+				<p> Capitaine : {{item.capitaine}} </p>
+			{% endif %}
+		</div>
+		<div class="departement-membre">
+			{% for departement in item.membres %}
+				<p>{{departement.membre}}</p>
+			{% endfor %}
+		</div>
+	{% endfor %}
+</div>

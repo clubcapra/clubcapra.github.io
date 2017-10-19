@@ -4,7 +4,8 @@ email: clubcapra@gmail.com
 description: >
   Site web du club scientifique capra de l'école de technologie supérieure.
 baseurl: ""
-url: ""
+url: "http://localhost:4000"
+twitter_username: 
 github_username:  clubcapra
 # Build Settings
 sass:

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h2>Partenaires</h2>
+<h3>Capra tient à remercier ses fidèles partenaires</h3>
+
+<p>CAPRA est toujours à la recherche de nouveaux commanditaires. Si vous êtes intéressé à effectuer un partenariat avec l’équipe Capra, vous pouvez prendre connaissance du Plan de commandites. N’hésitez pas à prendre contact avec nous! Voici les entreprises et associations qui ont contribué à l’atteinte de nos objectifs. (Platinium, or, argent, bronze)</p>
+
+{% for item in site.data.content.partenaires %}
+	{% for categorie in item.categorie %}
+	<div class="partenaire">
+		<h3> {{categorie}} </h3>
+		{% for partenaire in item.partenaires %}
+			<a href="{{partenaire.url}}"><img src="{{partenaire.image.src}}" width={{partenaire.image.width}} heigth={{partenaire.image.heigth}}></a>
+		{% endfor %}
+	</div>
+	{% endfor %}
+{% endfor %}
