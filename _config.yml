@@ -5,7 +5,10 @@ description: >
   Site web du club scientifique capra de l'école de technologie supérieure.
 baseurl: ""
 url: ""
-github_username:  clubcapra
+github_username:    clubcapra
+twitter_username:   clubcapra
+github_username:    clubcapra
+facebook_username:  clubcapra
 # Build Settings
 sass:
   sass_dir: _sass
