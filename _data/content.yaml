@@ -1,9 +1,14 @@
 equipe:
   - departement:
     titre: Admin
-    capitaine: Iman Hassanein
+    capitaines: 
+      - capitaine: 
+        nom: Iman Hassanein
+        titre: Co-capitaine
+      - capitaine:
+        nom: Jean-Luc Montreuil
+        titre: Co-capitaine
     membres: 
-      - membre: Jean-Luc Montreuil
       - membre: Benoit Côté-Jodoin
       - membre: Simon Pepin
   
