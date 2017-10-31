@@ -14,8 +14,10 @@ layout: default
 					<p> Responsable : {{responsable.nom}} </p>
 					<p class="responsable-titre"> {{responsable.titre}} </p>
 				{% endfor %}
-			{% elsif item.capitaine %}
-				<p> Capitaine : {{item.capitaine}} </p>
+			{% elsif item.capitaines %}
+				{% for capitaine in item.capitaines %}
+					<p> Co-capitaine : {{capitaine.nom}} </p>
+				{% endfor %}
 			{% endif %}
 		</div>
 		<div class="departement-membre">
