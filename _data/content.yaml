@@ -3,24 +3,22 @@ equipe:
     titre: Admin
     capitaines: 
       - capitaine: 
-        nom: Iman Hassanein
-        titre: Co-capitaine
+        nom: Simon Pepin
+        titre: Co-capitaine administratif
       - capitaine:
-        nom: Jean-Luc Montreuil
-        titre: Co-capitaine
+        nom: Alexandre Blais
+        titre: Co-capitaine technique
     membres: 
       - membre: Benoit Côté-Jodoin
-      - membre: Simon Pepin
+      - membre: Jean-Luc Montreuil
+      - membre: Iman Hassanein
   
   - departement:
     titre: Mecatronique
     responsables:
-      - responsable:
-        nom: Alexandre Blais
-        titre: Département électrique
       - responsable: 
         nom: Alexandre Francoeur
-        titre: Département mécanique
+        titre: Département mécatronique
     membres: 
       - membre: Aline "Moukda" Tansery
       - membre: Mike Beauséjours
@@ -31,6 +29,7 @@ equipe:
       - membre: Maxime Royal
       - membre: Olivier Fortin
       - membre: James T. Teasdale
+      - membre: Benjamin Brunet
 
   - departement:
     titre: Logiciel
@@ -38,7 +37,7 @@ equipe:
       - responsable: 
         nom: Olivier L. Larouche
         titre: Département logiciel
-    membres: 
+    membres:
       - membre: Marc-Antoine Malépart
       - membre: Guillaume Ruel
       - membre: Marc Antoine Dumont
@@ -48,6 +47,8 @@ equipe:
       - membre: Frédéric Paquette
       - membre: Derek Masson
       - membre: Florence Girard
+      - membre: Régis Roy
+      - membre: Quoc-Minh Ton-That
 
 partenaires:
 
