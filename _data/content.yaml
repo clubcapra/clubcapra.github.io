@@ -10,7 +10,6 @@ equipe:
         titre: Co-capitaine technique
     membres: 
       - membre: Benoit Côté-Jodoin
-      - membre: Jean-Luc Montreuil
       - membre: Iman Hassanein
   
   - departement:
@@ -35,15 +34,12 @@ equipe:
     titre: Logiciel
     responsables:
       - responsable: 
-        nom: Olivier L. Larouche
+        nom: Ludovic Vanasse
         titre: Département logiciel
     membres:
-      - membre: Marc-Antoine Malépart
       - membre: Guillaume Ruel
-      - membre: Marc Antoine Dumont
       - membre: Francis Labelle
       - membre: Francis Lemaire
-      - membre: Ludovic Vanasse
       - membre: Frédéric Paquette
       - membre: Derek Masson
       - membre: Florence Girard
@@ -51,8 +47,7 @@ equipe:
       - membre: Quoc-Minh Ton-That
 
 partenaires:
-
-  - categorie: Platine
+  - categorie: Or
     partenaires:
       - partenaire :
         nom: etsmtl
@@ -68,23 +63,20 @@ partenaires:
           width: 250px
           heigth: 250px
         url: http://www.etsmtl.ca/fdets/Accueil
-
-#  - categorie: Or
-#    partenaires:
-#      - partenaire :
-#        nom: sick
-#        image:  
-#          src: /images/partenaires/Sick.png
-#          width: 250px
-#          heigth: 250px
-#        url: https://www.sick.com/fr/fr/?defaultRedirect=true&sourceCountryIso=fr&missingCookie=true&sourceLanguageIso=fr&tail=/
-# 
-#  - categorie: Argent
-#    partenaires:
-#      - partenaire :
-#        nom: ElectroFusion
-#        image:  
-#          src: /images/partenaires/ElectroFusion.png
-#          width: 250px
-#          heigth: 250px
-#        url: http://www.electro-fusion.com/en/
+ 
+  - categorie: Argent
+    partenaires:
+      - partenaire :
+        nom: Sick
+        image:  
+          src: /images/partenaires/sick.png
+          width: 250px
+          heigth: 250px
+        url: https://www.sick.com/ca/
+      - partenaire :
+        nom: Cadence
+        image:  
+          src: /images/partenaires/Logos_Cadence_FR_RGB.png
+          width: 250px
+          heigth: 250px
+        url: http://cadenceautomation.ca/
