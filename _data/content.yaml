@@ -9,7 +9,6 @@ equipe:
         nom: Alexandre Blais
         titre: Co-capitaine technique
     membres: 
-      - membre: Benoit Côté-Jodoin
       - membre: Iman Hassanein
   
   - departement:
@@ -21,14 +20,17 @@ equipe:
     membres: 
       - membre: Aline "Moukda" Tansery
       - membre: Mike Beauséjours
-      - membre: Félix Bédard-Massicotte
       - membre: Philippe Urbain
-      - membre: Jeremy Laplante
       - membre: Maxime Royal
       - membre: Olivier Fortin
       - membre: James T. Teasdale
       - membre: Benjamin Brunet
-      - membre: Maurice Collenne
+      - membre: Frederick Giard
+      - membre: Marc-Antoine Lachance
+      - membre: Jérémy Ménard
+      - membre: Samuel Yergeau
+      - membre: Maxime Vigneault
+      - membre: Alexandre	Mongrain
 
   - departement:
     titre: Logiciel
@@ -37,14 +39,13 @@ equipe:
         nom: Ludovic Vanasse
         titre: Département logiciel
     membres:
-      - membre: Guillaume Ruel
-      - membre: Francis Labelle
       - membre: Francis Lemaire
       - membre: Frédéric Paquette
-      - membre: Derek Masson
       - membre: Florence Girard
-      - membre: Régis Roy
       - membre: Quoc-Minh Ton-That
+      - membre: Charles Giguère
+      - membre: Marc-olivier Bélisle
+
 
 partenaires:
   - categorie: Or
