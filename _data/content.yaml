@@ -81,3 +81,13 @@ partenaires:
           width: 250px
           heigth: 250px
         url: http://cadenceautomation.ca/
+        
+  - categorie: Bronze
+    partenaires:
+      - partenaire :
+        nom : A.B. Mekatek Inc.
+        image:
+        src: /images/partenaires/MekatekFond.png
+        width: 250px
+        heigth: 250px
+      url: https://www.abmekatek.com/
