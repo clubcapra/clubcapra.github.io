@@ -1,4 +1,4 @@
-# Club Capra Website [https://clubcapra.com](https://clubcapra.com)
+# Club Capra Website [http://clubcapra.com](http://clubcapra.com)
 
 ## [Start Bootstrap - New Age](https://startbootstrap.com/template-overviews/new-age/)
 
