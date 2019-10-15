@@ -4,6 +4,16 @@ body {
   height: 100%;
 }
 
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
 }
@@ -151,7 +161,7 @@ section h2 {
 header.masthead {
   position: relative;
   width: 100%;
-  padding-top: 150px;
+  /* padding-top: 150px; */
   padding-bottom: 100px;
   color: white;
   background:  #b80000;
@@ -285,7 +295,7 @@ section.features .feature-item i {
 section.cta {
   position: relative;
   padding: 250px 0;
-  background-image: url("../img/imagePartenariat.jpg");
+  background-image: url("../img/rc2019_1.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -294,6 +304,9 @@ section.cta {
 }
 
 section.cta .cta-content {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
@@ -362,6 +375,11 @@ section.contact ul.list-social li.social-facebook a {
 
 section.contact ul.list-social li.social-git a {
   background-color: white;
+  vertical-align: center;
+}
+
+section.contact ul.list-social li.social-linkedin a {
+  background-color: #0e76a8;
   vertical-align: center;
 }
 
@@ -474,9 +492,10 @@ border-color: #007bff;
 .equipenom{
   background-color: white;
   border-radius: 250px;
- border-color: gray;
- border-width: 1px;
+  border-color: gray;
+  border-width: 1px;
   margin: 1%;
+  /* width: auto; */
   max-width: 100%;
 }
 
@@ -485,12 +504,13 @@ border-color: #007bff;
   background-color: #E01E1E;
   border-radius: 250px;
   margin: 1%;
+  /* width: auto; */
+  max-width: 100%;
 }
 
 .btn-Part{
   font-size: 11px;
   padding: 15px 45px;
-
   border: 0px;
   background-color: #E01E1E;
   color: white;
@@ -521,15 +541,11 @@ border-color: #007bff;
   vertical-align: bottom;
 }
 
-
-
 .partGris{
   background-color:  #efefee;
   padding: 1vw;
   margin: 2vh;
   border-radius: 8px;
- 
-
 }
 
 .text-light{
