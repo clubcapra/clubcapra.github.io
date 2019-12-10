@@ -1,0 +1,738 @@
+/* Copyright (c) 2019 Club RockÉTS (MIT License) */
+
+/*******************************************************************************
+*                                   IMPORTS                                    *
+*******************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+
+@font-face {
+    font-family: "Moon";
+    src: url("fonts/moon_light.otf");
+}
+
+@font-face {
+    font-family: "Euphemia";
+    src: url("fonts/euphemia.ttf");
+}
+
+/*******************************************************************************
+*                                    GLOBAL                                    *
+*******************************************************************************/
+html, body {
+    font-family: "Raleway", sans-serif;
+    font-size: 100%;
+    height: 100%;
+    line-height: 1.45;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('media/gallery/rc2019_1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-container {
+    background: white;
+    z-index: 1;
+    padding-top: 1em;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section:not(:first-of-type) {
+    padding-bottom: 4em;
+}
+
+section h2 {
+    font-size: 3em;
+    font-weight: normal;
+}
+
+/*******************************************************************************
+*                                   PARALLAX                                   *
+*******************************************************************************/
+main {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax-spacer {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), inset 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.parallax-back {
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax-spacer#first {
+    background-image: url('media/gallery/takin1.jpg');
+}
+
+.parallax-spacer#second {
+    background-image: url('media/gallery/takin5.jpg');
+}
+
+.parallax-spacer#third {
+    background-image: url('media/gallery/team2.jpg');
+}
+
+/*******************************************************************************
+*                                    HEADER                                    *
+*******************************************************************************/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: auto;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.10);
+    transition: background 0.25s;
+}
+
+header.scrolled {
+    background: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+header #navigation {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header ul{
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: block;
+    list-style-type: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header ul li .inset {
+    color: #777;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 12pt;
+    color: white;
+}
+
+header ul li:hover {
+    color: #bfbfbf;
+}
+
+header.scrolled ul li a {
+    color: black;
+}
+
+header.scrolled ul li:hover {
+    color: #121212
+}
+
+#progress {
+    background: white;
+    height: 0.25em;
+    width: 0;
+    transition: background 0.25s;
+}
+
+header.scrolled #progress {
+    background: #E01E1E;
+}
+
+/*******************************************************************************
+*                                     HERO                                     *
+*******************************************************************************/
+#hero, #hero-spacer {
+    height: 100vh;
+}
+
+video#hero-vid {
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -999;
+    position: absolute;
+    right: -400px;
+    bottom: 0px;
+}
+
+#overlay {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: inherit;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title h1{
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 10vh;
+    max-width: 80vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+#title h2{
+    color: #e01e1e;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 550;
+    font-size: 5vh;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+@media only screen and (min-width: 1600px) {
+    #title h1 {
+        font-size: 20em;
+    }
+}
+
+/*******************************************************************************
+*                                   GALLERY                                    *
+*******************************************************************************/
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-overlay-text {
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    text-align: center;
+    background: rgba(232, 24, 9, 0.75);
+    padding-top:0.25em;
+    padding-bottom:0.25em;
+}
+
+.gallery-overlay .gallery-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.gallery-overlay {
+    opacity:0;
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: white;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    cursor: pointer;
+}
+
+.gallery-overlay:hover {
+    opacity:1;
+}
+
+.gallery-image {
+    height: 20em;
+}
+
+.gallery-image {
+    background-size: cover;
+    position: relative;
+}
+
+/* Adaptive image-per-row */
+.gallery-image.double {
+    width: calc(100%);
+}
+
+.gallery-image {
+    width: calc(100%/2);
+}
+
+@media only screen and (min-width: 600px) {
+    .gallery-image.double {
+        width: calc(100%/2);
+    }
+
+    .gallery-image {
+        width: calc(100%/4);
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .gallery-image.double {
+        width: calc(100%/3);
+    }
+
+    .gallery-image {
+        width: calc(100%/6);
+        height: auto;
+        padding-top: 25%;
+    }
+}
+
+#gallery-modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: radial-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.75));
+    overflow: auto;
+}
+
+#gallery-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery-modal-content img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translate(-50%,-50%);
+}
+
+/*******************************************************************************
+*                                   ROCKETS                                    *
+*******************************************************************************/
+
+.rocket-tabs-container {
+    background: #404040;
+    position: relative;
+}
+
+.rocket-tabs-content {
+    max-width: 1200px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.rocket-tab-link {
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.rocket-tab-link:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.rocket-tab-link.tab-active {
+    background-color: #404040;
+    border-radius: 5px 5px 0 0;
+    color: white;
+}
+
+.rocket-tab-content {
+    display: none;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.rocket-tab-content.tab-active {
+    display: flex;
+}
+
+.rocket-info {
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.rocket-render {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    align-content: center;
+}
+
+.rocket-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#rocket-switch-side {
+    display: none;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 1;
+    background: white;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    padding-bottom: 0.3em;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#rocket-switch-side:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+@media only screen and (max-width: 750px) {
+    .rocket-tab-content {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: scroll;
+    }
+
+    #rocket-switch-side {
+        display: block;
+    }
+
+    .rocket-tab-content.rocket-left-focus .rocket-column.rocket-right {
+        display: none;
+    }
+
+    .rocket-tab-content.rocket-right-focus .rocket-column.rocket-left {
+        display: none;
+    }
+}
+
+.rocket-info table {
+    border-spacing: 0;
+    width: 16em;
+    font-family: 'Moon', 'Raleway', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.rocket-info h3, .rocket-info h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.rocket-info h3 {
+    font-size: 1.8em;
+}
+
+.rocket-info h4 {
+    margin-top: -0.75em;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.rocket-info h4, .rocket-info-keys {
+    color: #aaaaaa;
+}
+
+.rocket-info td {
+    width: 8em;
+}
+
+.rocket-info table .unit {
+    text-transform: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.6em;
+}
+
+.rocket-info .rocket-info-keys {
+    font-size: 0.6em;
+}
+.rocket-info .rocket-info-keys td {
+    padding-top: 0.5em;
+}
+
+#rocket-tab-ookpik .rocket-info .rocket-info-keys td {
+    border-bottom: 3px #7C1807 double;
+}
+
+#rocket-tab-amarok2 .rocket-info .rocket-info-keys td,
+#rocket-tab-amarok3 .rocket-info .rocket-info-keys td {
+    border-bottom: 3px #3369ad double;
+}
+
+.rocket-tab-link .latin {
+    display: block;
+}
+.rocket-tab-link .alt {
+    display: none;
+}
+
+.rocket-tab-link.tab-active .latin {
+    display: none;
+}
+.rocket-tab-link.tab-active .alt {
+    display: block;
+}
+
+/*******************************************************************************
+*                                     AWARD                                    *
+*******************************************************************************/
+.award-container {
+    display: flex;
+}
+
+.award-column {
+    flex: 50%;
+    padding: 1em;
+}
+
+.award-column h3 {
+    margin-bottom: 0;
+}
+
+.award-column-left {
+    text-align: right;
+}
+
+.award-column span {
+    display: block;
+}
+
+/*******************************************************************************
+*                                   PARTNERS                                   *
+*******************************************************************************/
+#partners h3 {
+    width:100%;
+    text-align: center;
+    border: hidden;
+    border-radius: 15px;
+}
+
+.partners-or,
+.partners-argent,
+.partners-bronze,
+.become-partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.partner-logo {
+    padding: 1em;
+}
+
+.partners-or .partner-logo,
+.partners-or .partner-logo img {
+    max-width: 17.5em;
+    max-height: 8.75em;
+    margin: auto;
+}
+
+.partners-argent .partner-logo,
+.partners-argent .partner-logo img {
+    max-width: 15em;
+    max-height: 7.5em;
+    margin: auto;
+}
+
+.partners-bronze .partner-logo,
+.partners-bronze .partner-logo img {
+    max-width: 12.5em;
+    max-height: 6.25em;
+    margin: auto;
+}
+
+.become-partners {
+    margin: auto;
+    max-width: 80%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.partner-button {
+	background-color:#c62d1f;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:15px 40px;
+	text-decoration:none;
+}
+.partner-button:hover {
+	background-color:#e0002d;
+}
+.partner-button:active {
+	position:relative;
+	top:1px;
+}
+
+
+/*******************************************************************************
+*                                    SOCIAL                                    *
+*******************************************************************************/
+.social-container {
+    display:flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.social-network {
+    padding: 1em;
+}
+
+.social-network,
+.social-network img {
+    width: 4em;
+}
+
+.social-logos {
+    padding: 3px;
+    text-decoration: none;
+}
+
+.social-address {
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    text-align: center;
+    width:100%;
+}
+
+/*******************************************************************************
+*                                    FOOTER                                    *
+*******************************************************************************/
+footer {
+    padding: 1em;
+    background: white;
+    text-align: center;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-love {
+    color: #303030;
+}
+
+/*******************************************************************************
+*                                MEDIA QUERIES                                 *
+*******************************************************************************/
+@media only screen and (max-width:1200px) {
+    .content {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media only screen and (min-width:769px) {
+    .visible-mobile, .visible-tablet, .hidden-desktop {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:768px) {
+    .visible-mobile, .hidden-tablet, .visible-desktop {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width:479px) {
+    .hidden-mobile, .visible-tablet, .visible-desktop {
+        display: none !important;
+    }
+}
+
+/*******************************************************************************
+*                             CSS LOADING SPINNER                              *
+*******************************************************************************/
+.spinner {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.spinner div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+.spinner div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.spinner div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.spinner div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+            transform: rotate(360deg);
+    }
+}
