@@ -19,13 +19,14 @@
     <header id="#header">
         <div id="navigation">
             <ul>
-                <li><a href="#home">ACCUEIL</a></li>
+                <li><a href="#home"><img src="assets/media/capra/Capra_Logo_Colour.png" style="height: 20px;"></a></li>
+                <!-- <li><a href="#home">ACCUEIL</a></li> -->
                 <li><span class="inset"> · </span></li>
-                <li><a href="#club">CLUB</a></li>
+                <li><a href="#club">EN BREF</a></li>
                 <li><span class="inset"> · </span></li>
                 <li><a href="#gallery">GALLERIE</a></li>
                 <li><span class="inset"> · </span></li>
-                <!-- <li><a href="#rockets">FUSÉES</a></li> -->
+                <!-- <li><a href="#papers">PUBLICATIONS</a></li> -->
                 <!-- <li><span class="inset"> · </span></li> -->
                 <!-- <li><a href="#awards">PRIX</a></li> -->
                 <!-- <li><span class="inset"> · </span></li> -->
@@ -53,7 +54,6 @@
                 <div id="overlay">
                     <!-- <div id="title"> -->
                         <!-- <h1>ROCK<span class="logo-red">ÉTS</span></h1> -->
-                        <img src="assets/media/capra/Capra_Logo_Colour.png" alt="Club Capra">
                     <!-- </div> -->
                 </div>
             </section>
@@ -63,7 +63,7 @@
             <div class="content-container">
                 <section id="club">
                     <div class="content">
-                        <h2>Bienvenue</h2>
+                        <h2>En bref</h2>
                         <p>Le club Capra conçoit et réalise des véhicules de secours
                             autonomes. Ces robots ont la capacité de naviguer dans un environnement qui leur est inconnu et d'effectuer des
                             manipulations et des analyses. Une multitude de capteurs leur permettent de sonder leur environnement et leur état:
@@ -79,21 +79,11 @@
                         <h2>Photos</h2>
                     </div>
                     <div class="gallery-container">
-                        <div class="gallery-image"
-                            style="background-image: url(assets/media/gallery/IMG_0005_thumb.jpg)">
+                        <div class="gallery-image double"
+                            style="background-image: url(assets/media/gallery/rc2019_2.jpg)">
                             <div class="gallery-overlay">
                                 <div class="gallery-overlay-text">
-                                    <span class="gallery-title">Ookpik</span><br />
-                                    <span class="gallery-desc"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="gallery-image"
-                            style="background-image: url(assets/media/gallery/IMG_7346_thumb.jpg)">
-                            <div class="gallery-overlay">
-                                <div class="gallery-overlay-text">
-                                    <span class="gallery-title">Émerillon V</span><br />
+                                    <span class="gallery-title">Takin franchit un obstacle</span><br />
                                     <span class="gallery-desc"></span>
                                 </div>
                             </div>
@@ -107,7 +97,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="gallery-image"
+                        <div class="gallery-image double"
+                            style="background-image: url(assets/media/gallery/rc2019_3.jpg)">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-text">
+                                    <span class="gallery-title">Takin manoeuvre dans un parcours encombré</span><br />
+                                    <span class="gallery-desc"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="gallery-image"
                             style="background-image: url(assets/media/gallery/DSC_8249_thumb.jpg)">
                             <div class="gallery-overlay">
                                 <div class="gallery-overlay-text">
@@ -208,13 +207,23 @@
                                     <span class="gallery-desc"></span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
-
                 </section>
             </div>
-            <!-- <div id="first" class="parallax-spacer"></div>
-            <div class="content-container">
+            <div id="first" class="parallax-spacer"></div>
+            <!-- <div class="content-container">
+                <section id="papers">
+                    <div class="content">
+                        <h2>Publications</h2>
+                        <div class="papers-container">
+                            <p>lorem ipsidum</p>
+                        </div>
+                    </div>
+                </section>
+            </div> -->
+            <!-- <div id="second" class="parallax-spacer"></div> -->
+            <!-- <div class="content-container">
                 <section id="awards">
                     <div class="content">
                         <h2>Prix</h2>
@@ -241,14 +250,13 @@
                     </div>
                 </section>
             </div> -->
-            <div id="second" class="parallax-spacer"></div>
+            <!-- <div id="third" class="parallax-spacer"></div> -->
             <div class="content-container">
                 <section id="partners">
                     <div class="content">
-                        <h2>Merci à tous nos partenaires</h2>
-                        <!-- <div class="h3" style="width: 100%; text-align: center; background-color: goldenrod;">Or</div> -->
-                        <h3>Or</h3>
-                        <div class="partners-pilote">
+                        <h2>Partenaires</h2>
+                        <h3 style="background-color: goldenrod;">Or</h3>
+                        <div class="partners-or">
                             <div class="partner-logo">
                                 <a href="https://www.kinovarobotics.com">
                                     <img src="assets/media/partners/Logo-KINOVA-RGB.jpg" alt="Kinova Robotics">
@@ -285,8 +293,8 @@
                                 </a>
                             </div>
                         </div>
-                        <h3>Argent</h3>
-                        <div class="partners-specialiste">
+                        <h3 style="background-color: silver;">Argent</h3>
+                        <div class="partners-argent">
                             <div class="partner-logo">
                                 <a href="https://aeets.com/">
                                     <img src="assets/media/partners/aeets.svg" alt="Association Étudiante de l'ÉTS">
@@ -308,8 +316,8 @@
                                 </a>
                             </div>
                         </div>
-                        <h3>Bronze</h3>
-                        <div class="partners-ingenieur">
+                        <h3 style="background-color: #cd7f32;">Bronze</h3>
+                        <div class="partners-bronze">
                             <div class="partner-logo">
                                 <a href="https://www.abmekatek.com/">
                                     <img src="assets/media/partners/Mekatek.png" alt="A.B. Mekatek">
@@ -321,14 +329,15 @@
                                 </a>
                             </div>
                         </div>
-                        <div>
-                            <h3>CAPRA est toujours à la recherche de nouveaux commanditaires. Si vous êtes intéressé à effectuer un
-                                partenariat avec l’équipe Capra, vous pouvez prendre connaissance du Plan de partenariat.</h3>
-                            <a href="assets/documents/Plan_Partenariat_2019-2020.pdf">Découvrir le plan!</a>
+                        <div class="become-partners">
+                            <p>CAPRA est toujours à la recherche de nouveaux commanditaires. Si vous êtes intéressé à effectuer un
+                            partenariat avec l’équipe Capra, vous pouvez prendre connaissance du Plan de partenariat.
+                            </p>
+                            <a href="assets/documents/Plan_Partenariat_2019-2020.pdf" class="partner-button">Découvrir le plan!</a>
                         </div>
                     </div>
                 </section>
-
+                <div id="third" class="parallax-spacer"></div>
                 <section id="contact">
                     <div class="content">
                         <h2>Nos Réseaux</h2>
@@ -388,7 +397,7 @@
                 <div></div>
                 <div></div>
             </div>
-            <img src="assets/media/gallery/IMG_0005_thumb.jpg">
+            <img src="assets/media/gallery/rc2019_1.jpg">
         </div>
     </div>
 

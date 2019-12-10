@@ -28,7 +28,7 @@ html, body {
 }
 
 body {
-    background-image: url('media/hero/frame.jpg');
+    background-image: url('media/gallery/rc2019_1.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -84,11 +84,15 @@ main {
 }
 
 .parallax-spacer#first {
-    background-image: url('media/hero/pole_pitch.jpg');
+    background-image: url('media/gallery/takin1.jpg');
 }
 
 .parallax-spacer#second {
-    background-image: url('media/hero/tripod.jpg');
+    background-image: url('media/gallery/takin5.jpg');
+}
+
+.parallax-spacer#third {
+    background-image: url('media/gallery/team2.jpg');
 }
 
 /*******************************************************************************
@@ -165,7 +169,7 @@ header.scrolled ul li:hover {
 }
 
 header.scrolled #progress {
-    background: #E91E24;
+    background: #E01E1E;
 }
 
 /*******************************************************************************
@@ -186,7 +190,8 @@ video#hero-vid {
 }
 
 #overlay {
-    height: 100vh;
+    /* height: 100vh; */
+    width: fit-content;
     overflow: hidden;
     display: flex;
     flex-direction: inherit;
@@ -531,14 +536,14 @@ video#hero-vid {
 #partners h3 {
     width:100%;
     text-align: center;
+    border: hidden;
+    border-radius: 15px;
 }
 
-.partners-commandant,
-.partners-pilote,
-.partners-specialiste,
-.partners-ingenieur,
-.partners-astronaute,
-.partners-expert {
+.partners-or,
+.partners-argent,
+.partners-bronze,
+.become-partners {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -549,41 +554,52 @@ video#hero-vid {
     padding: 1em;
 }
 
-.partners-commandant .partner-logo,
-.partners-commandant .partner-logo img {
-    max-width: 20em;
-    max-height: 10em;
-    margin: auto;
-}
-
-.partners-pilote .partner-logo,
-.partners-pilote .partner-logo img {
+.partners-or .partner-logo,
+.partners-or .partner-logo img {
     max-width: 17.5em;
     max-height: 8.75em;
     margin: auto;
 }
 
-.partners-specialiste .partner-logo,
-.partners-specialiste .partner-logo img {
+.partners-argent .partner-logo,
+.partners-argent .partner-logo img {
     max-width: 15em;
     max-height: 7.5em;
     margin: auto;
 }
 
-.partners-ingenieur .partner-logo,
-.partners-ingenieur .partner-logo img {
+.partners-bronze .partner-logo,
+.partners-bronze .partner-logo img {
     max-width: 12.5em;
     max-height: 6.25em;
     margin: auto;
 }
 
-.partners-astronaute .partner-logo,
-.partners-astronaute .partner-logo img,
-.partners-expert .partner-logo,
-.partners-expert .partner-logo img {
-    max-width: 10em;
-    max-height: 5em;
+.become-partners {
     margin: auto;
+    max-width: 80%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.partner-button {
+	background-color:#c62d1f;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:15px 40px;
+	text-decoration:none;
+}
+.partner-button:hover {
+	background-color:#e0002d;
+}
+.partner-button:active {
+	position:relative;
+	top:1px;
 }
 
 
