@@ -180,12 +180,13 @@ header.scrolled #progress {
 }
 
 video#hero-vid {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
     min-width: 100vw;
     min-height: 100vh;
     z-index: -999;
-    position: absolute;
-    right: -400px;
-    bottom: 0px;
 }
 
 #overlay {
