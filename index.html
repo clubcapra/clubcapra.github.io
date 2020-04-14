@@ -1,148 +1,212 @@
 <!-- Copyright (c) 2019 Club RockÉTS (MIT Licence) -->
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Club Capra</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/main.css"
+    />
     <script src="assets/main.js"></script>
-    <link rel="icon" href="assets/media/capra/favicon.ico">
+    <link rel="icon" href="assets/media/capra/favicon.ico" />
     <script src="https://assets.what3words.com/sdk/v3/what3words.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="#header">
-        <div id="navigation">
-            <ul>
-                <li><a href="#home"><img src="assets/media/capra/Capra_Logo_Colour.png" style="height: 20px;"></a></li>
-                <li><span class="inset"> · </span></li>
-                <li><a href="#club">EN BREF</a></li>
-                <li><span class="inset"> · </span></li>
-                <li><a href="#gallery">GALLERIE</a></li>
-                <li><span class="inset"> · </span></li>
-                <!-- <li><a href="#papers">PUBLICATIONS</a></li> -->
-                <!-- <li><span class="inset"> · </span></li> -->
-                <!-- <li><a href="#awards">PRIX</a></li> -->
-                <!-- <li><span class="inset"> · </span></li> -->
-                <li><a href="#partners">PARTENAIRES</a></li>
-                <li><span class="inset"> · </span></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><span class="inset"> · </span></li>
-                <li><a href="https://www.jedonneenligne.org/fdets/campagne/ets/equipes/Teams/view/ba4c4d8c-e250-4dc1-ba52-ca54bc3b74c5" target="_blank">FAIRE UN DON</a></li>
-                <li><span class="inset"> · </span></li>
-                <li><a href="https://github.com/clubcapra/capra_web_ui/releases/latest" target="_blank">ROS UI</a></li>
-                <!-- <li><span class="inset"> · </span></li> -->
-                <!-- <li><a href="en/">ENGLISH</a></li> -->
-            </ul>
-        </div>
-        <div id="progress"></div>
+      <div id="navigation">
+        <ul>
+          <li>
+            <a href="#home"
+              ><img
+                src="assets/media/capra/Capra_Logo_Colour.png"
+                style="height: 20px;"
+            /></a>
+          </li>
+          <li><span class="inset"> · </span></li>
+          <li><a href="#club">EN BREF</a></li>
+          <li><span class="inset"> · </span></li>
+          <li><a href="#gallery">GALLERIE</a></li>
+          <li><span class="inset"> · </span></li>
+          <li><a href="#papers">PUBLICATIONS</a></li>
+          <li><span class="inset"> · </span></li>
+          <!-- <li><a href="#awards">PRIX</a></li> -->
+          <!-- <li><span class="inset"> · </span></li> -->
+          <li><a href="#partners">PARTENAIRES</a></li>
+          <li><span class="inset"> · </span></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><span class="inset"> · </span></li>
+          <li>
+            <a
+              href="https://www.jedonneenligne.org/fdets/campagne/ets/equipes/Teams/view/ba4c4d8c-e250-4dc1-ba52-ca54bc3b74c5"
+              target="_blank"
+              >FAIRE UN DON</a
+            >
+          </li>
+          <li><span class="inset"> · </span></li>
+          <li>
+            <a
+              href="https://github.com/clubcapra/capra_web_ui/releases/latest"
+              target="_blank"
+              >ROS UI</a
+            >
+          </li>
+          <!-- <li><span class="inset"> · </span></li> -->
+          <!-- <li><a href="en/">ENGLISH</a></li> -->
+        </ul>
+      </div>
+      <div id="progress"></div>
     </header>
-    <video class="visible-desktop" id="hero-vid" poster="assets/media/gallery/rc2019_1.jpg" autoplay loop muted>
-        <!-- <source type="video/webm" src="assets/media/hero/ookpik.webm" /> -->
-        <!-- <source type="video/mp4" src="assets/media/hero/ookpik.mp4" /> -->
+    <video
+      class="visible-desktop"
+      id="hero-vid"
+      poster="assets/media/gallery/rc2019_1.jpg"
+      autoplay
+      loop
+      muted
+    >
+      <!-- <source type="video/webm" src="assets/media/hero/ookpik.webm" /> -->
+      <!-- <source type="video/mp4" src="assets/media/hero/ookpik.mp4" /> -->
     </video>
     <main onscroll="scroller()">
-        <div id="home">
-            <!--Dummy div to force scrolling to the top-->
-        </div>
-        <div class="parallax-layer parallax-back">
-            <section id="hero">
-                <div id="overlay">
-                    <div id="title">
-                        <!-- <h1>CAPRA</h1> -->
-                        <h2>Un robot pour sauver des vies</h2>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="parallax-layer parallax-base">
-            <div id="hero-spacer"></div>
-            <div class="content-container">
-                <section id="club">
-                    <div class="content">
-                        <h2>En bref</h2>
-                        <p>Le club Capra conçoit et réalise des véhicules de secours
-                            autonomes. Ces robots ont la capacité de naviguer dans un environnement qui leur est inconnu
-                            et d'effectuer des
-                            manipulations et des analyses. Une multitude de capteurs leur permettent de sonder leur
-                            environnement et leur état:
-                            des caméras, des capteurs, des encodeurs, etc. Faire partie d’un club étudiant est l’une des
-                            expériences des plus enrichissantes à l’ÉTS. C’est l’occasion idéale d’approfondir des
-                            connaissances dans un domaine d’études et même d’élargir un champ de compétence en explorant
-                            d’autres domaines. Nous
-                            recrutons sans arrêt de nouveaux étudiants de MEC, ELE, LOG/TI, GPA et GOL. N’hésitez pas à
-                            venir nous rencontrer
-                            au local D-2014!</p>
-                    </div>
-                </section>
+      <div id="home">
+        <!--Dummy div to force scrolling to the top-->
+      </div>
+      <div class="parallax-layer parallax-back">
+        <section id="hero">
+          <div id="overlay">
+            <div id="title">
+              <!-- <h1>CAPRA</h1> -->
+              <h2>Un robot pour sauver des vies</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="parallax-layer parallax-base">
+        <div id="hero-spacer"></div>
+        <div class="content-container">
+          <section id="club">
+            <div class="content">
+              <h2>En bref</h2>
+              <p>
+                Le club Capra conçoit et réalise des véhicules de secours
+                autonomes. Ces robots ont la capacité de naviguer dans un
+                environnement qui leur est inconnu et d'effectuer des
+                manipulations et des analyses. Une multitude de capteurs leur
+                permettent de sonder leur environnement et leur état: des
+                caméras, des capteurs, des encodeurs, etc. Faire partie d’un
+                club étudiant est l’une des expériences des plus enrichissantes
+                à l’ÉTS. C’est l’occasion idéale d’approfondir des connaissances
+                dans un domaine d’études et même d’élargir un champ de
+                compétence en explorant d’autres domaines. Nous recrutons sans
+                arrêt de nouveaux étudiants de MEC, ELE, LOG/TI, GPA et GOL.
+                N’hésitez pas à venir nous rencontrer au local D-2014!
+              </p>
+            </div>
+          </section>
 
-                <section id="gallery">
-                    <div class="content">
-                        <h2>Photos</h2>
-                    </div>
-                    <div class="gallery-container">
-                        <div class="gallery-image double"
-                            style="background-image: url(assets/media/gallery/rc2019_2.jpg)">
-                            <div class="gallery-overlay">
-                                <div class="gallery-overlay-text">
-                                    <span class="gallery-title">Takin franchit un obstacle</span><br />
-                                    <span class="gallery-desc"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-image double"
-                            style="background-image: url(assets/media/gallery/comp_team_2019.JPG)">
-                            <div class="gallery-overlay">
-                                <div class="gallery-overlay-text">
-                                    <span class="gallery-title">Équipe de compétition 2019</span><br />
-                                    <span class="gallery-desc">L'équipe de compétition 2019 avec notre robot
-                                        Takin</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-image double"
-                            style="background-image: url(assets/media/gallery/rc2019_3.jpg)">
-                            <div class="gallery-overlay">
-                                <div class="gallery-overlay-text">
-                                    <span class="gallery-title">Takin manoeuvre dans un parcours encombré</span><br />
-                                    <span class="gallery-desc"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-image double"
-                            style="background-image: url(assets/media/gallery/takin_assemblage.jpg)">
-                            <div class="gallery-overlay">
-                                <div class="gallery-overlay-text">
-                                    <span class="gallery-title">Takin lors du premier assemblage</span><br />
-                                    <span class="gallery-desc"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-image"
-                            style="background-image: url(assets/media/gallery/takin_interne.jpg)">
-                            <div class="gallery-overlay">
-                                <div class="gallery-overlay-text">
-                                    <span class="gallery-title">Takin</span><br />
-                                    <span class="gallery-desc"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gallery-image double"
-                            style="background-image: url(assets/media/gallery/takin_test_suspension.jpg)">
-                            <div class="gallery-overlay">
-                                <div class="gallery-overlay-text">
-                                    <span class="gallery-title">Essai du design préliminaire de la suspension</span><br />
-                                    <span class="gallery-desc"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="gallery-image"
+          <section id="gallery">
+            <div class="content">
+              <h2>Photos</h2>
+            </div>
+            <div class="gallery-container">
+              <div
+                class="gallery-image double"
+                style="
+                  background-image: url(assets/media/gallery/rc2019_2.jpg);
+                "
+              >
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-text">
+                    <span class="gallery-title">Takin franchit un obstacle</span
+                    ><br />
+                    <span class="gallery-desc"></span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="gallery-image double"
+                style="
+                  background-image: url(assets/media/gallery/comp_team_2019.JPG);
+                "
+              >
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-text">
+                    <span class="gallery-title">Équipe de compétition 2019</span
+                    ><br />
+                    <span class="gallery-desc"
+                      >L'équipe de compétition 2019 avec notre robot Takin</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="gallery-image double"
+                style="
+                  background-image: url(assets/media/gallery/rc2019_3.jpg);
+                "
+              >
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-text">
+                    <span class="gallery-title"
+                      >Takin manoeuvre dans un parcours encombré</span
+                    ><br />
+                    <span class="gallery-desc"></span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="gallery-image double"
+                style="
+                  background-image: url(assets/media/gallery/takin_assemblage.jpg);
+                "
+              >
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-text">
+                    <span class="gallery-title"
+                      >Takin lors du premier assemblage</span
+                    ><br />
+                    <span class="gallery-desc"></span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="gallery-image"
+                style="
+                  background-image: url(assets/media/gallery/takin_interne.jpg);
+                "
+              >
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-text">
+                    <span class="gallery-title">Takin</span><br />
+                    <span class="gallery-desc"></span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="gallery-image double"
+                style="
+                  background-image: url(assets/media/gallery/takin_test_suspension.jpg);
+                "
+              >
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-text">
+                    <span class="gallery-title"
+                      >Essai du design préliminaire de la suspension</span
+                    ><br />
+                    <span class="gallery-desc"></span>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="gallery-image"
                             style="background-image: url(assets/media/gallery/IMG_0001_thumb.jpg)">
                             <div class="gallery-overlay">
                                 <div class="gallery-overlay-text">
@@ -235,22 +299,24 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div>
-                </section>
             </div>
-            <div id="first" class="parallax-spacer"></div>
-            <!-- <div class="content-container">
-                <section id="papers">
-                    <div class="content">
-                        <h2>Publications</h2>
-                        <div class="papers-container">
-                            <p>lorem ipsidum</p>
-                        </div>
-                    </div>
-                </section>
-            </div> -->
-            <!-- <div id="second" class="parallax-spacer"></div> -->
-            <!-- <div class="content-container">
+          </section>
+        </div>
+        <div id="first" class="parallax-spacer"></div>
+        <div class="content-container">
+          <section id="papers">
+            <div class="content">
+              <h2>Publications</h2>
+              <!-- <div class="papers-container"> -->
+              <!-- <script src="https://bibbase.org/show?bib=http://clubcapra.com/assets/papers/papers.bib&jsonp=1"></script> -->
+              <script src="https://bibbase.org/show?bib=clubcapra.github.io/assets/papers/papers.bib&jsonp=1&authorFirst=1&fullnames=1"></script>
+              <!-- <script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F4961627%2Fcollections%2FQ3HNMAEP%2Fitems%3Fkey%3DkQ85flpdthyRCBuArPQVjquu%26format%3Dbibtex%26limit%3D100&jsonp=1"></script> -->
+              <!-- </div> -->
+            </div>
+          </section>
+        </div>
+        <!-- <div id="second" class="parallax-spacer"></div> -->
+        <!-- <div class="content-container">
                 <section id="awards">
                     <div class="content">
                         <h2>Prix</h2>
@@ -277,173 +343,229 @@
                     </div>
                 </section>
             </div> -->
-            <!-- <div id="third" class="parallax-spacer"></div> -->
-            <div class="content-container">
-                <section id="partners">
-                    <div class="content">
-                        <h2>Partenaires</h2>
-                        <h3 style="background-color: goldenrod;">Or</h3>
-                        <div class="partners-or">
-                            <div class="partner-logo">
-                                <a href="https://www.kinovarobotics.com">
-                                    <img src="assets/media/partners/Logo-KINOVA-RGB.jpg" alt="Kinova Robotics">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://www.orica.com/locations/north-america/canada/brownsburg-/brownsburg">
-                                    <img src="assets/media/partners/orica.png" alt="Orica Canada">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://www.etsmtl.ca/">
-                                    <img src="assets/media/partners/ets.png" alt="École de technologie supérieure">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://www.etsmtl.ca/fdets/Accueil">
-                                    <img src="assets/media/partners/fdets.png" alt="Fond de Développement de l'ÉTS">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://mekanisk3d.com/">
-                                    <img src="assets/media/partners/mekanisk.svg" alt="MEKANISK Impression 3D">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://robotiq.com/fr/">
-                                    <img src="assets/media/partners/robotiq.png" alt="Robotiq">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://www.creaform-engineering.com/fr">
-                                    <img src="assets/media/partners/creaform.jpg" alt="Creaform Ingénierie">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://www.soucy-group.com/fr-CA/accueil">
-                                    <img src="assets/media/partners/logo-groupesoucy-noir-rouge.png" alt="Groupe Soucy">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://drillmex.com/">
-                                    <img src="assets/media/partners/drillmex.png" alt="Drillmex">
-                                </a>
-                            </div>
-                        </div>
-                        <h3 style="background-color: silver;">Argent</h3>
-                        <div class="partners-argent">
-                            <div class="partner-logo">
-                                <a href="https://aeets.com/">
-                                    <img src="assets/media/partners/aeets.svg" alt="Association Étudiante de l'ÉTS">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://www.sick.com/ca/fr/">
-                                    <img src="assets/media/partners/sick.png" alt="SICK Canada">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://cadenceautomation.ca/">
-                                    <img src="assets/media/partners/Logos_Cadence_FR_RGB.png"
-                                        alt="Cadence Automatisation">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://www.rheinmetall.ca/fr/rheinmetall_canada/index.php">
-                                    <img src="assets/media/partners/rheinmetall_canada.svg" alt="Rheinmetall Canada">
-                                </a>
-                            </div>
-                        </div>
-                        <h3 style="background-color: #cd7f32;">Bronze</h3>
-                        <div class="partners-bronze">
-                            <div class="partner-logo">
-                                <a href="https://www.abmekatek.com/">
-                                    <img src="assets/media/partners/Mekatek.png" alt="A.B. Mekatek">
-                                </a>
-                            </div>
-                            <div class="partner-logo">
-                                <a href="https://www.weidmuller.com/">
-                                    <img src="assets/media/partners/weidmuller.png" alt="Weidmüller">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="become-partners">
-                            <p>CAPRA est toujours à la recherche de nouveaux commanditaires. Si vous êtes intéressé à
-                                effectuer un
-                                partenariat avec l’équipe Capra, vous pouvez prendre connaissance du Plan de
-                                partenariat.
-                            </p>
-                            <a href="assets/documents/Plan_Partenariat.pdf" class="partner-button">Découvrir
-                                le plan!</a>
-                        </div>
-                    </div>
-                </section>
-                <div id="third" class="parallax-spacer"></div>
-                <section id="contact">
-                    <div class="content">
-                        <h2>Nos Réseaux</h2>
-                        <div class="social-container">
-                            <div class="social-network">
-                                <a href="https://www.facebook.com/clubcapra/">
-                                    <img src="assets/media/social/facebook.svg">
-                                </a>
-                            </div>
-                            <div class="social-network">
-                                <a href="https://www.instagram.com/capra_ets/">
-                                    <img src="assets/media/social/insta.png">
-                                </a>
-                            </div>
-                            <div class="social-network">
-                                <a href="https://ca.linkedin.com/company/club-capra">
-                                    <img src="assets/media/social/linkedin.png">
-                                </a>
-                            </div>
-                            <!-- <div class="social-network">
+        <div id="second" class="parallax-spacer"></div>
+        <div class="content-container">
+          <section id="partners">
+            <div class="content">
+              <h2>Partenaires</h2>
+              <h3 style="background-color: goldenrod;">Or</h3>
+              <div class="partners-or">
+                <div class="partner-logo">
+                  <a href="https://www.kinovarobotics.com">
+                    <img
+                      src="assets/media/partners/Logo-KINOVA-RGB.jpg"
+                      alt="Kinova Robotics"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a
+                    href="https://www.orica.com/locations/north-america/canada/brownsburg-/brownsburg"
+                  >
+                    <img
+                      src="assets/media/partners/orica.png"
+                      alt="Orica Canada"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a href="https://www.etsmtl.ca/">
+                    <img
+                      src="assets/media/partners/ets.png"
+                      alt="École de technologie supérieure"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a href="https://www.etsmtl.ca/fdets/Accueil">
+                    <img
+                      src="assets/media/partners/fdets.png"
+                      alt="Fond de Développement de l'ÉTS"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a href="https://mekanisk3d.com/">
+                    <img
+                      src="assets/media/partners/mekanisk.svg"
+                      alt="MEKANISK Impression 3D"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a href="https://robotiq.com/fr/">
+                    <img
+                      src="assets/media/partners/robotiq.png"
+                      alt="Robotiq"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a href="https://www.creaform-engineering.com/fr">
+                    <img
+                      src="assets/media/partners/creaform.jpg"
+                      alt="Creaform Ingénierie"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a href="https://www.soucy-group.com/fr-CA/accueil">
+                    <img
+                      src="assets/media/partners/logo-groupesoucy-noir-rouge.png"
+                      alt="Groupe Soucy"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a href="https://drillmex.com/">
+                    <img
+                      src="assets/media/partners/drillmex.png"
+                      alt="Drillmex"
+                    />
+                  </a>
+                </div>
+              </div>
+              <h3 style="background-color: silver;">Argent</h3>
+              <div class="partners-argent">
+                <div class="partner-logo">
+                  <a href="https://aeets.com/">
+                    <img
+                      src="assets/media/partners/aeets.svg"
+                      alt="Association Étudiante de l'ÉTS"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a href="https://www.sick.com/ca/fr/">
+                    <img
+                      src="assets/media/partners/sick.png"
+                      alt="SICK Canada"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a href="https://cadenceautomation.ca/">
+                    <img
+                      src="assets/media/partners/Logos_Cadence_FR_RGB.png"
+                      alt="Cadence Automatisation"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a
+                    href="https://www.rheinmetall.ca/fr/rheinmetall_canada/index.php"
+                  >
+                    <img
+                      src="assets/media/partners/rheinmetall_canada.svg"
+                      alt="Rheinmetall Canada"
+                    />
+                  </a>
+                </div>
+              </div>
+              <h3 style="background-color: #cd7f32;">Bronze</h3>
+              <div class="partners-bronze">
+                <div class="partner-logo">
+                  <a href="https://www.abmekatek.com/">
+                    <img
+                      src="assets/media/partners/Mekatek.png"
+                      alt="A.B. Mekatek"
+                    />
+                  </a>
+                </div>
+                <div class="partner-logo">
+                  <a href="https://www.weidmuller.com/">
+                    <img
+                      src="assets/media/partners/weidmuller.png"
+                      alt="Weidmüller"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="become-partners">
+                <p>
+                  CAPRA est toujours à la recherche de nouveaux commanditaires.
+                  Si vous êtes intéressé à effectuer un partenariat avec
+                  l’équipe Capra, vous pouvez prendre connaissance du Plan de
+                  partenariat.
+                </p>
+                <a
+                  href="assets/documents/Plan_Partenariat.pdf"
+                  class="partner-button"
+                  >Découvrir le plan!</a
+                >
+              </div>
+            </div>
+          </section>
+          <div id="third" class="parallax-spacer"></div>
+          <section id="contact">
+            <div class="content">
+              <h2>Nos Réseaux</h2>
+              <div class="social-container">
+                <div class="social-network">
+                  <a href="https://www.facebook.com/clubcapra/">
+                    <img src="assets/media/social/facebook.svg" />
+                  </a>
+                </div>
+                <div class="social-network">
+                  <a href="https://www.instagram.com/capra_ets/">
+                    <img src="assets/media/social/insta.png" />
+                  </a>
+                </div>
+                <div class="social-network">
+                  <a href="https://ca.linkedin.com/company/club-capra">
+                    <img src="assets/media/social/linkedin.png" />
+                  </a>
+                </div>
+                <!-- <div class="social-network">
                                 <a href="https://www.youtube.com/channel/UChCSLkzgBhRTVGqWTRvXS3A">
                                     <img src="assets/media/social/youtube.png">
                                 </a>
                             </div> -->
-                            <div class="social-network">
-                                <a href="https://github.com/clubcapra/">
-                                    <img src="assets/media/social/github.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="social-address">
-                            <a href="mailto:capra@clubcapra.com">capra@clubcapra.com</a><br/>
-                            <br/>
-                            1219, rue William<br />
-                            Montréal (Québec) H3C 1K3<br />
-                            Local D-2014<br />
-                            <div>
-                            <what3words-address words="fortress.mainland.hydrant" size="14"/>
-                            </div>
-                            <br/>
-                            514 396-8800 Poste : 7779<br />
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <footer>
-                <div class="content">
-                    <p class="footer-copyright">© Club Capra <span id="currentyear"></span></p>
-                    <p class="footer-love">Fait à Montréal avec ♥</p>
+                <div class="social-network">
+                  <a href="https://github.com/clubcapra/">
+                    <img src="assets/media/social/github.png" />
+                  </a>
                 </div>
-            </footer>
+              </div>
+              <div class="social-address">
+                <a href="mailto:capra@clubcapra.com">capra@clubcapra.com</a
+                ><br />
+                <br />
+                1219, rue William<br />
+                Montréal (Québec) H3C 1K3<br />
+                Local D-2014<br />
+                <div>
+                  <what3words-address
+                    words="fortress.mainland.hydrant"
+                    size="14"
+                  />
+                </div>
+                <br />
+                514 396-8800 Poste : 7779<br />
+              </div>
+            </div>
+          </section>
         </div>
+        <footer>
+          <div class="content">
+            <p class="footer-copyright">
+              © Club Capra <span id="currentyear"></span>
+            </p>
+            <p class="footer-love">Fait à Montréal avec ♥</p>
+          </div>
+        </footer>
+      </div>
     </main>
     <!-- <div id="gallery-modal-background"> -->
-        <!-- <div id="gallery-modal-content"> -->
-            <!-- <div class="spinner">
+    <!-- <div id="gallery-modal-content"> -->
+    <!-- <div class="spinner">
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
             <img src="assets/media/gallery/rc2019_1.jpg"> -->
-        <!-- </div> -->
     <!-- </div> -->
-
-</body>
-
+    <!-- </div> -->
+  </body>
 </html>
