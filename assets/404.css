@@ -1,0 +1,70 @@
+/* Copyright (c) 2019 Club RockÉTS (MIT License) */
+
+/*******************************************************************************
+*                                   IMPORTS                                    *
+*******************************************************************************/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
+
+@font-face {
+  font-family: "Moon";
+  src: url("fonts/moon_light.otf");
+}
+
+@font-face {
+  font-family: "Euphemia";
+  src: url("fonts/euphemia.ttf");
+}
+
+/*******************************************************************************
+*                                    GLOBAL                                    *
+*******************************************************************************/
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 100%;
+  max-height: 100%;
+  line-height: 1;
+  padding: 0;
+  margin: 0 auto;
+  background-color: white;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: normal;
+  color: #c62d1f;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px auto;
+}
+
+.partner-button {
+  background-color: #c62d1f;
+  border-radius: 42px;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 40px;
+  text-decoration: none;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 0;
+  text-align: center;
+}
+.partner-button:hover {
+  background-color: #e0002d;
+}
+.partner-button:active {
+  position: relative;
+  top: 1px;
+}
