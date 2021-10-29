@@ -207,7 +207,7 @@ header.scrolled #progress {
 }
 @media only screen and (max-width: 750px) {
   #hero-spacer {
-    height: 10vh;
+    height: 20vh;
   }
 }
 
