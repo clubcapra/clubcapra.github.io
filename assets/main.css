@@ -53,6 +53,11 @@ section h2 {
   font-weight: normal;
 }
 
+section h3 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
 /*******************************************************************************
 *                                   PARALLAX                                   *
 *******************************************************************************/
@@ -85,12 +90,19 @@ main {
 }
 
 .parallax-spacer#first {
-  background-image: url("media/gallery/MicrosoftTeams-image\ \(11\).jpg");
+  background-image: url("media/gallery/team2021_2.jpg");
 }
 
 .parallax-spacer#second {
   background-image: url("media/gallery/takin5.jpg");
 }
+
+@media only screen and (max-width: 750px) {
+  .parallax-spacer {
+    display: none;
+  }
+}
+
 
 
 /*******************************************************************************
@@ -106,6 +118,7 @@ header {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background 0.25s;
 }
+
 
 header.scrolled {
   background: white;
@@ -170,12 +183,32 @@ header.scrolled #progress {
   background: #e01e1e;
 }
 
+@media only screen and (max-width: 750px) {
+  header {
+    background: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  header ul li a {
+    color: black;
+  }
+  
+  header ul li:hover {
+    color: #121212;
+  }
+}
+
 /*******************************************************************************
 *                                     HERO                                     *
 *******************************************************************************/
 #hero,
 #hero-spacer {
   height: 100vh;
+}
+@media only screen and (max-width: 750px) {
+  #hero-spacer {
+    height: 10vh;
+  }
 }
 
 video#hero-vid {
@@ -580,22 +613,22 @@ video#hero-vid {
 
 .partners-or .partner-logo,
 .partners-or .partner-logo img {
-  max-width: 17.5em;
-  max-height: 8.75em;
+  max-width: 18.5em;
+  max-height: 9.75em;
   margin: auto;
 }
 
 .partners-argent .partner-logo,
 .partners-argent .partner-logo img {
-  max-width: 15em;
-  max-height: 7.5em;
+  max-width: 14em;
+  max-height: 6.5em;
   margin: auto;
 }
 
 .partners-bronze .partner-logo,
 .partners-bronze .partner-logo img {
-  max-width: 12.5em;
-  max-height: 6.25em;
+  max-width: 10.5em;
+  max-height: 4.25em;
   margin: auto;
 }
 
