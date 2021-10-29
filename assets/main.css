@@ -29,7 +29,6 @@ body {
 }
 
 body {
-  background-image: url("media/gallery/rc2019_1.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -86,16 +85,13 @@ main {
 }
 
 .parallax-spacer#first {
-  background-image: url("media/gallery/takin1.jpg");
+  background-image: url("media/gallery/MicrosoftTeams-image\ \(11\).jpg");
 }
 
 .parallax-spacer#second {
   background-image: url("media/gallery/takin5.jpg");
 }
 
-.parallax-spacer#third {
-  background-image: url("media/gallery/team2.jpg");
-}
 
 /*******************************************************************************
 *                                    HEADER                                    *
