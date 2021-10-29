@@ -62,17 +62,24 @@ $(function () {
         $('main').scrollTop($('main').scrollTop() + target.offset().top - $('header').height());
         
     })
+
 });
 
 
 function scroller() {
     var height = $(window).height();
-    if ($('main').scrollTop() > height - $('header').height()) {
+    var width = $(window).width();
+    if(width > 750){
+        if ($('main').scrollTop() > height - $('header').height()) {
+            $('header').addClass('scrolled');
+        }
+        else {
+            $('header').removeClass('scrolled');
+        }
+    }else{
         $('header').addClass('scrolled');
     }
-    else {
-        $('header').removeClass('scrolled');
-    }
+    
     var progress = 100 * ($('main').scrollTop() / ($('main')[0].scrollHeight - height))
     $('#progress').css({'width': progress + '%'});
 }
