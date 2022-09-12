@@ -914,6 +914,9 @@ section {
     height: 30px;
     font-size: 16px;
   }
+  .bg-video {
+    display:none;
+  }
 }
 
 /*=====  End of RESPONSIVE  ======*/
