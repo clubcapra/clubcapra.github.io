@@ -916,6 +916,7 @@ section {
   }
   .bg-video {
     display:none;
+    visibility: hidden;
   }
   
 }
