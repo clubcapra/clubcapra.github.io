@@ -866,7 +866,6 @@ section {
   padding: 0 40px;
 }
 
-
 @media (max-width: 992px) {
   .not-on-top #header-navbar {
     position: fixed;
@@ -904,7 +903,7 @@ section {
   }
 
   .jumbotron-single h1 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .grid-item {
