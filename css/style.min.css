@@ -886,7 +886,7 @@ section {
     padding-bottom: 15px !important;
   }
 
-  .navbar-transparent .navbar-collapse {
+  .navbar-collapse {
     background: #D2042D;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #D2042D, #D2042D);
@@ -917,6 +917,9 @@ section {
   .bg-video {
     display:none;
   }
+  
 }
+
+
 
 /*=====  End of RESPONSIVE  ======*/
