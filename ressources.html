@@ -28,7 +28,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
@@ -67,7 +73,7 @@
                         <a class="nav-link" href="contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="en/ressources">EN</a>
+                        <a class="nav-link" href="en/ressources">EN</a>
                     </li>
                 </ul>
             </div>
@@ -86,7 +92,10 @@
             <div class="section-content ">
                 <div class="title-wrap" data-aos="fade-up">
                     <h2 class="section-title">Notre <b>code</b></h2>
-                    <p class="section-sub-title">En utilisant ROS, C++ et Python nous développons une plateforme de contrôle de robot qui peut être utilisé par n'importe quel robot. Notre plateforme est contrôlée à l'aide de notre interface web qui est faite en React et TypeScript. Notre code en entier est open source afin de rendre la robotique facilement accessible à tous.  </p>
+                    <p class="section-sub-title">En utilisant ROS, C++ et Python nous développons une plateforme de
+                        contrôle de robot qui peut être utilisé par n'importe quel robot. Notre plateforme est contrôlée
+                        à l'aide de notre interface web qui est faite en React et TypeScript. Notre code en entier est
+                        open source afin de rendre la robotique facilement accessible à tous. </p>
                 </div>
 
                 <div class="row">
@@ -138,10 +147,11 @@
                         </div>
                         <!-- End Skill Item -->
                     </div>
-                    
+
                 </div>
                 <div class="row align-items-center justify-content-center">
-                    <button type="button" class="btn btn-primary" onClick="location.href='https://github.com/clubcapra';">VOIR NOTRE GITHUB</button>
+                    <button type="button" class="btn btn-primary"
+                        onClick="location.href='https://github.com/clubcapra';">VOIR NOTRE GITHUB</button>
 
                 </div>
             </div>
@@ -169,7 +179,7 @@
                 </div>
                 <div class="col-lg-4 col-md-12 d-flex align-items-center">
                     <p class="mx-auto text-center mb-0">&copy; Club Capra 2022</p>
-                    
+
                 </div>
             </div>
             <div class="row">
@@ -211,6 +221,6 @@
 
     <!-- Main JS -->
     <script src="js/app.min.js "></script>
-    
+
 
 </html>
