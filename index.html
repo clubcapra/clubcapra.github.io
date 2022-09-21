@@ -27,7 +27,13 @@
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
@@ -64,7 +70,7 @@
                         <a class="nav-link" href="contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="en/">EN</a>
+                        <a class="nav-link" href="en/">EN</a>
                     </li>
                 </ul>
             </div>
@@ -72,157 +78,165 @@
     </nav>
     </div>
     <div class="jumbotron d-flex align-items-center">
-        
+
         <div class="container text-center">
-            
+
             <h1 class="display-1 mb-4">CAPRA</h1>
         </div>
-            <video id="bgVideo" class="bg-video" preload="true" autoplay muted>
-                <source src="img/intro_trimmed.mp4" type="video/mp4" />
-                
-             </video>
-        
+        <video id="bgVideo" class="bg-video" preload="true" autoplay muted>
+            <source src="img/intro_trimmed.mp4" type="video/mp4" />
+
+        </video>
+
     </div> <!-- Features Section-->
     <section id="content">
-    <section id="features" class="featurettes">
-        <div class="container">
-            <div class="section-content">
-                <div class="title-wrap" data-aos="fade-up">
-                    <h2 class="section-title">Notre mission</h2>
-                </div>
+        <section id="features" class="featurettes">
+            <div class="container">
+                <div class="section-content">
+                    <div class="title-wrap" data-aos="fade-up">
+                        <h2 class="section-title">Notre mission</h2>
+                    </div>
 
-                <div class="row text-center">
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up">
-                        <span class="lnr lnr-heart lnr-icon fs-40 py-4 d-block"></span>
-                        <h5 class="mb-4">Sauver des vies</h5>
-                        <p>Utiliser la robotique afin de créer des solutions qui peuvent avoir un impact direct sur la vie des gens.</p>
+                    <div class="row text-center">
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                            <span class="lnr lnr-heart lnr-icon fs-40 py-4 d-block"></span>
+                            <h5 class="mb-4">Sauver des vies</h5>
+                            <p>Utiliser la robotique afin de créer des solutions qui peuvent avoir un impact direct sur
+                                la vie des gens.</p>
+                        </div>
+                        <!-- /.col-md-4 col-sm-6  -->
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                            <span class="lnr lnr-star lnr-icon fs-40 py-4 d-block"></span>
+                            <h5 class="mb-4">Compétitionner</h5>
+                            <p>Participer et se démarquer dans des compétitions de robotique à travers le monde.</p>
+                        </div>
+                        <!-- /.col-md-4 col-sm-6  -->
+                        <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                            <span class="lnr lnr-graduation-hat lnr-icon fs-40 py-4 d-block"></span>
+                            <h5 class="mb-4">Former des ingénieurs</h5>
+                            <p>Pousser nos membres à développer une multitude de compétences en ingénierie.</p>
+                        </div>
+                        <!-- /.col-md-4 col-sm-6  -->
                     </div>
-                    <!-- /.col-md-4 col-sm-6  -->
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                        <span class="lnr lnr-star lnr-icon fs-40 py-4 d-block"></span>
-                        <h5 class="mb-4">Compétitionner</h5>
-                        <p>Participer et se démarquer dans des compétitions de robotique à travers le monde.</p>
-                    </div>
-                    <!-- /.col-md-4 col-sm-6  -->
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
-                        <span class="lnr lnr-graduation-hat lnr-icon fs-40 py-4 d-block"></span>
-                        <h5 class="mb-4">Former des ingénieurs</h5>
-                        <p>Pousser nos membres à développer une multitude de compétences en ingénierie.</p>
-                    </div>
-                    <!-- /.col-md-4 col-sm-6  -->
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- End of Features Section-->
+        <section id="section-featurettes" class="featurettes">
+            <div class="container">
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-8 offset-md-right-2 col-sm-6" data-aos="flip-right">
+                                    <img class="my-5" src="img/prototypes.jpg" alt="">
+                                </div>
+                                <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+                                <div class="col-md-4 col-sm-6" data-aos="fade-right">
+                                    <h2 class="mb-4">Nos prototypes</h2>
+                                    <p>L’équipe Capra conçoit des robots depuis 1999. Notre mission a changé depuis 2016
+                                        pour nous spécialiser en robotique de recherche et secourisme. </p>
+                                    <button type="button" class="btn btn-primary" onClick="location.href='robots';">NOS
+                                        ROBOTS</button>
+                                </div>
+                                <!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+                            </div>
+                            <!--/ .featurettes-item -->
+
+                        </div>
+                        <!--/ .col-md-12 -->
+
+                    </div>
+                    <!--/ .row -->
+                </div>
+            </div>
+            <!--/ .container -->
+
+        </section>
+        <section id="section-featurettes" class="featurettes">
+
+            <div class="container">
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row align-items-center">
+
+                                <div class="col-md-4 col-sm-6" data-aos="fade-right">
+                                    <h2 class="mb-4">Notre Équipe</h2>
+                                    <p>Notre équipe multidisciplinaire est toujours prête à faire face aux différents
+                                        défis ! </p>
+                                    <button type="button" class="btn btn-primary" onClick="location.href='team';">EN
+                                        SAVOIR PLUS</button>
+                                </div>
+                                <!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+
+                                <div class="col-md-8 offset-md-right-2 col-sm-6" data-aos="flip-right">
+                                    <img class="my-5" src="img/teamcaprarobot.png" alt="">
+                                </div>
+                                <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+
+                            </div>
+                            <!--/ .featurettes-item -->
+
+                        </div>
+                        <!--/ .col-md-12 -->
+
+                    </div>
+                    <!--/ .row -->
+                </div>
+            </div>
+            <!--/ .container -->
+            <div class="container">
+                <div class="section-content" data-aos="fade-up">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <!-- Section Title -->
+                            <div class="title-wrap mb-5">
+                                <h2>Ceux qui aiment travailler avec nous</h2>
+                            </div>
+                            <!-- End of Section Title -->
+                        </div>
+                        <!-- Client Holder -->
+                        <div class="col-md-12 client-holder">
+                            <div class="client-slider owl-carousel justify-content-center">
+                                <div class="client-item justify-content-center">
+                                    <img class="img-responsive" src="img/partners/logo-groupesoucy-noir-rouge.png"
+                                        alt=" ">
+                                </div>
+                                <div class="client-item">
+                                    <img class="img-responsive" src="img/partners/HS_logo_couleur.png" alt=" ">
+                                </div>
+                                <div class="client-item">
+                                    <img class="img-responsive" src="img/partners/automatech.png" alt=" ">
+                                </div>
+                                <div class="client-item">
+                                    <img class="img-responsive" src="img/partners/NUMOVE.jpg" alt=" ">
+                                </div>
+                                <div class="client-item">
+                                    <img class="img-responsive" src="img/partners/aeets.svg" alt=" ">
+                                </div>
+                                <div class="client-item">
+                                    <img class="img-responsive" src="img/partners/mtt.png" alt=" ">
+                                </div>
+                                <div class="client-item">
+                                    <img class="img-responsive" src="img/partners/misumi.png" alt=" ">
+                                </div>
+                            </div>
+                            <!-- End of Client Holder -->
+                        </div>
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mt-3 text-center">
+                            <button type="button" class="btn btn-primary"
+                                onClick="location.href='documents/CAPRA_PlanPartenariat.pdf'">DÉCOUVRIR LE PLAN DE
+                                PARTENARIAT</button>
+                        </div>
+                    </div>
+
+                </div>
+        </section> <!-- Testimonial Section-->
     </section>
-    <!-- End of Features Section-->
-    <section id="section-featurettes" class="featurettes">
-        <div class="container">
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row align-items-center">
-                            <div class="col-md-8 offset-md-right-2 col-sm-6" data-aos="flip-right">
-                                <img class="my-5" src="img/prototypes.jpg" alt="">
-                            </div>
-                            <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-                            <div class="col-md-4 col-sm-6" data-aos="fade-right">
-                                <h2 class="mb-4">Nos prototypes</h2>
-                                <p>L’équipe Capra conçoit des robots depuis 1999. Notre mission a changé depuis 2016 pour nous spécialiser en robotique de recherche et secourisme. </p>
-                                <button type="button" class="btn btn-primary" onClick="location.href='robots';">NOS ROBOTS</button>
-                            </div>
-                            <!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-                        </div>
-                        <!--/ .featurettes-item -->
-
-                    </div>
-                    <!--/ .col-md-12 -->
-
-                </div>
-                <!--/ .row -->
-            </div>
-        </div>
-        <!--/ .container -->
-
-    </section>
-    <section id="section-featurettes" class="featurettes" >
-
-        <div class="container">
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row align-items-center">
-
-                            <div class="col-md-4 col-sm-6" data-aos="fade-right">
-                                <h2 class="mb-4">Notre Équipe</h2>
-                                <p>Notre équipe multidisciplinaire est toujours prête à faire face aux différents défis ! </p>
-                                <button type="button" class="btn btn-primary" onClick="location.href='team';">EN SAVOIR PLUS</button>
-                            </div>
-                            <!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
-                            <div class="col-md-8 offset-md-right-2 col-sm-6" data-aos="flip-right">
-                                <img class="my-5" src="img/teamcaprarobot.png" alt="">
-                            </div>
-                            <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                        </div>
-                        <!--/ .featurettes-item -->
-
-                    </div>
-                    <!--/ .col-md-12 -->
-
-                </div>
-                <!--/ .row -->
-            </div>
-        </div>
-        <!--/ .container -->
-        <div class="container">
-            <div class="section-content" data-aos="fade-up">
-                <div class="row ">
-                    <div class="col-md-12">
-                        <!-- Section Title -->
-                        <div class="title-wrap mb-5">
-                            <h2>Ceux qui aiment travailler avec nous</h2>
-                        </div>
-                        <!-- End of Section Title -->
-                    </div>
-                    <!-- Client Holder -->
-                    <div class="col-md-12 client-holder">
-                        <div class="client-slider owl-carousel justify-content-center">
-                            <div class="client-item justify-content-center">
-                                <img class="img-responsive" src="img/partners/logo-groupesoucy-noir-rouge.png" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/partners/HS_logo_couleur.png" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/partners/automatech.png" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/partners/NUMOVE.jpg" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/partners/aeets.svg" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/partners/mtt.png" alt=" ">
-                            </div>
-                            <div class="client-item">
-                                <img class="img-responsive" src="img/partners/misumi.png" alt=" ">
-                            </div>
-                        </div>
-                        <!-- End of Client Holder -->
-                    </div>
-
-                </div>
-                <div class="col-md-12">
-                    <div class="mt-3 text-center">
-                        <button type="button" class="btn btn-primary" onClick="location.href='documents/CAPRA_PlanPartenariat.pdf'">DÉCOUVRIR LE PLAN DE PARTENARIAT</button>
-                    </div>
-                </div>
-
-            </div>
-    </section> <!-- Testimonial Section-->
-</section>
     <!-- End of Portfolio Section -->
     <!-- Client Section -->
 
@@ -236,7 +250,7 @@
                 </div>
                 <div class="col-lg-4 col-md-12 d-flex align-items-center">
                     <p class="mx-auto text-center mb-0">&copy; Club Capra 2022</p>
-                    
+
                 </div>
             </div>
             <div class="row">
@@ -277,7 +291,7 @@
 
     <!-- Main JS -->
     <script src="js/app.min.js "></script>
-    
+
 </body>
 
 </html>
