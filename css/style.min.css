@@ -241,6 +241,9 @@ section {
 .bg-video {
   position: absolute;
   right: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 .text-white {
@@ -913,10 +916,6 @@ section {
   .progress {
     height: 30px;
     font-size: 16px;
-  }
-  .bg-video {
-    display:none;
-    visibility: hidden;
   }
   
 }
