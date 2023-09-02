@@ -5,3 +5,5 @@ dist/
 node_module/
 src/assets/
 tsconfig.*.json
+vendor/
+js/
