@@ -1,6 +1,6 @@
 import {
   createRouter,
-  createWebHistory,
+  createWebHashHistory,
   type Router,
   type NavigationGuardNext,
   type RouteLocationNormalized,
@@ -19,7 +19,7 @@ const router: Router = createRouter({
    *
    * @see {@link https://router.vuejs.org/guide/essentials/history-mode.html}
    */
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
 });
 
