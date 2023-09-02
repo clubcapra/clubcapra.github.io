@@ -1,0 +1,7 @@
+.vscode/
+.yarn/
+coverage/
+dist/
+node_module/
+src/assets/
+tsconfig.*.json
