@@ -46,7 +46,7 @@ export default defineConfig(async ({ mode, command }): Promise<UserConfig> => {
         vueTsc: true,
         eslint: {
           lintCommand:
-            'eslint . --ext .vue,.js,.jsx,.cjs,.mjs --cache --cache-location ./node_modules/.vite/vite-plugin-eslint', // for example, lint .ts & .tsx
+            'eslint . --ext .vue,.js,.jsx,.cjs,.mjs --cache --cache-location ./node_modules/.vite/vite-plugin-eslint --ignore-path .eslintignore', // for example, lint .ts & .tsx
         },
       }),
     ],
