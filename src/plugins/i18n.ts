@@ -1,15 +1,20 @@
 import { createI18n } from 'vue-i18n';
-import enCA from '../locales/en-CA.json';
-import frCA from '../locales/fr-CA.json';
 
-type MessageSchema = typeof enCA;
+const messages = {
+  en: {
+    'made with love': 'Made in Montréal with',
+  },
+  fr: {
+    'made with love': 'Fait à Montréal avec',
+  },
+};
 
+type MessageSchema = (typeof messages)['en'];
 const i18n = createI18n<[MessageSchema], 'en' | 'fr'>({
+  legacy: false, // we must set `false`, to use Compostion API
   locale: navigator.language.split('-')[0] || 'en',
   fallbackLocale: 'en',
-  messages: {
-    en: enCA as MessageSchema,
-    fr: frCA as MessageSchema, // Make sure frCA follows the MessageSchema
-  },
+  allowComposition: true,
+  messages,
 });
 export default i18n;
