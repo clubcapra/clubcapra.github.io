@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // Components
 
+import FooterComponent from './components/FooterComponent.vue';
 import NavbarComponent from './components/NavbarComponent.vue';
 
 // Assets
@@ -14,6 +15,7 @@ import safaryPinnedTab from './assets/safari-pinned-tab.svg';
 
 <template>
   <NavbarComponent />
+  <FooterComponent />
   <teleport to="head">
     <link
       rel="apple-touch-icon"
