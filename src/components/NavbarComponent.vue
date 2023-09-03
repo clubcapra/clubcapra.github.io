@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import CapraLogoWhilte from '@clubcapra/assets/media/Capra_Logo_White.png';
+import capraLogoWhite from '@clubcapra/assets/media/Capra_Logo_White.png';
 </script>
 
 <template>
   <nav id="header-navbar" class="fixed-top navbar navbar-expand-lg py-4">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center text-white" href="/">
-        <img :src="CapraLogoWhilte" alt="CAPRA" style="height: 35px" />
+        <img :src="capraLogoWhite" alt="CAPRA" style="height: 35px" />
       </a>
       <button
         class="navbar-toggler"
