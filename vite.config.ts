@@ -1,10 +1,10 @@
-import { fileURLToPath, URL } from 'node:url';
 import fs from 'node:fs';
+import { fileURLToPath, URL } from 'node:url';
 
-import { defineConfig, type UserConfig } from 'vite';
-import { visualizer } from 'rollup-plugin-visualizer';
-import { checker } from 'vite-plugin-checker';
 import vue from '@vitejs/plugin-vue';
+import { visualizer } from 'rollup-plugin-visualizer';
+import { defineConfig, type UserConfig } from 'vite';
+import { checker } from 'vite-plugin-checker';
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 
 /**
@@ -17,7 +17,6 @@ export default defineConfig(async ({ mode, command }): Promise<UserConfig> => {
   const config: UserConfig = {
     // https://vitejs.dev/config/shared-options.html#base
     base: '/',
-
     // https://vitejs.dev/config/shared-options.html#define
     define: {
       // Needed for evvue
@@ -62,6 +61,7 @@ export default defineConfig(async ({ mode, command }): Promise<UserConfig> => {
       // https://vitejs.dev/config/shared-options.html#resolve-alias
       alias: {
         '@clubcapra': fileURLToPath(new URL('./src', import.meta.url)),
+        'vue-i18n': 'vue-i18n/dist/vue-i18n.cjs.js',
       },
       extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
     },
