@@ -6,6 +6,7 @@
     ".eslintrc"
   ],
   "compilerOptions": {
+    "moduleResolution": "Bundler",
     "composite": true,
     "types": ["node"]
   }
