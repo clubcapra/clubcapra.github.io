@@ -16,6 +16,7 @@
   ],
   "compilerOptions": {
     "composite": true,
+    "resolvePackageJsonExports": false,
     "baseUrl": ".",
     "paths": {
       "@clubcapra/*": [
