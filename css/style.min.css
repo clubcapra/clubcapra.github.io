@@ -8,7 +8,6 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   overflow-y: hidden;
-
 }
 
 h1,
@@ -28,8 +27,8 @@ h6,
 }
 
 a {
-  color: #D2042D;
-  transition: all .3s ease-in-out;
+  color: #d2042d;
+  transition: all 0.3s ease-in-out;
 }
 
 a:focus,
@@ -37,9 +36,8 @@ button:focus {
   outline: none;
 }
 
-.btn-primary:active
-{
-    background-color:#f00d0d !important;
+.btn-primary:active {
+  background-color: #f00d0d !important;
 }
 
 .btn:hover,
@@ -79,7 +77,9 @@ section {
 }
 
 .shadow {
-  box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1) !important;
+  box-shadow:
+    0 10px 30px 0 rgba(67, 80, 98, 0.24),
+    0 2px 4px 0 rgba(67, 80, 98, 0.1) !important;
 }
 
 #header-navbar {
@@ -98,7 +98,7 @@ section {
 
 .navbar-nav .nav-link {
   color: #fff;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .navbar-nav:hover li a {
@@ -175,7 +175,7 @@ section {
 }
 
 .lnr-icon {
-  color: #D2042D;
+  color: #d2042d;
 }
 
 .section-separator-bg {
@@ -198,7 +198,7 @@ section {
 }
 
 .section-separator h2 {
-  line-height: .9;
+  line-height: 0.9;
   font-weight: bold;
   display: inline-block;
   border: 15px solid #fff;
@@ -215,13 +215,13 @@ section {
 .overlay:before {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
   opacity: 0.9;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #D2042D;
+  background: #d2042d;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #000, #121212);
   /* Chrome 10-25, Safari 5.1-6 */
@@ -235,7 +235,7 @@ section {
 
 .overlay.bg-white:before {
   background: #fff;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .bg-video {
@@ -264,8 +264,8 @@ section {
 
 .btn-primary {
   display: inline-block;
-  background-color: #D22B2B;
-  border-color: #D22B2B;
+  background-color: #d22b2b;
+  border-color: #d22b2b;
   color: #fff;
 }
 
@@ -297,15 +297,15 @@ section {
 }
 
 .btn-link {
-  color: #D22B2B;
+  color: #d22b2b;
 }
 
 .rectangle-1 {
   width: 2000px;
   height: 400px;
-  background: #D2042D;
-  background: -webkit-linear-gradient(to right, #D22B2B, #D2042D);
-  background: linear-gradient(to right, #D22B2B, #D2042D);
+  background: #d2042d;
+  background: -webkit-linear-gradient(to right, #d22b2b, #d2042d);
+  background: linear-gradient(to right, #d22b2b, #d2042d);
   transform-origin: 50% 150% 0;
   position: absolute;
   left: 0;
@@ -316,9 +316,9 @@ section {
 .rectangle-2 {
   width: 2000px;
   height: 400px;
-  background: #D2042D;
-  background: -webkit-linear-gradient(to right, #D22B2B, #D2042D);
-  background: linear-gradient(to right, #D22B2B, #D2042D);
+  background: #d2042d;
+  background: -webkit-linear-gradient(to right, #d22b2b, #d2042d);
+  background: linear-gradient(to right, #d22b2b, #d2042d);
   transform-origin: 65% 100% 0;
   position: absolute;
   right: 0;
@@ -435,14 +435,16 @@ section {
 .circle-1 {
   width: 50px;
   height: 50px;
-  border: 2px solid #D22B2B;
+  border: 2px solid #d22b2b;
   position: absolute;
   display: block;
   border-radius: 50%;
   transform-origin: 50% 50%;
   left: 5%;
   top: 50%;
-  animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite;
+  animation:
+    fadeInFromTop 0.5s linear forwards,
+    floating ease 4s infinite;
 }
 
 .circle-2 {
@@ -450,12 +452,14 @@ section {
   height: 70px;
   top: 20%;
   left: 83%;
-  border: 2px solid #D22B2B;
+  border: 2px solid #d22b2b;
   position: absolute;
   display: block;
   border-radius: 50%;
   transform-origin: 50% 50%;
-  animation: fadeInFromTop .5s linear forwards, floating ease-in-out 4s infinite;
+  animation:
+    fadeInFromTop 0.5s linear forwards,
+    floating ease-in-out 4s infinite;
 }
 
 .circle-3 {
@@ -467,7 +471,9 @@ section {
   position: absolute;
   display: block;
   border-radius: 50%;
-  animation: fadeInFromTop .5s linear forwards, floating ease-in-out 4s infinite;
+  animation:
+    fadeInFromTop 0.5s linear forwards,
+    floating ease-in-out 4s infinite;
 }
 
 @keyframes floating {
@@ -520,7 +526,9 @@ section {
 
 .hexagon-1 {
   right: 5%;
-  animation: fadeInFromTop .5s linear forwards, floating ease-in-out 6s infinite;
+  animation:
+    fadeInFromTop 0.5s linear forwards,
+    floating ease-in-out 6s infinite;
 }
 
 .hexagon-1 img {
@@ -532,7 +540,9 @@ section {
 .hexagon-2 {
   left: 40%;
   top: 80%;
-  animation: fadeInFromTop .5s linear forwards, floating ease-in-out 6s infinite;
+  animation:
+    fadeInFromTop 0.5s linear forwards,
+    floating ease-in-out 6s infinite;
 }
 
 .hexagon-2 img {
@@ -544,7 +554,9 @@ section {
 .triangle-2 {
   top: 30%;
   left: 20%;
-  animation: fadeInFromTop .5s linear forwards, floating ease-in-out 8s infinite;
+  animation:
+    fadeInFromTop 0.5s linear forwards,
+    floating ease-in-out 8s infinite;
 }
 
 .triangle-2 img {
@@ -556,7 +568,9 @@ section {
 .triangle-3 {
   top: 80%;
   left: 15%;
-  animation: fadeInFromTop .5s linear forwards, floating ease-in-out 10s infinite;
+  animation:
+    fadeInFromTop 0.5s linear forwards,
+    floating ease-in-out 10s infinite;
 }
 
 .triangle-3 img {
@@ -568,7 +582,9 @@ section {
 .triangle-4 {
   top: 60%;
   right: 15%;
-  animation: fadeInFromTop .5s linear forwards, floating ease-in-out 5s infinite;
+  animation:
+    fadeInFromTop 0.5s linear forwards,
+    floating ease-in-out 5s infinite;
 }
 
 .triangle-4 img {
@@ -578,7 +594,7 @@ section {
 }
 
 .feature-item {
-  transition: all .2s ease-in-out 0s !important;
+  transition: all 0.2s ease-in-out 0s !important;
 }
 
 .feature-item:hover {
@@ -586,7 +602,7 @@ section {
 }
 
 .progress-bar {
-  background-color: #D2042D;
+  background-color: #d2042d;
 }
 
 .testi-img img {
@@ -607,7 +623,7 @@ section {
 }
 
 .testi-icon {
-  color: #D2042D;
+  color: #d2042d;
 }
 
 .testi-content {
@@ -641,13 +657,17 @@ section {
   cursor: pointer;
   position: absolute;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
-  -webkit-transition: box-shadow 0.3s ease, background-color 0.3s ease;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  -webkit-transition:
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
-.owl-dot.active>span {
+.owl-dot.active > span {
   background-color: transparent;
-  box-shadow: 0 0 0 2px #D2042D;
+  box-shadow: 0 0 0 2px #d2042d;
 }
 
 .owl-dots {
@@ -721,7 +741,7 @@ section {
   right: 0;
   bottom: 0;
   left: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   opacity: 0;
 }
 
@@ -735,12 +755,12 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .lightcase-icon-close:before {
   content: '\e870';
-  font-family: "Linearicons-Free";
+  font-family: 'Linearicons-Free';
 }
 
 .grid-title {
@@ -765,13 +785,17 @@ section {
   padding: 8px 32px;
   transform: translateY(20px);
   opacity: 0;
-  transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition:
+    transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .in .sidenav-content {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s, opacity 0.5s 0.5s;
+  transition:
+    transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s,
+    opacity 0.5s 0.5s;
 }
 
 .sidenav a {
@@ -837,28 +861,28 @@ section {
 }
 
 .form-control:focus {
-  border-color: #D2042D;
+  border-color: #d2042d;
   box-shadow: 0 0 0 0.2rem rgba(253, 101, 90, 0.25);
 }
 
 .form-control::-webkit-input-placeholder {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .form-control::-moz-placeholder {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .form-control:-ms-input-placeholder {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .form-control::-ms-input-placeholder {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .form-control::placeholder {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .client-slider .owl-nav {
@@ -875,11 +899,11 @@ section {
     top: 0;
     height: auto;
     width: 100%;
-    background: #D2042D;
+    background: #d2042d;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #D2042D, #D2042D);
+    background: -webkit-linear-gradient(to right, #d2042d, #d2042d);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #D2042D, #D2042D);
+    background: linear-gradient(to right, #d2042d, #d2042d);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 11;
   }
@@ -890,11 +914,11 @@ section {
   }
 
   .navbar-collapse {
-    background: #D2042D;
+    background: #d2042d;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #D2042D, #D2042D);
+    background: -webkit-linear-gradient(to right, #d2042d, #d2042d);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #D2042D, #D2042D);
+    background: linear-gradient(to right, #d2042d, #d2042d);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px;
   }
@@ -917,9 +941,6 @@ section {
     height: 30px;
     font-size: 16px;
   }
-  
 }
-
-
 
 /*=====  End of RESPONSIVE  ======*/
