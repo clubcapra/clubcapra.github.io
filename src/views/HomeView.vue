@@ -11,8 +11,8 @@ import prototypes from '@clubcapra/assets/media/prototypes.jpg';
 
 <template>
   <JumbotronVideoComponent title="CAPRA" :video="introTrimmed" />
-  <section id="content">
-    <section id="features" class="featurettes">
+  <section>
+    <section class="featurettes">
       <div class="container">
         <div class="section-content">
           <div class="title-wrap" data-aos="fade-up">
