@@ -62,7 +62,7 @@ import prototypes from '@clubcapra/assets/media/prototypes.jpg';
       </div>
     </section>
     <!-- End of Features Section-->
-    <section id="section-featurettes" class="featurettes">
+    <section class="featurettes">
       <div class="container">
         <div class="section-content">
           <div class="row">
@@ -101,7 +101,7 @@ import prototypes from '@clubcapra/assets/media/prototypes.jpg';
       </div>
       <!--/ .container -->
     </section>
-    <section id="section-featurettes" class="featurettes">
+    <section class="featurettes">
       <div class="container">
         <div class="section-content">
           <div class="row">
