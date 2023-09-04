@@ -34,6 +34,10 @@ defineProps<{
   .jumbotron {
     min-height: 500px;
   }
+
+  .jumbotron h1 {
+    font-size: 3rem;
+  }
 }
 
 .jumbotron:before {

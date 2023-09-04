@@ -874,10 +874,6 @@ section {
 }
 
 @media (max-width: 767px) {
-  .jumbotron h1 {
-    font-size: 3rem;
-  }
-
   .jumbotron-single h1 {
     font-size: 2rem !important;
   }
