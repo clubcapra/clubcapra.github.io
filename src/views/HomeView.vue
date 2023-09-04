@@ -1,13 +1,12 @@
 <script setup lang="ts">
 // Components
-import ClientHolder from '@clubcapra/components/ClientHolder.vue';
+import SponsorHolderComponent from '@clubcapra/components/SponsorHolderComponent.vue';
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
 
 // Media
 import introTrimmed from '@clubcapra/assets/media/intro_trimmed.mp4';
 import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
-
-//
+import prototypes from '@clubcapra/assets/media/prototypes.jpg';
 </script>
 
 <template>
@@ -73,7 +72,7 @@ import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
                   class="col-md-8 offset-md-right-2 col-sm-6"
                   data-aos="flip-right"
                 >
-                  <img class="my-5" src="img/prototypes.jpg" alt="" />
+                  <img class="my-5" :src="prototypes" />
                 </div>
                 <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
                 <div class="col-md-4 col-sm-6" data-aos="fade-right">
@@ -128,7 +127,7 @@ import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
                   class="col-md-8 offset-md-right-2 col-sm-6"
                   data-aos="flip-right"
                 >
-                  <img class="my-5" :src="teamcaprarobot" alt="" />
+                  <img class="my-5" :src="teamcaprarobot" />
                 </div>
                 <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
               </div>
@@ -151,7 +150,7 @@ import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
               <!-- End of Section Title -->
             </div>
             <!-- Client Holder -->
-            <ClientHolder />
+            <SponsorHolderComponent />
           </div>
           <div class="col-md-12">
             <div class="mt-3 text-center">
