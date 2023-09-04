@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // Components
-import SponsorHolderComponent from '@clubcapra/components/SponsorHolderComponent.vue';
+import SponsorComponent from '@clubcapra/components/SponsorComponent.vue';
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
 
 // Media
@@ -150,7 +150,7 @@ import prototypes from '@clubcapra/assets/media/prototypes.jpg';
               <!-- End of Section Title -->
             </div>
             <!-- Client Holder -->
-            <SponsorHolderComponent />
+            <SponsorComponent />
           </div>
           <div class="col-md-12">
             <div class="mt-3 text-center">
