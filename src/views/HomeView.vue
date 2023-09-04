@@ -7,6 +7,9 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 import introTrimmed from '@clubcapra/assets/media/intro_trimmed.mp4';
 import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
 import prototypes from '@clubcapra/assets/media/prototypes.jpg';
+
+// Files
+import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
 </script>
 
 <template>
@@ -154,12 +157,9 @@ import prototypes from '@clubcapra/assets/media/prototypes.jpg';
           </div>
           <div class="col-md-12">
             <div class="mt-3 text-center">
-              <button
-                class="btn btn-primary"
-                onClick="location.href='documents/CAPRA_PlanPartenariat.pdf'"
-              >
+              <a :href="partenariatFile" target="_blank" class="btn btn-primary">
                 DÉCOUVRIR LE PLAN DE PARTENARIAT
-              </button>
+              </a>
             </div>
           </div>
         </div>
