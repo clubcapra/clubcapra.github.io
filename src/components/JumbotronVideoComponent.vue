@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div class="jumbotron d-flex align-items-center">
-    <h1 class="text-h4 mb-4">{{ title }}</h1>
+    <h1 class="text-h1 mb-4">{{ title }}</h1>
     <video v-if="video" class="bg-video" preload="true" autoplay muted>
       <source :src="video" type="video/mp4" />
     </video>
@@ -34,10 +34,6 @@ defineProps<{
   .jumbotron {
     min-height: 500px;
   }
-
-  .jumbotron h1 {
-    font-size: 3rem;
-  }
 }
 
 .jumbotron:before {
@@ -59,15 +55,16 @@ defineProps<{
 }
 
 .jumbotron > h1 {
-  white-space: normal;
   line-height: 0.9;
   font-weight: bold;
   display: inline-block;
   border: 15px solid #fff;
   padding: 30px;
-  font-size: 9rem;
   opacity: 0;
   animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
   animation-delay: 0.2s;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
