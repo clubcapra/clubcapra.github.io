@@ -1,19 +1,21 @@
 <script setup lang="ts">
-import logoETSTypoGrise from '@clubcapra/assets/media/partners/Logo_ETS_TypoGrise_D_FR_1.jpg';
+// Sponsor logos
 import hsLogoCouleur from '@clubcapra/assets/media/partners/HS_logo_couleur.png';
-import automatech from '@clubcapra/assets/media/partners/automatech.png';
 import ixiasoftMadcapLogoRgbC from '@clubcapra/assets/media/partners/IXIASOFT-Madcap-logo-RGB-C.jpg';
-import altium from '@clubcapra/assets/media/partners/altium.svg';
+import logoETSTypoGrise from '@clubcapra/assets/media/partners/Logo_ETS_TypoGrise_D_FR_1.jpg';
 import aeets from '@clubcapra/assets/media/partners/aeets.svg';
-import mtt from '@clubcapra/assets/media/partners/mtt.png';
+import altium from '@clubcapra/assets/media/partners/altium.svg';
+import automatech from '@clubcapra/assets/media/partners/automatech.png';
 import goLabo from '@clubcapra/assets/media/partners/go-labo.png';
+import mtt from '@clubcapra/assets/media/partners/mtt.png';
 
-const sponsos = [
-  // ignore le premier pour l'instant
-  // { img: 'img/partners/Logo_ETS_TypoGrise_D_FR_1.jpg' },
+const sponsorsUp = [
+  { img: logoETSTypoGrise },
   { img: hsLogoCouleur },
   { img: automatech },
   { img: ixiasoftMadcapLogoRgbC },
+];
+const sponsorsDown = [
   { img: altium },
   { img: aeets },
   { img: mtt },
@@ -22,21 +24,17 @@ const sponsos = [
 </script>
 
 <template>
-  <div class="col-md-12 client-holder">
-    <div class="client-slider owl-carousel justify-content-center">
-      <div class="client-item justify-content-center">
-        <img class="img-responsive" :src="logoETSTypoGrise" />
-      </div>
+  <v-container>
+    <v-row no-gutters>
+      <v-col v-for="(sponsor, i) in sponsorsUp" :key="i">
+        <v-sheet class="pa-2 ma-2"><v-img :src="sponsor.img" /></v-sheet>
+      </v-col>
 
-      <div v-for="sponso in sponsos" :key="sponso.img" class="client-item">
-        <img class="img-responsive" :src="sponso.img" />
-      </div>
-    </div>
-  </div>
+      <v-responsive width="100%" />
+
+      <v-col v-for="(sponsor, i) in sponsorsDown" :key="i">
+        <v-sheet class="pa-2 ma-2"><v-img :src="sponsor.img" /></v-sheet>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
-
-<style>
-.client-slider .client-item {
-  padding: 0 40px;
-}
-</style>
