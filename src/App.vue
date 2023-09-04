@@ -7,6 +7,10 @@ import { useGlobalStore } from './store';
 import FooterComponent from './components/FooterComponent.vue';
 import NavbarComponent from './components/NavbarComponent.vue';
 
+// Animate on scroll library
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 /** Global Store */
 const globalStore = useGlobalStore();
 
@@ -18,6 +22,7 @@ const loading: WritableComputedRef<boolean> = computed({
 
 onMounted(() => {
   loading.value = false;
+  AOS.init();
 });
 </script>
 
