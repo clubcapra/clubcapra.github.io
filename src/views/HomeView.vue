@@ -36,7 +36,7 @@ import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.p
               </div>
               <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
               <div class="col-md-4 col-sm-6" data-aos="fade-right">
-                <h2 class="mb-4">Nos prototypes</h2>
+                <h2 class="mb-4">{{ $t('Our prototypes') }}</h2>
                 <p>
                   L’équipe Capra conçoit des robots depuis 1999. Notre mission a
                   changé depuis 2016 pour nous spécialiser en robotique de
@@ -44,7 +44,7 @@ import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.p
                 </p>
                 <router-link v-slot="{ navigate }" to="/robots" custom>
                   <button class="btn btn-primary" @click="navigate">
-                    EN SAVOIR PLUS
+                    {{ $t('learn_more').toUpperCase() }}
                   </button>
                 </router-link>
               </div>
@@ -68,11 +68,8 @@ import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.p
           <div class="col-md-12">
             <div class="row align-items-center">
               <div class="col-md-4 col-sm-6" data-aos="fade-right">
-                <h2 class="mb-4">Notre Équipe</h2>
-                <p>
-                  Notre équipe multidisciplinaire est toujours prête à faire
-                  face aux différents défis !
-                </p>
+                <h2 class="mb-4">{{ $t('Our Team') }}</h2>
+                <p>{{ $t('multidisciplinary_team') }}</p>
                 <router-link v-slot="{ navigate }" to="/team" custom>
                   <button class="btn btn-primary" @click="navigate">
                     EN SAVOIR PLUS
