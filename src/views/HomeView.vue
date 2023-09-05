@@ -42,13 +42,11 @@ import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.p
                   changé depuis 2016 pour nous spécialiser en robotique de
                   recherche et secourisme.
                 </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  onClick="location.href='robots';"
-                >
-                  NOS ROBOTS
-                </button>
+                <router-link v-slot="{ navigate }" to="/robots" custom>
+                  <button class="btn btn-primary" @click="navigate">
+                    EN SAVOIR PLUS
+                  </button>
+                </router-link>
               </div>
               <!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
             </v-row>
