@@ -1,0 +1,55 @@
+<script setup lang="ts">
+import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
+</script>
+
+<template>
+  <JumbotronVideoComponent title="Contactez-nous" />
+  <section id="contact-form" class="bg-white">
+    <div class="container">
+      <div class="section-content">
+        <div class="title-wrap" data-aos="fade-up">
+          <h2 class="section-title">Où nous trouver?</h2>
+        </div>
+        <div class="row text-center mt-4 justify-content-center">
+          <div class="col-md-3" data-aos="fade-up">
+            <span class="py-4 d-block">
+              <i class="fas fa-map-marker-alt fs-40 testi-icon" />
+            </span>
+            <h5>EMPLACEMENT</h5>
+            <p>
+              1219, rue William
+              <br />
+              Montréal (Québec) H3C 1K3
+              <br />
+              Local D-2014
+              <br />
+            </p>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+            <span class="py-4 d-block">
+              <i class="fas fa-envelope fs-40 testi-icon" />
+            </span>
+            <h5>COURRIEL</h5>
+            <p>capra@ens.etsmtl.ca</p>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="800">
+            <span class="py-4 d-block">
+              <a href="https://www.facebook.com/clubcapra/">
+                <i class="fab fa-facebook-f fs-40 testi-icon" />
+              </a>
+            </span>
+            <h5>FACEBOOK</h5>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="1000">
+            <span class="py-4 d-block">
+              <a href="https://www.instagram.com/capra_ets/">
+                <i class="fab fa-instagram fs-40 testi-icon" />
+              </a>
+            </span>
+            <h5>INSTAGRAM</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

@@ -8,6 +8,16 @@ const routes: RouteRecordRaw[] = [
     name: 'home',
     component: Home,
   },
+  {
+    path: '/competition',
+    name: 'competition',
+    component: () => import('./CompetitionView.vue'),
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('./ContactView.vue'),
+  },
 ];
 
 export { routes };
