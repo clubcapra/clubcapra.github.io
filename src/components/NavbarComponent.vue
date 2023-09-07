@@ -29,7 +29,9 @@ import capraLogoWhite from '@clubcapra/assets/media/Capra_Logo_White.png';
             <a class="nav-link" href="team">Équipe</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="competition">Compétitions</a>
+            <router-link :to="{ name: 'competition' }">
+              <a class="nav-link" href="competition">Compétitions</a>
+            </router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="partners">Partenaires</a>
@@ -38,7 +40,9 @@ import capraLogoWhite from '@clubcapra/assets/media/Capra_Logo_White.png';
             <a class="nav-link" href="ressources">Ressources</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact">Contact</a>
+            <router-link :to="{ name: 'contact' }">
+              <a class="nav-link" href="contact">Contact</a>
+            </router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="en/">EN</a>
