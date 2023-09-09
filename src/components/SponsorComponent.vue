@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// Components
+import SponsorItemComponent from './SponsorItemComponent.vue';
+
 // Sponsor logos
 import hsLogoCouleur from '@clubcapra/assets/media/partners/HS_logo_couleur.png';
 import ixiasoftMadcapLogoRgbC from '@clubcapra/assets/media/partners/IXIASOFT-Madcap-logo-RGB-C.jpg';
@@ -27,13 +30,13 @@ const sponsorsDown = [
   <v-container>
     <v-row no-gutters>
       <v-col v-for="(sponsor, i) in sponsorsUp" :key="i">
-        <v-sheet class="pa-2 ma-2"><v-img :src="sponsor.img" /></v-sheet>
+        <sponsor-item-component :img="sponsor.img" />
       </v-col>
 
       <v-responsive width="100%" />
 
       <v-col v-for="(sponsor, i) in sponsorsDown" :key="i">
-        <v-sheet class="pa-2 ma-2"><v-img :src="sponsor.img" /></v-sheet>
+        <sponsor-item-component :img="sponsor.img" />
       </v-col>
     </v-row>
   </v-container>
