@@ -19,7 +19,7 @@ import mtt from '@clubcapra/assets/media/partners/mtt.png';
 
 <template>
   <JumbotronVideoComponent :title="$t('partners')" :img="partnerHandshake" />
-  <section id="skills" class="bg-white">
+  <section class="bg-white">
     <div class="container">
       <div class="section-content">
         <div class="title-wrap partner-title gold-title" data-aos="fade-up">
@@ -78,3 +78,22 @@ import mtt from '@clubcapra/assets/media/partners/mtt.png';
     </div>
   </section>
 </template>
+
+<style>
+.partner-title {
+  border-radius: 4rem;
+  padding: 1rem;
+}
+
+.gold-title {
+  background-color: gold;
+}
+
+.silver-title {
+  background-color: rgb(173, 173, 173);
+}
+
+.bronze-title {
+  background-color: rgba(170, 84, 63, 0.884);
+}
+</style>
