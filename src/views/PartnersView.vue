@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
+
+import plantPartenariat from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
 </script>
 
 <template>
@@ -51,12 +53,9 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
         </div>
         <div class="col-md-12">
           <div class="mt-3 text-center">
-            <button
-              class="btn btn-primary"
-              onClick="location.href='documents/CAPRA_PlanPartenariat.pdf'"
-            >
+            <a class="btn btn-primary" :href="plantPartenariat">
               DÉCOUVRIR LE PLAN DE PARTENARIAT
-            </button>
+            </a>
           </div>
         </div>
       </div>
