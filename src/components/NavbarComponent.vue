@@ -29,19 +29,27 @@ import capraLogoWhite from '@clubcapra/assets/media/Capra_Logo_White.png';
             <a class="nav-link" href="team">Équipe</a>
           </li>
           <li class="nav-item">
-            <router-link :to="{ name: 'competition' }">
-              <a class="nav-link" href="competition">Compétitions</a>
+            <router-link v-slot="{ navigate }" :to="{ name: 'competition' }">
+              <button class="nav-link" @click="navigate">
+                {{ $t('page_competitions') }}
+              </button>
             </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="partners">Partenaires</a>
+            <router-link v-slot="{ navigate }" :to="{ name: 'partners' }">
+              <button class="nav-link" @click="navigate">
+                {{ $t('page_partners') }}
+              </button>
+            </router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ressources">Ressources</a>
           </li>
           <li class="nav-item">
-            <router-link :to="{ name: 'contact' }">
-              <a class="nav-link" href="contact">Contact</a>
+            <router-link v-slot="{ navigate }" :to="{ name: 'contact' }">
+              <button class="nav-link" @click="navigate">
+                {{ $t('page_contact') }}
+              </button>
             </router-link>
           </li>
           <li class="nav-item">
