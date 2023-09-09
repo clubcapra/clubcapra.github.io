@@ -1,13 +1,33 @@
 <script setup lang="ts">
-defineProps<{
+import { ref, onMounted } from 'vue';
+
+const props = defineProps<{
+  /**
+   * The title of the jumbotron.
+   */
   title: string;
+  /**
+   * If set, the main element will have a background video.
+   */
   video?: string;
-  single?: boolean;
+  /**
+   * If set, the main element will have a background image.
+   */
+  img?: string;
 }>();
+
+const mainElementRef = ref<HTMLElement | null>(null);
+if (props.img) {
+  onMounted(() => {
+    if (mainElementRef.value) {
+      mainElementRef.value.style.backgroundImage = `url(${props.img})`;
+    }
+  });
+}
 </script>
 
 <template>
-  <div class="jumbotron d-flex align-items-center">
+  <div ref="mainElementRef" class="jumbotron d-flex align-items-center">
     <h1 class="text-h1 mb-4">{{ title }}</h1>
     <video v-if="video" class="bg-video" preload="true" autoplay muted>
       <source :src="video" type="video/mp4" />
