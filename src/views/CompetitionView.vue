@@ -69,6 +69,7 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
     </v-container>
   </section>
   <!-- Testimonial Section-->
+  <!-- Bangkok -->
   <section
     id="bangkok-title"
     class="overlay section-separator-bg"
@@ -117,6 +118,7 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
       </div>
     </div>
   </div>
+  <!-- DORTMUND -->
   <section
     id="dortmund-title"
     class="section-separator-bg overlay"
@@ -134,7 +136,6 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Markhor Réparation"
         />
-
         <img
           :src="dortmundMarkhorObstacle"
           class="w-100 shadow-1-strong rounded mb-4"
@@ -172,7 +173,7 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
       </div>
     </div>
   </div>
-
+  <!-- SYDNEY -->
   <section
     id="sydney-title"
     class="sydney-section-separator-bg overlay"
