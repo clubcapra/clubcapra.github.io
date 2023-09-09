@@ -26,19 +26,22 @@ import mtt from '@clubcapra/assets/media/partners/mtt.png';
         </div>
         <div class="row justify-content-center align-items-center py-5">
           <div class="col-md-6 col-12">
-            <img :src="EtsTypoGrise" />
+            <img :src="EtsTypoGrise" alt="ETS TypoGrise" />
           </div>
           <div class="col-md-6 col-12">
-            <img :src="hsLogoCouleur" />
+            <img :src="hsLogoCouleur" alt="HS logo couleur" />
           </div>
           <div class="col-md-6 col-12">
-            <img :src="automatech" />
+            <img :src="automatech" alt="Automatech" />
           </div>
           <div class="col-md-6 col-12">
-            <img :src="ixiasoftMadcapLogoRgbC" />
+            <img
+              :src="ixiasoftMadcapLogoRgbC"
+              alt="IXIASOFT Madcap logo RGB C"
+            />
           </div>
           <div class="col-md-6 col-12">
-            <img :src="cgLogoCir" />
+            <img :src="cgLogoCir" alt="CG LOGO CIR" />
           </div>
         </div>
         <div class="title-wrap partner-title silver-title" data-aos="fade-up">
@@ -46,10 +49,10 @@ import mtt from '@clubcapra/assets/media/partners/mtt.png';
         </div>
         <div class="row justify-content-center align-items-center py-5">
           <div class="col-md-3 col-6">
-            <img :src="aeets" />
+            <img :src="aeets" alt="AEETS" />
           </div>
           <div class="col-md-3 col-6">
-            <img :src="altium" />
+            <img :src="altium" alt="Altium" />
           </div>
         </div>
         <div class="title-wrap partner-title bronze-title" data-aos="fade-up">
@@ -57,10 +60,10 @@ import mtt from '@clubcapra/assets/media/partners/mtt.png';
         </div>
         <div class="row justify-content-center align-items-center py-5">
           <div class="col-md-2 col-4">
-            <img :src="goLabo" />
+            <img :src="goLabo" alt="Go Labo" />
           </div>
           <div class="col-md-2 col-4">
-            <img :src="mtt" />
+            <img :src="mtt" alt="MTT" />
           </div>
         </div>
         <div class="col-md-12">
