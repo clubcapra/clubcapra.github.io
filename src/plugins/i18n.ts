@@ -2,6 +2,10 @@ import { createI18n } from 'vue-i18n';
 
 type Lang = 'fr' | 'en';
 const rawMessages: Record<string, Record<Lang, string>> = {
+  btn_discover_our_partnership_plan: {
+    en: 'Discover our partnership plan',
+    fr: 'Découvrir notre plan de partenariat',
+  },
   btn_learn_more: {
     en: 'Learn more',
     fr: 'En savoir plus',
@@ -38,6 +42,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Train future engineers',
     fr: 'Former les ingénieurs de demain',
   },
+  our_mission_title: {
+    en: 'Our mission',
+    fr: 'Notre mission',
+  },
   our_prototypes_description: {
     en: 'Capra builds robots since 1999. Our mission changed in 2016 when we decided to specialize in search and rescue robotics.',
     fr: 'L’équipe Capra conçoit des robots depuis 1999. Notre mission a changé depuis 2016 pour nous spécialiser en robotique de recherche et secourisme.',
@@ -53,6 +61,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   our_team_title: {
     en: 'Our Team',
     fr: 'Notre équipe',
+  },
+  people_that_love_to_work_with_us: {
+    en: 'People that love to work with us',
+    fr: 'Ceux qui aiment travailler avec nous',
   },
 };
 

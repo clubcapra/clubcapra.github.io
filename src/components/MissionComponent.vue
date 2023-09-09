@@ -1,25 +1,26 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+// Components
 import MissionItemComponent from './MissionItemComponent.vue';
 
+const { t } = useI18n();
 const missions = [
   {
-    title: 'Sauver des vies',
-    content:
-      'Utiliser la robotique afin de créer des solutions qui peuvent avoir un impact direct sur la vie des gens.',
+    title: t('mission_save_lives_title'),
+    content: t('mission_save_lives_description'),
     icon: 'heart',
     delay: '0',
   },
   {
-    title: 'Compétitionner',
-    content:
-      'Participer et se démarquer dans des compétitions de robotique à travers le monde.',
+    title: t('mission_compete_title'),
+    content: t('mission_compete_description'),
     icon: 'star',
     delay: '200',
   },
   {
-    title: 'Former des ingénieurs',
-    content:
-      'Pousser nos membres à développer une multitude de compétences en ingénierie.',
+    title: t('mission_train_future_engineers_title'),
+    content: t('mission_train_future_engineers_description'),
     icon: 'graduation-hat',
     delay: '400',
   },
@@ -29,7 +30,7 @@ const missions = [
 <template>
   <div class="section-content">
     <div class="title-wrap" data-aos="fade-up">
-      <h2 class="section-title">Notre mission</h2>
+      <h2 class="section-title">{{ $t('our_mission_title') }}</h2>
     </div>
 
     <v-row class="text-md-center">

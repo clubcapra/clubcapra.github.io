@@ -35,11 +35,11 @@ import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.p
                 <v-img class="my-5" :src="prototypes" />
               </div>
               <div class="col-md-4 col-sm-6" data-aos="fade-right">
-                <h2 class="mb-4">{{ $t('Our prototypes') }}</h2>
-                <p>{{ $t('prototypes_description') }}</p>
+                <h2 class="mb-4">{{ $t('our_prototypes_title') }}</h2>
+                <p>{{ $t('our_prototypes_description') }}</p>
                 <router-link v-slot="{ navigate }" to="/robots" custom>
                   <button class="btn btn-primary" @click="navigate">
-                    {{ $t('learn_more').toUpperCase() }}
+                    {{ $t('our_robots').toUpperCase() }}
                   </button>
                 </router-link>
               </div>
@@ -54,33 +54,27 @@ import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.p
   <section class="featurettes">
     <div class="container">
       <div class="section-content">
-        <div class="row">
-          <div class="col-md-12">
+        <v-row>
+          <v-col>
             <div class="row align-items-center">
               <div class="col-md-4 col-sm-6" data-aos="fade-right">
-                <h2 class="mb-4">{{ $t('Our Team') }}</h2>
-                <p>{{ $t('multidisciplinary_team') }}</p>
+                <h2 class="mb-4">{{ $t('our_team_title') }}</h2>
+                <p>{{ $t('our_team_description') }}</p>
                 <router-link v-slot="{ navigate }" to="/team" custom>
                   <button class="btn btn-primary" @click="navigate">
-                    EN SAVOIR PLUS
+                    {{ $t('btn_learn_more').toUpperCase() }}
                   </button>
                 </router-link>
               </div>
-              <!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
               <div
                 class="col-md-8 offset-md-right-2 col-sm-6"
                 data-aos="flip-right"
               >
                 <v-img class="my-5" :src="teamcaprarobot" />
               </div>
-              <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
             </div>
-            <!--/ .featurettes-item -->
-          </div>
-          <!--/ .col-md-12 -->
-        </div>
-        <!--/ .row -->
+          </v-col>
+        </v-row>
       </div>
     </div>
   </section>
@@ -91,19 +85,16 @@ import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.p
       <div class="section-content" data-aos="fade-up">
         <div class="row">
           <div class="col-md-12">
-            <!-- Section Title -->
             <div class="title-wrap mb-5">
-              <h2>Ceux qui aiment travailler avec nous</h2>
+              <h2>{{ $t('people_that_love_to_work_with_us') }}</h2>
             </div>
-            <!-- End of Section Title -->
           </div>
-          <!-- Client Holder -->
           <SponsorComponent />
         </div>
         <div class="col-md-12">
           <div class="mt-3 text-center">
             <a :href="partenariatFile" target="_blank" class="btn btn-primary">
-              DÉCOUVRIR LE PLAN DE PARTENARIAT
+              {{ $t('btn_discover_our_partnership_plan').toUpperCase() }}
             </a>
           </div>
         </div>
