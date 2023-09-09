@@ -1,13 +1,13 @@
 <script setup lang="ts">
 // Components
-import SponsorComponent from '@clubcapra/components/SponsorComponent.vue';
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
 import MissionComponent from '@clubcapra/components/MissionComponent.vue';
+import SponsorComponent from '@clubcapra/components/SponsorComponent.vue';
 
 // Media
 import introTrimmed from '@clubcapra/assets/media/intro_trimmed.mp4';
-import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
 import prototypes from '@clubcapra/assets/media/prototypes.jpg';
+import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
 
 // Files
 import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
