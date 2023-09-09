@@ -22,6 +22,15 @@ import dortmundMarkhorUI from '@clubcapra/assets/media/dortmund/markhor_ui.jpg';
 import dortmundTeam2021 from '@clubcapra/assets/media/dortmund/team2021.jpg';
 import dortmundMarkhorAssemblage from '@clubcapra/assets/media/dortmund/markhor_assemblage.jpg';
 import dortmundMarkhorParcours from '@clubcapra/assets/media/dortmund/markhor_parcours.jpg';
+
+// Sydney
+import syndeyBG from '@clubcapra/assets/media/sydney/sydney.jpg';
+import syndneyCompTeam2019 from '@clubcapra/assets/media/sydney/comp_team_2019.jpg';
+import syndneyRC2019v2 from '@clubcapra/assets/media/sydney/rc2019_2.jpg';
+import syndneyRC2019v3 from '@clubcapra/assets/media/sydney/rc2019_3.jpg';
+import syndneyTakin1 from '@clubcapra/assets/media/sydney/takin1.jpg';
+import syndneyTakin5 from '@clubcapra/assets/media/sydney/takin5.jpg';
+import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assemblage.jpg';
 </script>
 
 <template>
