@@ -26,13 +26,13 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
                   tient chaque année dans un pays différent. Notre première
                   participation fut en 2019 en Australie.
                 </p>
-                <button
-                  type="button"
+                <a
                   class="btn btn-primary"
-                  onClick="location.href='https://rrl.robocup.org/';"
+                  href="https://rrl.robocup.org/"
+                  target="_blank"
                 >
-                  EN SAVOIR PLUS
-                </button>
+                  {{ $t('btn_learn_more').toUpperCase() }}
+                </a>
               </div>
               <!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
 
