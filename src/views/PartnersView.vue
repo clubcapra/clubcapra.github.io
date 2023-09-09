@@ -54,7 +54,7 @@ import plantPartenariat from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.
         <div class="col-md-12">
           <div class="mt-3 text-center">
             <a class="btn btn-primary" :href="plantPartenariat">
-              DÉCOUVRIR LE PLAN DE PARTENARIAT
+              {{ $t('discover_our_partnership').toUpperCase() }}
             </a>
           </div>
         </div>
