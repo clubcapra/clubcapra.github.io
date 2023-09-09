@@ -1,34 +1,74 @@
 import { createI18n } from 'vue-i18n';
 
-const messages = {
-  en: {
-    'made with love': 'Made in Montréal with',
-    'Our Team': 'Our Team',
-    'Our prototypes': 'Our prototypes',
-    learn_more: 'Learn more',
-    mission_description:
-      'Capra builds robots since 1999. Our mission changed in 2016 when we decided to specialize in search and rescue robotics.',
-    multidisciplinary_team:
-      'Our multidisciplinary team is ready to face any challenge !',
-    prototype_description:
-      'Capra builds robots since 1999. Our mission changed in 2016 when we decided to specialize in search and rescue robotics.',
+type Lang = 'fr' | 'en';
+const rawMessages: Record<string, Record<Lang, string>> = {
+  btn_learn_more: {
+    en: 'Learn more',
+    fr: 'En savoir plus',
   },
-  fr: {
-    'made with love': 'Fait à Montréal avec',
-    'Our prototypes': 'Nos prototypes',
-    'Our Team': 'Notre équipe',
-    learn_more: 'En savoir plus',
-    mission_description:
-      'Capra builds robots since 1999. Our mission changed in 2016 when we decided to specialize in search and rescue robotics.',
-    multidisciplinary_team:
-      'Notre équipe multidisciplinaire est toujours prête à faire face aux différents défis !',
-    prototype_description:
-      'L’équipe Capra conçoit des robots depuis 1999. Notre mission a changé depuis 2016 pour nous spécialiser en robotique de recherche et secourisme.',
+  btn_our_robots: {
+    en: 'Our robots',
+    fr: 'Nos robots',
+  },
+  made_with_love: {
+    en: 'Made in Montréal with',
+    fr: 'Fait à Montréal avec',
+  },
+  mission_compete_description: {
+    en: 'Participate and stand out in robotics competitions around the world.',
+    fr: 'Participer et se démarquer dans des compétitions de robotique à travers le monde.',
+  },
+  mission_compete_title: {
+    en: 'Compete',
+    fr: 'Compétitionner',
+  },
+  mission_save_lives_description: {
+    en: "Use robotics to create solutions that can have a direct impact on people's lives.",
+    fr: 'Utiliser la robotique afin de créer des solutions qui peuvent avoir un impact direct sur la vie des gens.',
+  },
+  mission_save_lives_title: {
+    en: 'Save lives',
+    fr: 'Sauver des vies',
+  },
+  mission_train_future_engineers_description: {
+    en: 'Push our members to develop multiple new engineering skills.',
+    fr: 'Pousser nos membres à développer une multitude de compétences en ingénierie.',
+  },
+  mission_train_future_engineers_title: {
+    en: 'Train future engineers',
+    fr: 'Former les ingénieurs de demain',
+  },
+  our_prototypes_description: {
+    en: 'Capra builds robots since 1999. Our mission changed in 2016 when we decided to specialize in search and rescue robotics.',
+    fr: 'L’équipe Capra conçoit des robots depuis 1999. Notre mission a changé depuis 2016 pour nous spécialiser en robotique de recherche et secourisme.',
+  },
+  our_prototypes_title: {
+    en: 'Our prototypes',
+    fr: 'Nos prototypes',
+  },
+  our_team_description: {
+    en: 'Our multidisciplinary team is ready to face any challenge !',
+    fr: 'Notre équipe multidisciplinaire est toujours prête à faire face aux différents défis !',
+  },
+  our_team_title: {
+    en: 'Our Team',
+    fr: 'Notre équipe',
   },
 };
 
-type MessageSchema = (typeof messages)['en'];
-const i18n = createI18n<[MessageSchema], 'en' | 'fr'>({
+const messages: Record<Lang, Record<string, string>> = {
+  fr: {},
+  en: {},
+};
+
+// Converts raw messages to a Record of language keys and their corresponding translations.
+for (const [key, trads] of Object.entries(rawMessages)) {
+  for (const [lang, trad] of Object.entries(trads)) {
+    messages[lang as Lang][key] = trad;
+  }
+}
+
+const i18n = createI18n({
   legacy: false, // we must set `false`, to use Compostion API
   locale: navigator.language.split('-')[0] || 'en',
   fallbackLocale: 'en',
