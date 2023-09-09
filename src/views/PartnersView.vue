@@ -1,23 +1,24 @@
 <script setup lang="ts">
+import partnerHandshake from '@clubcapra/assets/media/partners-handshake.jpg';
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
 
 // Documents
-import plantPartenariat from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
+import planPartenariat from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
 
 // Partners logos
-import EtsTypoGrise from '@clubcapra/assets/media/partners/Logo_ETS_TypoGrise_D_EN.png';
-import hsLogoCouleur from '@clubcapra/assets/media/partners/HS_logo_couleur.png';
-import automatech from '@clubcapra/assets/media/partners/automatech.png';
-import ixiasoftMadcapLogoRgbC from '@clubcapra/assets/media/partners/IXIASOFT-Madcap-logo-RGB-C.jpg';
 import cgLogoCir from '@clubcapra/assets/media/partners/CG_LOGO_CIR.png';
+import hsLogoCouleur from '@clubcapra/assets/media/partners/HS_logo_couleur.png';
+import ixiasoftMadcapLogoRgbC from '@clubcapra/assets/media/partners/IXIASOFT-Madcap-logo-RGB-C.jpg';
+import EtsTypoGrise from '@clubcapra/assets/media/partners/Logo_ETS_TypoGrise_D_EN.png';
 import aeets from '@clubcapra/assets/media/partners/aeets.svg';
 import altium from '@clubcapra/assets/media/partners/altium.svg';
+import automatech from '@clubcapra/assets/media/partners/automatech.png';
 import goLabo from '@clubcapra/assets/media/partners/go-labo.png';
 import mtt from '@clubcapra/assets/media/partners/mtt.png';
 </script>
 
 <template>
-  <JumbotronVideoComponent :title="$t('partners')" />
+  <JumbotronVideoComponent :title="$t('partners')" :img="partnerHandshake" />
   <section id="skills" class="bg-white">
     <div class="container">
       <div class="section-content">
@@ -68,7 +69,7 @@ import mtt from '@clubcapra/assets/media/partners/mtt.png';
         </div>
         <div class="col-md-12">
           <div class="mt-3 text-center">
-            <a class="btn btn-primary" :href="plantPartenariat">
+            <a class="btn btn-primary" :href="planPartenariat">
               {{ $t('discover_our_partnership').toUpperCase() }}
             </a>
           </div>
