@@ -18,6 +18,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Robo Cup Rescue is our main competition. It is the biggest robotics competition that takes place every year in a different country. Our first participation was in Australia in 2019.',
     fr: "La RoboCup Rescue est notre principale compétition. Il s'agit de la plus grande compétition de robotique au monde et se tient chaque année dans un pays différent. Notre première participation fut en 2019 en Australie.",
   },
+  email: {
+    en: 'Email',
+    fr: 'Courriel',
+  },
   made_with_love: {
     en: 'Made in Montréal with',
     fr: 'Fait à Montréal avec',
@@ -69,6 +73,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   people_that_love_to_work_with_us: {
     en: 'People that love to work with us',
     fr: 'Ceux qui aiment travailler avec nous',
+  },
+  where_to_find_us: {
+    en: 'Where to find us?',
+    fr: 'Où nous trouver ?',
   },
 };
 

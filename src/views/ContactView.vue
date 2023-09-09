@@ -8,7 +8,7 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
     <div class="container">
       <div class="section-content">
         <div class="title-wrap" data-aos="fade-up">
-          <h2 class="section-title">Où nous trouver?</h2>
+          <h2 class="section-title">{{ $t('where_to_find_us') }}</h2>
         </div>
         <div class="row text-center mt-4 justify-content-center">
           <div class="col-md-3" data-aos="fade-up">
@@ -29,7 +29,7 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
             <span class="py-4 d-block">
               <i class="fas fa-envelope fs-40 testi-icon" />
             </span>
-            <h5>COURRIEL</h5>
+            <h5>{{ $t('email').toUpperCase() }}</h5>
             <p>capra@ens.etsmtl.ca</p>
           </div>
           <div class="col-md-3" data-aos="fade-up" data-aos-delay="800">
