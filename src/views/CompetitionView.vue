@@ -13,6 +13,15 @@ import bangkokTeamWorking2 from '@clubcapra/assets/media/bangkok/team_working2.j
 import bangkokTeam2022 from '@clubcapra/assets/media/bangkok/team_2022.jpg';
 import bangkokMarkhorDex from '@clubcapra/assets/media/bangkok/markhor_dex.jpg';
 import bangkokRrl from '@clubcapra/assets/media/bangkok/rrl.jpg';
+
+// Dortmund
+import dortmundBG from '@clubcapra/assets/media/dortmund/dortmund.jpg';
+import dortmungMarkhorReparation from '@clubcapra/assets/media/dortmund/markhor_reparation.jpg';
+import dortmundMarkhorObstacle from '@clubcapra/assets/media/dortmund/markhor_obstacle.jpg';
+import dortmundMarkhorUI from '@clubcapra/assets/media/dortmund/markhor_ui.jpg';
+import dortmundTeam2021 from '@clubcapra/assets/media/dortmund/team2021.jpg';
+import dortmundMarkhorAssemblage from '@clubcapra/assets/media/dortmund/markhor_assemblage.jpg';
+import dortmundMarkhorParcours from '@clubcapra/assets/media/dortmund/markhor_parcours.jpg';
 </script>
 
 <template>
@@ -102,7 +111,7 @@ import bangkokRrl from '@clubcapra/assets/media/bangkok/rrl.jpg';
   <section
     id="dortmund-title"
     class="section-separator-bg overlay"
-    style="background-image: url(src/assets/media/dortmund/dortmund.jpg)"
+    :style="`background-image: url(${dortmundBG}) `"
   >
     <div class="section-separator container text-center">
       <h2 class="mb-4">DORTMUND 2021</h2>
@@ -112,18 +121,18 @@ import bangkokRrl from '@clubcapra/assets/media/bangkok/rrl.jpg';
     <div class="row">
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <img
-          src="src/assets/media/dortmund/markhor_reparation.jpg"
+          :src="dortmungMarkhorReparation"
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Markhor Réparation"
         />
 
         <img
-          src="src/assets/media/dortmund/markhor_obstacle.jpg"
+          :src="dortmundMarkhorObstacle"
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Markhor Obstacle"
         />
         <img
-          src="src/assets/media/dortmund/markhor_ui.jpg"
+          :src="dortmundMarkhorUI"
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Markhor UI"
         />
@@ -131,21 +140,21 @@ import bangkokRrl from '@clubcapra/assets/media/bangkok/rrl.jpg';
 
       <div class="col-lg-8 mb-4 mb-lg-0">
         <img
-          src="src/assets/media/dortmund/team2021.jpg"
+          :src="dortmundTeam2021"
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Équipe 2021"
         />
         <div class="row">
           <div class="col-md-6">
             <img
-              src="src/assets/media/dortmund/markhor_assemblage.jpg"
+              :src="dortmundMarkhorAssemblage"
               class="w-100 shadow-1-strong rounded mb-4"
               alt="Markhor Assemblage"
             />
           </div>
           <div class="col-md-6">
             <img
-              src="src/assets/media/dortmund/markhor_parcours.jpg"
+              :src="dortmundMarkhorParcours"
               class="w-100 shadow-1-strong rounded mb-4"
               alt="Markhor Parcours"
             />
