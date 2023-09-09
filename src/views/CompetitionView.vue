@@ -9,19 +9,14 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
 <template>
   <JumbotronVideoComponent title="Compétitions" :img="team2021" />
   <section id="section-featurettes" class="featurettes">
-    <div class="container">
+    <v-container>
       <div class="section-content">
-        <div class="row">
-          <div class="col-md-12">
+        <v-row>
+          <v-col>
             <div class="row align-items-center">
               <div class="col-md-4 col-sm-6" data-aos="fade-right">
                 <h2 class="mb-4">RoboCupRescue</h2>
-                <p>
-                  La RoboCup Rescue est notre principale compétition. Il s'agit
-                  de la plus grande compétition de robotique au monde et se
-                  tient chaque année dans un pays différent. Notre première
-                  participation fut en 2019 en Australie.
-                </p>
+                <p>{{ $t('competition_robocuprescue_description') }}</p>
                 <a
                   class="btn btn-primary"
                   href="https://rrl.robocup.org/"
@@ -30,8 +25,6 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
                   {{ $t('btn_learn_more').toUpperCase() }}
                 </a>
               </div>
-              <!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
               <div
                 class="col-md-8 offset-md-right-2 col-sm-6"
                 data-aos="flip-right"
@@ -42,16 +35,11 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
                   alt=""
                 />
               </div>
-              <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
             </div>
-            <!--/ .featurettes-item -->
-          </div>
-          <!--/ .col-md-12 -->
-        </div>
-        <!--/ .row -->
+          </v-col>
+        </v-row>
       </div>
-    </div>
-    <!--/ .container -->
+    </v-container>
   </section>
   <!-- Testimonial Section-->
   <section
@@ -102,7 +90,6 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
       </div>
     </div>
   </div>
-
   <section
     id="dortmund-title"
     class="section-separator-bg overlay"
