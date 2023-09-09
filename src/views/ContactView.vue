@@ -34,7 +34,7 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
           </div>
           <div class="col-md-3" data-aos="fade-up" data-aos-delay="800">
             <span class="py-4 d-block">
-              <a href="https://www.facebook.com/clubcapra/">
+              <a href="https://www.facebook.com/clubcapra/" target="_blank">
                 <i class="fab fa-facebook-f fs-40 testi-icon" />
               </a>
             </span>
@@ -42,7 +42,7 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
           </div>
           <div class="col-md-3" data-aos="fade-up" data-aos-delay="1000">
             <span class="py-4 d-block">
-              <a href="https://www.instagram.com/capra_ets/">
+              <a href="https://www.instagram.com/capra_ets/" target="_blank">
                 <i class="fab fa-instagram fs-40 testi-icon" />
               </a>
             </span>
