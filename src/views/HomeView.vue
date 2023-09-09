@@ -34,30 +34,20 @@ import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.p
               >
                 <v-img class="my-5" :src="prototypes" />
               </div>
-              <!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
               <div class="col-md-4 col-sm-6" data-aos="fade-right">
                 <h2 class="mb-4">{{ $t('Our prototypes') }}</h2>
-                <p>
-                  L’équipe Capra conçoit des robots depuis 1999. Notre mission a
-                  changé depuis 2016 pour nous spécialiser en robotique de
-                  recherche et secourisme.
-                </p>
+                <p>{{ $t('prototypes_description') }}</p>
                 <router-link v-slot="{ navigate }" to="/robots" custom>
                   <button class="btn btn-primary" @click="navigate">
                     {{ $t('learn_more').toUpperCase() }}
                   </button>
                 </router-link>
               </div>
-              <!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
             </v-row>
-            <!--/ .featurettes-item -->
           </v-col>
-          <!--/ .col-md-12 -->
         </v-row>
-        <!--/ .row -->
       </div>
     </v-container>
-    <!--/ .container -->
   </section>
 
   <!-- Team members -->
