@@ -69,7 +69,7 @@ import mtt from '@clubcapra/assets/media/partners/mtt.png';
         </div>
         <div class="col-md-12">
           <div class="mt-3 text-center">
-            <a class="btn btn-primary" :href="planPartenariat">
+            <a class="btn btn-primary" :href="planPartenariat" target="_blank">
               {{ $t('discover_our_partnership').toUpperCase() }}
             </a>
           </div>
