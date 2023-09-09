@@ -98,7 +98,6 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
         </div>
         <div class="row align-items-center justify-content-center">
           <button
-            type="button"
             class="btn btn-primary"
             onClick="location.href='https://github.com/clubcapra';"
           >
@@ -114,7 +113,7 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
         <div class="content">
           <h2>Publications</h2>
           <div class="papers-container">
-            <script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/clubcapra/papers/master/papers.bib&jsonp=1"></script>
+            <!-- <script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/clubcapra/papers/master/papers.bib&jsonp=1" ></script> -->
           </div>
         </div>
       </section>
