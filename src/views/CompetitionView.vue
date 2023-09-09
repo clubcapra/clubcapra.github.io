@@ -57,7 +57,7 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
   <section
     id="bangkok-title"
     class="overlay section-separator-bg"
-    style="background-image: url(img/bangkok/bangkokBG.jpg)"
+    style="background-image: url(src/assets/media/bangkok/bangkokBG.jpg)"
   >
     <div class="section-separator container text-center">
       <h2 class="mb-4">BANGKOK 2022</h2>
@@ -106,7 +106,7 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
   <section
     id="dortmund-title"
     class="section-separator-bg overlay"
-    style="background-image: url(img/dortmund/dortmund.jpg)"
+    style="background-image: url(src/assets/media/dortmund/dortmund.jpg)"
   >
     <div class="section-separator container text-center">
       <h2 class="mb-4">DORTMUND 2021</h2>
@@ -162,7 +162,7 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
   <section
     id="sydney-title"
     class="sydney-section-separator-bg overlay"
-    style="background-image: url(img/sydney/sydney.jpg)"
+    style="background-image: url(src/assets/media/sydney/sydney.jpg)"
   >
     <div class="section-separator container text-center">
       <h2 class="mb-4">SYDNEY 2019</h2>
