@@ -24,7 +24,7 @@ import dortmundMarkhorAssemblage from '@clubcapra/assets/media/dortmund/markhor_
 import dortmundMarkhorParcours from '@clubcapra/assets/media/dortmund/markhor_parcours.jpg';
 
 // Sydney
-import syndeyBG from '@clubcapra/assets/media/sydney/sydney.jpg';
+import sydneyBG from '@clubcapra/assets/media/sydney/sydney.jpg';
 import syndneyCompTeam2019 from '@clubcapra/assets/media/sydney/comp_team_2019.jpg';
 import syndneyRC2019v2 from '@clubcapra/assets/media/sydney/rc2019_2.jpg';
 import syndneyRC2019v3 from '@clubcapra/assets/media/sydney/rc2019_3.jpg';
@@ -176,7 +176,7 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
   <section
     id="sydney-title"
     class="sydney-section-separator-bg overlay"
-    style="background-image: url(src/assets/media/sydney/sydney.jpg)"
+    :style="`background-image: url(${sydneyBG}) `"
   >
     <div class="section-separator container text-center">
       <h2 class="mb-4">SYDNEY 2019</h2>
@@ -186,35 +186,35 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
     <div class="row">
       <div class="col-lg-8 mb-4 mb-lg-0">
         <img
-          src="src/assets/media/sydney/comp_team_2019.JPG"
+          :src="syndneyCompTeam2019"
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Équipe 2021"
         />
         <img
-          src="src/assets/media/sydney/rc2019_2.jpg"
+          :src="syndneyRC2019v2"
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Markhor Assemblage"
         />
       </div>
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <img
-          src="src/assets/media/sydney/rc2019_3.jpg"
+          :src="syndneyRC2019v3"
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Markhor Réparation"
         />
 
         <img
-          src="src/assets/media/sydney/takin1.jpg"
+          :src="syndneyTakin1"
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Markhor Obstacle"
         />
         <img
-          src="src/assets/media/sydney/takin5.jpg"
+          :src="syndneyTakin5"
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Markhor UI"
         />
         <img
-          src="src/assets/media/sydney/takin_assemblage.jpg"
+          :src="syndneyTakinAssemblage"
           class="w-100 shadow-1-strong rounded mb-4"
           alt="Markhor UI"
         />
