@@ -4,6 +4,15 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 
 // Media
 import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
+import robotcuprescue from '@clubcapra/assets/media/robotcuprescue.png';
+
+// Bangkok
+import bangkokBG from '@clubcapra/assets/media/bangkok/bangkokBG.jpg';
+import bangkokTeamWorking1 from '@clubcapra/assets/media/bangkok/team_working1.jpg';
+import bangkokTeamWorking2 from '@clubcapra/assets/media/bangkok/team_working2.jpg';
+import bangkokTeam2022 from '@clubcapra/assets/media/bangkok/team_2022.jpg';
+import bangkokMarkhorDex from '@clubcapra/assets/media/bangkok/markhor_dex.jpg';
+import bangkokRrl from '@clubcapra/assets/media/bangkok/rrl.jpg';
 </script>
 
 <template>
@@ -29,10 +38,10 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
                 class="col-md-8 offset-md-right-2 col-sm-6"
                 data-aos="flip-right"
               >
-                <img
+                <v-img
                   class="my-5"
-                  src="src/assets/media/robotcuprescue.png"
-                  alt=""
+                  :src="robotcuprescue"
+                  alt="Robocup Rescue Image"
                 />
               </div>
             </div>
@@ -45,7 +54,7 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
   <section
     id="bangkok-title"
     class="overlay section-separator-bg"
-    style="background-image: url(src/assets/media/bangkok/bangkokBG.jpg)"
+    :style="`background-image: url(${bangkokBG})`"
   >
     <div class="section-separator container text-center">
       <h2 class="mb-4">BANGKOK 2022</h2>
@@ -55,37 +64,37 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
     <div class="row">
       <div class="col-lg-4 mb-4 mb-lg-0">
         <img
-          src="src/assets/media/bangkok/team_working1.jpg"
+          :src="bangkokTeamWorking1"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="Mountains in the Clouds"
+          alt="Bangkok Team Working 1"
         />
         <img
-          src="src/assets/media/bangkok/team_working2.jpg"
+          :src="bangkokTeamWorking2"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="Mountains in the Clouds"
+          alt="Bangkok Team Working 2"
         />
       </div>
       <div class="col-lg-8 col-md-12 mb-4 mb-lg-0">
         <img
-          src="src/assets/media/bangkok/team_2022.jpg"
+          :src="bangkokTeam2022"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="Wintry Mountain Landscape"
+          alt="Bangkok Team 2022"
         />
       </div>
     </div>
     <div class="row">
       <div class="col-md-4 mb-4 mb-lg-0">
         <img
-          src="src/assets/media/bangkok/markhor_dex.jpg"
+          :src="bangkokMarkhorDex"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="Boat on Calm Water"
+          alt="Bangkok Markhor Dex"
         />
       </div>
       <div class="col-md-8 mb-4 mb-lg-0">
         <img
-          src="src/assets/media/bangkok/rrl.JPG"
+          :src="bangkokRrl"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="Boat on Calm Water"
+          alt="Bangkok RRL"
         />
       </div>
     </div>
