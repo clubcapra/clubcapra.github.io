@@ -54,6 +54,14 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Train future engineers',
     fr: 'Former les ingénieurs de demain',
   },
+  our_code_description: {
+    en: 'Using ROS, C++ et Python we are developping a robot platform that can be used by any robot. This platform can then be controlled by our Web user interface that is made with React and TypeScript. Our entire code base is open source because we want to make robotics easily accessible by everyone.',
+    fr: "En utilisant ROS, C++ et Python nous développons une plateforme de contrôle de robot qui peut être utilisé par n'importe quel robot. Notre plateforme est contrôlée à l'aide de notre interface web qui est faite en React et TypeScript. Notre code en entier est open source afin de rendre la robotique facilement accessible à tous.",
+  },
+  our_code_title: {
+    en: 'Our',
+    fr: 'Notre',
+  },
   our_mission_title: {
     en: 'Our mission',
     fr: 'Notre mission',
@@ -109,6 +117,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   people_that_love_to_work_with_us: {
     en: 'People that love to work with us',
     fr: 'Ceux qui aiment travailler avec nous',
+  },
+  see_our_github: {
+    en: 'See our Github',
+    fr: 'Voir notre Github',
   },
   where_to_find_us: {
     en: 'Where to find us?',
