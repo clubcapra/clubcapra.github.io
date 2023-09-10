@@ -5,6 +5,58 @@ import MemberItemComponent from '@clubcapra/components/MemberItemComponent.vue';
 
 // Media
 import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
+
+// Capitaine:
+//   David, Caron
+
+// Co-Capitaine:
+//   William, Jarry
+//   Bonzly, Noël
+//   Mathieu, Salois
+
+// Trésorier:
+//   Mathieu, Salois
+
+// Directeurs techniques:
+//   Guy-Philippe Nadon
+//   Nicolas, Vigneault
+
+// Électrique:
+//   Chef Électrique:
+//     Amber, Louie
+//   Membre:
+//     Asma, Djoual
+//     Léo-Daniel, Gosselin
+//     Benoit, Malenfant
+//     Suzon, Olory
+
+// Mécanique:
+//   Chef Mécanique:
+//     Kevin, Larochelle
+//     Noémie, Godbout
+//   Membres:
+//     Maxime, Rolland
+//     Gabriel, Rondeau-Bouvrette
+//     Pierre-Luc, Villeneuve
+//     Asma Nouara, Yahiaoui
+//     William, Zamudio-Turcotte
+//     Maxime, Bernard
+//     Guillaume, Beaufort-Samson
+
+// Logiciel:
+//   Chef Logiciel:
+//     Samuel, Lachance
+//   Membres:
+//     Marc-Olivier, Champagne
+//     Cloé, Dutil
+//     Michael, Gagnon
+//     Alexandre, Lapointe
+//     Gabriel, Lévesque-Duval
+//     Yulia, Bakaleinik
+//     Mohamed Redha, Meddad
+//     Daouda Faye, Ngom
+//     Simon, Roy
+//     Alexis, Martin
 </script>
 
 <template>
