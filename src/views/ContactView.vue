@@ -1,9 +1,13 @@
 <script setup lang="ts">
+// Components
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
+
+// Media
+import etsmtl from '@clubcapra/assets/media/etsmtl.jpg';
 </script>
 
 <template>
-  <JumbotronVideoComponent title="Contactez-nous" />
+  <JumbotronVideoComponent title="Contactez-nous" :img="etsmtl" />
   <section id="contact-form" class="bg-white">
     <div class="container">
       <div class="section-content">
