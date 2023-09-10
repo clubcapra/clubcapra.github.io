@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // Components
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
+import MemberItemComponent from '@clubcapra/components/MemberItemComponent.vue';
 
 // Media
 import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
@@ -16,21 +17,12 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/marco.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Marc-Olivier Champagne</h4>
-                <small>Capitaine</small>
-                <br />
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
+          <MemberItemComponent
+            name="Marc-Olivier Champagne"
+            img="src/assets/media/team/marco.jpg"
+            program="Génie Logiciel"
+            poste="Capitaine"
+          />
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
@@ -388,11 +380,6 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
 .team-list {
   -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
-}
-
-.team .content .title,
-.team-list .content .title {
-  font-size: 18px;
 }
 
 .team .overlay {
