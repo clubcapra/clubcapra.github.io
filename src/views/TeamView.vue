@@ -19,7 +19,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/marco.jpg"
+                src="src/assets/media/team/marco.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -34,7 +34,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/ben.jpg"
+                src="src/assets/media/team/ben.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -49,7 +49,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/alexis.jpg"
+                src="src/assets/media/team/alexis.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -72,7 +72,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/kev.jpg"
+                src="src/assets/media/team/kev.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -90,7 +90,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/maxb.jpg"
+                src="src/assets/media/team/maxb.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -104,7 +104,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/gabrb.jpg"
+                src="src/assets/media/team/gabrb.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -118,7 +118,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/maxrolland.jpg"
+                src="src/assets/media/team/maxrolland.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -140,7 +140,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/david.jpg"
+                src="src/assets/media/team/david.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -155,7 +155,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/amber.jpg"
+                src="src/assets/media/team/amber.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -176,7 +176,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/gabld.jpg"
+                src="src/assets/media/team/gabld.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -191,7 +191,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/leo.jpg"
+                src="src/assets/media/team/leo.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -210,7 +210,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/cloe.jpg"
+                src="src/assets/media/team/cloe.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -224,7 +224,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/myriam.jpg"
+                src="src/assets/media/team/myriam.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -238,7 +238,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/alex.jpg"
+                src="src/assets/media/team/alex.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -254,7 +254,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/ludo.jpg"
+                src="src/assets/media/team/ludo.jpg"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -267,7 +267,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/avatar.png"
+                src="src/assets/media/team/avatar.png"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -280,7 +280,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/avatar.png"
+                src="src/assets/media/team/avatar.png"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -293,7 +293,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/avatar.png"
+                src="src/assets/media/team/avatar.png"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -306,7 +306,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/avatar.png"
+                src="src/assets/media/team/avatar.png"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -319,7 +319,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/avatar.png"
+                src="src/assets/media/team/avatar.png"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -332,7 +332,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/avatar.png"
+                src="src/assets/media/team/avatar.png"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
@@ -345,7 +345,7 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
           <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
             <div class="team text-center rounded p-3 py-4">
               <img
-                src="img/team/avatar.png"
+                src="src/assets/media/team/avatar.png"
                 class="img-fluid avatar avatar-medium shadow rounded-pill"
                 alt=""
               />
