@@ -4,10 +4,55 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 
 // Media
 import robotsBG from '@clubcapra/assets/media/robotsbg.png';
+import markhorSave from '@clubcapra/assets/media/markhor_save.jpg';
+import homepageVid from '@clubcapra/assets/media/homepage_vid.mp4';
+import markhorSpeed from '@clubcapra/assets/media/markhor_speed.mp4';
+import markhorStairs from '@clubcapra/assets/media/markhor_stairs.mp4';
 </script>
 
 <template>
-  <JumbotronVideoComponent :title="$t('our_robots')" :img="robotsBG" />
+  <full-page id="fullpage">
+    <dev class="section">
+      <JumbotronVideoComponent :title="$t('our_robots')" :img="robotsBG" />
+    </dev>
+    <div class="section section-overlay">
+      <img :src="markhorSave" class="section-image" />
+      <div class="layer">
+        <h1>{{ $t('robots_save_lives') }}</h1>
+      </div>
+    </div>
+    <div class="section section-overlay">
+      <video loop muted playsinline data-autoplay>
+        <source :src="homepageVid" type="video/mp4" />
+      </video>
+      <div class="layer">
+        <h1>{{ $t('robots_perform_with_precision') }}</h1>
+      </div>
+    </div>
+    <div class="section section-overlay">
+      <video
+        class="split-video left-video"
+        loop
+        muted
+        playsinline
+        data-autoplay
+      >
+        <source :src="markhorSpeed" type="video/mp4" />
+      </video>
+      <video
+        class="split-video right-video"
+        loop
+        muted
+        playsinline
+        data-autoplay
+      >
+        <source :src="markhorStairs" type="video/mp4" />
+      </video>
+      <div class="layer">
+        <h1>{{ $t('robots_cross_any_obstacle') }}</h1>
+      </div>
+    </div>
+  </full-page>
 </template>
 
 <style>
