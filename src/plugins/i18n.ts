@@ -126,6 +126,18 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'People that love to work with us',
     fr: 'Ceux qui aiment travailler avec nous',
   },
+  robots_cross_any_obstacle: {
+    en: 'Cross any obstacle !',
+    fr: "Franchissent tous types d'obstacles !",
+  },
+  robots_perform_with_precision: {
+    en: 'Perform with precision !',
+    fr: 'Performe avec précision !',
+  },
+  robots_save_lives: {
+    en: 'Save lives !',
+    fr: 'Sauvent des vies !',
+  },
   see_our_github: {
     en: 'See our Github',
     fr: 'Voir notre Github',
