@@ -4,6 +4,9 @@
 // Vuetify color fix.
 declare module 'vuetify/lib/util/colors.mjs';
 
+// Fullpage.js fix.
+declare module 'vue-fullpage.js';
+
 // eslint-disable-next-line no-unused-vars
 interface ImportMetaEnv {
   // see https://vitejs.dev/guide/env-and-mode.html#env-files

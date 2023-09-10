@@ -2,9 +2,10 @@
 import { createApp } from 'vue';
 import router from './router';
 import store from './store';
-import i18n from './plugins/i18n';
 
-// Load Vuetify
+// Load Plugins
+import fullPage from './plugins/fullpage';
+import i18n from './plugins/i18n';
 import vuetify from './plugins/vuetify';
 
 // Load Layout vue.
@@ -14,6 +15,7 @@ import App from './App.vue';
 const vue = createApp(App);
 vue.use(router);
 vue.use(store);
+vue.use(fullPage);
 vue.use(vuetify);
 vue.use(i18n);
 
