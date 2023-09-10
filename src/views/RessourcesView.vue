@@ -1,13 +1,10 @@
 <script setup lang="ts">
+// Components
+import BibBaseComponent from '@clubcapra/components/BibBaseComponent.vue';
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
+
+// Media
 import codebg from '@clubcapra/assets/media/codebg.jpg';
-
-
-
-const bidUr
-
-
-
 </script>
 
 <template>
@@ -111,7 +108,9 @@ const bidUr
         <div class="content">
           <h2>Publications</h2>
           <div class="papers-container">
-            <script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/clubcapra/papers/master/papers.bib&jsonp=1"></script>
+            <BibBaseComponent
+              url="https://raw.githubusercontent.com/clubcapra/papers/master/papers.bib"
+            />
           </div>
         </div>
       </section>
