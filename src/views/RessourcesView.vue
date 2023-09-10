@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
 import codebg from '@clubcapra/assets/media/codebg.jpg';
+
+
+
+const bidUr
+
+
+
 </script>
 
 <template>
@@ -10,16 +17,10 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
       <div class="section-content">
         <div class="title-wrap" data-aos="fade-up">
           <h2 class="section-title">
-            Notre
+            {{ $t('our_code_title') }}
             <b>code</b>
           </h2>
-          <p class="section-sub-title">
-            En utilisant ROS, C++ et Python nous développons une plateforme de
-            contrôle de robot qui peut être utilisé par n'importe quel robot.
-            Notre plateforme est contrôlée à l'aide de notre interface web qui
-            est faite en React et TypeScript. Notre code en entier est open
-            source afin de rendre la robotique facilement accessible à tous.
-          </p>
+          <p class="section-sub-title">{{ $t('our_code_description') }}</p>
         </div>
 
         <div class="row">
@@ -97,12 +98,9 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
           </div>
         </div>
         <div class="row align-items-center justify-content-center">
-          <button
-            class="btn btn-primary"
-            onClick="location.href='https://github.com/clubcapra';"
-          >
-            VOIR NOTRE GITHUB
-          </button>
+          <a class="btn btn-primary" href="https://github.com/clubcapra">
+            {{ $t('see_our_github').toUpperCase() }}
+          </a>
         </div>
       </div>
     </div>
@@ -113,7 +111,7 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
         <div class="content">
           <h2>Publications</h2>
           <div class="papers-container">
-            <!-- <script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/clubcapra/papers/master/papers.bib&jsonp=1" ></script> -->
+            <script src="https://bibbase.org/show?bib=https://raw.githubusercontent.com/clubcapra/papers/master/papers.bib&jsonp=1"></script>
           </div>
         </div>
       </section>
