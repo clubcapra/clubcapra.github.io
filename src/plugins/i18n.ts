@@ -110,6 +110,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Robots',
     fr: 'Robots',
   },
+  page_team: {
+    en: 'Team',
+    fr: 'Équipe',
+  },
   partner_gold: {
     en: 'Gold',
     fr: 'Or',
