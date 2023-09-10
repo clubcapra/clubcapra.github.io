@@ -82,6 +82,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Competitions',
     fr: 'Compétitions',
   },
+  page_home: {
+    en: 'Capra',
+    fr: 'Capra',
+  },
   page_partners: {
     en: 'Partners',
     fr: 'Partenaires',

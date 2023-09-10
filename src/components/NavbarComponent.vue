@@ -20,7 +20,11 @@ import capraLogoWhite from '@clubcapra/assets/media/Capra_Logo_White.png';
       <div id="navbar-nav-header" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/">Capra</a>
+            <router-link v-slot="{ navigate }" :to="{ name: 'home' }">
+              <button class="nav-link" @click="navigate">
+                {{ $t('page_home') }}
+              </button>
+            </router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="robots">Robots</a>
