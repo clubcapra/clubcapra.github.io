@@ -13,7 +13,7 @@
         <div class="col-lg-4 col-md-12 d-flex align-items-center" />
         <div class="col-lg-4 col-md-12 d-flex align-items-center">
           <p class="mx-auto text-center mb-0">
-            {{ $t('made with love') }}
+            {{ $t('made_with_love') }}
             <v-icon icon="md:heart" />
           </p>
         </div>
