@@ -74,6 +74,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Our prototypes',
     fr: 'Nos prototypes',
   },
+  our_robots: {
+    en: 'Our Robots',
+    fr: 'Nos Robots',
+  },
   our_team_description: {
     en: 'Our multidisciplinary team is ready to face any challenge !',
     fr: 'Notre équipe multidisciplinaire est toujours prête à faire face aux différents défis !',
@@ -101,6 +105,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   page_ressources: {
     en: 'Ressources',
     fr: 'Ressources',
+  },
+  page_robots: {
+    en: 'Robots',
+    fr: 'Robots',
   },
   partner_gold: {
     en: 'Gold',

@@ -27,7 +27,11 @@ import capraLogoWhite from '@clubcapra/assets/media/Capra_Logo_White.png';
             </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="robots">Robots</a>
+            <router-link v-slot="{ navigate }" :to="{ name: 'robots' }">
+              <button class="nav-link" @click="navigate">
+                {{ $t('page_robots') }}
+              </button>
+            </router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="team">Équipe</a>
