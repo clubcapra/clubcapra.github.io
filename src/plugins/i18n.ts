@@ -158,6 +158,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Mechanical',
     fr: 'Mécanique',
   },
+  team_member: {
+    en: 'Member',
+    fr: 'Membre',
+  },
   team_software: {
     en: 'Software',
     fr: 'Logiciel',
