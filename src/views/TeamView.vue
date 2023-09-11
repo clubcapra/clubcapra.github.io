@@ -1,10 +1,27 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 // Components
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
 import MemberItemComponent from '@clubcapra/components/MemberItemComponent.vue';
 
 // Media
+import defaultAvatar from '@clubcapra/assets/media/team/avatar.png';
 import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
+
+// Members pictures
+import david from '@clubcapra/assets/media/team/david.jpg';
+import ben from '@clubcapra/assets/media/team/ben.jpg';
+import kev from '@clubcapra/assets/media/team/kev.jpg';
+import maxb from '@clubcapra/assets/media/team/maxb.jpg';
+import gabrb from '@clubcapra/assets/media/team/gabrb.jpg';
+import maxrolland from '@clubcapra/assets/media/team/maxrolland.jpg';
+import amber from '@clubcapra/assets/media/team/amber.jpg';
+import leo from '@clubcapra/assets/media/team/leo.jpg';
+import marco from '@clubcapra/assets/media/team/marco.jpg';
+import alex from '@clubcapra/assets/media/team/alex.jpg';
+import gabld from '@clubcapra/assets/media/team/gabld.jpg';
+import alexis from '@clubcapra/assets/media/team/alexis.jpg';
+
 interface Member {
   name: string;
   img?: string;
@@ -12,20 +29,16 @@ interface Member {
   title?: string;
 }
 
-import defaultAvatar from '@clubcapra/assets/media/team/avatar.png';
-
-const members: { [category: string]: Member[] } = {};
-
 const administration: Member[] = [
   {
     name: 'David Caron',
-    img: 'src/assets/media/team/david.jpg',
+    img: david,
     program: 'Génie Électrique',
     title: 'Capitaine',
   },
   {
     name: 'Benoit Malenfant',
-    img: 'src/assets/media/team/ben.jpg',
+    img: ben,
     program: 'Génie Électrique',
     title: 'Co-Capitaine',
   },
@@ -45,11 +58,10 @@ const administration: Member[] = [
     title: 'Directeur Technique',
   },
 ];
-
-const mecanique: Member[] = [
+const mechanical: Member[] = [
   {
     name: 'Kevin Larochelle',
-    img: 'src/assets/media/team/kev.jpg',
+    img: kev,
     program: 'Génie de la Production Automatisée',
     title: 'Chef Mécanique',
   },
@@ -60,25 +72,24 @@ const mecanique: Member[] = [
   },
   {
     name: 'Maxime Bernard',
-    img: 'src/assets/media/team/maxb.jpg',
+    img: maxb,
     program: 'Génie Mécanique',
   },
   {
     name: 'Gabriel Rondeau-Bouvrette',
-    img: 'src/assets/media/team/gabrb.jpg',
+    img: gabrb,
     program: 'Génie Mécanique',
   },
   {
     name: 'Maxime Rolland',
-    img: 'src/assets/media/team/maxrolland.jpg',
+    img: maxrolland,
     program: 'Génie de la Production Automatisée',
   },
 ];
-
-const electrique: Member[] = [
+const electrical: Member[] = [
   {
     name: 'Amber Louie',
-    img: 'src/assets/media/team/amber.jpg',
+    img: amber,
     program: 'Génie Électrique',
     title: 'Chef Électrique',
   },
@@ -88,16 +99,11 @@ const electrique: Member[] = [
   },
   {
     name: 'Léo-Daniel Gosselin',
-    img: 'src/assets/media/team/leo.jpg',
+    img: leo,
     program: 'Génie de la Production Automatisée',
   },
-  {
-    name: 'Suzon Olory',
-    program: 'Génie Électrique',
-  },
 ];
-
-const logiciel: Member[] = [
+const software: Member[] = [
   {
     name: 'Samuel Lachance',
     program: 'Génie Logiciel',
@@ -105,27 +111,21 @@ const logiciel: Member[] = [
   },
   {
     name: 'Marc-Olivier Champagne',
-    img: 'src/assets/media/team/marco.jpg',
-    program: 'Génie Logiciel',
-  },
-  {
-    name: 'Cloé Dutil',
-    img: 'src/assets/media/team/cloe.jpg',
+    img: marco,
     program: 'Génie Logiciel',
   },
   {
     name: 'Michael Gagnon',
-    img: 'src/assets/media/team/mike.jpg',
     program: 'Génie Logiciel',
   },
   {
     name: 'Alexandre Lapointe',
-    img: 'src/assets/media/team/alex.jpg',
+    img: alex,
     program: 'Génie de la Production Automatisée',
   },
   {
     name: 'Gabriel Lévesque-Duval',
-    img: 'src/assets/media/team/gabld.jpg',
+    img: gabld,
     program: 'Génie Logiciel',
   },
   {
@@ -134,61 +134,18 @@ const logiciel: Member[] = [
   },
   {
     name: 'Alexis Martin',
+    img: alexis,
     program: 'Génie Logiciel',
   },
 ];
 
-// Capitaine:
-//   David, Caron
-
-// Co-Capitaine:
-//   William, Jarry
-//   Bonzly, Noël
-//   Mathieu, Salois
-
-// Trésorier:
-//   Mathieu, Salois
-
-// Directeurs techniques:
-//   Guy-Philippe Nadon
-//   Nicolas, Vigneault
-
-// Électrique:
-//   Chef Électrique:
-//     Amber, Louie
-//   Membre:
-//     Asma, Djoual
-//     Léo-Daniel, Gosselin
-//     Benoit, Malenfant
-//     Suzon, Olory
-
-// Mécanique:
-//   Chef Mécanique:
-//     Kevin, Larochelle
-//     Noémie, Godbout
-//   Membres:
-//     Maxime, Rolland
-//     Gabriel, Rondeau-Bouvrette
-//     Pierre-Luc, Villeneuve
-//     Asma Nouara, Yahiaoui
-//     William, Zamudio-Turcotte
-//     Maxime, Bernard
-//     Guillaume, Beaufort-Samson
-
-// Logiciel:
-//   Chef Logiciel:
-//     Samuel, Lachance
-//   Membres:
-//     Marc-Olivier, Champagne
-//     Cloé, Dutil
-//     Michael, Gagnon
-//     Alexandre, Lapointe
-//     Gabriel, Lévesque-Duval
-//     Yulia, Bakaleinik
-//     Mohamed Redha, Meddad
-//     Daouda Faye, Ngom
-//     Simon, Roy
-//     Alexis, Martin
+const { t } = useI18n();
+const sections = [
+  { title: t('team_administration'), members: administration },
+  { title: t('team_mechanical'), members: mechanical },
+  { title: t('team_electrical'), members: electrical },
+  { title: t('team_software'), members: software },
+];
 </script>
 
 <template>
@@ -196,67 +153,22 @@ const logiciel: Member[] = [
   <section id="features">
     <div class="container">
       <div class="section-content">
-        <div class="title-wrap" data-aos="fade-up">
-          <h2 class="section-title">Administration</h2>
-        </div>
+        <template v-for="(section, key) in sections" :key="key">
+          <div class="title-wrap" data-aos="fade-up">
+            <h2 class="section-title">{{ section.title }}</h2>
+          </div>
 
-        <div class="row justify-content-center">
-          <MemberItemComponent
-            v-for="(member, i) in administration"
-            :key="i"
-            :name="member.name"
-            :img="member.img ?? defaultAvatar"
-            :program="member.program"
-            :title="member.title"
-          />
-
-          <!--end col-->
-        </div>
-        <!--end row-->
-        <div class="member-title-wrap" data-aos="fade-up">
-          <h2 class="section-title">Mécanique</h2>
-        </div>
-
-        <div class="row justify-content-center">
-          <MemberItemComponent
-            v-for="(member, i) in mecanique"
-            :key="i"
-            :name="member.name"
-            :img="member.img ?? defaultAvatar"
-            :program="member.program"
-            :title="member.title"
-          />
-        </div>
-        <!--end row-->
-        <div class="member-title-wrap" data-aos="fade-up">
-          <h2 class="section-title">Électrique</h2>
-        </div>
-
-        <div class="row justify-content-center">
-          <MemberItemComponent
-            v-for="(member, i) in electrique"
-            :key="i"
-            :name="member.name"
-            :img="member.img ?? defaultAvatar"
-            :program="member.program"
-            :title="member.title"
-          />
-        </div>
-        <!--end row-->
-        <div class="member-title-wrap" data-aos="fade-up">
-          <h2 class="section-title">Logiciel</h2>
-        </div>
-
-        <div class="row justify-content-center">
-          <MemberItemComponent
-            v-for="(member, i) in logiciel"
-            :key="i"
-            :name="member.name"
-            :img="member.img ?? defaultAvatar"
-            :program="member.program"
-            :title="member.title"
-          />
-        </div>
+          <div class="row justify-content-center">
+            <MemberItemComponent
+              v-for="(member, j) in section.members"
+              :key="j"
+              :name="member.name"
+              :img="member.img ?? defaultAvatar"
+              :program="member.program"
+              :title="member.title"
+            />
+          </div>
+        </template>
       </div>
     </div>
   </section>
