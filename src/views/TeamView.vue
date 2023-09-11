@@ -5,6 +5,138 @@ import MemberItemComponent from '@clubcapra/components/MemberItemComponent.vue';
 
 // Media
 import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
+interface Member {
+  name: string;
+  img?: string;
+  program: string;
+  title?: string;
+}
+
+import defaultAvatar from '@clubcapra/assets/media/team/avatar.png';
+
+const members: { [category: string]: Member[] } = {};
+
+const administration: Member[] = [
+  {
+    name: 'David Caron',
+    img: 'src/assets/media/team/david.jpg',
+    program: 'Génie Électrique',
+    title: 'Capitaine',
+  },
+  {
+    name: 'Benoit Malenfant',
+    img: 'src/assets/media/team/ben.jpg',
+    program: 'Génie Électrique',
+    title: 'Co-Capitaine',
+  },
+  {
+    name: 'Mathieu Salois',
+    program: 'Génie Logiciel',
+    title: 'Trésorier',
+  },
+  {
+    name: 'Guy-Philippe Nadon',
+    program: 'Génie Logiciel',
+    title: 'Directeur Technique',
+  },
+  {
+    name: 'Nicolas Vigneault',
+    program: 'Génie Logiciel',
+    title: 'Directeur Technique',
+  },
+];
+
+const mecanique: Member[] = [
+  {
+    name: 'Kevin Larochelle',
+    img: 'src/assets/media/team/kev.jpg',
+    program: 'Génie de la Production Automatisée',
+    title: 'Chef Mécanique',
+  },
+  {
+    name: 'Noémie Godbout',
+    program: 'Génie de la Production Automatisée',
+    title: 'Chef Mécanique',
+  },
+  {
+    name: 'Maxime Bernard',
+    img: 'src/assets/media/team/maxb.jpg',
+    program: 'Génie Mécanique',
+  },
+  {
+    name: 'Gabriel Rondeau-Bouvrette',
+    img: 'src/assets/media/team/gabrb.jpg',
+    program: 'Génie Mécanique',
+  },
+  {
+    name: 'Maxime Rolland',
+    img: 'src/assets/media/team/maxrolland.jpg',
+    program: 'Génie de la Production Automatisée',
+  },
+];
+
+const electrique: Member[] = [
+  {
+    name: 'Amber Louie',
+    img: 'src/assets/media/team/amber.jpg',
+    program: 'Génie Électrique',
+    title: 'Chef Électrique',
+  },
+  {
+    name: 'Asma Djoual',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'Léo-Daniel Gosselin',
+    img: 'src/assets/media/team/leo.jpg',
+    program: 'Génie de la Production Automatisée',
+  },
+  {
+    name: 'Suzon Olory',
+    program: 'Génie Électrique',
+  },
+];
+
+const logiciel: Member[] = [
+  {
+    name: 'Samuel Lachance',
+    program: 'Génie Logiciel',
+    title: 'Chef Logiciel',
+  },
+  {
+    name: 'Marc-Olivier Champagne',
+    img: 'src/assets/media/team/marco.jpg',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Cloé Dutil',
+    img: 'src/assets/media/team/cloe.jpg',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Michael Gagnon',
+    img: 'src/assets/media/team/mike.jpg',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Alexandre Lapointe',
+    img: 'src/assets/media/team/alex.jpg',
+    program: 'Génie de la Production Automatisée',
+  },
+  {
+    name: 'Gabriel Lévesque-Duval',
+    img: 'src/assets/media/team/gabld.jpg',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Simon Roy',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Alexis Martin',
+    program: 'Génie Logiciel',
+  },
+];
 
 // Capitaine:
 //   David, Caron
@@ -70,41 +202,14 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
 
         <div class="row justify-content-center">
           <MemberItemComponent
-            name="Marc-Olivier Champagne"
-            img="src/assets/media/team/marco.jpg"
-            program="Génie Logiciel"
-            poste="Capitaine"
+            v-for="(member, i) in administration"
+            :key="i"
+            :name="member.name"
+            :img="member.img ?? defaultAvatar"
+            :program="member.program"
+            :title="member.title"
           />
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/ben.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Benoit Malenfant</h4>
-                <small>Co-Capitaine</small>
-                <br />
-                <small class="text-muted">Génie Électrique</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/alexis.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Alexis Martin</h4>
-                <small>Trésorier</small>
-                <br />
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
+
           <!--end col-->
         </div>
         <!--end row-->
@@ -113,67 +218,14 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/kev.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Kevin Larochelle</h4>
-                <small>Chef Mécanique</small>
-                <br />
-                <small class="text-muted">
-                  Génie de la Production Automatisée
-                </small>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/maxb.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Maxime Bernard</h4>
-                <small class="text-muted">Génie Mécanique</small>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/gabrb.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Gabriel Rondeau-Bouvrette</h4>
-                <small class="text-muted">Génie Mécanique</small>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/maxrolland.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Maxime Rolland</h4>
-                <small class="text-muted">
-                  Génie de la Production Automatisée
-                </small>
-              </div>
-            </div>
-          </div>
+          <MemberItemComponent
+            v-for="(member, i) in mecanique"
+            :key="i"
+            :name="member.name"
+            :img="member.img ?? defaultAvatar"
+            :program="member.program"
+            :title="member.title"
+          />
         </div>
         <!--end row-->
         <div class="member-title-wrap" data-aos="fade-up">
@@ -181,35 +233,14 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/david.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">David Caron</h4>
-                <small>Chef Électrique</small>
-                <br />
-                <small class="text-muted">Génie Électrique</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/amber.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Amber Louie</h4>
-                <small class="text-muted">Génie Électrique</small>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
+          <MemberItemComponent
+            v-for="(member, i) in electrique"
+            :key="i"
+            :name="member.name"
+            :img="member.img ?? defaultAvatar"
+            :program="member.program"
+            :title="member.title"
+          />
         </div>
         <!--end row-->
         <div class="member-title-wrap" data-aos="fade-up">
@@ -217,188 +248,14 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/gabld.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Gabriel Lévesque-Duval</h4>
-                <small>Chef Logiciel</small>
-                <br />
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/leo.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Léo-Daniel Gosselin</h4>
-                <small>Opérateur</small>
-                <br />
-                <small class="text-muted">
-                  Génie de la Production Automatisée
-                </small>
-              </div>
-            </div>
-          </div>
-
-          <!--end col-->
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/cloe.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Cloé Dutil</h4>
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/myriam.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Myriam Lacroix</h4>
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/alex.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Alexandre Lapointe</h4>
-                <small class="text-muted">
-                  Génie de la Production Automatisée
-                </small>
-              </div>
-            </div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/ludo.jpg"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Ludovic Vanasse</h4>
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/avatar.png"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Yulia Bakaleinik</h4>
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/avatar.png"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">William Jarry</h4>
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/avatar.png"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Guy-Philippe Nadon</h4>
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/avatar.png"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Daouda-Faye Ngom</h4>
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/avatar.png"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Suzon Olory</h4>
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/avatar.png"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Simon Roy</h4>
-                <small class="text-muted">Génie Logiciel</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-            <div class="team text-center rounded p-3 py-4">
-              <img
-                src="src/assets/media/team/avatar.png"
-                class="img-fluid avatar avatar-medium shadow rounded-pill"
-                alt=""
-              />
-              <div class="content mt-3">
-                <h4 class="member-title mb-0">Simon Savard</h4>
-                <small class="text-muted">Génie Électrique</small>
-              </div>
-            </div>
-          </div>
+          <MemberItemComponent
+            v-for="(member, i) in logiciel"
+            :key="i"
+            :name="member.name"
+            :img="member.img ?? defaultAvatar"
+            :program="member.program"
+            :title="member.title"
+          />
         </div>
       </div>
     </div>
