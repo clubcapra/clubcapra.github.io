@@ -146,6 +146,22 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'See our Github',
     fr: 'Voir notre Github',
   },
+  team_administration: {
+    en: 'Administration',
+    fr: 'Administration',
+  },
+  team_electrical: {
+    en: 'Electrical',
+    fr: 'Électrique',
+  },
+  team_mechanical: {
+    en: 'Mechanical',
+    fr: 'Mécanique',
+  },
+  team_software: {
+    en: 'Software',
+    fr: 'Logiciel',
+  },
   where_to_find_us: {
     en: 'Where to find us?',
     fr: 'Où nous trouver ?',
