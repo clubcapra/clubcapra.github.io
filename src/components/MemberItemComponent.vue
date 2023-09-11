@@ -3,7 +3,7 @@ defineProps<{
   name: string;
   img: string;
   program: string;
-  title?: string;
+  title: string;
 }>();
 </script>
 
@@ -17,7 +17,7 @@ defineProps<{
       />
       <div class="content mt-3">
         <h4 class="member-title mb-0">{{ name }}</h4>
-        <small v-if="title">{{ title }}</small>
+        <small>{{ title }}</small>
         <br />
         <small class="text-muted">{{ program }}</small>
       </div>

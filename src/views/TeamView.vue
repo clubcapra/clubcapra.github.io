@@ -24,9 +24,9 @@ import alexis from '@clubcapra/assets/media/team/alexis.jpg';
 
 interface Member {
   name: string;
-  img?: string;
   program: string;
-  title?: string;
+  img?: string; // Default to defaultAvatars
+  title?: string; // Default to 'Membre'
 }
 
 const administration: Member[] = [
@@ -37,10 +37,20 @@ const administration: Member[] = [
     title: 'Capitaine',
   },
   {
+    name: 'Bonzly Noël',
+    program: 'Génie Mécanique',
+    title: 'Co-Capitaine',
+  },
+  {
+    name: 'William Jarry',
+    program: 'Génie Logiciel',
+    title: 'Co-Capitaine',
+  },
+  {
     name: 'Benoit Malenfant',
     img: ben,
     program: 'Génie Électrique',
-    title: 'Co-Capitaine',
+    title: 'Directeur Technique',
   },
   {
     name: 'Mathieu Salois',
@@ -165,7 +175,7 @@ const sections = [
               :name="member.name"
               :img="member.img ?? defaultAvatar"
               :program="member.program"
-              :title="member.title"
+              :title="member.title ?? $t('team_member')"
             />
           </div>
         </template>
