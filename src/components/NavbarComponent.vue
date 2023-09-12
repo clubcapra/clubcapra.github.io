@@ -68,9 +68,6 @@ import capraLogoWhite from '@clubcapra/assets/media/Capra_Logo_White.png';
               </button>
             </router-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="en/">EN</a>
-          </li>
         </ul>
       </div>
     </div>
