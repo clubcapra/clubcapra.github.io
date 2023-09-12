@@ -14,8 +14,8 @@ declare module 'vue-matomo';
 interface ImportMetaEnv {
   // see https://vitejs.dev/guide/env-and-mode.html#env-files
   // add .env variables.
-  MATOMO_INSTANCE_URL: string;
-  MATOMO_SITE_ID: string;
+  VITE_MATOMO_INSTANCE_URL: string;
+  VITE_MATOMO_SITE_ID: string;
 }
 
 // eslint-disable-next-line no-unused-vars
