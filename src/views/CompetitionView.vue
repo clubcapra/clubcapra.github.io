@@ -34,7 +34,7 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
 </script>
 
 <template>
-  <JumbotronVideoComponent :title="$t('competitions')" :img="team2021" />
+  <JumbotronVideoComponent :title="$t('page_competitions')" :img="team2021" />
   <section id="section-featurettes" class="featurettes">
     <v-container>
       <div class="section-content">

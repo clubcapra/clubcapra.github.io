@@ -18,7 +18,10 @@ import mtt from '@clubcapra/assets/media/partners/mtt.png';
 </script>
 
 <template>
-  <JumbotronVideoComponent :title="$t('partners')" :img="partnerHandshake" />
+  <JumbotronVideoComponent
+    :title="$t('page_partners')"
+    :img="partnerHandshake"
+  />
   <section class="bg-white">
     <div class="container">
       <div class="section-content">
