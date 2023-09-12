@@ -7,6 +7,7 @@ import store from './store';
 import fullPage from './plugins/fullpage';
 import i18n from './plugins/i18n';
 import vuetify from './plugins/vuetify';
+import VueMatomo from 'vue-matomo';
 
 // Load Layout vue.
 import App from './App.vue';
@@ -18,8 +19,15 @@ vue.use(store);
 vue.use(fullPage);
 vue.use(vuetify);
 vue.use(i18n);
+if (import.meta.env.MATOMO_INSTANCE_URL) {
+  vue.use(VueMatomo, {
+    host: import.meta.env.MATOMO_INSTANCE_URL,
+    siteId: import.meta.env.MATOMO_SITE_ID,
+  });
+}
 
 // Run!
 router.isReady().then(() => {
   vue.mount('#app');
+  window._paq?.push(['trackPageView']);
 });
