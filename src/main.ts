@@ -19,10 +19,10 @@ vue.use(store);
 vue.use(fullPage);
 vue.use(vuetify);
 vue.use(i18n);
-if (import.meta.env.MATOMO_INSTANCE_URL) {
+if (import.meta.env.VITE_MATOMO_INSTANCE_URL) {
   vue.use(VueMatomo, {
-    host: import.meta.env.MATOMO_INSTANCE_URL,
-    siteId: import.meta.env.MATOMO_SITE_ID,
+    host: import.meta.env.VITE_MATOMO_INSTANCE_URL,
+    siteId: import.meta.env.VITE_MATOMO_SITE_ID,
   });
 }
 
