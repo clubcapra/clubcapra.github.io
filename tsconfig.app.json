@@ -15,6 +15,7 @@
     "**/*.min.js"
   ],
   "compilerOptions": {
+    "module": "ESNext",
     "composite": true,
     "resolvePackageJsonExports": false,
     "baseUrl": ".",
