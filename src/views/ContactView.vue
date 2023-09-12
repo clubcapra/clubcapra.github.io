@@ -7,7 +7,7 @@ import etsmtl from '@clubcapra/assets/media/etsmtl.jpg';
 </script>
 
 <template>
-  <JumbotronVideoComponent title="Contactez-nous" :img="etsmtl" />
+  <JumbotronVideoComponent :title="$t('contact_us')" :img="etsmtl" />
   <section id="contact-form" class="bg-white">
     <div class="container">
       <div class="section-content">
