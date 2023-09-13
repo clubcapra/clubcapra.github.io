@@ -28,7 +28,7 @@ if (props.img) {
 
 <template>
   <div ref="mainElementRef" class="jumbotron d-flex align-items-center">
-    <h1 class="text-h1 mb-4">{{ title }}</h1>
+    <h1 class="text-md-h1 mb-4">{{ title }}</h1>
     <video v-if="video" class="bg-video" preload="true" autoplay muted>
       <source :src="video" type="video/mp4" />
     </video>
@@ -48,12 +48,6 @@ if (props.img) {
   margin-bottom: 0;
   overflow: hidden;
   min-height: 100vh;
-}
-
-@media (max-width: 767px) and (orientation: landscape) {
-  .jumbotron {
-    min-height: 500px;
-  }
 }
 
 .jumbotron:before {
