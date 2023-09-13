@@ -31,6 +31,11 @@ import syndneyRC2019v3 from '@clubcapra/assets/media/sydney/rc2019_3.jpg';
 import syndneyTakin1 from '@clubcapra/assets/media/sydney/takin1.jpg';
 import syndneyTakin5 from '@clubcapra/assets/media/sydney/takin5.jpg';
 import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assemblage.jpg';
+
+// Set title
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
+document.title = t('page_competitions');
 </script>
 
 <template>
