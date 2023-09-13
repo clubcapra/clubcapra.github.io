@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*.css",
+    "src/**/*.icon",
+    "src/**/*.json",
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "src/*.vue"
+  ],
+  "exclude": [
+    "src/**/__tests__/*",
+    "**/*.min.js"
+  ],
+  "compilerOptions": {
+    "module": "ESNext",
+    "composite": true,
+    "resolvePackageJsonExports": false,
+    "baseUrl": ".",
+    "paths": {
+      "@clubcapra/*": [
+        "./src/*"
+      ]
+    },
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "vuetify"
+    ]
+  }
+}
