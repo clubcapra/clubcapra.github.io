@@ -11,9 +11,6 @@ import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
 
 // Files
 import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
-
-// Set title
-document.title = 'Capra';
 </script>
 
 <template>

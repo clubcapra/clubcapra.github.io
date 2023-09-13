@@ -12,6 +12,8 @@ import { useGlobalStore } from './store';
 
 import { routes } from './views';
 
+import i18n from './plugins/i18n';
+
 /** Vue Router */
 const router: Router = createRouter({
   /**
@@ -35,7 +37,8 @@ router.beforeEach(
     // Show Loading
     globalStore.setLoading(true);
     await nextTick();
-
+    const title = (_to.meta?.title as string) ?? 'page_home';
+    document.title = i18n.global.t(title);
     next();
   }
 );
