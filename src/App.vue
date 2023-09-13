@@ -27,6 +27,30 @@ onMounted(() => {
 </script>
 
 <template>
+  <teleport to="head">
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="/assets/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+  </teleport>
   <v-app>
     <NavbarComponent />
     <v-main>
