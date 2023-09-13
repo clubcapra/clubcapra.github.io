@@ -7,6 +7,12 @@ import { useGlobalStore } from './store';
 import FooterComponent from './components/FooterComponent.vue';
 import NavbarComponent from './components/NavbarComponent.vue';
 
+// Assets
+import favicon16x16 from './assets/favicon-16x16.png';
+import favicon32x32 from './assets/favicon-32x32.png';
+import appleTouchIcon from './assets/apple-touch-icon.png';
+import safariPinnedTab from './assets/safari-pinned-tab.svg';
+
 // Animate on scroll library
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -28,28 +34,10 @@ onMounted(() => {
 
 <template>
   <teleport to="head">
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon-16x16.png"
-    />
-    <link
-      rel="mask-icon"
-      href="/assets/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
+    <link rel="apple-touch-icon" sizes="152x152" :href="appleTouchIcon" />
+    <link rel="icon" type="image/png" sizes="32x32" :href="favicon32x32" />
+    <link rel="icon" type="image/png" sizes="16x16" :href="favicon16x16" />
+    <link rel="mask-icon" :href="safariPinnedTab" color="#5bbad5" />
   </teleport>
   <v-app>
     <NavbarComponent />
