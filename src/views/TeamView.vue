@@ -156,9 +156,6 @@ const sections = [
   { title: t('team_electrical'), members: electrical },
   { title: t('team_software'), members: software },
 ];
-
-// Set title
-document.title = t('page_team');
 </script>
 
 <template>

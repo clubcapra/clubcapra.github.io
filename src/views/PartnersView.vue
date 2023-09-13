@@ -15,11 +15,6 @@ import altium from '@clubcapra/assets/media/partners/altium.svg';
 import automatech from '@clubcapra/assets/media/partners/automatech.png';
 import goLabo from '@clubcapra/assets/media/partners/go-labo.png';
 import mtt from '@clubcapra/assets/media/partners/mtt.png';
-
-// Set title
-import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
-document.title = t('page_partners');
 </script>
 
 <template>

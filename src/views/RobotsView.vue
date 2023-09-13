@@ -8,11 +8,6 @@ import markhorSave from '@clubcapra/assets/media/markhor_save.jpg';
 import homepageVid from '@clubcapra/assets/media/homepage_vid.mp4';
 import markhorSpeed from '@clubcapra/assets/media/markhor_speed.mp4';
 import markhorStairs from '@clubcapra/assets/media/markhor_stairs.mp4';
-
-// Set title
-import { useI18n } from 'vue-i18n';
-const { t } = useI18n();
-document.title = t('page_robots');
 </script>
 
 <template>
