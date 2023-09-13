@@ -19,7 +19,7 @@ const routes: RouteRecordRaw[] = [
     component: () => import('./TeamView.vue'),
   },
   {
-    path: '/competition',
+    path: '/competitions',
     name: 'competition',
     component: () => import('./CompetitionView.vue'),
   },
