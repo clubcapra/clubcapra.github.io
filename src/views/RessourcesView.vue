@@ -5,6 +5,11 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 
 // Media
 import codebg from '@clubcapra/assets/media/codebg.jpg';
+
+// Set title
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
+document.title = t('page_ressources');
 </script>
 
 <template>

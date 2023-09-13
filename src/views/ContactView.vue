@@ -4,6 +4,11 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 
 // Media
 import etsmtl from '@clubcapra/assets/media/etsmtl.jpg';
+
+// Set title
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
+document.title = t('page_contact');
 </script>
 
 <template>
