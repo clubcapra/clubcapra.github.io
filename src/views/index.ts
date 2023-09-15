@@ -1,3 +1,4 @@
+import i18n from '@clubcapra/plugins/i18n';
 import type { RouteRecordRaw } from 'vue-router';
 
 import Home from './HomeView.vue';
@@ -8,7 +9,7 @@ const routes: RouteRecordRaw[] = [
     name: 'home',
     component: Home,
     meta: {
-      title: 'page_home',
+      title: i18n.global.t('page_home'),
     },
   },
   {
@@ -16,7 +17,7 @@ const routes: RouteRecordRaw[] = [
     name: 'robots',
     component: () => import('./RobotsView.vue'),
     meta: {
-      title: 'page_robots',
+      title: i18n.global.t('page_robots'),
     },
   },
   {
@@ -24,7 +25,7 @@ const routes: RouteRecordRaw[] = [
     name: 'team',
     component: () => import('./TeamView.vue'),
     meta: {
-      title: 'page_team',
+      title: i18n.global.t('page_team'),
     },
   },
   {
@@ -32,7 +33,7 @@ const routes: RouteRecordRaw[] = [
     name: 'competition',
     component: () => import('./CompetitionView.vue'),
     meta: {
-      title: 'page_competitions',
+      title: i18n.global.t('page_competitions'),
     },
   },
   {
@@ -40,7 +41,7 @@ const routes: RouteRecordRaw[] = [
     name: 'partners',
     component: () => import('./PartnersView.vue'),
     meta: {
-      title: 'page_partners',
+      title: i18n.global.t('page_partners'),
     },
   },
   {
@@ -48,7 +49,7 @@ const routes: RouteRecordRaw[] = [
     name: 'ressources',
     component: () => import('./RessourcesView.vue'),
     meta: {
-      title: 'page_ressources',
+      title: i18n.global.t('page_ressources'),
     },
   },
   {
@@ -56,7 +57,7 @@ const routes: RouteRecordRaw[] = [
     name: 'contact',
     component: () => import('./ContactView.vue'),
     meta: {
-      title: 'page_contact',
+      title: i18n.global.t('page_contact'),
     },
   },
 ];
