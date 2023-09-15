@@ -64,7 +64,7 @@ const administration: Member[] = [
   },
   {
     name: 'Nicolas Vigneault',
-    program: 'Génie Logiciel',
+    program: 'Génie de la Production Automatisée',
     title: 'Directeur Technique',
   },
 ];
