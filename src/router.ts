@@ -35,10 +35,16 @@ router.beforeEach(
     // Show Loading
     globalStore.setLoading(true);
     await nextTick();
-
     next();
   }
 );
+
+// Hook for page title
+router.beforeEach((to, _from, next) => {
+  // Change page title
+  document.title = to.meta.title;
+  next();
+});
 
 // Global After Hooks
 // https://router.vuejs.org/guide/advanced/navigation-guards.html#global-after-hooks}
