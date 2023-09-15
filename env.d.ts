@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint spaced-comment: off */
 /// <reference types="vite/client" />
 
@@ -10,7 +11,6 @@ declare module 'vue-fullpage.js';
 // Matomo fix.
 declare module 'vue-matomo';
 
-// eslint-disable-next-line no-unused-vars
 interface ImportMetaEnv {
   // see https://vitejs.dev/guide/env-and-mode.html#env-files
   // add .env variables.
@@ -18,7 +18,17 @@ interface ImportMetaEnv {
   VITE_MATOMO_SITE_ID: string;
 }
 
-// eslint-disable-next-line no-unused-vars
+// Vue Router meta data fix.
+import 'vue-router';
+declare module 'vue-router' {
+  interface RouteMeta {
+    /**
+     * Title of the page.
+     */
+    title: string;
+  }
+}
+
 interface Window {
   _paq?: {
     push: (args: string[]) => void;
