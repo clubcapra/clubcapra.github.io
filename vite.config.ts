@@ -13,17 +13,9 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
  * @see {@link https://vitejs.dev/config/}
  */
 export default defineConfig(async ({ mode, command }): Promise<UserConfig> => {
-  const isProd = mode === 'production';
   const config: UserConfig = {
     // https://vitejs.dev/config/shared-options.html#base
     base: '/',
-    // https://vitejs.dev/config/shared-options.html#define
-    define: {
-      // Needed for evvue
-      'process.env': isProd
-        ? {}
-        : { VUE_APP_BASE_URL: 'http://localhost:6543' },
-    },
     plugins: [
       // Vue3
       vue({
