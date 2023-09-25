@@ -12,9 +12,9 @@ import markhorStairs from '@clubcapra/assets/media/markhor_stairs.mp4';
 
 <template>
   <full-page id="fullpage">
-    <dev class="section">
+    <div class="section">
       <JumbotronVideoComponent :title="$t('our_robots')" :img="robotsBG" />
-    </dev>
+    </div>
     <div class="section section-overlay">
       <img :src="markhorSave" class="section-image" />
       <div class="layer">
