@@ -99,7 +99,7 @@ button:focus {
 .btn:hover,
 a:hover {
   text-decoration: none;
-  color: #f00d0d;
+  color: #fff;
 }
 
 img {
