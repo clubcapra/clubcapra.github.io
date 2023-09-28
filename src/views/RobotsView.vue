@@ -147,4 +147,8 @@ video {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+main {
+  --v-layout-top: 0px !important; /* remove gape when droping */
+}
 </style>
