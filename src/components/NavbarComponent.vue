@@ -66,7 +66,7 @@ function isMobile() {
     <DrawerComponent :items="pages" />
   </v-navigation-drawer>
 
-  <v-app-bar absolute density="compact" color="red">
+  <v-app-bar density="compact" color="red">
     <v-app-bar-nav-icon @click="drawer = !drawer" />
 
     <v-img
