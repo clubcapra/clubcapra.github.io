@@ -15,57 +15,53 @@ const { t } = useI18n();
 
 /*
   {
-    name: "", // name of the robot in the tab
-    creation_date: "",
-    svg: "", // used in the tab with the name of the robots
-    sections:[
+    name: '', // name of the robot in the tab and for the jumbotron
+    creation_date: '',
+    source: '',
+    isVideo: false,
+    svg: '', // used in the tab with the name of the robots
+    sections: [
       {
-        title: "",
-        medias:[
+        title: '',
+        medias: [
           {
-            source: "",
+            source: '',
             isVideo: false,
-          }
-        ]
+          },
+        ],
       },
+    ],
+  },
 */
 
 const robots = [
   {
     name: t('our_robots'),
-    creation_date: "",
-    svg: "",
-    sections:[
-      {
-        title: t('our_robots'),
-        medias:[
-          {
-            source: robotsBG,
-            isVideo: false,
-          }
-        ]
-      },
+    creation_date: '',
+    source: robotsBG,
+    isVideo: false,
+    sections: [
       {
         title: t('robots_save_lives'),
-        medias:[
+        medias: [
           {
             source: markhorSave,
             isVideo: false,
-          }
-        ]
+          },
+        ],
       },
       {
         title: t('robots_perform_with_precision'),
-        medias:[
+        medias: [
           {
             source: homepageVid,
             isVideo: true,
-          }
-        ]
+          },
+        ],
       },
       {
         title: t('robots_cross_any_obstacle'),
-        medias:[
+        medias: [
           {
             source: markhorSpeed,
             isVideo: true,
@@ -73,12 +69,12 @@ const robots = [
           {
             source: markhorStairs,
             isVideo: true,
-          }
-        ]
-      }
-    ]
-  }
-]
+          },
+        ],
+      },
+    ],
+  },
+];
 </script>
 
 <template>
