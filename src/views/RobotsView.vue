@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
 // Components
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
 
@@ -9,7 +11,9 @@ import homepageVid from '@clubcapra/assets/media/homepage_vid.mp4';
 import markhorSpeed from '@clubcapra/assets/media/markhor_speed.mp4';
 import markhorStairs from '@clubcapra/assets/media/markhor_stairs.mp4';
 
-const robots = [
+const { t } = useI18n();
+
+/*
   {
     name: "", // name of the robot in the tab
     creation_date: "",
@@ -21,6 +25,54 @@ const robots = [
           {
             source: "",
             isVideo: false,
+          }
+        ]
+      },
+*/
+
+const robots = [
+  {
+    name: t('our_robots'),
+    creation_date: "",
+    svg: "",
+    sections:[
+      {
+        title: t('our_robots'),
+        medias:[
+          {
+            source: robotsBG,
+            isVideo: false,
+          }
+        ]
+      },
+      {
+        title: t('robots_save_lives'),
+        medias:[
+          {
+            source: markhorSave,
+            isVideo: false,
+          }
+        ]
+      },
+      {
+        title: t('robots_perform_with_precision'),
+        medias:[
+          {
+            source: homepageVid,
+            isVideo: true,
+          }
+        ]
+      },
+      {
+        title: t('robots_cross_any_obstacle'),
+        medias:[
+          {
+            source: markhorSpeed,
+            isVideo: true,
+          },
+          {
+            source: markhorStairs,
+            isVideo: true,
           }
         ]
       }
