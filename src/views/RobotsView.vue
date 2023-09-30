@@ -8,6 +8,25 @@ import markhorSave from '@clubcapra/assets/media/markhor_save.jpg';
 import homepageVid from '@clubcapra/assets/media/homepage_vid.mp4';
 import markhorSpeed from '@clubcapra/assets/media/markhor_speed.mp4';
 import markhorStairs from '@clubcapra/assets/media/markhor_stairs.mp4';
+
+const robots = [
+  {
+    name: "", // name of the robot in the tab
+    creation_date: "",
+    svg: "", // used in the tab with the name of the robots
+    sections:[
+      {
+        title: "",
+        medias:[
+          {
+            source: "",
+            isVideo: false,
+          }
+        ]
+      }
+    ]
+  }
+]
 </script>
 
 <template>
