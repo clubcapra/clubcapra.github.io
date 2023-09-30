@@ -83,38 +83,44 @@ const robots = [
       <JumbotronVideoComponent :title="$t('our_robots')" :img="robotsBG" />
     </div>
     <div class="section section-overlay">
-      <img :src="markhorSave" class="section-image" />
+      <div class="section-medias">
+        <img :src="markhorSave" class="section-image" />
+      </div>
       <div class="layer">
         <h1>{{ $t('robots_save_lives') }}</h1>
       </div>
     </div>
     <div class="section section-overlay">
-      <video loop muted playsinline data-autoplay>
-        <source :src="homepageVid" type="video/mp4" />
-      </video>
+      <div class="section-medias">
+        <video loop muted playsinline data-autoplay>
+          <source :src="homepageVid" type="video/mp4" />
+        </video>
+      </div>
       <div class="layer">
         <h1>{{ $t('robots_perform_with_precision') }}</h1>
       </div>
     </div>
     <div class="section section-overlay">
-      <video
-        class="split-video left-video"
-        loop
-        muted
-        playsinline
-        data-autoplay
-      >
-        <source :src="markhorSpeed" type="video/mp4" />
-      </video>
-      <video
-        class="split-video right-video"
-        loop
-        muted
-        playsinline
-        data-autoplay
-      >
-        <source :src="markhorStairs" type="video/mp4" />
-      </video>
+      <div class="section-medias">
+        <video
+          class="split-video left-video"
+          loop
+          muted
+          playsinline
+          data-autoplay
+        >
+          <source :src="markhorSpeed" type="video/mp4" />
+        </video>
+        <video
+          class="split-video right-video"
+          loop
+          muted
+          playsinline
+          data-autoplay
+        >
+          <source :src="markhorStairs" type="video/mp4" />
+        </video>
+      </div>
       <div class="layer">
         <h1>{{ $t('robots_cross_any_obstacle') }}</h1>
       </div>
@@ -173,41 +179,34 @@ const robots = [
   font-size: 3.5rem;
 }
 
-video {
+.section-medias {
   position: absolute;
+  display: flex;
   bottom: 0;
   top: 0;
-  right: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: black;
   background-position: center center;
   background-size: contain;
   object-fit: cover;
   z-index: 3;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
-.section-image {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  background-position: center center;
-  background-size: contain;
+
+.section-medias > * {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  overflow-y: hidden;
+}
+.section-medias > video {
   object-fit: cover;
-  z-index: 3;
 }
-.split-video {
-  width: 50%;
-}
-.left-video {
-  left: 0;
-}
-.right-video {
-  right: 0;
-}
+
 .section {
   text-align: center;
   -webkit-transform: translate3d(0, 0, 0);
