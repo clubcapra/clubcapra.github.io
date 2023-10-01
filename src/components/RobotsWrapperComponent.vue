@@ -1,6 +1,6 @@
 <!-- eslint-disable prettier/prettier -->
 <template>
-  <v-app-bar absolute density="compact" color="white">
+  <v-app-bar absolute density="compact" color="white" id="robot-navbar">
     <v-list-item
       class="robot-btn"
       density="compact"
@@ -62,7 +62,42 @@ export default {
   color: rgb(244, 67, 54);
 }
 .robot-btn-active {
-    background-color: rgb(244, 67, 54, 0.9);
-    color: white;
+  background-color: rgb(244, 67, 54, 0.9);
+  color: white;
+}
+#robot-navbar {
+  opacity: 0;
+}
+
+#robot-navbar {
+  animation: fadeout 3s;
+}
+
+header:hover + main > header,
+#robot-navbar:hover {
+  animation: fadein 3s !important;
+  opacity: 1;
+}
+
+header:hover + main > header {
+  opacity: 1 !important;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 </style>
