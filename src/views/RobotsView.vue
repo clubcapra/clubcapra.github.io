@@ -86,7 +86,7 @@ const robots: Robot[] = [
 
 <template>
   <RobotsWrapperComponent>
-    <RobotComponent v-for="robot in robots" :key="robot.name" :robot="robot"/>
+    <RobotComponent v-for="robot in robots" :key="robot.name" :robot="robot" />
   </RobotsWrapperComponent>
 </template>
 

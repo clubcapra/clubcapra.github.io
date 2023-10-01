@@ -1,3 +1,4 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
   <v-app-bar absolute density="compact" color="red">
     <v-spacer />

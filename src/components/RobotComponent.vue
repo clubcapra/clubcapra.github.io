@@ -1,16 +1,17 @@
+<!-- eslint-disable prettier/prettier -->
 <script setup lang="ts">
-  import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
-  import { inject } from 'vue';
-  import type { Robot } from '@clubcapra/views/RobotsView.vue';
+import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
+import { inject } from 'vue';
+import type { Robot } from '@clubcapra/views/RobotsView.vue';
 
-  defineProps<{
-    robot: Robot;
-  }>();
+defineProps<{
+  robot: Robot;
+}>();
 
-  const selectedRobot = inject('selectedRobot');
+const selectedRobot = inject('selectedRobot');
 </script>
 <template>
-  <div class="section" v-show="selectedRobot == robot.name">
+  <div v-show="selectedRobot == robot.name" class="section">
     <JumbotronVideoComponent
       v-if="robot.mediaType == 'img'"
       :title="robot.name"
@@ -24,9 +25,9 @@
   </div>
   <div
     v-for="(section, i) in robot.sections"
+    v-show="selectedRobot == robot.name"
     :key="i"
     class="section section-overlay"
-    v-show="selectedRobot == robot.name"
   >
     <div class="section-medias">
       <template v-for="(media, i) in section.medias" :key="i">
