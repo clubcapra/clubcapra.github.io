@@ -1,11 +1,17 @@
 <!-- eslint-disable prettier/prettier -->
 <template>
-  <v-app-bar absolute density="compact" color="red">
+  <v-app-bar absolute density="compact" color="white">
+    <v-list-item
+      class="robot-btn"
+      density="compact"
+      :title="$t('our_robots')"
+    />
     <v-spacer />
     <v-list-item
       v-for="name in robotsName"
       :key="name"
-      class="robotBtn"
+      class="robot-btn"
+      :class="selectedRobot == name? 'robot-btn-active':''"
       density="compact"
       :title="name"
       @click="selectRobot(name)"
@@ -50,3 +56,13 @@ export default {
   },
 };
 </script>
+
+<style>
+.robot-btn {
+  color: rgb(244, 67, 54);
+}
+.robot-btn-active {
+    background-color: rgb(244, 67, 54, 0.9);
+    color: white;
+}
+</style>
