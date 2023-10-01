@@ -2,7 +2,8 @@
 import { useI18n } from 'vue-i18n';
 
 // Components
-import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
+import RobotsWrapperComponent from '@clubcapra/components/RobotsWrapperComponent.vue';
+import RobotComponent from '@clubcapra/components/RobotComponent.vue';
 
 // Media
 import robotsBG from '@clubcapra/assets/media/robotsbg.png';
@@ -13,40 +14,46 @@ import markhorStairs from '@clubcapra/assets/media/markhor_stairs.mp4';
 
 const { t } = useI18n();
 
-/*
-  {
-    name: '', // name of the robot in the tab and for the jumbotron
-    creation_date: '',
-    source: '',
-    isVideo: false,
-    svg: '', // used in the tab with the name of the robots
-    sections: [
-      {
-        title: '',
-        medias: [
-          {
-            source: '',
-            isVideo: false,
-          },
-        ],
-      },
-    ],
-  },
-*/
+export type MediaType = 'video' | 'img';
+export interface Media {
+  source: string;
+  mediaType: MediaType;
+}
+export interface Section {
+  title: string;
+  medias: Media[];
+}
+export interface Robot {
+  name: string; // name of the robot in the tab and for the jumbotron
+  creation_date: string;
+  source: string;
+  mediaType: MediaType;
+  svg: string; // used in the tab with the name of the robots
+  sections: Section[];
+}
 
-const robots = [
+const robots: Robot[] = [
+  {
+    name: 'Test',
+    creation_date: '',
+    source: robotsBG,
+    mediaType: 'img',
+    svg: '',
+    sections: [],
+  },
   {
     name: t('our_robots'),
     creation_date: '',
     source: robotsBG,
-    isVideo: false,
+    mediaType: 'img',
+    svg: '',
     sections: [
       {
         title: t('robots_save_lives'),
         medias: [
           {
             source: markhorSave,
-            isVideo: false,
+            mediaType: 'img',
           },
         ],
       },
@@ -55,7 +62,7 @@ const robots = [
         medias: [
           {
             source: homepageVid,
-            isVideo: true,
+            mediaType: 'video',
           },
         ],
       },
@@ -64,11 +71,11 @@ const robots = [
         medias: [
           {
             source: markhorSpeed,
-            isVideo: true,
+            mediaType: 'video',
           },
           {
             source: markhorStairs,
-            isVideo: true,
+            mediaType: 'video',
           },
         ],
       },
@@ -78,54 +85,9 @@ const robots = [
 </script>
 
 <template>
-  <full-page id="fullpage">
-    <div class="section">
-      <JumbotronVideoComponent :title="$t('our_robots')" :img="robotsBG" />
-    </div>
-    <div class="section section-overlay">
-      <div class="section-medias">
-        <img :src="markhorSave" class="section-image" />
-      </div>
-      <div class="layer">
-        <h1>{{ $t('robots_save_lives') }}</h1>
-      </div>
-    </div>
-    <div class="section section-overlay">
-      <div class="section-medias">
-        <video loop muted playsinline data-autoplay>
-          <source :src="homepageVid" type="video/mp4" />
-        </video>
-      </div>
-      <div class="layer">
-        <h1>{{ $t('robots_perform_with_precision') }}</h1>
-      </div>
-    </div>
-    <div class="section section-overlay">
-      <div class="section-medias">
-        <video
-          class="split-video left-video"
-          loop
-          muted
-          playsinline
-          data-autoplay
-        >
-          <source :src="markhorSpeed" type="video/mp4" />
-        </video>
-        <video
-          class="split-video right-video"
-          loop
-          muted
-          playsinline
-          data-autoplay
-        >
-          <source :src="markhorStairs" type="video/mp4" />
-        </video>
-      </div>
-      <div class="layer">
-        <h1>{{ $t('robots_cross_any_obstacle') }}</h1>
-      </div>
-    </div>
-  </full-page>
+  <RobotsWrapperComponent>
+    <RobotComponent v-for="robot in robots" :key="robot.name" :robot="robot"/>
+  </RobotsWrapperComponent>
 </template>
 
 <style>
