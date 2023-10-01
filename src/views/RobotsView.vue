@@ -25,10 +25,10 @@ export interface Section {
 }
 export interface Robot {
   name: string; // name of the robot in the tab and for the jumbotron
-  creation_date: string;
+  creation_date: string; // Not used
   source: string;
   mediaType: MediaType;
-  svg: string; // used in the tab with the name of the robots
+  svg: string; // used in the tab with the name of the robots // Not Used
   sections: Section[];
 }
 
