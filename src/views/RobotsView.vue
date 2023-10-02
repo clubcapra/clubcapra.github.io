@@ -2,7 +2,6 @@
 import { useI18n } from 'vue-i18n';
 
 // Components
-import RobotsWrapperComponent from '@clubcapra/components/RobotsWrapperComponent.vue';
 import RobotComponent from '@clubcapra/components/RobotComponent.vue';
 
 // Media
@@ -11,6 +10,7 @@ import markhorSave from '@clubcapra/assets/media/markhor_save.jpg';
 import homepageVid from '@clubcapra/assets/media/homepage_vid.mp4';
 import markhorSpeed from '@clubcapra/assets/media/markhor_speed.mp4';
 import markhorStairs from '@clubcapra/assets/media/markhor_stairs.mp4';
+import { onMounted } from 'vue';
 
 const { t } = useI18n();
 
@@ -24,6 +24,7 @@ export interface Section {
   medias: Media[];
 }
 export interface Robot {
+  id: string;
   name: string; // name of the robot in the tab and for the jumbotron
   creation_date: string; // Not used
   source: string;
@@ -34,14 +35,7 @@ export interface Robot {
 
 const robots: Robot[] = [
   {
-    name: 'Test',
-    creation_date: '',
-    source: robotsBG,
-    mediaType: 'img',
-    svg: '',
-    sections: [],
-  },
-  {
+    id: 'Robot-Markhor',
     name: t('our_robots'),
     creation_date: '',
     source: robotsBG,
@@ -81,13 +75,37 @@ const robots: Robot[] = [
       },
     ],
   },
+  {
+    id: 'Robot-Takin',
+    name: 'Takin',
+    creation_date: '',
+    source: robotsBG,
+    mediaType: 'img',
+    svg: '',
+    sections: [],
+  },
 ];
+/* 
+  Scroll the page with the footer before the content of the page,
+  we doesn't want a case where the user scroll the content width the footer still visible
+*/
+onMounted(() => {
+  document
+    .querySelector('.v-application__wrap')
+    .addEventListener('scroll', e => {
+      if (document.querySelector('.v-application__wrap').scrollTop != 0) {
+        document.querySelector('main').classList.add('scrolled');
+      } else {
+        document.querySelector('main').classList.remove('scrolled');
+      }
+    });
+});
 </script>
 
 <template>
-  <RobotsWrapperComponent>
+  <div class="scroll-container">
     <RobotComponent v-for="robot in robots" :key="robot.name" :robot="robot" />
-  </RobotsWrapperComponent>
+  </div>
 </template>
 
 <style>
@@ -178,5 +196,42 @@ const robots: Robot[] = [
 
 main {
   --v-layout-top: 0px !important; /* remove gape when droping */
+}
+
+/*
+  FullPage replacement
+  Dasom Ko, Pure CSS Fullpage Scrolling, https://codepen.io/ds92ko/pen/NWMaZRW
+*/
+
+* {
+  box-sizing: border-box;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container,
+.v-application__wrap {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+section {
+  height: max-content;
+  min-height: 100vh;
+}
+
+.scroll-item {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+main.scrolled,
+main.scrolled .scroll-container {
+  overflow: hidden;
 }
 </style>

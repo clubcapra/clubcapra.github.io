@@ -9,7 +9,7 @@ defineProps<{
 }>();
 </script>
 <template>
-  <div class="section">
+  <section class="section scroll-item">
     <JumbotronVideoComponent
       v-if="robot.mediaType == 'img'"
       :title="robot.name"
@@ -20,11 +20,11 @@ defineProps<{
       :title="robot.name"
       :video="robot.source"
     />
-  </div>
-  <div
+  </section>
+  <section
     v-for="(section, i) in robot.sections"
     :key="i"
-    class="section section-overlay"
+    class="section scroll-item section-overlay"
   >
     <div class="section-medias">
       <template v-for="(media, i) in section.medias" :key="i">
@@ -49,5 +49,5 @@ defineProps<{
     <div class="layer">
       <h1>{{ section.title }}</h1>
     </div>
-  </div>
+  </section>
 </template>
