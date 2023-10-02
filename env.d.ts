@@ -5,9 +5,6 @@
 // Vuetify color fix.
 declare module 'vuetify/lib/util/colors.mjs';
 
-// Fullpage.js fix.
-declare module 'vue-fullpage.js';
-
 // Matomo fix.
 declare module 'vue-matomo';
 

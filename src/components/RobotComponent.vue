@@ -7,11 +7,9 @@ import type { Robot } from '@clubcapra/views/RobotsView.vue';
 defineProps<{
   robot: Robot;
 }>();
-
-const selectedRobot = inject('selectedRobot');
 </script>
 <template>
-  <div v-show="selectedRobot == robot.name" class="section">
+  <div class="section">
     <JumbotronVideoComponent
       v-if="robot.mediaType == 'img'"
       :title="robot.name"
@@ -25,7 +23,6 @@ const selectedRobot = inject('selectedRobot');
   </div>
   <div
     v-for="(section, i) in robot.sections"
-    v-show="selectedRobot == robot.name"
     :key="i"
     class="section section-overlay"
   >
