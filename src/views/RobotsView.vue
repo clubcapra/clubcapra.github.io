@@ -35,8 +35,17 @@ export interface Robot {
 
 const robots: Robot[] = [
   {
+    id: 'Robot-Rove',
+    name: 'Rove',
+    creation_date: '',
+    source: robotsBG,
+    mediaType: 'img',
+    svg: '',
+    sections: [],
+  },
+  {
     id: 'Robot-Markhor',
-    name: t('our_robots'),
+    name: 'Markhor',
     creation_date: '',
     source: robotsBG,
     mediaType: 'img',
@@ -103,6 +112,21 @@ onMounted(() => {
 </script>
 
 <template>
+  <header class="robot-menu">
+    <v-list-item
+        density="compact"
+        :title="t('our_robots')"
+        class="robot-link"
+        />
+    <v-list-item 
+        v-for="(robot, i) in robots"
+        :key="i"
+        :href="'#' + robot.id"
+        density="compact"
+        :title="robot.name"
+        class="robot-link"
+        />
+  </header>
   <div class="scroll-container">
     <RobotComponent v-for="robot in robots" :key="robot.name" :robot="robot" />
   </div>
@@ -198,6 +222,26 @@ main {
   --v-layout-top: 0px !important; /* remove gape when droping */
 }
 
+.robot-menu{
+  position: absolute;
+  display: block;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  padding-top: 48px; /* Navbar height */
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.1);
+}
+.robot-menu * {
+  background: none !important;
+  color: white;
+  .v-list-item__overlay {
+    opacity: none;
+  }
+}
+.robot-menu > *:not(:first-child) {
+  margin-left: 15px;
+}
 /*
   FullPage replacement
   Dasom Ko, Pure CSS Fullpage Scrolling, https://codepen.io/ds92ko/pen/NWMaZRW

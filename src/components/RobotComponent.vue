@@ -12,6 +12,7 @@ defineProps<{
   <section class="section scroll-item">
     <JumbotronVideoComponent
       v-if="robot.mediaType == 'img'"
+      :id="robot.id"
       :title="robot.name"
       :img="robot.source"
     />
