@@ -9,7 +9,7 @@ defineProps<{
 }>();
 </script>
 <template>
-  <section class="section scroll-item">
+  <section class="section scroll-item" :id="robot.id">
     <JumbotronVideoComponent
       v-if="robot.mediaType == 'img'"
       :id="robot.id"
@@ -37,12 +37,12 @@ defineProps<{
           playsinline
           data-autoplay
         >
-          <source :src="media.source" type="video/mp4" />
+          <source :data-src="media.source" type="video/mp4" />
         </video>
         <!-- Image -->
         <img
           v-else-if="media.mediaType == 'img'"
-          :src="media.source"
+          :data-src="media.source"
           class="section-image"
         />
       </template>

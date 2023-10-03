@@ -99,33 +99,65 @@ const robots: Robot[] = [
   we doesn't want a case where the user scroll the content width the footer still visible
 */
 onMounted(() => {
-  document
-    .querySelector('.v-application__wrap')
-    .addEventListener('scroll', e => {
-      if (document.querySelector('.v-application__wrap').scrollTop != 0) {
-        document.querySelector('main').classList.add('scrolled');
-      } else {
-        document.querySelector('main').classList.remove('scrolled');
+  const robotWrap = document.querySelector('.v-application__wrap');
+  const robotMain = document.querySelector('main');
+  const robotScrollContainer = document.querySelector('.scroll-container');
+  robotWrap?.addEventListener('scrollend', e => {
+    if (robotWrap?.scrollTop != 0) {
+      robotMain?.classList.add('scrolled');
+    } else {
+      robotMain?.classList.remove('scrolled');
+    }
+  });
+  robotScrollContainer?.addEventListener('scrollend', e => {
+    const position =
+      Math.floor(
+        robotScrollContainer?.scrollTop / robotScrollContainer?.clientHeight
+      ) + 1;
+    const startingLoadingPosition = Math.max(position - 2, 0);
+    const endingLoadingPosition = startingLoadingPosition + 5;
+    robotScrollContainer
+      .querySelectorAll('.section:nth-child(' + position + ') video')
+      .forEach(video => {
+        video.play();
+      });
+    // Lazy loading
+    robotScrollContainer
+      .querySelectorAll('.section video source')
+      .forEach((source, i) => {
+        if (i >= startingLoadingPosition && i <= endingLoadingPosition) {
+          if (source.src == '') {
+            source.src = source.getAttribute('data-src');
+            source.parentElement?.load();
+          }
+        }
+      });
+    robotScrollContainer.querySelectorAll('.section img').forEach((img, i) => {
+      if (i >= startingLoadingPosition && i <= endingLoadingPosition) {
+        if (img.src == '') {
+          img.src = img.getAttribute('data-src');
+        }
       }
     });
+  });
 });
 </script>
 
 <template>
   <header class="robot-menu">
     <v-list-item
-        density="compact"
-        :title="t('our_robots')"
-        class="robot-link"
-        />
-    <v-list-item 
-        v-for="(robot, i) in robots"
-        :key="i"
-        :href="'#' + robot.id"
-        density="compact"
-        :title="robot.name"
-        class="robot-link"
-        />
+      density="compact"
+      :title="t('our_robots')"
+      class="robot-link"
+    />
+    <v-list-item
+      v-for="(robot, i) in robots"
+      :key="i"
+      :href="'#' + robot.id"
+      density="compact"
+      :title="robot.name"
+      class="robot-link"
+    />
   </header>
   <div class="scroll-container">
     <RobotComponent v-for="robot in robots" :key="robot.name" :robot="robot" />
@@ -222,7 +254,7 @@ main {
   --v-layout-top: 0px !important; /* remove gape when droping */
 }
 
-.robot-menu{
+.robot-menu {
   position: absolute;
   display: block;
   top: 0px;
