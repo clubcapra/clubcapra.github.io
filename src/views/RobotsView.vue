@@ -98,49 +98,49 @@ const robots: Robot[] = [
   Scroll the page with the footer before the content of the page,
   we doesn't want a case where the user scroll the content width the footer still visible
 */
-onMounted(() => {
-  const robotWrap = document.querySelector('.v-application__wrap');
-  const robotMain = document.querySelector('main');
-  const robotScrollContainer = document.querySelector('.scroll-container');
-  robotWrap?.addEventListener('scrollend', e => {
-    if (robotWrap?.scrollTop != 0) {
-      robotMain?.classList.add('scrolled');
-    } else {
-      robotMain?.classList.remove('scrolled');
-    }
-  });
-  robotScrollContainer?.addEventListener('scrollend', e => {
-    const position =
-      Math.floor(
-        robotScrollContainer?.scrollTop / robotScrollContainer?.clientHeight
-      ) + 1;
-    const startingLoadingPosition = Math.max(position - 2, 0);
-    const endingLoadingPosition = startingLoadingPosition + 5;
-    robotScrollContainer
-      .querySelectorAll('.section:nth-child(' + position + ') video')
-      .forEach(video => {
-        video.play();
-      });
-    // Lazy loading
-    robotScrollContainer
-      .querySelectorAll('.section video source')
-      .forEach((source, i) => {
-        if (i >= startingLoadingPosition && i <= endingLoadingPosition) {
-          if (source.src == '') {
-            source.src = source.getAttribute('data-src');
-            source.parentElement?.load();
-          }
-        }
-      });
-    robotScrollContainer.querySelectorAll('.section img').forEach((img, i) => {
-      if (i >= startingLoadingPosition && i <= endingLoadingPosition) {
-        if (img.src == '') {
-          img.src = img.getAttribute('data-src');
-        }
-      }
-    });
-  });
-});
+// onMounted(() => {
+//   const robotWrap = document.querySelector('.v-application__wrap');
+//   const robotMain = document.querySelector('main');
+//   const robotScrollContainer = document.querySelector('.scroll-container');
+//   robotWrap?.addEventListener('scrollend', e => {
+//     if (robotWrap?.scrollTop != 0) {
+//       robotMain?.classList.add('scrolled');
+//     } else {
+//       robotMain?.classList.remove('scrolled');
+//     }
+//   });
+//   robotScrollContainer?.addEventListener('scrollend', e => {
+//     const position =
+//       Math.floor(
+//         robotScrollContainer?.scrollTop / robotScrollContainer?.clientHeight
+//       ) + 1;
+//     const startingLoadingPosition = Math.max(position - 2, 0);
+//     const endingLoadingPosition = startingLoadingPosition + 5;
+//     robotScrollContainer
+//       .querySelectorAll('.section:nth-child(' + position + ') video')
+//       .forEach(video => {
+//         video.play();
+//       });
+//     // Lazy loading
+//     robotScrollContainer
+//       .querySelectorAll('.section video source')
+//       .forEach((source, i) => {
+//         if (i >= startingLoadingPosition && i <= endingLoadingPosition) {
+//           if (source.src == '') {
+//             source.src = source.getAttribute('data-src');
+//             source.parentElement?.load();
+//           }
+//         }
+//       });
+//     robotScrollContainer.querySelectorAll('.section img').forEach((img, i) => {
+//       if (i >= startingLoadingPosition && i <= endingLoadingPosition) {
+//         if (img.src == '') {
+//           img.src = img.getAttribute('data-src');
+//         }
+//       }
+//     });
+//   });
+// });
 </script>
 
 <template>
@@ -215,7 +215,7 @@ onMounted(() => {
   font-size: 3.5rem;
 }
 
-.section-medias {
+.robot-section-medias {
   position: absolute;
   display: flex;
   bottom: 0;
@@ -230,8 +230,7 @@ onMounted(() => {
   flex-wrap: wrap;
   flex-direction: column;
 }
-
-.section-medias > * {
+.robot-section-medias > * {
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -239,7 +238,7 @@ onMounted(() => {
   flex-grow: 1;
   overflow-y: hidden;
 }
-.section-medias > video {
+.robot-section-medias > video {
   object-fit: cover;
 }
 
@@ -253,14 +252,14 @@ onMounted(() => {
 main {
   --v-layout-top: 0px !important; /* remove gape when droping */
 }
-
+/*
 .robot-menu {
   position: absolute;
   display: block;
   top: 0px;
   right: 0px;
   height: 100vh;
-  padding-top: 48px; /* Navbar height */
+  padding-top: 48px; /* Navbar height
   z-index: 50;
   background: rgba(0, 0, 0, 0.1);
 }
@@ -274,15 +273,17 @@ main {
 .robot-menu > *:not(:first-child) {
   margin-left: 15px;
 }
+*/
+
 /*
   FullPage replacement
   Dasom Ko, Pure CSS Fullpage Scrolling, https://codepen.io/ds92ko/pen/NWMaZRW
 */
-
+/*
 * {
   box-sizing: border-box;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge 
+  scrollbar-width: none; /* Firefox 
 }
 
 ::-webkit-scrollbar {
@@ -310,4 +311,5 @@ main.scrolled,
 main.scrolled .scroll-container {
   overflow: hidden;
 }
+*/
 </style>

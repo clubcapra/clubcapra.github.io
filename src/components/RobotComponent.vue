@@ -27,7 +27,7 @@ defineProps<{
     :key="i"
     class="section scroll-item section-overlay"
   >
-    <div class="section-medias">
+    <div class="section-medias robot-section-medias">
       <template v-for="(media, i) in section.medias" :key="i">
         <!-- Video -->
         <video
