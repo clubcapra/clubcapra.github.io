@@ -5,6 +5,25 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 
 // Media
 import codebg from '@clubcapra/assets/media/codebg.jpg';
+
+const codeLanguages = [
+  {
+    name: 'C++',
+    percent: 70,
+  },
+  {
+    name: 'TypeScript',
+    percent: 20,
+  },
+  {
+    name: 'Python',
+    percent: 5,
+  },
+  {
+    name: 'C',
+    percent: 5,
+  },
+];
 </script>
 
 <template>
@@ -23,71 +42,23 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
         <div class="row">
           <div class="col-md-12" data-aos="fade-right">
             <!-- Skill Item -->
-            <div class="skill-item">
+            <div
+              v-for="(codeLanguage, i) of codeLanguages"
+              :key="i"
+              class="skill-item"
+            >
               <div class="d-flex justify-content-between">
-                <p>C++</p>
-                <p class="text-muted">70%</p>
+                <p>{{ codeLanguage.name }}</p>
+                <p class="text-muted">{{ codeLanguage.percent }}%</p>
               </div>
-              <div class="progress" data-percent="70%">
+              <div class="progress" :data-percent="codeLanguage.percent">
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  aria-valuenow="70"
+                  :aria-valuenow="codeLanguage.percent"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 0"
-                />
-              </div>
-            </div>
-            <!-- End Skill Item -->
-            <!-- Skill Item -->
-            <div class="skill-item">
-              <div class="d-flex justify-content-between">
-                <p>TypeScript</p>
-                <p class="text-muted">20%</p>
-              </div>
-              <div class="progress" data-percent="20%">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="20"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 0"
-                />
-              </div>
-            </div>
-            <!-- End Skill Item -->
-            <!-- Skill Item -->
-            <div class="skill-item">
-              <div class="d-flex justify-content-between">
-                <p>Python</p>
-                <p class="text-muted">5%</p>
-              </div>
-              <div class="progress" data-percent="5%">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="5"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 0"
-                />
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="d-flex justify-content-between">
-                <p>C</p>
-                <p class="text-muted">5%</p>
-              </div>
-              <div class="progress" data-percent="5%">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="5"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 0"
+                  :style="`width: ${codeLanguage.percent}%`"
                 />
               </div>
             </div>
