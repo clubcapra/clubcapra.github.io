@@ -32,7 +32,11 @@ if (props.img) {
 </script>
 
 <template>
-  <div ref="mainElementRef" class="jumbotron d-flex align-items-center">
+  <div
+    ref="mainElementRef"
+    :class="isContent ? 'jumbotron-content' : 'jumbotron-title'"
+    class="jumbotron d-flex align-items-center"
+  >
     <h1 class="text-md-h1 mb-4">{{ title }}</h1>
     <video v-if="video" class="bg-video" preload="true" autoplay muted>
       <source :src="video" type="video/mp4" />
@@ -60,7 +64,6 @@ if (props.img) {
   position: absolute;
   display: block;
   content: '';
-  opacity: 0.8;
   top: 0;
   bottom: 0;
   left: 0;
@@ -77,13 +80,27 @@ if (props.img) {
   line-height: 0.9;
   font-weight: bold;
   display: inline-block;
-  border: 15px solid #fff;
   padding: 30px;
-  opacity: 0;
-  animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
-  animation-delay: 0.2s;
   z-index: 1;
   margin-left: auto;
   margin-right: auto;
+}
+.jumbotron-title::before {
+  opacity: 0.8;
+}
+.jumbotron-content::before {
+  opacity: 0.5;
+}
+
+.jumbotron-title > h1 {
+  /* Fading animation */
+  opacity: 0;
+  animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+  animation-delay: 0.2s;
+
+  border: 15px solid #fff;
+}
+.jumbotron-content > h1 {
+  font-size: 3.5rem !important;
 }
 </style>
