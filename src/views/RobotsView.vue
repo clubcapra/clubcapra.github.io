@@ -15,19 +15,19 @@ import markhorStairs from '@clubcapra/assets/media/markhor_stairs.mp4';
     <div class="section">
       <JumbotronVideoComponent :title="$t('our_robots')" :img="robotsBG" />
     </div>
-    <div class="section section-overlay">
-      <img :src="markhorSave" class="section-image" />
-      <div class="layer">
-        <h1>{{ $t('robots_save_lives') }}</h1>
-      </div>
+    <div class="section">
+      <JumbotronVideoComponent
+        :title="$t('robots_save_lives')"
+        :img="markhorSave"
+        :is-content="true"
+      />
     </div>
-    <div class="section section-overlay">
-      <video loop muted playsinline data-autoplay>
-        <source :src="homepageVid" type="video/mp4" />
-      </video>
-      <div class="layer">
-        <h1>{{ $t('robots_perform_with_precision') }}</h1>
-      </div>
+    <div class="section">
+      <JumbotronVideoComponent
+        :title="$t('robots_perform_with_precision')"
+        :video="homepageVid"
+        :is-content="true"
+      />
     </div>
     <div class="section section-overlay">
       <video
