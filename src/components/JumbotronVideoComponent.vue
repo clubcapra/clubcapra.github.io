@@ -12,6 +12,7 @@ const props = defineProps<{
   videos?: string[];
   /**
    * Set the orientation of the spliting.
+   * For the split module
    * @defaultValue `'vertical'`
    */
   splitOrientation?: 'horizontal' | 'vertical';
@@ -37,21 +38,22 @@ console.log(splitOrientationToUse);
 <template>
   <div ref="mainElementRef" class="jumbotron d-flex align-items-center">
     <h1 class="text-md-h1 mb-4">{{ title }}</h1>
-    <video
-      v-for="(video, i) in videos"
-      :key="i"
-      class="bg-video"
-      preload="true"
-      autoplay
-      muted
-      loop
-    >
-      <source :src="video" type="video/mp4" />
-    </video>
+    <div :class="`split split-${splitOrientationToUse}`">
+      <video
+        v-for="(video, i) in videos"
+        :key="i"
+        preload="true"
+        autoplay
+        muted
+        loop
+      >
+        <source :src="video" type="video/mp4" />
+      </video>
+    </div>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 .jumbotron {
   color: #fff;
   padding-top: 80px;
@@ -83,7 +85,9 @@ console.log(splitOrientationToUse);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, #000, #121212);
 }
-
+.jumbotron > * {
+  z-index: 0;
+}
 .jumbotron > h1 {
   line-height: 0.9;
   font-weight: bold;
@@ -97,4 +101,14 @@ console.log(splitOrientationToUse);
   margin-left: auto;
   margin-right: auto;
 }
+
+.split {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@import '@clubcapra/styles/split.scss';
 </style>
