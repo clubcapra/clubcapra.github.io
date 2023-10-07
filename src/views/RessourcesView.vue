@@ -35,7 +35,7 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
                   aria-valuenow="70"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 0"
+                  style="width: 70%"
                 />
               </div>
             </div>
@@ -53,7 +53,7 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
                   aria-valuenow="20"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 0"
+                  style="width: 20%"
                 />
               </div>
             </div>
@@ -71,7 +71,7 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
                   aria-valuenow="5"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 0"
+                  style="width: 5%"
                 />
               </div>
             </div>
@@ -87,7 +87,7 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
                   aria-valuenow="5"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 0"
+                  style="width: 5%"
                 />
               </div>
             </div>
