@@ -11,6 +11,11 @@ const props = defineProps<{
    */
   videos?: string[];
   /**
+   * Set the orientation of the spliting.
+   * @defaultValue `'vertical'`
+   */
+  splitOrientation?: 'horizontal' | 'vertical';
+  /**
    * If set, the main element will have a background image.
    */
   img?: string;
@@ -24,6 +29,9 @@ if (props.img) {
     }
   });
 }
+const splitOrientationToUse =
+  props.splitOrientation != undefined ? props.splitOrientation : 'vertical';
+console.log(splitOrientationToUse);
 </script>
 
 <template>
