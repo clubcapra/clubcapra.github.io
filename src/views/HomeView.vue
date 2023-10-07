@@ -14,7 +14,7 @@ import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.p
 </script>
 
 <template>
-  <JumbotronVideoComponent title="CAPRA" :video="introTrimmed" />
+  <JumbotronVideoComponent title="CAPRA" :videos="[introTrimmed]" />
 
   <!-- Missions -->
   <section class="featurettes">

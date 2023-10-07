@@ -9,7 +9,7 @@ const props = defineProps<{
   /**
    * If set, the main element will have a background video.
    */
-  video?: string;
+  videos?: string[];
   /**
    * If set, the main element will have a background image.
    */
@@ -29,7 +29,15 @@ if (props.img) {
 <template>
   <div ref="mainElementRef" class="jumbotron d-flex align-items-center">
     <h1 class="text-md-h1 mb-4">{{ title }}</h1>
+    <video
+      v-for="(video, i) in videos"
+      :key="i"
+      class="bg-video"
+      preload="true"
+      autoplay
+      muted
     <video v-if="video" class="bg-video" preload="true" autoplay muted>
+    >
       <source :src="video" type="video/mp4" />
     </video>
   </div>
