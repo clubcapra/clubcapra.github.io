@@ -14,6 +14,11 @@ const props = defineProps<{
    * If set, the main element will have a background image.
    */
   img?: string;
+  /**
+   * If set and true, the opacity of the overlay and the size the text will change.
+   * To show the content.
+   */
+  isContent?:  boolean;
 }>();
 
 const mainElementRef = ref<HTMLElement | null>(null);
