@@ -29,28 +29,11 @@ import markhorStairs from '@clubcapra/assets/media/markhor_stairs.mp4';
         <h1>{{ $t('robots_perform_with_precision') }}</h1>
       </div>
     </div>
-    <div class="section section-overlay">
-      <video
-        class="split-video left-video"
-        loop
-        muted
-        playsinline
-        data-autoplay
-      >
-        <source :src="markhorSpeed" type="video/mp4" />
-      </video>
-      <video
-        class="split-video right-video"
-        loop
-        muted
-        playsinline
-        data-autoplay
-      >
-        <source :src="markhorStairs" type="video/mp4" />
-      </video>
-      <div class="layer">
-        <h1>{{ $t('robots_cross_any_obstacle') }}</h1>
-      </div>
+    <div class="section">
+      <JumbotronVideoComponent
+        :title="$t('robots_cross_any_obstacle')"
+        :videos="[markhorSpeed, markhorStairs]"
+      />
     </div>
   </full-page>
 </template>
