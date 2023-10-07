@@ -36,7 +36,7 @@ if (props.img) {
       preload="true"
       autoplay
       muted
-    <video v-if="video" class="bg-video" preload="true" autoplay muted>
+      loop
     >
       <source :src="video" type="video/mp4" />
     </video>
