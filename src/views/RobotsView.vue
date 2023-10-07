@@ -115,15 +115,7 @@ video {
   object-fit: cover;
   z-index: 3;
 }
-.split-video {
-  width: 50%;
-}
-.left-video {
-  left: 0;
-}
-.right-video {
-  right: 0;
-}
+
 .section {
   text-align: center;
   -webkit-transform: translate3d(0, 0, 0);
