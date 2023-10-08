@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import codeLanguages from '@clubcapra/data/GithubStats.json';
+
 // Components
 import BibBaseComponent from '@clubcapra/components/BibBaseComponent.vue';
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
@@ -6,24 +8,24 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 // Media
 import codebg from '@clubcapra/assets/media/codebg.jpg';
 
-const codeLanguages = [
-  {
-    name: 'C++',
-    percent: 70,
-  },
-  {
-    name: 'TypeScript',
-    percent: 20,
-  },
-  {
-    name: 'Python',
-    percent: 5,
-  },
-  {
-    name: 'C',
-    percent: 5,
-  },
-];
+// const codeLanguages = [
+//   {
+//     name: 'C++',
+//     percent: 70,
+//   },
+//   {
+//     name: 'TypeScript',
+//     percent: 20,
+//   },
+//   {
+//     name: 'Python',
+//     percent: 5,
+//   },
+//   {
+//     name: 'C',
+//     percent: 5,
+//   },
+// ];
 </script>
 
 <template>
