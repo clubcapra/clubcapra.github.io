@@ -38,3 +38,4 @@ coverage/
 
 # Auto generated files from vite
 src/Meta.ts
+src/data/GithubStats.json
