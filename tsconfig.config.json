@@ -3,7 +3,8 @@
   "extends": "@vue/tsconfig/tsconfig.json",
   "include": [
     "vite.config.*",
-    ".eslintrc"
+    ".eslintrc",
+    "./GithubStats.ts"
   ],
   "compilerOptions": {
     "moduleResolution": "Bundler",
