@@ -49,42 +49,34 @@ const pages: DrawerMenuItem[] = [
     to: { name: 'contact' },
   },
 ];
-
-/**
- * Checks if the user is accessing the website from a mobile device.
- * @returns True if the user is accessing the website from a mobile device, false otherwise.
- */
-function isMobile() {
-  const regex =
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-  return regex.test(navigator.userAgent);
-}
 </script>
 
 <template>
-  <v-navigation-drawer v-model="drawer">
-    <DrawerComponent :items="pages" />
-  </v-navigation-drawer>
-
+  <div class="d-flex d-md-none">
+    <v-navigation-drawer v-model="drawer" temporary>
+      <DrawerComponent :items="pages" />
+    </v-navigation-drawer>
+  </div>
   <v-app-bar density="compact" color="red">
-    <v-app-bar-nav-icon @click="drawer = !drawer" />
+    <v-app-bar-nav-icon class="d-flex d-md-none" @click="drawer = !drawer" />
 
-    <v-img
-      :src="capraLogoWhite"
-      alt="Capra Logo"
-      max-height="128"
-      max-width="128"
-    />
-
-    <v-spacer />
-    <template v-if="!isMobile()">
-      <v-list-item
-        v-for="(page, i) in pages"
-        :key="i"
-        :to="page.to"
-        density="compact"
-        :title="page.title"
+    <v-spacer style="padding: 2px" class="pa-md-15">
+      <v-img
+        :src="capraLogoWhite"
+        alt="Capra Logo"
+        max-height="128"
+        max-width="128"
+        min-width="128"
       />
-    </template>
+    </v-spacer>
+
+    <v-list-item
+      v-for="(page, i) in pages"
+      :key="i"
+      class="d-none d-md-flex"
+      :to="page.to"
+      density="compact"
+      :title="page.title"
+    />
   </v-app-bar>
 </template>
