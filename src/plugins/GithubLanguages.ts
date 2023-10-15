@@ -1,4 +1,14 @@
 import { organisation } from './GithubStats';
+
+export interface LanguagesDictionnary {
+  [x: string]: number;
+}
+export interface Language {
+  name: string;
+  bytes: number;
+  percent: number;
+}
+
 export default class GithubLanguages {
   static languageRequestUrl =
     'https://api.github.com/repos/{ORGANISATION}/{REPO}/languages';
@@ -20,7 +30,7 @@ export default class GithubLanguages {
   public static async getLanguagesDictionnary() {
     const languagesDictionnaryPromises: Promise<any[]>[] = [];
     let allReqestAreFulfilled = true;
-    const totalLanguagesDictionnary: { [x: string]: number } = {};
+    const totalLanguagesDictionnary: LanguagesDictionnary = {};
 
     // Check status and convert response to object
     const languageResponses = await Promise.all(this.languageRequests);
@@ -78,7 +88,7 @@ export default class GithubLanguages {
   }
 
   public static async getLanguagesArray() {
-    const languageArray = [];
+    const languageArray: Language[] = [];
     let totalBytes = 0;
     let index = 0;
     const languagesDictionnary = await this.getLanguagesDictionnary();
