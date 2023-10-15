@@ -5,7 +5,7 @@ GithubLanguages.addLanguagesFromRepo('clubcapra.github.io');
 GithubLanguages.addLanguagesFromRepo('capra_web_ui');
 GithubLanguages.addLanguagesFromRepo('markhor');
 GithubLanguages.addLanguagesFromRepo('ovis');
-GithubLanguages.addLanguagesFromRepo('test');
+GithubLanguages.addLanguagesFromRepo('test'); // this repo doesn't exist, it was added to test a case of internet outage or a repo deletion
 
 
 let languagesArray = await GithubLanguages.getLanguagesArray();
