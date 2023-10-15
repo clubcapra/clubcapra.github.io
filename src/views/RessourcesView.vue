@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import codeLanguages from '@clubcapra/data/GithubStats.json';
-
+// import githubStats from '@clubcapra/assets/GithubStats.json';
+import GithubStats from '@clubcapra/plugins/GithubStats';
 // Components
 import BibBaseComponent from '@clubcapra/components/BibBaseComponent.vue';
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
@@ -45,7 +45,7 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
           <div class="col-md-12" data-aos="fade-right">
             <!-- Skill Item -->
             <div
-              v-for="(codeLanguage, i) of codeLanguages"
+              v-for="(codeLanguage, i) of GithubStats.codeLanguages"
               :key="i"
               class="skill-item"
             >

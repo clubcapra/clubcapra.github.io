@@ -3,12 +3,12 @@
   "extends": "@vue/tsconfig/tsconfig.json",
   "include": [
     "vite.config.*",
-    ".eslintrc",
-    "./GithubStats.ts"
+    ".eslintrc"
   ],
   "compilerOptions": {
     "moduleResolution": "Bundler",
     "composite": true,
+    "resolveJsonModule": true,
     "types": ["node"]
   }
 }

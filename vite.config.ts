@@ -1,15 +1,10 @@
 import fs from 'node:fs';
 import { fileURLToPath, URL } from 'node:url';
-
 import vue from '@vitejs/plugin-vue';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig, type UserConfig } from 'vite';
 import { checker } from 'vite-plugin-checker';
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
-
-
-  // Load Github stats
-  import codeLanguages from './GithubStats';
 
 /**
  * Vite Configure
@@ -120,11 +115,5 @@ const meta: MetaInterface = {
 export default meta;
 `
   );
-
-  fs.writeFileSync(
-    './src/data/GithubStats.json',
-    JSON.stringify(codeLanguages)
-  );
-
   return config;
 });
