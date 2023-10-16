@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-12 d-flex align-items-center" />
         <div class="col-lg-4 col-md-12 d-flex align-items-center">
-          <p class="mx-auto text-center mb-0">&copy; Club Capra 2022</p>
+          <p class="mx-auto text-center mb-0">&copy; Club Capra 2023</p>
         </div>
       </div>
       <div class="row">
