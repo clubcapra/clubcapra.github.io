@@ -8,9 +8,7 @@ export class GithubStats {
    * Fetch the stats from the json file
    */
   public async fetchStats(): Promise<Record<string, number>[]> {
-    const data = await import('@clubcapra/assets/GithubStats.json', {
-      assert: { type: 'json' },
-    });
+    const data = await import('@clubcapra/assets/GithubStats.json');
     return data.default as unknown as Record<string, number>[];
   }
 
