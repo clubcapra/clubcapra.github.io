@@ -1,6 +1,6 @@
 <script setup lang="ts">
-// import githubStats from '@clubcapra/assets/GithubStats.json';
-import GithubStats from '@clubcapra/plugins/GithubStats';
+import { onMounted, ref } from 'vue';
+import { GithubStats } from '@clubcapra/utils/GithubStats';
 // Components
 import BibBaseComponent from '@clubcapra/components/BibBaseComponent.vue';
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
@@ -8,24 +8,16 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 // Media
 import codebg from '@clubcapra/assets/media/codebg.jpg';
 
-// const codeLanguages = [
-//   {
-//     name: 'C++',
-//     percent: 70,
-//   },
-//   {
-//     name: 'TypeScript',
-//     percent: 20,
-//   },
-//   {
-//     name: 'Python',
-//     percent: 5,
-//   },
-//   {
-//     name: 'C',
-//     percent: 5,
-//   },
-// ];
+const languages = ref();
+onMounted(async () => {
+  const githubStats = new GithubStats();
+
+  const stats = await githubStats.fetchStats();
+  const mergedStats = githubStats.mergeStats(stats);
+  const parsedStats = githubStats.parseStats(mergedStats);
+
+  languages.value = parsedStats;
+});
 </script>
 
 <template>
@@ -45,7 +37,7 @@ import codebg from '@clubcapra/assets/media/codebg.jpg';
           <div class="col-md-12" data-aos="fade-right">
             <!-- Skill Item -->
             <div
-              v-for="(codeLanguage, i) of GithubStats.codeLanguages"
+              v-for="(codeLanguage, i) of languages"
               :key="i"
               class="skill-item"
             >
