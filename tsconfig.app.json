@@ -18,6 +18,7 @@
     "module": "ESNext",
     "composite": true,
     "resolvePackageJsonExports": false,
+    "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
       "@clubcapra/*": [
