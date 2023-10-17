@@ -16,7 +16,9 @@ onMounted(async () => {
   const mergedStats = githubStats.mergeStats(stats);
   const parsedStats = githubStats.parseStats(mergedStats);
 
-  languages.value = parsedStats;
+  const filteredStats = parsedStats.filter(ps => ps.percent > 0);
+  const orderedStats = filteredStats.sort((a, b) => b.percent - a.percent); // percent desc
+  languages.value = orderedStats;
 });
 </script>
 
