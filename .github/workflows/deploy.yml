@@ -41,6 +41,8 @@ jobs:
         run: |
           echo "VITE_MATOMO_INSTANCE_URL=${{ vars.MATOMO_INSTANCE_URL }}" >> .env.local
           echo "VITE_MATOMO_SITE_ID=${{ vars.MATOMO_SITE_ID }}" >> .env.local
+      - name: Update githubStats
+        run: ./githubStats.sh clubcapra.github.io capra_web_ui ovis markhor > ./src/assets/GithubStats.json
       - name: Build
         run: |
           npm run build
