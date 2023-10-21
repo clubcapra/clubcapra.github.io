@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import { fileURLToPath, URL } from 'node:url';
+
 import vue from '@vitejs/plugin-vue';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig, type UserConfig } from 'vite';
@@ -115,5 +116,6 @@ const meta: MetaInterface = {
 export default meta;
 `
   );
+ 
   return config;
 });
