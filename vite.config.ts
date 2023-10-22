@@ -116,6 +116,6 @@ const meta: MetaInterface = {
 export default meta;
 `
   );
- 
+
   return config;
 });
