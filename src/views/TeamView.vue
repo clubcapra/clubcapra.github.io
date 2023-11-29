@@ -37,25 +37,20 @@ const administration: Member[] = [
     title: 'Capitaine',
   },
   {
-    name: 'Bonzly Noël',
-    program: 'Génie Mécanique',
-    title: 'Co-Capitaine',
-  },
-  {
     name: 'William Jarry',
     program: 'Génie Logiciel',
     title: 'Co-Capitaine',
+  },
+  {
+    name: 'Mathieu Salois',
+    program: 'Génie Logiciel',
+    title: 'Trésorier & Co-Capitaine',
   },
   {
     name: 'Benoit Malenfant',
     img: ben,
     program: 'Génie Électrique',
     title: 'Directeur Technique',
-  },
-  {
-    name: 'Mathieu Salois',
-    program: 'Génie Logiciel',
-    title: 'Trésorier',
   },
   {
     name: 'Guy-Philippe Nadon',
@@ -76,9 +71,12 @@ const mechanical: Member[] = [
     title: 'Chef Mécanique',
   },
   {
+    name: 'Bonzly Noël',
+    program: 'Génie Mécanique',
+  },
+  {
     name: 'Noémie Godbout',
     program: 'Génie de la Production Automatisée',
-    title: 'Chef Mécanique',
   },
   {
     name: 'Maxime Bernard',
@@ -86,14 +84,17 @@ const mechanical: Member[] = [
     program: 'Génie Mécanique',
   },
   {
-    name: 'Gabriel Rondeau-Bouvrette',
-    img: gabrb,
-    program: 'Génie Mécanique',
-  },
-  {
     name: 'Maxime Rolland',
     img: maxrolland,
     program: 'Génie de la Production Automatisée',
+  },
+  {
+    name: 'William Zamudio-Turcotte',
+    program: 'Génie de la Production Automatisée',
+  },
+  {
+    name: 'Pierre-Luc Villeneuve',
+    program: 'Génie Mécanique',
   },
 ];
 const electrical: Member[] = [
@@ -104,13 +105,25 @@ const electrical: Member[] = [
     title: 'Chef Électrique',
   },
   {
-    name: 'Asma Djoual',
-    program: 'Génie Électrique',
-  },
-  {
     name: 'Léo-Daniel Gosselin',
     img: leo,
     program: 'Génie de la Production Automatisée',
+  },
+  {
+    name: 'Antoine Maltais',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'Christian Bourget',
+    program: 'Génie de la Production Automatisée',
+  },
+  {
+    name: 'Papa Amadou Sall',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'Étienne Le Guerrier',
+    program: 'Génie Électrique',
   },
 ];
 const software: Member[] = [
@@ -122,10 +135,6 @@ const software: Member[] = [
   {
     name: 'Marc-Olivier Champagne',
     img: marco,
-    program: 'Génie Logiciel',
-  },
-  {
-    name: 'Michael Gagnon',
     program: 'Génie Logiciel',
   },
   {
@@ -145,6 +154,26 @@ const software: Member[] = [
   {
     name: 'Alexis Martin',
     img: alexis,
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Jacob Clermont',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'Denis Turk',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Iliana De Carufel',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Raphaël Vigneault',
+    program: 'Génie De La Production Automatisée',
+  },
+  {
+    name: 'Suzon Orlando',
     program: 'Génie Logiciel',
   },
 ];
