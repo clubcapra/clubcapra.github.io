@@ -13,7 +13,6 @@ import david from '@clubcapra/assets/media/team/david.jpg';
 import ben from '@clubcapra/assets/media/team/ben.jpg';
 import kev from '@clubcapra/assets/media/team/kev.jpg';
 import maxb from '@clubcapra/assets/media/team/maxb.jpg';
-import gabrb from '@clubcapra/assets/media/team/gabrb.jpg';
 import maxrolland from '@clubcapra/assets/media/team/maxrolland.jpg';
 import amber from '@clubcapra/assets/media/team/amber.jpg';
 import leo from '@clubcapra/assets/media/team/leo.jpg';
@@ -37,25 +36,20 @@ const administration: Member[] = [
     title: 'Capitaine',
   },
   {
-    name: 'Bonzly Noël',
-    program: 'Génie Mécanique',
-    title: 'Co-Capitaine',
-  },
-  {
     name: 'William Jarry',
     program: 'Génie Logiciel',
     title: 'Co-Capitaine',
+  },
+  {
+    name: 'Mathieu Salois',
+    program: 'Génie Logiciel',
+    title: 'Trésorier & Co-Capitaine',
   },
   {
     name: 'Benoit Malenfant',
     img: ben,
     program: 'Génie Électrique',
     title: 'Directeur Technique',
-  },
-  {
-    name: 'Mathieu Salois',
-    program: 'Génie Logiciel',
-    title: 'Trésorier',
   },
   {
     name: 'Guy-Philippe Nadon',
@@ -76,24 +70,30 @@ const mechanical: Member[] = [
     title: 'Chef Mécanique',
   },
   {
+    name: 'Bonzly Noël',
+    program: 'Génie Mécanique',
+  },
+  {
     name: 'Noémie Godbout',
     program: 'Génie de la Production Automatisée',
-    title: 'Chef Mécanique',
   },
   {
     name: 'Maxime Bernard',
     img: maxb,
-    program: 'Génie Mécanique',
-  },
-  {
-    name: 'Gabriel Rondeau-Bouvrette',
-    img: gabrb,
-    program: 'Génie Mécanique',
+    program: 'Maitrise en Génie de la Production Automatisée',
   },
   {
     name: 'Maxime Rolland',
     img: maxrolland,
     program: 'Génie de la Production Automatisée',
+  },
+  {
+    name: 'William Zamudio-Turcotte',
+    program: 'Génie de la Production Automatisée',
+  },
+  {
+    name: 'Pierre-Luc Villeneuve',
+    program: 'Génie Mécanique',
   },
 ];
 const electrical: Member[] = [
@@ -104,13 +104,33 @@ const electrical: Member[] = [
     title: 'Chef Électrique',
   },
   {
-    name: 'Asma Djoual',
-    program: 'Génie Électrique',
-  },
-  {
     name: 'Léo-Daniel Gosselin',
     img: leo,
     program: 'Génie de la Production Automatisée',
+  },
+  {
+    name: 'Antoine Maltais',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'Christian Bourget',
+    program: 'Génie de la Production Automatisée',
+  },
+  {
+    name: 'Papa Amadou Sall',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'Étienne Le Guerrier',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'David Blier',
+    program: 'Génie De La Production Automatisée',
+  },
+  {
+    name: 'Jordan Morinville',
+    program: 'Génie Électrique',
   },
 ];
 const software: Member[] = [
@@ -122,10 +142,6 @@ const software: Member[] = [
   {
     name: 'Marc-Olivier Champagne',
     img: marco,
-    program: 'Génie Logiciel',
-  },
-  {
-    name: 'Michael Gagnon',
     program: 'Génie Logiciel',
   },
   {
@@ -145,6 +161,26 @@ const software: Member[] = [
   {
     name: 'Alexis Martin',
     img: alexis,
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Jacob Clermont',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'Denis Turk',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Iliana De Carufel',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Raphaël Vigneault',
+    program: 'Génie De La Production Automatisée',
+  },
+  {
+    name: 'Suzon Orlando',
     program: 'Génie Logiciel',
   },
 ];
