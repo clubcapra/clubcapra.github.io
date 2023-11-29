@@ -13,7 +13,6 @@ import david from '@clubcapra/assets/media/team/david.jpg';
 import ben from '@clubcapra/assets/media/team/ben.jpg';
 import kev from '@clubcapra/assets/media/team/kev.jpg';
 import maxb from '@clubcapra/assets/media/team/maxb.jpg';
-import gabrb from '@clubcapra/assets/media/team/gabrb.jpg';
 import maxrolland from '@clubcapra/assets/media/team/maxrolland.jpg';
 import amber from '@clubcapra/assets/media/team/amber.jpg';
 import leo from '@clubcapra/assets/media/team/leo.jpg';
