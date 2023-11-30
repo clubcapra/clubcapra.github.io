@@ -80,7 +80,7 @@ const mechanical: Member[] = [
   {
     name: 'Maxime Bernard',
     img: maxb,
-    program: 'Génie Mécanique',
+    program: 'Maitrise en Génie de la Production Automatisée',
   },
   {
     name: 'Maxime Rolland',
@@ -122,6 +122,14 @@ const electrical: Member[] = [
   },
   {
     name: 'Étienne Le Guerrier',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'David Blier',
+    program: 'Génie De La Production Automatisée',
+  },
+  {
+    name: 'Jordan Morinville',
     program: 'Génie Électrique',
   },
 ];
