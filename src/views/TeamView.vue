@@ -165,7 +165,7 @@ const software: Member[] = [
   },
   {
     name: 'Jacob Clermont',
-    program: 'Génie Électrique',
+    program: 'Génie Logiciel',
   },
   {
     name: 'Denis Turk',
