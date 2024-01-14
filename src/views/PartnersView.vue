@@ -6,7 +6,6 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 import planPartenariat from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
 
 // Partners logos
-import cgLogoCir from '@clubcapra/assets/media/partners/CG_LOGO_CIR.png';
 import hsLogoCouleur from '@clubcapra/assets/media/partners/HS_logo_couleur.png';
 import ixiasoftMadcapLogoRgbC from '@clubcapra/assets/media/partners/IXIASOFT-Madcap-logo-RGB-C.jpg';
 import EtsTypoGrise from '@clubcapra/assets/media/partners/Logo_ETS_TypoGrise_D_EN.png';
@@ -15,6 +14,7 @@ import altium from '@clubcapra/assets/media/partners/altium.svg';
 import automatech from '@clubcapra/assets/media/partners/automatech.png';
 import goLabo from '@clubcapra/assets/media/partners/go-labo.png';
 import mtt from '@clubcapra/assets/media/partners/mtt.png';
+import Stelpro from '@clubcapra/assets/media/partners/stelpro.png';
 </script>
 
 <template>
@@ -45,7 +45,7 @@ import mtt from '@clubcapra/assets/media/partners/mtt.png';
             />
           </div>
           <div class="col-md-6 col-12">
-            <img :src="cgLogoCir" alt="CG LOGO CIR" />
+            <img :src="Stelpro" alt="Stelpro" />
           </div>
         </div>
         <div class="title-wrap partner-title silver-title" data-aos="fade-up">
