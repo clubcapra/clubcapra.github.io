@@ -14,7 +14,7 @@ import altium from '@clubcapra/assets/media/partners/altium.svg';
 import automatech from '@clubcapra/assets/media/partners/automatech.png';
 import goLabo from '@clubcapra/assets/media/partners/go-labo.png';
 import mtt from '@clubcapra/assets/media/partners/mtt.png';
-import cgLogoCir from '@clubcapra/assets/media/partners/stelpro.png';
+import stelpro from '@clubcapra/assets/media/partners/stelpro.png';
 </script>
 
 <template>
