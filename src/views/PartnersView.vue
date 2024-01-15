@@ -93,7 +93,7 @@ import opnor from '@clubcapra/assets/media/partners/opnor.png';
 }
 
 .gold-title {
-  background-color: gold; 
+  background-color: gold;
 }
 
 .silver-title {
