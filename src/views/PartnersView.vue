@@ -14,7 +14,8 @@ import altium from '@clubcapra/assets/media/partners/altium.svg';
 import automatech from '@clubcapra/assets/media/partners/automatech.png';
 import goLabo from '@clubcapra/assets/media/partners/go-labo.png';
 import mtt from '@clubcapra/assets/media/partners/mtt.png';
-import Stelpro from '@clubcapra/assets/media/partners/stelpro.png';
+import stelpro from '@clubcapra/assets/media/partners/stelpro.png';
+import opnor from '@clubcapra/assets/media/partners/opnor.png';
 </script>
 
 <template>
@@ -45,7 +46,10 @@ import Stelpro from '@clubcapra/assets/media/partners/stelpro.png';
             />
           </div>
           <div class="col-md-6 col-12">
-            <img :src="Stelpro" alt="Stelpro" />
+            <img :src="stelpro" alt="stelpro" />
+          </div>
+          <div class="col-md-6 col-12">
+            <img :src="opnor" alt="opnor" />
           </div>
         </div>
         <div class="title-wrap partner-title silver-title" data-aos="fade-up">
@@ -89,7 +93,7 @@ import Stelpro from '@clubcapra/assets/media/partners/stelpro.png';
 }
 
 .gold-title {
-  background-color: gold;
+  background-color: gold; 
 }
 
 .silver-title {
