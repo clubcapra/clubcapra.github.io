@@ -83,7 +83,7 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
             <img :src="monday" alt="monday" />
           </div>
           <div class="col-md-2 col-4">
-            <img :src="monday" alt="odrive" />
+            <img :src="odrive" alt="odrive" />
           </div>
         </div>
         <div class="col-md-12">
