@@ -16,6 +16,7 @@ import goLabo from '@clubcapra/assets/media/partners/go-labo.png';
 import mtt from '@clubcapra/assets/media/partners/mtt.png';
 import stelpro from '@clubcapra/assets/media/partners/stelpro.png';
 import opnor from '@clubcapra/assets/media/partners/opnor.png';
+import hako from '@clubcapra/assets/media/partners/hako.png';
 </script>
 
 <template>
@@ -61,6 +62,9 @@ import opnor from '@clubcapra/assets/media/partners/opnor.png';
           </div>
           <div class="col-md-3 col-6">
             <img :src="altium" alt="Altium" />
+          </div>
+          <div class="col-md-3 col-6">
+            <img :src="hako" alt="hako" />
           </div>
         </div>
         <div class="title-wrap partner-title bronze-title" data-aos="fade-up">
