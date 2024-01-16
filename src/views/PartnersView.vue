@@ -18,6 +18,7 @@ import stelpro from '@clubcapra/assets/media/partners/stelpro.png';
 import opnor from '@clubcapra/assets/media/partners/opnor.png';
 import hako from '@clubcapra/assets/media/partners/hako.png';
 import monday from '@clubcapra/assets/media/partners/monday.png';
+import odrive from '@clubcapra/assets/media/partners/odrive.png';
 </script>
 
 <template>
@@ -80,6 +81,9 @@ import monday from '@clubcapra/assets/media/partners/monday.png';
           </div>
           <div class="col-md-2 col-4">
             <img :src="monday" alt="monday" />
+          </div>
+          <div class="col-md-2 col-4">
+            <img :src="monday" alt="odrive" />
           </div>
         </div>
         <div class="col-md-12">
