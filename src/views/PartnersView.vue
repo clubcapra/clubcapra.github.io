@@ -17,6 +17,7 @@ import mtt from '@clubcapra/assets/media/partners/mtt.png';
 import stelpro from '@clubcapra/assets/media/partners/stelpro.png';
 import opnor from '@clubcapra/assets/media/partners/opnor.png';
 import hako from '@clubcapra/assets/media/partners/hako.png';
+import monday from '@clubcapra/assets/media/partners/monday.png';
 </script>
 
 <template>
@@ -76,6 +77,9 @@ import hako from '@clubcapra/assets/media/partners/hako.png';
           </div>
           <div class="col-md-2 col-4">
             <img :src="mtt" alt="MTT" />
+          </div>
+          <div class="col-md-2 col-4">
+            <img :src="monday" alt="monday" />
           </div>
         </div>
         <div class="col-md-12">
