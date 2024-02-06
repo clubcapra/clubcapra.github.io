@@ -9,17 +9,16 @@ import defaultAvatar from '@clubcapra/assets/media/team/avatar.png';
 import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
 
 // Members pictures
-import david from '@clubcapra/assets/media/team/david.jpg';
-import ben from '@clubcapra/assets/media/team/ben.jpg';
-import kev from '@clubcapra/assets/media/team/kev.jpg';
-import maxb from '@clubcapra/assets/media/team/maxb.jpg';
-import maxrolland from '@clubcapra/assets/media/team/maxrolland.jpg';
-import amber from '@clubcapra/assets/media/team/amber.jpg';
-import leo from '@clubcapra/assets/media/team/leo.jpg';
-import marco from '@clubcapra/assets/media/team/marco.jpg';
-import alex from '@clubcapra/assets/media/team/alex.jpg';
-import gabld from '@clubcapra/assets/media/team/gabld.jpg';
-import alexis from '@clubcapra/assets/media/team/alexis.jpg';
+import davidCaron from '@clubcapra/assets/media/team/davidCaron.jpg';
+import benoitMalenfant from '@clubcapra/assets/media/team/benoitMalenfant.jpg';
+import kevinLarochelle from '@clubcapra/assets/media/team/kevinLarochelle.jpg';
+import maximeBernard from '@clubcapra/assets/media/team/maximeBernard.jpg';
+import maximeRolland from '@clubcapra/assets/media/team/maximeRolland.jpg';
+import amberLouie from '@clubcapra/assets/media/team/amberLouie.jpg';
+import leoDanielGosselin from '@clubcapra/assets/media/team/leoDanielGosselin.jpg';
+import marcOlivierChampagne from '@clubcapra/assets/media/team/marcOlivierChampagne.jpg';
+import gabrielLevesqueDuval from '@clubcapra/assets/media/team/gabrielLevesqueDuval.jpg';
+import alexisMartin from '@clubcapra/assets/media/team/alexisMartin.jpg';
 
 interface Member {
   name: string;
@@ -31,7 +30,7 @@ interface Member {
 const administration: Member[] = [
   {
     name: 'David Caron',
-    img: david,
+    img: davidCaron,
     program: 'Génie Électrique',
     title: 'Capitaine',
   },
@@ -47,13 +46,8 @@ const administration: Member[] = [
   },
   {
     name: 'Benoit Malenfant',
-    img: ben,
+    img: benoitMalenfant,
     program: 'Génie Électrique',
-    title: 'Directeur Technique',
-  },
-  {
-    name: 'Guy-Philippe Nadon',
-    program: 'Génie Logiciel',
     title: 'Directeur Technique',
   },
   {
@@ -65,7 +59,7 @@ const administration: Member[] = [
 const mechanical: Member[] = [
   {
     name: 'Kevin Larochelle',
-    img: kev,
+    img: kevinLarochelle,
     program: 'Génie de la Production Automatisée',
     title: 'Chef Mécanique',
   },
@@ -74,17 +68,13 @@ const mechanical: Member[] = [
     program: 'Génie Mécanique',
   },
   {
-    name: 'Noémie Godbout',
-    program: 'Génie de la Production Automatisée',
-  },
-  {
     name: 'Maxime Bernard',
-    img: maxb,
+    img: maximeBernard,
     program: 'Maitrise en Génie de la Production Automatisée',
   },
   {
     name: 'Maxime Rolland',
-    img: maxrolland,
+    img: maximeRolland,
     program: 'Génie de la Production Automatisée',
   },
   {
@@ -92,20 +82,24 @@ const mechanical: Member[] = [
     program: 'Génie de la Production Automatisée',
   },
   {
-    name: 'Pierre-Luc Villeneuve',
-    program: 'Génie Mécanique',
+    name: 'Samuel Lagassé',
+    program: 'Génie mécanique',
+  },
+  {
+    name: 'Philippe-Antoine',
+    program: 'Génie mécanique',
   },
 ];
 const electrical: Member[] = [
   {
     name: 'Amber Louie',
-    img: amber,
+    img: amberLouie,
     program: 'Génie Électrique',
     title: 'Chef Électrique',
   },
   {
     name: 'Léo-Daniel Gosselin',
-    img: leo,
+    img: leoDanielGosselin,
     program: 'Génie de la Production Automatisée',
   },
   {
@@ -117,41 +111,48 @@ const electrical: Member[] = [
     program: 'Génie de la Production Automatisée',
   },
   {
-    name: 'Papa Amadou Sall',
-    program: 'Génie Électrique',
-  },
-  {
     name: 'Étienne Le Guerrier',
     program: 'Génie Électrique',
-  },
-  {
-    name: 'David Blier',
-    program: 'Génie De La Production Automatisée',
   },
   {
     name: 'Jordan Morinville',
     program: 'Génie Électrique',
   },
+  {
+    name: 'Alexis Girardin',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'Karl Aidans',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'Desbiens Philippe',
+    program: 'Génie Électrique',
+  },
 ];
 const software: Member[] = [
   {
-    name: 'Samuel Lachance',
+    name: 'Nathan Gueissaz-Teufel',
     program: 'Génie Logiciel',
     title: 'Chef Logiciel',
   },
   {
-    name: 'Marc-Olivier Champagne',
-    img: marco,
+    name: 'Samuel Lachance',
     program: 'Génie Logiciel',
   },
   {
-    name: 'Alexandre Lapointe',
-    img: alex,
-    program: 'Génie de la Production Automatisée',
+    name: 'Guy-Philippe Nadon',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Marc-Olivier Champagne',
+    img: marcOlivierChampagne,
+    program: 'Génie Logiciel',
   },
   {
     name: 'Gabriel Lévesque-Duval',
-    img: gabld,
+    img: gabrielLevesqueDuval,
     program: 'Génie Logiciel',
   },
   {
@@ -160,7 +161,7 @@ const software: Member[] = [
   },
   {
     name: 'Alexis Martin',
-    img: alexis,
+    img: alexisMartin,
     program: 'Génie Logiciel',
   },
   {
@@ -181,6 +182,18 @@ const software: Member[] = [
   },
   {
     name: 'Suzon Orlando',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Simon St-André',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Charles Albert Choupin',
+    program: 'Génie Logiciel',
+  },
+  {
+    name: 'Christine Tang-Dai',
     program: 'Génie Logiciel',
   },
 ];
