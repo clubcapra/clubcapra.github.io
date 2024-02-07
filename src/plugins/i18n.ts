@@ -10,6 +10,14 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Learn more',
     fr: 'En savoir plus',
   },
+  btn_Enrich: {
+    en: 'ENRICH',
+    fr: 'ENRICH',
+  },
+  btn_Elrob: {
+    en: 'ELROB ',
+    fr: 'ELROB',
+  },
   btn_our_robots: {
     en: 'Our robots',
     fr: 'Nos robots',
@@ -19,8 +27,12 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     fr: 'Contactez-nous',
   },
   competition_robocuprescue_description: {
-    en: 'Robo Cup Rescue is our main competition. It is the biggest robotics competition that takes place every year in a different country. Our first participation was in Australia in 2019.',
+    en: 'Robo Cup Rescue used to be our main competition. It is the biggest robotics competition that takes place every year in a different country. Our first participation was in Australia in 2019.',
     fr: "La RoboCup Rescue est notre principale compétition. Il s'agit de la plus grande compétition de robotique au monde et se tient chaque année dans un pays différent. Notre première participation fut en 2019 en Australie.",
+  },
+  competition_enrich_elrob_description: {
+    en: "We've pivoted from RoboCupRescue to engage in the ENRICH and ELROB competitions, these robotics challenges require us to create and utilize practical solutions in hazardous environments and real-world scenarios. These competitions help us leveraging our robotics skills and knowledge for resue, safety and innovative applications.",
+    fr: "Nous avons pivotés de la compétition RoboCupRescue à celles de ENCRICH et ELROB. Ces défis robotiques nous demandent de créer des solutions pratiques dans des environements hostiles et des scénarios réalistes. Ces compétitions nous permettent d'utiliser nous compétences en robotique à des fins de sauvetage, de sécurité et d'applications innovantes.",
   },
   discover_our_partnership: {
     en: 'Discover our partnership plan',
