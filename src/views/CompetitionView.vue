@@ -6,6 +6,13 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
 import robotcuprescue from '@clubcapra/assets/media/robotcuprescue.png';
 
+// Zwentendorf
+import zwentendorfTeam from '@clubcapra/assets/media/zwentendorf/zwentendorf_team.jpg';
+import zwentendorfRobot from '@clubcapra/assets/media/zwentendorf/zwentendorf_robot.jpg';
+import zwentendorfTeamWorking1 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working1.jpg';
+import zwentendorfTeamWorking2 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working2.jpg';
+import zwentendorfTeamWorking3 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working3.jpg';
+
 // Bangkok
 import bangkokBG from '@clubcapra/assets/media/bangkok/bangkokBG.jpg';
 import bangkokTeamWorking1 from '@clubcapra/assets/media/bangkok/team_working1.jpg';
@@ -68,6 +75,53 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
       </div>
     </v-container>
   </section>
+  <!-- Testimonial Section-->
+  <!-- Zwentendorf -->
+  <section
+    id="zwentendorf-title"
+    class="overlay section-separator-bg"
+    :style="`background-image: url(${bangkokBG})`"
+  >
+    <div class="section-separator container text-center">
+      <h2 class="mb-4">ZWENTENDORF 2023</h2>
+    </div>
+  </section>
+  <div class="container py-4">
+    <div class="row">
+      <div
+        class="col-lg-8 col-md-12 mb-4 mb-lg-0"
+        style="max-width: 61.5%; flex: 0 0 0 61.5%"
+      >
+        <img
+          :src="zwentendorfTeam"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Bangkok Team 2022"
+        />
+        <img
+          :src="zwentendorfTeamWorking2"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Bangkok RRL"
+        />
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          :src="zwentendorfTeamWorking3"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Zwentendorf Team Picture"
+        />
+        <img
+          :src="zwentendorfTeamWorking1"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Zwentendorf Team Working 2"
+        />
+        <img
+          :src="zwentendorfRobot"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Bangkok Markhor Dex"
+        />
+      </div>
+    </div>
+  </div>
   <!-- Testimonial Section-->
   <!-- Bangkok -->
   <section
