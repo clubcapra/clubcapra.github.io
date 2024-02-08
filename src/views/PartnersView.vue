@@ -48,12 +48,6 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
               alt="IXIASOFT Madcap logo RGB C"
             />
           </div>
-          <div class="col-md-6 col-12">
-            <img :src="stelpro" alt="stelpro" />
-          </div>
-          <div class="col-md-6 col-12">
-            <img :src="opnor" alt="opnor" />
-          </div>
         </div>
         <div class="title-wrap partner-title silver-title" data-aos="fade-up">
           <h2 class="section-title">{{ $t('partner_silver') }}</h2>
@@ -61,6 +55,12 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
         <div class="row justify-content-center align-items-center py-5">
           <div class="col-md-3 col-6">
             <img :src="aeets" alt="AEETS" />
+          </div>
+          <div class="col-md-3 col-6">
+            <img :src="stelpro" alt="stelpro" />
+          </div>
+          <div class="col-md-3 col-6">
+            <img :src="opnor" alt="opnor" />
           </div>
           <div class="col-md-3 col-6">
             <img :src="altium" alt="Altium" />
