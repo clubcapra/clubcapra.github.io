@@ -2,9 +2,6 @@
 import partnerHandshake from '@clubcapra/assets/media/partners-handshake.jpg';
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
 
-// Documents
-import planPartenariat from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
-
 // Partners logos
 import hsLogoCouleur from '@clubcapra/assets/media/partners/HS_logo_couleur.png';
 import ixiasoftMadcapLogoRgbC from '@clubcapra/assets/media/partners/IXIASOFT-Madcap-logo-RGB-C.jpg';
@@ -84,16 +81,6 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
           </div>
           <div class="col-md-2 col-4">
             <img :src="odrive" alt="odrive" />
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="mt-3 text-center">
-            <!--
-              **Removal of partnership plan for a short moment. WIP -- will be added back by march 1st**
-            <a class="btn btn-primary" :href="planPartenariat" target="_blank">
-              {{ $t('discover_our_partnership').toUpperCase() }}
-            </a>
-            -->
           </div>
         </div>
       </div>

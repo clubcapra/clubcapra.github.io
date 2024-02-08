@@ -8,9 +8,6 @@ import SponsorComponent from '@clubcapra/components/SponsorComponent.vue';
 import introTrimmed from '@clubcapra/assets/media/intro_trimmed.mp4';
 import prototypes from '@clubcapra/assets/media/prototypes.jpg';
 import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
-
-// Files
-import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
 </script>
 
 <template>
@@ -90,13 +87,6 @@ import partenariatFile from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.p
             </div>
           </div>
           <SponsorComponent />
-        </div>
-        <div class="col-md-12">
-          <div class="mt-3 text-center">
-            <a :href="partenariatFile" target="_blank" class="btn btn-primary">
-              {{ $t('btn_discover_our_partnership_plan').toUpperCase() }}
-            </a>
-          </div>
         </div>
       </div>
     </div>
