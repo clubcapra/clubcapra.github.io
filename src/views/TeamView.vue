@@ -89,6 +89,10 @@ const mechanical: Member[] = [
     name: 'Philippe-Antoine',
     program: 'Génie mécanique',
   },
+  {
+    name: 'Antony Afif',
+    program: 'Génie mécanique',
+  },
 ];
 const electrical: Member[] = [
   {
@@ -127,7 +131,11 @@ const electrical: Member[] = [
     program: 'Génie Électrique',
   },
   {
-    name: 'Desbiens Philippe',
+    name: 'Philippe Desbiens',
+    program: 'Génie Électrique',
+  },
+  {
+    name: 'Émile Lacroix',
     program: 'Génie Électrique',
   },
 ];
@@ -182,7 +190,7 @@ const software: Member[] = [
   },
   {
     name: 'Suzon Orlando',
-    program: 'Génie Logiciel',
+    program: 'Maitrise en Génie Logiciel',
   },
   {
     name: 'Simon St-André',
@@ -190,10 +198,6 @@ const software: Member[] = [
   },
   {
     name: 'Charles Albert Choupin',
-    program: 'Génie Logiciel',
-  },
-  {
-    name: 'Christine Tang-Dai',
     program: 'Génie Logiciel',
   },
 ];
