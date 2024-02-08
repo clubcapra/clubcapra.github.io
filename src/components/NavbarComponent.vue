@@ -49,6 +49,17 @@ const pages: DrawerMenuItem[] = [
     to: { name: 'contact' },
   },
 ];
+
+const languages = [
+  {
+    title: 'FR',
+    value: 'fr',
+  },
+  {
+    title: 'EN',
+    value: 'en',
+  },
+];
 </script>
 
 <template>
@@ -77,6 +88,13 @@ const pages: DrawerMenuItem[] = [
       :to="page.to"
       density="compact"
       :title="page.title"
+    />
+    <v-select
+      v-model="$i18n.locale"
+      class="d-none d-md-flex"
+      density="compact"
+      :items="languages"
+      :item-props="itemProps"
     />
   </v-app-bar>
 </template>
