@@ -2,9 +2,6 @@
 import partnerHandshake from '@clubcapra/assets/media/partners-handshake.jpg';
 import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
 
-// Documents
-import planPartenariat from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
-
 // Partners logos
 import hsLogoCouleur from '@clubcapra/assets/media/partners/HS_logo_couleur.png';
 import ixiasoftMadcapLogoRgbC from '@clubcapra/assets/media/partners/IXIASOFT-Madcap-logo-RGB-C.jpg';
@@ -48,12 +45,6 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
               alt="IXIASOFT Madcap logo RGB C"
             />
           </div>
-          <div class="col-md-6 col-12">
-            <img :src="stelpro" alt="stelpro" />
-          </div>
-          <div class="col-md-6 col-12">
-            <img :src="opnor" alt="opnor" />
-          </div>
         </div>
         <div class="title-wrap partner-title silver-title" data-aos="fade-up">
           <h2 class="section-title">{{ $t('partner_silver') }}</h2>
@@ -61,6 +52,12 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
         <div class="row justify-content-center align-items-center py-5">
           <div class="col-md-3 col-6">
             <img :src="aeets" alt="AEETS" />
+          </div>
+          <div class="col-md-3 col-6">
+            <img :src="stelpro" alt="stelpro" />
+          </div>
+          <div class="col-md-3 col-6">
+            <img :src="opnor" alt="opnor" />
           </div>
           <div class="col-md-3 col-6">
             <img :src="altium" alt="Altium" />
@@ -84,13 +81,6 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
           </div>
           <div class="col-md-2 col-4">
             <img :src="odrive" alt="odrive" />
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="mt-3 text-center">
-            <a class="btn btn-primary" :href="planPartenariat" target="_blank">
-              {{ $t('discover_our_partnership').toUpperCase() }}
-            </a>
           </div>
         </div>
       </div>
