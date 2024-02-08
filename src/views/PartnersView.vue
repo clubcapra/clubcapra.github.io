@@ -29,6 +29,18 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
   <section class="bg-white">
     <div class="container">
       <div class="section-content">
+        <div class="title-wrap partner-title diamond-title" data-aos="fade-up">
+          <h2 class="section-title">{{ $t('partner_diamond') }}</h2>
+        </div>
+        <div class="row justify-content-center align-items-center py-5">
+          <!-- Add new Diamond members -->
+        </div>
+        <div class="title-wrap partner-title plat-title" data-aos="fade-up">
+          <h2 class="section-title">{{ $t('partner_plat') }}</h2>
+        </div>
+        <div class="row justify-content-center align-items-center py-5">
+          <!-- Add new Platinum members -->
+        </div>
         <div class="title-wrap partner-title gold-title" data-aos="fade-up">
           <h2 class="section-title">{{ $t('partner_gold') }}</h2>
         </div>
@@ -102,6 +114,14 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
 .partner-title {
   border-radius: 4rem;
   padding: 1rem;
+}
+
+.diamond-title {
+  background-color: #9ac5db;
+}
+
+.plat-title {
+  background-color: #e5e4e2;
 }
 
 .gold-title {
