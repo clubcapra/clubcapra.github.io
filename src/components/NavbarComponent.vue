@@ -91,9 +91,10 @@ const languages = [
     />
     <v-select
       v-model="$i18n.locale"
-      style="padding-left: 4px"
-      class="d-none d-md-flex"
+      style="padding-left: 4px; height: 38px"
+      class="d-flex"
       density="compact"
+      variant="outlined"
       :items="languages"
       :item-props="itemProps"
     />
