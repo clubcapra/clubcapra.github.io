@@ -63,14 +63,14 @@ import markhorStairs from '@clubcapra/assets/media/markhor_stairs.mp4';
   padding: 1rem;
   margin-bottom: 1rem;
   color: white;
-  opacity: 0.9;
+  opacity: 0.4;
 }
 
 .section-overlay:before {
   position: absolute;
   display: block;
   content: '';
-  opacity: 0.5;
+  opacity: 0.4;
   top: 0;
   bottom: 0;
   left: 0;
