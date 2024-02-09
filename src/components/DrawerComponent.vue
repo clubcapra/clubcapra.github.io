@@ -30,7 +30,7 @@ defineProps<{
             <v-list-item
               v-bind="props"
               :prepend-icon="item.icon"
-              :title="item.title"
+              :title="t(item.title)"
             />
           </template>
           <!-- Sub menu item -->
@@ -40,7 +40,7 @@ defineProps<{
               v-else
               :disabled="!subItem.to"
               :prepend-icon="subItem.icon"
-              :title="subItem.title"
+              :title="t(subItem.title)"
               :to="subItem.to"
               link
             />
