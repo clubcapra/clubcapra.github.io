@@ -55,7 +55,7 @@ if (props.img) {
   position: absolute;
   display: block;
   content: '';
-  opacity: 0.8;
+  opacity: 0.3;
   top: 0;
   bottom: 0;
   left: 0;
