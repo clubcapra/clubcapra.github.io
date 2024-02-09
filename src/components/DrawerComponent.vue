@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import type DrawerMenuItem from '@clubcapra/interfaces/DrawerMenuItemInterface';
 
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
+
 defineProps<{
   /** Drawer Menu Items */
   items: DrawerMenuItem[];
@@ -17,7 +20,7 @@ defineProps<{
           v-if="!item.items"
           :disabled="!item.to"
           :prepend-icon="item.icon"
-          :title="item.title"
+          :title="t(item.title)"
           :to="item.to"
           link
         />
