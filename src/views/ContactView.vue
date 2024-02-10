@@ -15,7 +15,7 @@ import etsmtl from '@clubcapra/assets/media/etsmtl.jpg';
           <h2 class="section-title">{{ $t('where_to_find_us') }}</h2>
         </div>
         <div class="row text-center mt-4 justify-content-center">
-          <div class="col-md-3" data-aos="fade-up">
+          <div class="col-md-2" data-aos="fade-up" data-aos-delay="400">
             <span class="py-4 d-block">
               <i class="fas fa-map-marker-alt fs-40 testi-icon" />
             </span>
@@ -29,14 +29,14 @@ import etsmtl from '@clubcapra/assets/media/etsmtl.jpg';
               <br />
             </p>
           </div>
-          <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-md-2" data-aos="fade-up" data-aos-delay="600">
             <span class="py-4 d-block">
               <i class="fas fa-envelope fs-40 testi-icon" />
             </span>
             <h5>{{ $t('email').toUpperCase() }}</h5>
             <p>capra@ens.etsmtl.ca</p>
           </div>
-          <div class="col-md-3" data-aos="fade-up" data-aos-delay="800">
+          <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
             <span class="py-4 d-block">
               <a href="https://www.facebook.com/clubcapra/" target="_blank">
                 <i class="fab fa-facebook-f fs-40 testi-icon" />
@@ -44,13 +44,24 @@ import etsmtl from '@clubcapra/assets/media/etsmtl.jpg';
             </span>
             <h5>FACEBOOK</h5>
           </div>
-          <div class="col-md-3" data-aos="fade-up" data-aos-delay="1000">
+          <div class="col-md-2" data-aos="fade-up" data-aos-delay="1000">
             <span class="py-4 d-block">
               <a href="https://www.instagram.com/capra_ets/" target="_blank">
                 <i class="fab fa-instagram fs-40 testi-icon" />
               </a>
             </span>
             <h5>INSTAGRAM</h5>
+          </div>
+          <div class="col-md-2" data-aos="fade-up" data-aos-delay="1200">
+            <span class="py-4 d-block">
+              <a
+                href="https://www.linkedin.com/company/club-capra/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin fs-40 testi-icon" />
+              </a>
+            </span>
+            <h5>LINKEDIN</h5>
           </div>
         </div>
       </div>
