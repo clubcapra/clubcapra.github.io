@@ -130,6 +130,14 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Team',
     fr: 'Équipe',
   },
+  partner_diamond: {
+    en: 'Diamond',
+    fr: 'Diamant',
+  },
+  partner_plat: {
+    en: 'Platinum',
+    fr: 'Platine',
+  },
   partner_gold: {
     en: 'Gold',
     fr: 'Or',

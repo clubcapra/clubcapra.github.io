@@ -14,39 +14,50 @@ const drawer: Ref<boolean> = ref(false);
 const { t } = useI18n();
 const pages: DrawerMenuItem[] = [
   {
-    title: t('page_home'),
+    title: 'page_home',
     icon: 'mdi-home',
     to: { name: 'home' },
   },
   {
-    title: t('page_robots'),
+    title: 'page_robots',
     icon: 'mdi-robot',
     to: { name: 'robots' },
   },
   {
-    title: t('page_team'),
+    title: 'page_team',
     icon: 'mdi-account-group',
     to: { name: 'team' },
   },
   {
-    title: t('page_competitions'),
+    title: 'page_competitions',
     icon: 'mdi-trophy',
     to: { name: 'competition' },
   },
   {
-    title: t('page_partners'),
+    title: 'page_partners',
     icon: 'mdi-handshake',
     to: { name: 'partners' },
   },
   {
-    title: t('page_ressources'),
+    title: 'page_ressources',
     icon: 'mdi-file-document',
     to: { name: 'ressources' },
   },
   {
-    title: t('page_contact'),
+    title: 'page_contact',
     icon: 'mdi-email',
     to: { name: 'contact' },
+  },
+];
+
+const languages = [
+  {
+    title: 'FR',
+    value: 'fr',
+  },
+  {
+    title: 'EN',
+    value: 'en',
   },
 ];
 </script>
@@ -76,7 +87,16 @@ const pages: DrawerMenuItem[] = [
       class="d-none d-md-flex"
       :to="page.to"
       density="compact"
-      :title="page.title"
+      :title="t(page.title)"
+    />
+    <v-select
+      v-model="$i18n.locale"
+      style="padding-left: 4px; height: 38px"
+      class="d-flex"
+      density="compact"
+      variant="outlined"
+      :items="languages"
+      :item-props="itemProps"
     />
   </v-app-bar>
 </template>
