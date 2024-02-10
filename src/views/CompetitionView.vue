@@ -6,6 +6,15 @@ import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoCompone
 import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
 import robotcuprescue from '@clubcapra/assets/media/robotcuprescue.png';
 
+// Zwentendorf
+import zwentendorfBG from '@clubcapra/assets/media/zwentendorf/zwentendorf_bg.jpg';
+import zwentendorfTeam1 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team1.jpg';
+import zwentendorfTeam2 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team2.jpg';
+import zwentendorfRobot from '@clubcapra/assets/media/zwentendorf/zwentendorf_robot.jpg';
+import zwentendorfTeamWorking1 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working1.jpg';
+import zwentendorfTeamWorking2 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working2.jpg';
+import zwentendorfTeamWorking3 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working3.jpg';
+
 // Bangkok
 import bangkokBG from '@clubcapra/assets/media/bangkok/bangkokBG.jpg';
 import bangkokTeamWorking1 from '@clubcapra/assets/media/bangkok/team_working1.jpg';
@@ -35,6 +44,98 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
 
 <template>
   <JumbotronVideoComponent :title="$t('page_competitions')" :img="team2021" />
+  <!--RobocupRescue Description Section-->
+  <section id="section-featurettes" class="featurettes">
+    <v-container>
+      <div class="section-content">
+        <v-row>
+          <v-col>
+            <div class="row align-items-center">
+              <div
+                class="col-md-8 offset-md-right-2 col-sm-6"
+                data-aos="flip-right"
+              >
+                <v-img
+                  class="my-5"
+                  :src="zwentendorfTeam2"
+                  alt="Robocup Rescue Image"
+                />
+              </div>
+              <div class="col-md-4 col-sm-6" data-aos="fade-right">
+                <h2 class="mb-4">Enrich &amp; Elrob</h2>
+                <h5>{{ $t('competition_enrich_elrob_description') }}</h5>
+                <div class="row justify-content-center">
+                  <a
+                    class="btn btn-lg btn-primary m-1"
+                    href="https://enrich2023.european-robotics.eu/"
+                    target="_blank"
+                  >
+                    {{ $t('btn_Enrich').toUpperCase() }}
+                  </a>
+                  <a
+                    class="btn btn-primary m-1"
+                    href="https://www.elrob.org/"
+                    target="_blank"
+                  >
+                    {{ $t('btn_Elrob').toUpperCase() }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+      </div>
+    </v-container>
+  </section>
+  <!-- Testimonial Section-->
+  <!-- Zwentendorf -->
+  <section
+    id="zwentendorf-title"
+    class="overlay section-separator-bg"
+    :style="`background-size:100%; background-image: url(${zwentendorfBG})`"
+  >
+    <div class="section-separator container text-center">
+      <h2 class="mb-4">ZWENTENDORF 2023</h2>
+    </div>
+  </section>
+  <div class="container py-4">
+    <div class="row">
+      <div
+        class="col-lg-8 col-md-12 mb-4 mb-lg-0"
+        style="max-width: 61.5%; flex: 0 0 0 61.5%"
+      >
+        <img
+          :src="zwentendorfTeam1"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Bangkok Team 2022"
+        />
+        <img
+          :src="zwentendorfTeamWorking2"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Bangkok RRL"
+        />
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          :src="zwentendorfTeamWorking3"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Zwentendorf Team Picture"
+        />
+        <img
+          :src="zwentendorfTeamWorking1"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Zwentendorf Team Working 2"
+        />
+        <img
+          :src="zwentendorfRobot"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Bangkok Markhor Dex"
+        />
+      </div>
+    </div>
+  </div>
+  <section class="bg-red section-separator-bg" :style="`height: 50px;)`" />
+  <!--RobocupRescue Description Section-->
   <section id="section-featurettes" class="featurettes">
     <v-container>
       <div class="section-content">
@@ -43,7 +144,7 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
             <div class="row align-items-center">
               <div class="col-md-4 col-sm-6" data-aos="fade-right">
                 <h2 class="mb-4">RoboCupRescue</h2>
-                <p>{{ $t('competition_robocuprescue_description') }}</p>
+                <h5>{{ $t('competition_robocuprescue_description') }}</h5>
                 <a
                   class="btn btn-primary"
                   href="https://rrl.robocup.org/"
