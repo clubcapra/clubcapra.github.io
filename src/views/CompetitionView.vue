@@ -7,13 +7,14 @@ import team2021 from '@clubcapra/assets/media/team2021_2.jpg';
 import robotcuprescue from '@clubcapra/assets/media/robotcuprescue.png';
 
 // Zwentendorf
-import zwentendorfBG from '@clubcapra/assets/media/zwentendorf/zwentendorf_bg.jpg';
-import zwentendorfTeam1 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team1.jpg';
-import zwentendorfTeam2 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team2.jpg';
-import zwentendorfRobot from '@clubcapra/assets/media/zwentendorf/zwentendorf_robot.jpg';
-import zwentendorfTeamWorking1 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working1.jpg';
-import zwentendorfTeamWorking2 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working2.jpg';
-import zwentendorfTeamWorking3 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working3.jpg';
+import zwentendorfBG from '@clubcapra/assets/media/zwentendorf/zwentendorf_bg.avif';
+import zwentendorfTeam1 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team1.avif';
+import zwentendorfTeam2 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team2.avif';
+import zwentendorfRobot1 from '@clubcapra/assets/media/zwentendorf/zwentendorf_robot1.avif';
+import zwentendorfRobot2 from '@clubcapra/assets/media/zwentendorf/zwentendorf_robot2.avif';
+import zwentendorfTeamWorking1 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working1.avif';
+import zwentendorfTeamWorking2 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working2.avif';
+import zwentendorfTeamWorking3 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team_working3.avif';
 
 // Bangkok
 import bangkokBG from '@clubcapra/assets/media/bangkok/bangkokBG.jpg';
@@ -99,37 +100,41 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
     </div>
   </section>
   <div class="container py-4">
-    <div class="row">
-      <div
-        class="col-lg-8 col-md-12 mb-4 mb-lg-0"
-        style="max-width: 61.5%; flex: 0 0 0 61.5%"
-      >
+    <div class="row justify-center">
+      <div class="col-lg-4" style="max-width: 61.5%; flex: 0 0 0 61.5%">
         <img
           :src="zwentendorfTeam1"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="Bangkok Team 2022"
+          alt="Zwentendorf 2023 Team picture 1"
+        />
+        <img
+          :src="zwentendorfRobot1"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Zwentendorf 2023 Robot picture 1"
+        />
+      </div>
+      <div class="col-lg-4">
+        <img
+          :src="zwentendorfTeamWorking1"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Zwentendorf 2023 Team working 1"
+        />
+        <img
+          :src="zwentendorfRobot2"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Zwentendorf 2023 Robot picture 2"
+        />
+      </div>
+      <div class="col-lg-4">
+        <img
+          :src="zwentendorfTeamWorking3"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Zwentendorf 2023 Team working 3"
         />
         <img
           :src="zwentendorfTeamWorking2"
           class="w-100 shadow-1-strong rounded mb-4"
-          alt="Bangkok RRL"
-        />
-      </div>
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <img
-          :src="zwentendorfTeamWorking3"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Zwentendorf Team Picture"
-        />
-        <img
-          :src="zwentendorfTeamWorking1"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Zwentendorf Team Working 2"
-        />
-        <img
-          :src="zwentendorfRobot"
-          class="w-100 shadow-1-strong rounded mb-4"
-          alt="Bangkok Markhor Dex"
+          alt="Zwentendorf 2023 Team working 2"
         />
       </div>
     </div>
