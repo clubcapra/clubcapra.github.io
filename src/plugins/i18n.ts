@@ -42,6 +42,38 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Email',
     fr: 'Courriel',
   },
+  engineering_electrical: {
+    en: 'Electrical Engineering',
+    fr: 'Génie Électrique',
+  },
+  engineering_electrical_master: {
+    en: 'Master in Electrical Engineering',
+    fr: 'Maîtrise en Génie Électrique',
+  },
+  engineering_gpa: {
+    en: 'Automated Manufacturing Engineering',
+    fr: 'Génie De La Production Automatisée',
+  },
+  engineering_gpa_master: {
+    en: 'Master in Automated Manufacturing Engineering',
+    fr: 'Maîtrise en Génie De La Production Automatisée',
+  },
+  engineering_mechanical: {
+    en: 'Mechanical Engineering',
+    fr: 'Génie Mécanique',
+  },
+  engineering_mechanical_master: {
+    en: 'Master in Mechanical Engineering',
+    fr: 'Maîtrise en Génie Mécanique',
+  },
+  engineering_software: {
+    en: 'Software Engineering',
+    fr: 'Génie Logiciel',
+  },
+  engineering_software_master: {
+    en: 'Master in Software Engineering',
+    fr: 'Maîtrise en Génie Logiciel',
+  },
   made_with_love: {
     en: 'Made in Montréal with',
     fr: 'Fait à Montréal avec',
@@ -189,6 +221,34 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   team_software: {
     en: 'Software',
     fr: 'Logiciel',
+  },
+  title_captain: {
+    en: 'Captian',
+    fr: 'Capitaine',
+  },  
+  title_co_captain: {
+    en: 'Co-Captain',
+    fr: 'Co-Capitaine',
+  },  
+  title_co_captain_treasury : {
+    en: 'Treasury & Co-Captain',
+    fr: 'Trésorerie & Co-Capitaine',
+  },
+  title_electrical_team_leader: {
+    en: 'Electrical Team Lead',
+    fr: 'Chef Électrique',
+  },
+  title_mechanical_team_leader: {
+    en: 'Mechanical Team Lead',
+    fr: 'Chef Mécanique',
+  },
+  title_software_team_leader: {
+    en: 'Software Team Lead',
+    fr: 'Chef Logiciel',
+  },
+  title_technical_director: {
+    en: 'Technical Director',
+    fr: 'Directeur Technique',
   },
   where_to_find_us: {
     en: 'Where to find us?',
