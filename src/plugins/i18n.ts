@@ -32,7 +32,7 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   },
   competition_enrich_elrob_description: {
     en: "We've pivoted from RoboCupRescue to engage in the ENRICH and ELROB competitions, these robotics challenges require us to create and utilize practical solutions in hazardous environments and real-world scenarios. These competitions help us leveraging our robotics skills and knowledge for resue, safety and innovative applications.",
-    fr: "Nous avons pivotés de la compétition RoboCupRescue à celles de ENCRICH et ELROB. Ces défis robotiques nous demandent de créer des solutions pratiques dans des environements hostiles et des scénarios réalistes. Ces compétitions nous permettent d'utiliser nous compétences en robotique à des fins de sauvetage, de sécurité et d'applications innovantes.",
+    fr: "Nous avons pivotés de la compétition RoboCupRescue à celles de ENRICH et ELROB. Ces défis robotiques nous demandent de créer des solutions pratiques dans des environements hostiles et des scénarios réalistes. Ces compétitions nous permettent d'utiliser nous compétences en robotique à des fins de sauvetage, de sécurité et d'applications innovantes.",
   },
   discover_our_partnership: {
     en: 'Discover our partnership plan',
