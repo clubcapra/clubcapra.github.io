@@ -223,7 +223,7 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     fr: 'Logiciel',
   },
   title_captain: {
-    en: 'Captian',
+    en: 'Captain',
     fr: 'Capitaine',
   },  
   title_co_captain: {
