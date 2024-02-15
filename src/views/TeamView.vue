@@ -45,12 +45,6 @@ const administration: Member[] = [
     title: 'Trésorier & Co-Capitaine',
   },
   {
-    name: 'Benoit Malenfant',
-    img: benoitMalenfant,
-    program: 'Génie Électrique',
-    title: 'Directeur Technique',
-  },
-  {
     name: 'Nicolas Vigneault',
     program: 'Génie de la Production Automatisée',
     title: 'Directeur Technique',
@@ -100,6 +94,12 @@ const electrical: Member[] = [
     img: amberLouie,
     program: 'Génie Électrique',
     title: 'Chef Électrique',
+  },
+  {
+    name: 'Benoit Malenfant',
+    img: benoitMalenfant,
+    program: 'Génie Électrique',
+    title: 'Directeur Technique',
   },
   {
     name: 'Léo-Daniel Gosselin',
