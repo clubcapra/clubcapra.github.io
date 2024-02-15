@@ -99,7 +99,6 @@ const electrical: Member[] = [
     name: 'Benoit Malenfant',
     img: benoitMalenfant,
     program: 'Génie Électrique',
-    title: 'Directeur Technique',
   },
   {
     name: 'Léo-Daniel Gosselin',
