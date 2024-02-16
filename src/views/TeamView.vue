@@ -102,6 +102,11 @@ const electrical: Member[] = [
     title: 'title_electrical_team_leader',
   },
   {
+    name: 'Benoit Malenfant',
+    img: benoitMalenfant,
+    program: 'Génie Électrique',
+  },
+  {
     name: 'Léo-Daniel Gosselin',
     img: leoDanielGosselin,
     program: 'engineering_gpa',
