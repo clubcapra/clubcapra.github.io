@@ -31,69 +31,75 @@ const administration: Member[] = [
   {
     name: 'David Caron',
     img: davidCaron,
-    program: 'Génie Électrique',
-    title: 'Capitaine',
+    program: 'engineering_electrical',
+    title: 'title_captain',
   },
   {
     name: 'William Jarry',
-    program: 'Génie Logiciel',
-    title: 'Co-Capitaine',
+    program: 'engineering_software',
+    title: 'title_co_captain',
   },
   {
     name: 'Mathieu Salois',
-    program: 'Génie Logiciel',
-    title: 'Trésorier & Co-Capitaine',
+    program: 'engineering_software',
+    title: 'title_co_captain_treasury',
+  },
+  {
+    name: 'Benoit Malenfant',
+    img: benoitMalenfant,
+    program: 'engineering_electrical',
+    title: 'title_technical_director',
   },
   {
     name: 'Nicolas Vigneault',
-    program: 'Génie de la Production Automatisée',
-    title: 'Directeur Technique',
+    program: 'engineering_gpa',
+    title: 'title_technical_director',
   },
 ];
 const mechanical: Member[] = [
   {
     name: 'Kevin Larochelle',
     img: kevinLarochelle,
-    program: 'Génie de la Production Automatisée',
-    title: 'Chef Mécanique',
+    program: 'engineering_gpa',
+    title: 'title_mechanical_team_leader',
   },
   {
     name: 'Bonzly Noël',
-    program: 'Génie Mécanique',
+    program: 'engineering_mechanical',
   },
   {
     name: 'Maxime Bernard',
     img: maximeBernard,
-    program: 'Maitrise en Génie de la Production Automatisée',
+    program: 'engineering_gpa_master',
   },
   {
     name: 'Maxime Rolland',
     img: maximeRolland,
-    program: 'Génie de la Production Automatisée',
+    program: 'engineering_gpa',
   },
   {
     name: 'William Zamudio-Turcotte',
-    program: 'Génie de la Production Automatisée',
+    program: 'engineering_gpa',
   },
   {
     name: 'Samuel Lagassé',
-    program: 'Génie mécanique',
+    program: 'engineering_mechanical',
   },
   {
     name: 'Philippe-Antoine',
-    program: 'Génie mécanique',
+    program: 'engineering_mechanical',
   },
   {
     name: 'Antony Afif',
-    program: 'Génie mécanique',
+    program: 'engineering_mechanical',
   },
 ];
 const electrical: Member[] = [
   {
     name: 'Amber Louie',
     img: amberLouie,
-    program: 'Génie Électrique',
-    title: 'Chef Électrique',
+    program: 'engineering_electrical',
+    title: 'title_electrical_team_leader',
   },
   {
     name: 'Benoit Malenfant',
@@ -103,110 +109,110 @@ const electrical: Member[] = [
   {
     name: 'Léo-Daniel Gosselin',
     img: leoDanielGosselin,
-    program: 'Génie de la Production Automatisée',
+    program: 'engineering_gpa',
   },
   {
     name: 'Antoine Maltais',
-    program: 'Génie Électrique',
+    program: 'engineering_electrical',
   },
   {
     name: 'Christian Bourget',
-    program: 'Génie de la Production Automatisée',
+    program: 'engineering_gpa',
   },
   {
     name: 'Étienne Le Guerrier',
-    program: 'Génie Électrique',
+    program: 'engineering_electrical',
   },
   {
     name: 'Jordan Morinville',
-    program: 'Génie Électrique',
+    program: 'engineering_electrical',
   },
   {
     name: 'Alexis Girardin',
-    program: 'Génie Électrique',
+    program: 'engineering_electrical',
   },
   {
     name: 'Karl Aidans',
-    program: 'Génie Électrique',
+    program: 'engineering_electrical',
   },
   {
     name: 'Philippe Desbiens',
-    program: 'Génie Électrique',
+    program: 'engineering_electrical',
   },
   {
     name: 'Émile Lacroix',
-    program: 'Génie Électrique',
+    program: 'engineering_electrical',
   },
 ];
 const software: Member[] = [
   {
     name: 'Nathan Gueissaz-Teufel',
-    program: 'Génie Logiciel',
-    title: 'Chef Logiciel',
+    program: 'engineering_software',
+    title: 'title_software_team_leader',
   },
   {
     name: 'Samuel Lachance',
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
   {
     name: 'Guy-Philippe Nadon',
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
   {
     name: 'Marc-Olivier Champagne',
     img: marcOlivierChampagne,
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
   {
     name: 'Gabriel Lévesque-Duval',
     img: gabrielLevesqueDuval,
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
   {
     name: 'Simon Roy',
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
   {
     name: 'Alexis Martin',
     img: alexisMartin,
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
   {
     name: 'Jacob Clermont',
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
   {
     name: 'Denis Turk',
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
   {
     name: 'Iliana De Carufel',
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
   {
     name: 'Raphaël Vigneault',
-    program: 'Génie De La Production Automatisée',
+    program: 'engineering_gpa',
   },
   {
     name: 'Suzon Orlando',
-    program: 'Maitrise en Génie Logiciel',
+    program: 'engineering_software_master',
   },
   {
     name: 'Simon St-André',
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
   {
     name: 'Charles Albert Choupin',
-    program: 'Génie Logiciel',
+    program: 'engineering_software',
   },
 ];
 
 const { t } = useI18n();
 const sections = [
-  { title: t('team_administration'), members: administration },
-  { title: t('team_mechanical'), members: mechanical },
-  { title: t('team_electrical'), members: electrical },
-  { title: t('team_software'), members: software },
+  { title: 'team_administration', members: administration },
+  { title: 'team_mechanical', members: mechanical },
+  { title: 'team_electrical', members: electrical },
+  { title: 'team_software', members: software },
 ];
 </script>
 
@@ -217,7 +223,7 @@ const sections = [
       <div class="section-content">
         <template v-for="(section, key) in sections" :key="key">
           <div class="title-wrap" data-aos="fade-up">
-            <h2 class="section-title">{{ section.title }}</h2>
+            <h2 class="section-title">{{ t(section.title) }}</h2>
           </div>
 
           <div class="row justify-content-center">
@@ -226,8 +232,10 @@ const sections = [
               :key="j"
               :name="member.name"
               :img="member.img ?? defaultAvatar"
-              :program="member.program"
-              :title="member.title ?? $t('team_member')"
+              :program="$t(member.program)"
+              :title="
+                member.title == undefined ? $t('team_member') : $t(member.title)
+              "
             />
           </div>
         </template>
