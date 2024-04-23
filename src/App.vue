@@ -15,6 +15,7 @@ import safariPinnedTab from './assets/safari-pinned-tab.svg';
 // Animate on scroll library
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import NavbarComponentVue from './components/NavbarComponent.vue';
 
 /** Global Store */
 const globalStore = useGlobalStore();
@@ -39,6 +40,7 @@ onMounted(() => {
     <link rel="mask-icon" :href="safariPinnedTab" color="#5bbad5" />
   </teleport>
   <v-app>
+    <NavbarComponentVue />
     <v-main>
       <router-view />
     </v-main>

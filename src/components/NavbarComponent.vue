@@ -1,102 +1,77 @@
 <script setup lang="ts">
-import capraLogoWhite from '@clubcapra/assets/media/Capra_Logo_White.png';
-import type { Ref } from 'vue';
 import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
+import logo from '@clubcapra/assets/media/Capra_Cercle_Full.png';
 
-// Components
-import DrawerComponent from './DrawerComponent.vue';
-import type DrawerMenuItem from '@clubcapra/interfaces/DrawerMenuItemInterface';
+const isOpen = ref(false);
 
-/** drawer visibility */
-const drawer: Ref<boolean> = ref(false);
-
-const { t } = useI18n();
-const pages: DrawerMenuItem[] = [
+const navbarItems = [
   {
-    title: 'page_home',
-    icon: 'mdi-home',
-    to: { name: 'home' },
+    name: 'About us',
+    link: '#',
   },
   {
-    title: 'page_robots',
-    icon: 'mdi-robot',
-    to: { name: 'robots' },
+    name: 'Solution',
+    link: '#',
   },
   {
-    title: 'page_team',
-    icon: 'mdi-account-group',
-    to: { name: 'team' },
+    name: 'Team',
+    link: '#',
   },
   {
-    title: 'page_competitions',
-    icon: 'mdi-trophy',
-    to: { name: 'competition' },
+    name: 'Publications',
+    link: '#',
   },
   {
-    title: 'page_partners',
-    icon: 'mdi-handshake',
-    to: { name: 'partners' },
-  },
-  {
-    title: 'page_ressources',
-    icon: 'mdi-file-document',
-    to: { name: 'ressources' },
-  },
-  {
-    title: 'page_contact',
-    icon: 'mdi-email',
-    to: { name: 'contact' },
-  },
-];
-
-const languages = [
-  {
-    title: 'FR',
-    value: 'fr',
-  },
-  {
-    title: 'EN',
-    value: 'en',
+    name: 'Contact',
+    link: '#',
   },
 ];
 </script>
 
 <template>
-  <div class="d-flex d-md-none">
-    <v-navigation-drawer v-model="drawer" temporary>
-      <DrawerComponent :items="pages" />
-    </v-navigation-drawer>
-  </div>
-  <v-app-bar density="compact" color="red">
-    <v-app-bar-nav-icon class="d-flex d-md-none" @click="drawer = !drawer" />
-
-    <v-spacer style="padding: 2px" class="pa-md-15">
-      <v-img
-        :src="capraLogoWhite"
-        alt="Capra Logo"
-        max-height="128"
-        max-width="128"
-        min-width="128"
-      />
-    </v-spacer>
-
-    <v-list-item
-      v-for="(page, i) in pages"
-      :key="i"
-      class="d-none d-md-flex"
-      :to="page.to"
-      density="compact"
-      :title="t(page.title)"
-    />
-    <v-select
-      v-model="$i18n.locale"
-      style="padding-left: 4px; height: 38px"
-      class="d-flex"
-      density="compact"
-      variant="outlined"
-      :items="languages"
-      :item-props="itemProps"
-    />
-  </v-app-bar>
+  <nav
+    id="app"
+    class="sticky top-0 z-50 md:backdrop-blur-md bg-white md:bg-transparent"
+  >
+    <div class="container px-4 py-3 mx-auto">
+      <div class="md:flex justify-between items-center">
+        <!-- left section -->
+        <div class="flex justify-between items-center">
+          <a
+            href="#"
+            class="text-gray-800 text-xl font-bold hover:text-gray-700 md:text-2xl"
+          >
+            <img :src="logo" alt="logo" class="h-12 w-12" />
+          </a>
+          <div class="md:hidden">
+            <button
+              type="button"
+              class="text-gray-500 hover:text-gray-600 focus:text-gray-600 focus:outline-none"
+              @click="isOpen = !isOpen"
+            >
+              <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                <path
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- right section -->
+        <div
+          class="flex-col mt-3 md:flex-row md:mt-0 md:flex"
+          :class="isOpen ? 'flex' : 'hidden'"
+        >
+          <a
+            v-for="item in navbarItems"
+            :key="item.name"
+            :href="item.link"
+            class="block md:inline-block px-2 py-1 text-gray-800 hover:text-gray-700 md:px-4 md:py-2 md:text-lg"
+          >
+            {{ item.name }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
 </template>
