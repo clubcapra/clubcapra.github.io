@@ -1,5 +1,5 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
-
+import tailwindAnimated from 'tailwindcss-animated';
 export default {
   content: ['./src/**/*.{html,vue}'],
   theme: {
@@ -24,5 +24,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindAnimated],
 };

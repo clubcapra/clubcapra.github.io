@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { onBeforeMount, ref } from 'vue';
 import logo from '@clubcapra/assets/media/Capra_Cercle_Full.png';
 
 const isOpen = ref(false);
@@ -18,10 +18,26 @@ const navbarItems = [
     link: '#',
   },
 ];
+
+// Hide navbar until scroll
+onBeforeMount(() => {
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+      if (window.scrollY > 100) {
+        navbar.classList.add('bg-white');
+        navbar.classList.remove('hidden');
+      }
+    }
+  });
+});
 </script>
 
 <template>
-  <nav id="app" class="sticky top-0 z-50 md:backdrop-blur-md bg-white">
+  <nav
+    id="navbar"
+    class="fixed w-full top-0 z-50 shadow hidden animate-fade animate-duration-150"
+  >
     <div class="container px-4 py-3 mx-auto">
       <div class="md:flex justify-between items-center">
         <!-- left section -->

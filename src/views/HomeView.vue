@@ -1,46 +1,50 @@
 <script setup lang="ts">
 import robotStory from '@clubcapra/assets/media/robot_story.jpg';
+import yoloV9 from '@clubcapra/assets/media/yolov9.jpeg';
 
 import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
+import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarouselComponent.vue';
 </script>
 
 <template>
-  <div
-    class="flex flex-col md:flex-row container mx-auto justify-between h-screen w-screen px-4 gap-4"
-  >
-    <div>
-      <h1
-        class="md:pt-40 z-10 mx-auto text-primary-500 font-bold font-sans text-5xl md:text-7xl"
-      >
-        Building the future of robotics, together
-      </h1>
-      <h3
-        class="md:pt-10 z-10 mx-auto text-primary-900 font-medium font-sans text-3xl"
-      >
-        We are a student initiative that aims to develop the next generation of
-        search and rescue robots.
-      </h3>
-      <button
-        class="bg-black hover:bg-primary-700 text-white font-medium text-lg py-2 px-4 rounded-lg md:mt-10"
-      >
-        Get in touch with us
-      </button>
-    </div>
+  <section class="bg-primary-500">
+    <div
+      class="flex flex-col md:flex-row container mx-auto md:items-center h-screen w-screen px-4 gap-4"
+    >
+      <div class="md:w-1/2 z-10 flex flex-col gap-10 pt-20 md:pt-0">
+        <h1
+          class="mx-auto text-primary-50 font-bold font-sans text-5xl md:text-7xl animate-fade-up animate-delay-200"
+        >
+          Building the future of robotics, together
+        </h1>
+        <h3
+          class="mx-auto text-primary-100 font-medium font-sans text-2xl md:text-3xl animate-fade-up animate-delay-700"
+        >
+          We are a student initiative that aims to develop the next generation
+          of search and rescue robots.
+        </h3>
+        <button
+          class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 px-4 rounded-lg w-fit animate-fade-up animate-delay-1000"
+        >
+          Get in touch with us
+        </button>
+      </div>
 
-    <iframe
-      class="rounded-full bg-primary-500 self-center aspect-square"
-      style="border: none"
-      width="100%"
-      height="100%"
-      src="https://rive.app/community/9385-17851-red-robot/embed"
-    />
-  </div>
+      <iframe
+        class="aspect-square md:absolute md:right-0 md:w-1/2 md:h-full z-0 animate-jump-in"
+        style="border: none"
+        width="100%"
+        height="100%"
+        src="https://rive.app/community/9385-17851-red-robot/embed"
+      />
+    </div>
+  </section>
 
   <!-- About us -->
-  <section class="container mx-auto px-4">
+  <section class="container mx-auto px-4 pt-20">
     <div class="flex flex-col md:flex-row gap-8 items-center">
       <div class="flex md:w-1/2 flex-col gap-8">
-        <h2 class="font-bold font-sans text-3xl md:text-4xl">
+        <h2 class="font-bold font-sans text-4xl md:text-5xl">
           Our
           <span class="text-primary-500">story</span>
         </h2>
@@ -83,10 +87,12 @@ import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
   </section>
   <section>
     <div class="container mx-auto px-4 py-20">
-      <div class="flex flex-col md:flex-row-reverse gap-8 items-center w-full">
+      <div class="flex flex-col md:flex-row gap-8 items-center w-full">
         <div class="flex flex-col gap-8 md:w-1/2">
           <h2 class="font-bold font-sans text-4xl md:text-5xl">
-            Designed from scratch by us
+            Designed from
+            <span class="text-primary-500">scratch</span>
+            by us
           </h2>
           <p>
             Our robots are designed and built from scratch by our team of
@@ -101,6 +107,25 @@ import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
           height="400"
           src="https://rive.app/community/files/9884-18863-guy-designing/embed"
         />
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mx-auto px-4 py-20">
+      <div class="flex flex-col md:flex-row-reverse gap-8 items-center w-full">
+        <div class="flex flex-col gap-8 md:w-1/2">
+          <h2 class="font-bold font-sans text-4xl md:text-5xl">
+            Powered by
+            <span class="text-primary-500">AI</span>
+          </h2>
+          <p>
+            Our robots are equipped with artificial intelligence that enables
+            them to make autonomous decisions in real-time. From object
+            detection to path planning, our robots are designed to be
+            intelligent and efficient in their operations.
+          </p>
+        </div>
+        <img :src="yoloV9" alt="yolo" class="md:w-1/2 rounded-lg" />
       </div>
     </div>
   </section>
@@ -124,4 +149,5 @@ import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
       <GlobeComponent />
     </div>
   </section>
+  <CompetitionCarouselComponent />
 </template>

@@ -22,9 +22,12 @@
   "dependencies": {
     "@mdi/font": "^7.2.96",
     "aos": "^2.3.4",
+    "embla-carousel-class-names": "^8.0.2",
+    "embla-carousel-vue": "^8.0.2",
     "globe.gl": "^2.32.4",
     "pinia": "^2.1.6",
     "pinia-plugin-persistedstate": "^3.2.0",
+    "tailwindcss-animated": "^1.0.1",
     "vue": "^3.3.4",
     "vue-fullpage.js": "^0.2.15",
     "vue-i18n": "^9.2.2",
