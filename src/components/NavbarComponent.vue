@@ -10,10 +10,6 @@ const navbarItems = [
     link: '#',
   },
   {
-    name: 'Solution',
-    link: '#',
-  },
-  {
     name: 'Team',
     link: '#',
   },
@@ -21,18 +17,11 @@ const navbarItems = [
     name: 'Publications',
     link: '#',
   },
-  {
-    name: 'Contact',
-    link: '#',
-  },
 ];
 </script>
 
 <template>
-  <nav
-    id="app"
-    class="sticky top-0 z-50 md:backdrop-blur-md bg-white md:bg-transparent"
-  >
+  <nav id="app" class="sticky top-0 z-50 md:backdrop-blur-md bg-white">
     <div class="container px-4 py-3 mx-auto">
       <div class="md:flex justify-between items-center">
         <!-- left section -->
