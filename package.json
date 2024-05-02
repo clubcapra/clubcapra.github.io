@@ -20,6 +20,11 @@
     "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.yml,.json --ignore-path .eslintignore --fix"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
     "@mdi/font": "^7.2.96",
     "@videojs-player/vue": "^1.0.0",
     "aos": "^2.3.4",

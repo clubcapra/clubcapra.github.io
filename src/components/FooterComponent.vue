@@ -1,37 +1,79 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faEnvelope, faHeart } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram,
+  faFacebook,
+} from '@fortawesome/free-brands-svg-icons';
+</script>
 
 <template>
-  <footer class="mastfoot my-3">
-    <div class="inner container">
-      <div class="row">
-        <div class="col-lg-4 col-md-12 d-flex align-items-center" />
-        <div class="col-lg-4 col-md-12 d-flex align-items-center">
-          <p class="mx-auto text-center mb-0">&copy; Club Capra 2023</p>
+  <footer class="pt-10 bg-black">
+    <div class="container mx-auto text-white px-4">
+      <div class="flex flex-col gap-8 items-center">
+        <h2 class="font-sans font-bold text-3xl md:text-4xl">
+          Get in touch with us
+        </h2>
+        <div class="flex flex-row gap-4">
+          <a
+            class="border border-white rounded-full"
+            href="mailto:clubcapra@etsmtl.ca"
+          >
+            <FontAwesomeIcon
+              :icon="faEnvelope"
+              size="2x"
+              class="p-4 aspect-square"
+            />
+          </a>
+          <a
+            class="border border-white rounded-full"
+            href="https://www.facebook.com/clubcapra/"
+          >
+            <FontAwesomeIcon
+              :icon="faLinkedin"
+              size="2x"
+              class="p-4 aspect-square"
+            />
+          </a>
+          <a
+            class="border border-white rounded-full"
+            href="https://www.instagram.com/capra_ets/"
+          >
+            <FontAwesomeIcon
+              :icon="faInstagram"
+              size="2x"
+              class="p-4 aspect-square"
+            />
+          </a>
+          <a
+            class="border border-white rounded-full"
+            href="https://www.linkedin.com/company/club-capra/"
+          >
+            <FontAwesomeIcon
+              :icon="faFacebook"
+              size="2x"
+              class="p-4 aspect-square"
+            />
+          </a>
+          <a
+            class="border border-white rounded-full"
+            href="https://github.com/clubcapra"
+          >
+            <FontAwesomeIcon
+              :icon="faGithub"
+              size="2x"
+              class="p-4 aspect-square"
+            />
+          </a>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-12 d-flex align-items-center" />
-        <div class="col-lg-4 col-md-12 d-flex align-items-center">
-          <p class="mx-auto text-center mb-0">
+        <div>
+          <p class="text-center">© 2024 Club Capra. All rights reserved.</p>
+          <p class="text-center mb-0">
             {{ $t('made_with_love') }}
-            <v-icon icon="mdi-heart" />
+            <FontAwesomeIcon :icon="faHeart" />
           </p>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <nav class="nav nav-mastfoot justify-content-center">
-            <a class="nav-link" href="https://www.facebook.com/clubcapra/">
-              <i class="fab fa-facebook-f" />
-            </a>
-            <a class="nav-link" href="https://www.instagram.com/capra_ets/">
-              <i class="fab fa-instagram" />
-            </a>
-            <a
-              class="nav-link"
-              href="https://www.linkedin.com/company/club-capra/"
-            >
-              <i class="fab fa-linkedin" />
-            </a>
-          </nav>
         </div>
       </div>
     </div>

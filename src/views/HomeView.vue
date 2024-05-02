@@ -13,6 +13,7 @@ import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarou
 import { VideoPlayer } from '@videojs-player/vue';
 import 'video.js/dist/video-js.css';
 import TeamProjectCardComponent from '@clubcapra/components/TeamProjectCardComponent.vue';
+import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselComponent.vue';
 </script>
 
 <template>
@@ -239,5 +240,11 @@ import TeamProjectCardComponent from '@clubcapra/components/TeamProjectCardCompo
         />
       </div>
     </div>
+  </section>
+  <section class="container px-4 mx-auto pb-20">
+    <h2 class="font-bold font-sans text-4xl md:text-5xl text-center mb-8">
+      People that love working with us
+    </h2>
+    <SponsorCarouselComponent />
   </section>
 </template>
