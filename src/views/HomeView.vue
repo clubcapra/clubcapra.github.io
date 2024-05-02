@@ -2,8 +2,13 @@
 import robotStory from '@clubcapra/assets/media/robot_story.jpg';
 import yoloV9 from '@clubcapra/assets/media/yolov9.jpeg';
 
+import enrichVideo from '@clubcapra/assets/media/Capra_montage.mp4';
+
 import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
 import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarouselComponent.vue';
+
+import { VideoPlayer } from '@videojs-player/vue';
+import 'video.js/dist/video-js.css';
 </script>
 
 <template>
@@ -68,21 +73,22 @@ import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarou
       </div>
     </div>
   </section>
-  <section class="bg-black py-40 mt-20">
+  <section class="bg-black py-20 mt-20">
     <div
       class="flex flex-col gap-12 items-center justify-center container px-4 w-full mx-auto"
     >
-      <h2 class="font-bold font-sans text-3xl md:text-5xl text-primary-50">
-        See our robots in action
-      </h2>
-      <iframe
-        class="rounded-lg aspect-video w-full md:w-3/4"
-        src="https://www.youtube.com/embed/_KpCUCoCCqU"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      />
+      <div class="flex flex-col items-center justify-center gap-4">
+        <h2 class="font-bold font-sans text-3xl md:text-5xl text-primary-50">
+          See our robots in action
+        </h2>
+        <h5 class="font-sans text-lg md:text-xl text-primary-50">
+          Watch our award-winning performance at the EnRicH 2023 competition
+        </h5>
+      </div>
+
+      <div class="w-3/5 rounded-lg">
+        <VideoPlayer controls preload="auto" :src="enrichVideo" fluid />
+      </div>
     </div>
   </section>
   <section>
