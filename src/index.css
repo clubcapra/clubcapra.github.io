@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: optional;
-    src: url(/fonts/inter-var-latin.woff2) format('woff2');
-  }
+html {
+  scroll-behavior: smooth;
 }

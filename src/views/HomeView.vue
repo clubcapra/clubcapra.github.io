@@ -37,13 +37,14 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
           We are a student initiative that aims to develop the next generation
           of search and rescue robots.
         </h3>
-        <button
+        <a
           class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 px-4 rounded-lg w-fit"
           data-aos="fade-up"
           data-aos-delay="1000"
+          href="#footer "
         >
           Get in touch with us
-        </button>
+        </a>
       </div>
 
       <iframe
@@ -116,9 +117,8 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
           data-aos-delay="200"
         >
           <h2 class="font-bold font-sans text-4xl md:text-5xl">
-            Designed from
+            Robots designed from
             <span class="text-primary-500">scratch</span>
-            by us
           </h2>
           <p>
             Our robots are designed and built from scratch by our team of
@@ -243,7 +243,7 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
   </section>
   <section class="container px-4 mx-auto pb-20">
     <h2 class="font-bold font-sans text-4xl md:text-5xl text-center mb-8">
-      People that love working with us
+      People that love to work with us
     </h2>
     <SponsorCarouselComponent />
   </section>

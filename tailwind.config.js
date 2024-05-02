@@ -1,4 +1,3 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
 import tailwindAnimated from 'tailwindcss-animated';
 export default {
   content: ['./src/**/*.{html,vue}'],
@@ -18,9 +17,6 @@ export default {
           900: '#920b0a',
           950: '#500000',
         },
-      },
-      fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
     },
   },

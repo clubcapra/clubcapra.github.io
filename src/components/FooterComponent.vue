@@ -10,7 +10,7 @@ import {
 </script>
 
 <template>
-  <footer class="pt-10 bg-black">
+  <footer id="footer" class="pt-10 bg-black">
     <div class="container mx-auto text-white px-4">
       <div class="flex flex-col gap-8 items-center">
         <h2 class="font-sans font-bold text-3xl md:text-4xl">
