@@ -96,5 +96,5 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="globe" />
+  <div ref="globe" data-aos="zoom-in" data-aos-delay="1000" />
 </template>

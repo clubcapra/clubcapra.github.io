@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import robotStory from '@clubcapra/assets/media/robot_story.jpg';
 import yoloV9 from '@clubcapra/assets/media/yolov9.jpeg';
+import codeIcon from '@clubcapra/assets/media/icons8-code-100.png';
+import circuitIcon from '@clubcapra/assets/media/icons8-circuit-100.png';
+import gearIcon from '@clubcapra/assets/media/icons8-gear-100.png';
 
 import enrichVideo from '@clubcapra/assets/media/Capra_montage.mp4';
 
@@ -9,6 +12,7 @@ import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarou
 
 import { VideoPlayer } from '@videojs-player/vue';
 import 'video.js/dist/video-js.css';
+import TeamProjectCardComponent from '@clubcapra/components/TeamProjectCardComponent.vue';
 </script>
 
 <template>
@@ -18,29 +22,37 @@ import 'video.js/dist/video-js.css';
     >
       <div class="md:w-1/2 z-10 flex flex-col gap-10 pt-20 md:pt-0">
         <h1
-          class="mx-auto text-primary-50 font-bold font-sans text-5xl md:text-7xl animate-fade-up animate-delay-200"
+          class="mx-auto text-white font-bold font-sans text-5xl md:text-7xl"
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           Building the future of robotics, together
         </h1>
         <h3
-          class="mx-auto text-primary-100 font-medium font-sans text-2xl md:text-3xl animate-fade-up animate-delay-700"
+          class="mx-auto text-primary-100 font-medium font-sans text-2xl md:text-3xl"
+          data-aos="fade-up"
+          data-aos-delay="700"
         >
           We are a student initiative that aims to develop the next generation
           of search and rescue robots.
         </h3>
         <button
-          class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 px-4 rounded-lg w-fit animate-fade-up animate-delay-1000"
+          class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 px-4 rounded-lg w-fit"
+          data-aos="fade-up"
+          data-aos-delay="1000"
         >
           Get in touch with us
         </button>
       </div>
 
       <iframe
-        class="aspect-square md:absolute md:right-0 md:w-1/2 md:h-full z-0 animate-jump-in"
+        class="aspect-square md:absolute md:right-0 md:w-1/2 md:h-full z-0"
         style="border: none"
         width="100%"
         height="100%"
         src="https://rive.app/community/9385-17851-red-robot/embed"
+        data-aos="zoom-in"
+        data-aos-delay="100"
       />
     </div>
   </section>
@@ -48,7 +60,7 @@ import 'video.js/dist/video-js.css';
   <!-- About us -->
   <section class="container mx-auto px-4 pt-20">
     <div class="flex flex-col md:flex-row gap-8 items-center">
-      <div class="flex md:w-1/2 flex-col gap-8">
+      <div class="flex md:w-1/2 flex-col gap-8" data-aos="fade-up">
         <h2 class="font-bold font-sans text-4xl md:text-5xl">
           Our
           <span class="text-primary-500">story</span>
@@ -68,7 +80,7 @@ import 'video.js/dist/video-js.css';
           impact on the evolution of robotics.
         </p>
       </div>
-      <div class="md:w-1/2">
+      <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="400">
         <img :src="robotStory" alt="robot" class="rounded-lg" />
       </div>
     </div>
@@ -77,16 +89,19 @@ import 'video.js/dist/video-js.css';
     <div
       class="flex flex-col gap-12 items-center justify-center container px-4 w-full mx-auto"
     >
-      <div class="flex flex-col items-center justify-center gap-4">
-        <h2 class="font-bold font-sans text-3xl md:text-5xl text-primary-50">
+      <div
+        class="flex flex-col items-center justify-center gap-4"
+        data-aos="fade-up"
+      >
+        <h2 class="font-bold font-sans text-3xl md:text-5xl text-white">
           See our robots in action
         </h2>
-        <h5 class="font-sans text-lg md:text-xl text-primary-50">
+        <h5 class="font-sans text-lg md:text-xl text-white">
           Watch our award-winning performance at the EnRicH 2023 competition
         </h5>
       </div>
 
-      <div class="w-3/5 rounded-lg">
+      <div class="w-3/5 rounded-lg" data-aos-delay="400" data-aos="zoom-in">
         <VideoPlayer controls preload="auto" :src="enrichVideo" fluid />
       </div>
     </div>
@@ -94,7 +109,11 @@ import 'video.js/dist/video-js.css';
   <section>
     <div class="container mx-auto px-4 py-20">
       <div class="flex flex-col md:flex-row gap-8 items-center w-full">
-        <div class="flex flex-col gap-8 md:w-1/2">
+        <div
+          class="flex flex-col gap-8 md:w-1/2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <h2 class="font-bold font-sans text-4xl md:text-5xl">
             Designed from
             <span class="text-primary-500">scratch</span>
@@ -112,6 +131,8 @@ import 'video.js/dist/video-js.css';
           style="border: none"
           height="400"
           src="https://rive.app/community/files/9884-18863-guy-designing/embed"
+          data-aos="fade-left"
+          data-aos-delay="400"
         />
       </div>
     </div>
@@ -119,7 +140,11 @@ import 'video.js/dist/video-js.css';
   <section>
     <div class="container mx-auto px-4 py-20">
       <div class="flex flex-col md:flex-row-reverse gap-8 items-center w-full">
-        <div class="flex flex-col gap-8 md:w-1/2">
+        <div
+          class="flex flex-col gap-8 md:w-1/2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <h2 class="font-bold font-sans text-4xl md:text-5xl">
             Powered by
             <span class="text-primary-500">AI</span>
@@ -131,7 +156,13 @@ import 'video.js/dist/video-js.css';
             intelligent and efficient in their operations.
           </p>
         </div>
-        <img :src="yoloV9" alt="yolo" class="md:w-1/2 rounded-lg" />
+        <img
+          :src="yoloV9"
+          alt="yolo"
+          class="md:w-1/2 rounded-lg"
+          data-aos="fade-right"
+          data-aos-delay="400"
+        />
       </div>
     </div>
   </section>
@@ -139,11 +170,15 @@ import 'video.js/dist/video-js.css';
     <div
       class="flex flex-col md:flex-row gap-8 items-center container w-full mx-auto px-4 h-96 md:h-96 mb-80 md:mb-0"
     >
-      <div class="flex flex-col gap-8 md:w-1/2 z-10">
-        <h2 class="font-bold font-sans text-4xl md:text-5xl text-primary-50">
+      <div
+        class="flex flex-col gap-8 md:w-1/2 z-10"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <h2 class="font-bold font-sans text-4xl md:text-5xl text-white">
           Impact on a global scale
         </h2>
-        <p class="text-primary-50">
+        <p class="text-white">
           Our robots participate in international competitions and events. We
           have showcased our robots in countries like Thailand, Germany,
           Austria, and Australia. Our goal is to make a global impact and
@@ -156,4 +191,53 @@ import 'video.js/dist/video-js.css';
     </div>
   </section>
   <CompetitionCarouselComponent />
+  <section class="container px-4 mx-auto py-20">
+    <div>
+      <h2
+        class="font-bold font-sans text-4xl md:text-5xl text-center"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        Contribute to one of our teams
+      </h2>
+      <!-- Team card-->
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 md:mt-12 w-full md:w-3/4 mx-auto"
+      >
+        <TeamProjectCardComponent
+          :icon="gearIcon"
+          title="Mechanical Engineering"
+          :tasks="[
+            'Design and build the mechanical components of our robot',
+            'Work with 3D modeling software to create detailed designs',
+            'Collaborate with other team members to integrate mechanical components',
+          ]"
+          data-aos="fade-up"
+          data-aos-delay="800"
+        />
+        <TeamProjectCardComponent
+          :icon="circuitIcon"
+          title="Electrical Engineering"
+          :tasks="[
+            'Design and build the electrical systems of our robot',
+            'Work with microcontrollers and sensors to control the robot',
+            'Collaborate with other team members to integrate electrical systems',
+          ]"
+          data-aos="fade-up"
+          data-aos-delay="1200"
+        />
+        <TeamProjectCardComponent
+          :icon="codeIcon"
+          title="Software Engineering"
+          :tasks="[
+            'Develop the software that controls the robot',
+            'Implement algorithms for object detection and path planning',
+            'Collaborate with other team members to integrate software components',
+          ]"
+          data-aos="fade-up"
+          data-aos-delay="1600"
+        />
+      </div>
+    </div>
+  </section>
 </template>

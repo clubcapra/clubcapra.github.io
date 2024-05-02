@@ -82,8 +82,19 @@ const competitions = [
 </script>
 <template>
   <section class="container pt-10 mx-auto flex flex-col gap-8 px-4">
-    <h2 class="text-4xl md:text-5xl font-bold">Our past competitions</h2>
-    <div ref="emblaRef" class="relative overflow-hidden">
+    <h2
+      class="text-4xl md:text-5xl font-bold"
+      data-aos="fade-up"
+      data-aos-delay="400"
+    >
+      Our past competitions
+    </h2>
+    <div
+      ref="emblaRef"
+      class="relative overflow-hidden"
+      data-aos="fade-up"
+      data-aos-delay="800"
+    >
       <div class="embla__container z-0">
         <div
           v-for="(competition, index) in competitions"

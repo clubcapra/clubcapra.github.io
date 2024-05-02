@@ -27,17 +27,17 @@ const isHovering = ref(false);
     />
     <div class="flex flex-col md:w-1/2 md:h-full justify-between md:py-10">
       <div class="flex flex-col p-4">
-        <h2 class="text-primary-50 text-2xl font-bold">{{ title }}</h2>
-        <h5 class="text-primary-50 text-lg font-medium">{{ location }}</h5>
+        <h2 class="text-white text-2xl font-bold">{{ title }}</h2>
+        <h5 class="text-white text-lg font-medium">{{ location }}</h5>
       </div>
 
-      <p class="text-primary-50 p-4">{{ description }}</p>
+      <p class="text-white p-4">{{ description }}</p>
 
       <a
         v-if="link"
         id="learn-more"
         :href="link"
-        class="text-primary-50 font-medium text-lg rounded-full m-4 hover:cursor-pointer inline-flex items-center hover:no-underline underline"
+        class="text-white font-medium text-lg rounded-full m-4 hover:cursor-pointer inline-flex items-center hover:no-underline underline"
         target="_blank"
         @mouseover="isHovering = true"
         @mouseleave="isHovering = false"
@@ -47,7 +47,7 @@ const isHovering = ref(false);
         <svg
           id="arrow"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-primary-50 animate-fade animate-duration-200"
+          class="h-6 w-6 text-white animate-fade animate-duration-200"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
