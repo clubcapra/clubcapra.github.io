@@ -137,7 +137,7 @@ import 'video.js/dist/video-js.css';
   </section>
   <section class="bg-black py-20">
     <div
-      class="flex flex-col md:flex-row gap-8 items-center container w-full mx-auto px-4 h-64 md:h-96"
+      class="flex flex-col md:flex-row gap-8 items-center container w-full mx-auto px-4 h-96 md:h-96 mb-80 md:mb-0"
     >
       <div class="flex flex-col gap-8 md:w-1/2 z-10">
         <h2 class="font-bold font-sans text-4xl md:text-5xl text-primary-50">

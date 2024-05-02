@@ -10,28 +10,35 @@ defineProps<{
   /** Description */
   description: string;
   /** Link */
-  link: string;
+  link?: string;
 }>();
 
 const isHovering = ref(false);
 </script>
 
 <template>
-  <div class="bg-black flex flex-row rounded-lg h-96 shadow-md">
-    <div class="flex flex-col">
-      <img :src="image" alt="competition" class="w-full h-full rounded-l-lg" />
-    </div>
-    <div class="flex flex-col w-3/5 gap-4 h-full justify-between py-10">
+  <div
+    class="bg-black flex flex-col md:flex-row rounded-lg md:h-96 h-[36rem] shadow-md"
+  >
+    <img
+      :src="image"
+      alt="competition"
+      class="md:rounded-r-none rounded-b-none rounded-t-lg md:rounded-l-lg h-1/2 object-cover md:h-full md:w-1/2"
+    />
+    <div class="flex flex-col md:w-1/2 md:h-full justify-between md:py-10">
       <div class="flex flex-col p-4">
         <h2 class="text-primary-50 text-2xl font-bold">{{ title }}</h2>
         <h5 class="text-primary-50 text-lg font-medium">{{ location }}</h5>
       </div>
 
       <p class="text-primary-50 p-4">{{ description }}</p>
+
       <a
+        v-if="link"
         id="learn-more"
         :href="link"
         class="text-primary-50 font-medium text-lg rounded-full m-4 hover:cursor-pointer inline-flex items-center hover:no-underline underline"
+        target="_blank"
         @mouseover="isHovering = true"
         @mouseleave="isHovering = false"
       >
