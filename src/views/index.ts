@@ -13,14 +13,6 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
-    path: '/robots',
-    name: 'robots',
-    component: () => import('./RobotsView.vue'),
-    meta: {
-      title: i18n.global.t('page_robots'),
-    },
-  },
-  {
     path: '/team',
     name: 'team',
     component: () => import('./TeamView.vue'),
