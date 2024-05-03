@@ -74,9 +74,11 @@ onMounted(() => {
   // Globe max height
   // If mobile, set the width to the window width if not set width to half of the window width
   if (window.innerWidth < 768) {
-    globeInstance.width(window.innerWidth).height(window.innerHeight / 2);
+    globeInstance.width(window.innerWidth - 32).height(400);
+  } else if (window.innerWidth < 1100) {
+    globeInstance.width(window.innerWidth / 2).height(500);
   } else {
-    globeInstance.width(window.innerWidth / 3).height(window.innerHeight / 1.5);
+    globeInstance.width(window.innerWidth / 3).height(500);
   }
 
   // Resize the globe when the window is resized
@@ -85,11 +87,11 @@ onMounted(() => {
 
     // If mobile, set the width to the window width if not set width to half of the window width
     if (window.innerWidth < 768) {
-      globeInstance.width(window.innerWidth).height(window.innerHeight / 2);
+      globeInstance.width(window.innerWidth - 32).height(400);
+    } else if (window.innerWidth < 1100) {
+      globeInstance.width(window.innerWidth / 2).height(500);
     } else {
-      globeInstance
-        .width(window.innerWidth / 2)
-        .height(window.innerHeight / 1.5);
+      globeInstance.width(window.innerWidth / 3).height(500);
     }
   });
 });
