@@ -5,13 +5,9 @@ import codeIcon from '@clubcapra/assets/media/icons8-code-100.png';
 import circuitIcon from '@clubcapra/assets/media/icons8-circuit-100.png';
 import gearIcon from '@clubcapra/assets/media/icons8-gear-100.png';
 
-import enrichVideo from '@clubcapra/assets/media/Capra_montage.mp4';
-
 import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
 import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarouselComponent.vue';
 
-import { VideoPlayer } from '@videojs-player/vue';
-import 'video.js/dist/video-js.css';
 import TeamProjectCardComponent from '@clubcapra/components/TeamProjectCardComponent.vue';
 import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselComponent.vue';
 </script>
@@ -93,8 +89,14 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
         </h5>
       </div>
 
-      <div class="w-3/5 rounded-lg" data-aos-delay="400" data-aos="zoom-in">
-        <VideoPlayer controls preload="auto" :src="enrichVideo" fluid />
+      <div class="w-full max-w-4xl" data-aos-delay="400" data-aos="zoom-in">
+        <!-- YouTube video iframe -->
+        <iframe
+          width="100%"
+          height="100%"
+          class="rounded-l aspect-video"
+          src="https://www.youtube.com/embed/_KpCUCoCCqU"
+        />
       </div>
     </div>
   </section>
