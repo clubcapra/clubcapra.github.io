@@ -109,14 +109,11 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
           data-aos-delay="200"
         >
           <h2 class="font-bold font-sans text-4xl md:text-5xl">
-            Robots designed from
-            <span class="text-primary-500">scratch</span>
+            {{ $t('robots_design_title') }}
+            <span class="text-primary-500">{{ $t('scratch_title') }}</span>
           </h2>
           <p>
-            Our robots are designed and built from scratch by our team of
-            dedicated students. We use cutting-edge technology and innovative
-            design to create robots that can navigate through challenging
-            terrains and save lives.
+            {{ $t('robots_design_content') }}
           </p>
         </div>
         <iframe
@@ -139,14 +136,11 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
           data-aos-delay="200"
         >
           <h2 class="font-bold font-sans text-4xl md:text-5xl">
-            Powered by
-            <span class="text-primary-500">AI</span>
+            {{ $t('powered_by_title') }}
+            <span class="text-primary-500">{{ $t('ai') }}</span>
           </h2>
           <p>
-            Our robots are equipped with artificial intelligence that enables
-            them to make autonomous decisions in real-time. From object
-            detection to path planning, our robots are designed to be
-            intelligent and efficient in their operations.
+            {{ $t('powered_by_content') }}
           </p>
         </div>
         <img
@@ -169,13 +163,10 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
         data-aos-delay="500"
       >
         <h2 class="font-bold font-sans text-4xl md:text-5xl text-white">
-          Impact on a global scale
+          {{ $t('global_impact_title') }}
         </h2>
         <p class="text-white">
-          Our robots participate in international competitions and events. We
-          have showcased our robots in countries like Thailand, Germany,
-          Austria, and Australia. Our goal is to make a global impact and
-          inspire the next generation of roboticists.
+          {{ $t('global_impact_content') }}
         </p>
       </div>
 

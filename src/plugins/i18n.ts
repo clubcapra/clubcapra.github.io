@@ -38,7 +38,38 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Our robot Markhor winning the best in class in Search & Rescue at EnRicH 2023',
     fr: 'Notre robot Markhor remportant le prix de la meilleure classe en recherche et sauvetage à EnRicH 2023',
   },
-
+  robots_design_title: {
+    en: 'Robots designed from',
+    fr: 'Robots conçus de',
+  },
+  scratch_title: {
+    en: 'scratch',
+    fr: 'A à Z',
+  },
+  robots_design_content: {
+    en: 'Our robots are designed and built from scratch by our team of dedicated students. We use cutting-edge technologies and innovative designs to create robots that can navigate through challenging terrains and save lives.',
+    fr: "Nos robots sont conçus et construits de A à Z par notre équipe d'étudiants dévoués. Nous utilisons des technologies de pointe et des conceptions innovantes pour créer des robots capables de naviguer dans des terrains difficiles et de sauver des vies.",
+  },
+  powered_by_title: {
+    en: 'Powered by',
+    fr: 'Alimenté par',
+  },
+  ai: {
+    en: 'AI',
+    fr: "l'IA",
+  },
+  powered_by_content: {
+    en: 'Our robots are equipped with artificial intelligence that enables them to make autonomous decisions in real-time. From object detection to path planning, our robots are designed to be intelligent and efficient in their operations.',
+    fr: "Nos robots sont équipés d'intelligence artificielle qui leur permet de prendre des décisions autonomes en temps réel. De la détection d'objets à la planification de trajectoires, nos robots sont conçus pour être intelligents et efficaces dans leurs opérations.",
+  },
+  gobal_impact_title: {
+    en: 'Impact on a global scale',
+    fr: "Impact à l'échelle mondiale",
+  },
+  global_impact_content: {
+    en: 'Our robots participate in international competitions and events every year. We have showcased our robots in countries like Thailand, Germany, Austria, and Australia. Our goal is to make a global impact and inspire the next generation of roboticists.',
+    fr: "Nos robots participent à des compétitions et événements internationaux chaque année. Nous avons présenté nos robots dans des pays comme la Thaïlande, l'Allemagne, l'Autriche et l'Australie. Notre objectif est de faire un impact mondial et d'inspirer la prochaine génération de roboticiens.",
+  },
   copyright: {
     en: '© 2024 Club Capra. All rights reserved.',
     fr: '© 2024 Club Capra. Tous droits réservés.',
