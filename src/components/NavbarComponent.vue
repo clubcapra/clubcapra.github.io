@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onBeforeMount, ref } from 'vue';
+import { onBeforeMount, onMounted, ref } from 'vue';
 import logo from '@clubcapra/assets/media/Capra_Cercle_Full.png';
 
 const isOpen = ref(false);
@@ -7,29 +7,53 @@ const isOpen = ref(false);
 const navbarItems = [
   {
     name: 'About us',
-    link: '#',
+    link: '/',
+    selected: false,
   },
   {
     name: 'Team',
-    link: '#',
+    link: '/team',
+    selected: false,
   },
   {
     name: 'Publications',
     link: '#',
+    selected: false,
   },
 ];
 
 // Hide navbar until scroll
 onBeforeMount(() => {
+  // Hide navbar on home page until scroll
+
   window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
     if (navbar) {
-      if (window.scrollY > 100) {
-        navbar.classList.add('bg-white');
-        navbar.classList.remove('hidden');
+      if (window.location.pathname === '/') {
+        if (window.scrollY > 100) {
+          navbar.classList.add('bg-white');
+          navbar.classList.remove('hidden');
+        }
       }
     }
   });
+
+  // Check which page we are on
+  for (const item of navbarItems) {
+    if (window.location.pathname === item.link) {
+      item.selected = true;
+    }
+  }
+});
+
+onMounted(() => {
+  if (window.location.pathname !== '/') {
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+      navbar.classList.add('bg-white');
+      navbar.classList.remove('hidden');
+    }
+  }
 });
 </script>
 
@@ -42,16 +66,13 @@ onBeforeMount(() => {
       <div class="md:flex justify-between items-center">
         <!-- left section -->
         <div class="flex justify-between items-center">
-          <a
-            href="#"
-            class="text-gray-800 text-xl font-bold hover:text-gray-700 md:text-2xl"
-          >
+          <a href="/" class="text-xl font-bold md:text-2xl">
             <img :src="logo" alt="logo" class="h-12 w-12" />
           </a>
           <div class="md:hidden">
             <button
               type="button"
-              class="text-gray-500 hover:text-gray-600 focus:text-gray-600 focus:outline-none"
+              class="text-gray-500 hover:text-primary-700 focus:text-gray-600 focus:outline-none"
               @click="isOpen = !isOpen"
             >
               <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
@@ -71,7 +92,8 @@ onBeforeMount(() => {
             v-for="item in navbarItems"
             :key="item.name"
             :href="item.link"
-            class="block md:inline-block px-2 py-1 text-gray-800 hover:text-gray-700 md:px-4 md:py-2 md:text-lg"
+            class="block md:inline-block px-2 py-1 text-gray-800 hover:text-primary-700 md:px-4 md:py-2 md:text-lg"
+            :class="item.selected ? 'text-primary-700' : ''"
           >
             {{ item.name }}
           </a>

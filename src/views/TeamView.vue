@@ -43,12 +43,6 @@ const administration: Member[] = [
     title: 'title_co_captain_treasury',
   },
   {
-    name: 'Benoit Malenfant',
-    img: benoitMalenfant,
-    program: 'engineering_electrical',
-    title: 'title_technical_director',
-  },
-  {
     name: 'Nicolas Vigneault',
     program: 'engineering_gpa',
     title: 'title_technical_director',
@@ -102,7 +96,7 @@ const electrical: Member[] = [
   {
     name: 'Benoit Malenfant',
     img: benoitMalenfant,
-    program: 'Génie Électrique',
+    program: 'engineering_electrical',
   },
   {
     name: 'Léo-Daniel Gosselin',
@@ -217,10 +211,15 @@ const sections = [
 <template>
   <section>
     <div class="container mx-auto px-4">
+      <div class="pt-40 pb-20">
+        <h2 class="text-5xl font-bold font-sans text-center">
+          {{ t('our_team_title') }}
+        </h2>
+      </div>
       <div class="flex flex-col gap-8 items-center">
         <template v-for="(section, key) in sections" :key="key">
           <div>
-            <h2 class="font-bold font-sans text-4xl md:text-5xl">
+            <h2 class="font-bold font-sans text-3xl md:text-4xl">
               {{ t(section.title) }}
             </h2>
           </div>
