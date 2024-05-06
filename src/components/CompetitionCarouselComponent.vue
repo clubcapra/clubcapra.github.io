@@ -52,31 +52,42 @@ const competitions = [
     title: 'EnRicH 2023',
     location: 'Zwentendorf, Austria',
     link: 'https://enrich2023.european-robotics.eu/',
-    description:
-      "Our team participated in the Zwentendorf competition in 2021. We were able to showcase our robot's capabilities and learn from other teams.",
+    tasks: [
+      'Create a 3D map of the nuclear power plant',
+      'Identify and locate radioactive sources',
+      'Rescue a dummy from a hazardous area',
+    ],
   },
   {
     image: robocup2022,
     title: 'Robocup 2022',
     location: 'Bangkok, Thailand',
     link: 'https://2022.robocup.org/',
-    description:
-      "Our team participated in the Zwentendorf competition in 2021. We were able to showcase our robot's capabilities and learn from other teams.",
+    tasks: [
+      'Navigate through obstacle courses as fast as possible',
+      'Scan QR codes to collect points',
+      'Use our robotic arm to pick up objects and place them in designated areas',
+    ],
   },
   {
     image: robocup2021,
     title: 'Robocup German Open 2021',
     location: 'Dortmund, Germany',
-    description:
-      "Our team participated in the Zwentendorf competition in 2021. We were able to showcase our robot's capabilities and learn from other teams.",
+    tasks: [
+      'Navigate through obstacle courses as fast as possible',
+      'Use a thermal camera to detect heat sources',
+      'Detect CO2 levels in the environment',
+    ],
   },
   {
     image: robocup2019,
     title: 'RoboCup 2019',
     location: 'Sydney, Australia',
     link: 'https://2019.robocup.org/',
-    description:
-      "Our team participated in the Zwentendorf competition in 2021. We were able to showcase our robot's capabilities and learn from other teams.",
+    tasks: [
+      'Identify hazardous signs with our camera system',
+      'Navigate through obstacle courses as fast as possible',
+    ],
   },
 ];
 </script>
@@ -105,7 +116,7 @@ const competitions = [
             :image="competition.image"
             :title="competition.title"
             :location="competition.location"
-            :description="competition.description"
+            :tasks="competition.tasks"
             :link="competition.link"
           />
         </div>

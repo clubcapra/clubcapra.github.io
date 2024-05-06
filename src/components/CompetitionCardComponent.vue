@@ -8,7 +8,7 @@ defineProps<{
   /** Location */
   location: string;
   /** Description */
-  description: string;
+  tasks: string[];
   /** Link */
   link?: string;
 }>();
@@ -25,13 +25,19 @@ const isHovering = ref(false);
       alt="competition"
       class="md:rounded-r-none rounded-b-none rounded-t-lg md:rounded-l-lg h-1/2 object-cover md:h-full md:w-1/2"
     />
-    <div class="flex flex-col md:w-1/2 md:h-full justify-between md:py-10">
+    <div class="flex flex-col md:w-1/2 md:h-full md:py-10">
       <div class="flex flex-col p-4">
         <h2 class="text-white text-2xl font-bold">{{ title }}</h2>
         <h5 class="text-white text-lg font-medium">{{ location }}</h5>
       </div>
-
-      <p class="text-white p-4">{{ description }}</p>
+      <div class="p-4">
+        <p class="text-white font-bold text-lg pb-2">Notable tasks:</p>
+        <ul class="list-inside text-white">
+          <li v-for="task in tasks" :key="task">
+            {{ task }}
+          </li>
+        </ul>
+      </div>
 
       <a
         v-if="link"

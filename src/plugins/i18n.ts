@@ -62,7 +62,7 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Our robots are equipped with artificial intelligence that enables them to make autonomous decisions in real-time. From object detection to path planning, our robots are designed to be intelligent and efficient in their operations.',
     fr: "Nos robots sont équipés d'intelligence artificielle qui leur permet de prendre des décisions autonomes en temps réel. De la détection d'objets à la planification de trajectoires, nos robots sont conçus pour être intelligents et efficaces dans leurs opérations.",
   },
-  gobal_impact_title: {
+  global_impact_title: {
     en: 'Impact on a global scale',
     fr: "Impact à l'échelle mondiale",
   },
