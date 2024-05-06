@@ -7,7 +7,7 @@ defineProps<{
   title: string;
   /** Location */
   location: string;
-  /** Description */
+  /** Tasks */
   tasks: string[];
   /** Link */
   link?: string;

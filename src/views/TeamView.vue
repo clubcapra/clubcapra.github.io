@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 // Components
-import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
 import MemberItemComponent from '@clubcapra/components/MemberItemComponent.vue';
 
 // Media
 import defaultAvatar from '@clubcapra/assets/media/team/avatar.png';
-import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
 
 // Members pictures
 import davidCaron from '@clubcapra/assets/media/team/davidCaron.jpg';
@@ -217,16 +215,17 @@ const sections = [
 </script>
 
 <template>
-  <JumbotronVideoComponent :title="$t('our_team_title')" :img="teamCapra" />
-  <section id="features">
-    <div class="container">
-      <div class="section-content">
+  <section>
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col gap-8 items-center">
         <template v-for="(section, key) in sections" :key="key">
-          <div class="title-wrap" data-aos="fade-up">
-            <h2 class="section-title">{{ t(section.title) }}</h2>
+          <div>
+            <h2 class="font-bold font-sans text-4xl md:text-5xl">
+              {{ t(section.title) }}
+            </h2>
           </div>
 
-          <div class="row justify-content-center">
+          <div class="flex flex-wrap justify-center items-center">
             <MemberItemComponent
               v-for="(member, j) in section.members"
               :key="j"
