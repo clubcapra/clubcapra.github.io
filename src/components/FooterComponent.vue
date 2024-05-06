@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faEnvelope, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import logo from '@clubcapra/assets/media/Capra_Cercle_Full.png';
 import {
   faGithub,
   faLinkedin,
@@ -12,69 +13,50 @@ import {
 <template>
   <footer id="footer" class="pt-10 bg-black">
     <div class="container mx-auto text-white px-4">
-      <div class="flex flex-col gap-8 items-center">
-        <h2 class="font-sans font-bold text-3xl md:text-4xl">
-          Get in touch with us
-        </h2>
-        <div class="flex flex-row gap-4">
-          <a
-            class="border border-white rounded-full"
-            href="mailto:clubcapra@etsmtl.ca"
-          >
-            <FontAwesomeIcon
-              :icon="faEnvelope"
-              size="2x"
-              class="p-4 aspect-square"
-            />
-          </a>
-          <a
-            class="border border-white rounded-full"
-            href="https://www.facebook.com/clubcapra/"
-          >
-            <FontAwesomeIcon
-              :icon="faLinkedin"
-              size="2x"
-              class="p-4 aspect-square"
-            />
-          </a>
-          <a
-            class="border border-white rounded-full"
-            href="https://www.instagram.com/capra_ets/"
-          >
-            <FontAwesomeIcon
-              :icon="faInstagram"
-              size="2x"
-              class="p-4 aspect-square"
-            />
-          </a>
-          <a
-            class="border border-white rounded-full"
-            href="https://www.linkedin.com/company/club-capra/"
-          >
-            <FontAwesomeIcon
-              :icon="faFacebook"
-              size="2x"
-              class="p-4 aspect-square"
-            />
-          </a>
-          <a
-            class="border border-white rounded-full"
-            href="https://github.com/clubcapra"
-          >
-            <FontAwesomeIcon
-              :icon="faGithub"
-              size="2x"
-              class="p-4 aspect-square"
-            />
-          </a>
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="flex flex-col md:flex-row gap-4 md:w-1/3">
+          <img :src="logo" alt="logo" class="h-16 w-16" />
+          <div class="flex flex-row items-center text-lg gap-1">
+            <FontAwesomeIcon :icon="faEnvelope" class="w-6" />
+            <p>clubcapra@etsmtl.ca</p>
+          </div>
+          <div class="flex flex-row items-center text-lg gap-1">
+            <FontAwesomeIcon :icon="faLocationDot" class="w-6" />
+            <p>
+              {{ $t('location') }}
+              <br />
+              {{ $t('room_number') }}
+            </p>
+          </div>
+
+          <p />
         </div>
-        <div>
-          <p class="text-center">© 2024 Club Capra. All rights reserved.</p>
-          <p class="text-center mb-0">
-            {{ $t('made_with_love') }}
-            <FontAwesomeIcon :icon="faHeart" />
-          </p>
+        <div class="flex flex-col gap-4">
+          <h5 class="font-sans font-bold text-xl md:text-2xl">
+            {{ $t('our_socials') }}
+          </h5>
+          <div class="flex flex-row gap-4">
+            <a class="text-xl" href="https://www.facebook.com/clubcapra/">
+              <FontAwesomeIcon :icon="faLinkedin" />
+            </a>
+            <a class="text-xl" href="https://www.instagram.com/capra_ets/">
+              <FontAwesomeIcon :icon="faInstagram" />
+            </a>
+            <a
+              class="text-xl"
+              href="https://www.linkedin.com/company/club-capra/"
+            >
+              <FontAwesomeIcon :icon="faFacebook" />
+            </a>
+            <a class="text-xl" href="https://github.com/clubcapra">
+              <FontAwesomeIcon :icon="faGithub" />
+            </a>
+          </div>
         </div>
+      </div>
+      <hr class="border-white my-8" />
+      <div class="flex w-full">
+        <p class="text-center">{{ $t('copyright') }}</p>
       </div>
     </div>
   </footer>
