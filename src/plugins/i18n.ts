@@ -70,6 +70,94 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Our robots participate in international competitions and events every year. We have showcased our robots in countries like Thailand, Germany, Austria, and Australia. Our goal is to make a global impact and inspire the next generation of roboticists.',
     fr: "Nos robots participent à des compétitions et événements internationaux chaque année. Nous avons présenté nos robots dans des pays comme la Thaïlande, l'Allemagne, l'Autriche et l'Australie. Notre objectif est de faire un impact mondial et d'inspirer la prochaine génération de roboticiens.",
   },
+  competitions_title: {
+    en: 'Our competitions',
+    fr: 'Nos compétitions',
+  },
+  notable_tasks_title: {
+    en: 'Notable tasks',
+    fr: 'Tâches notables',
+  },
+  zwentendorf: {
+    en: 'Zwentendorf',
+    fr: 'Zwentendorf',
+  },
+  austria: {
+    en: 'Austria',
+    fr: 'Autriche',
+  },
+  bangkok: {
+    en: 'Bangkok',
+    fr: 'Bangkok',
+  },
+  thailand: {
+    en: 'Thailand',
+    fr: 'Thaïlande',
+  },
+  dortmund: {
+    en: 'Dortmund',
+    fr: 'Dortmund',
+  },
+  germany: {
+    en: 'Germany',
+    fr: 'Allemagne',
+  },
+  sydney: {
+    en: 'Sydney',
+    fr: 'Sydney',
+  },
+  australia: {
+    en: 'Australia',
+    fr: 'Australie',
+  },
+  enrich_task_1: {
+    en: 'Create a 3D map of the nuclear power plant',
+    fr: 'Créer une carte 3D de la centrale nucléaire',
+  },
+  enrich_task_2: {
+    en: 'Locate and identify radioactive sources',
+    fr: 'Localiser et identifier les sources radioactives',
+  },
+  enrich_task_3: {
+    en: 'Rescue a dummy from a hazardous area',
+    fr: "Secourir un mannequin d'une zone dangereuse",
+  },
+  robocup2022_task_1: {
+    en: 'Navigate through obstacle courses as fast as possible',
+    fr: "Naviguer à travers des parcours d'obstacles le plus rapidement possible",
+  },
+  robocup2022_task_2: {
+    en: 'Scan QR codes to collect information',
+    fr: 'Scanner des codes QR pour collecter des informations',
+  },
+  robocup2022_task_3: {
+    en: 'Use our robotic arm to pick up objects and place them in designated areas',
+    fr: 'Utiliser notre bras robotique pour ramasser des objets et les placer dans des zones désignées',
+  },
+  robocup2021_task_1: {
+    en: 'Navigate through obstacle courses as fast as possible',
+    fr: "Naviguer à travers des parcours d'obstacles le plus rapidement possible",
+  },
+  robocup2021_task_2: {
+    en: 'Use a thermal camera to detect heat sources',
+    fr: 'Utiliser une caméra thermique pour détecter les sources de chaleur',
+  },
+  robocup2021_task_3: {
+    en: 'Detect CO2 levels in the environment',
+    fr: "Détecter les niveaux de CO2 dans l'environnement",
+  },
+  robocup2019_task_1: {
+    en: 'Identify hazardous signs with our camera system',
+    fr: 'Identifier les signes dangereux avec notre système de caméra',
+  },
+  robocup2019_task_2: {
+    en: 'Navigate through obstacle courses as fast as possible',
+    fr: "Naviguer à travers des parcours d'obstacles le plus rapidement possible",
+  },
+  learn_more: {
+    en: 'Learn more',
+    fr: 'En savoir plus',
+  },
   copyright: {
     en: '© 2024 Club Capra. All rights reserved.',
     fr: '© 2024 Club Capra. Tous droits réservés.',

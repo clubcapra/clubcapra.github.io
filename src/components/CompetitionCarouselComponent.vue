@@ -50,44 +50,33 @@ const competitions = [
   {
     image: zwentendorfTeam1,
     title: 'EnRicH 2023',
-    location: 'Zwentendorf, Austria',
+    city: 'zwentendorf',
+    country: 'austria',
     link: 'https://enrich2023.european-robotics.eu/',
-    tasks: [
-      'Create a 3D map of the nuclear power plant',
-      'Identify and locate radioactive sources',
-      'Rescue a dummy from a hazardous area',
-    ],
+    tasks: ['enrich_task_1', 'enrich_task_2', 'enrich_task_3'],
   },
   {
     image: robocup2022,
     title: 'Robocup 2022',
-    location: 'Bangkok, Thailand',
+    city: 'bangkok',
+    country: 'thailand',
     link: 'https://2022.robocup.org/',
-    tasks: [
-      'Navigate through obstacle courses as fast as possible',
-      'Scan QR codes to collect points',
-      'Use our robotic arm to pick up objects and place them in designated areas',
-    ],
+    tasks: ['robocup2022_task_1', 'robocup2022_task_2', 'robocup2022_task_3'],
   },
   {
     image: robocup2021,
     title: 'Robocup German Open 2021',
-    location: 'Dortmund, Germany',
-    tasks: [
-      'Navigate through obstacle courses as fast as possible',
-      'Use a thermal camera to detect heat sources',
-      'Detect CO2 levels in the environment',
-    ],
+    city: 'dortmund',
+    country: 'germany',
+    tasks: ['robocup2021_task_1', 'robocup2021_task_2', 'robocup2021_task_3'],
   },
   {
     image: robocup2019,
     title: 'RoboCup 2019',
-    location: 'Sydney, Australia',
+    city: 'sydney',
+    country: 'australia',
     link: 'https://2019.robocup.org/',
-    tasks: [
-      'Identify hazardous signs with our camera system',
-      'Navigate through obstacle courses as fast as possible',
-    ],
+    tasks: ['robocup2019_task_1', 'robocup2019_task_2'],
   },
 ];
 </script>
@@ -98,7 +87,7 @@ const competitions = [
       data-aos="fade-up"
       data-aos-delay="400"
     >
-      Our past competitions
+      {{ $t('competitions_title') }}
     </h2>
     <div
       ref="emblaRef"
@@ -115,7 +104,8 @@ const competitions = [
           <CompetitionCardComponent
             :image="competition.image"
             :title="competition.title"
-            :location="competition.location"
+            :city="competition.city"
+            :country="competition.country"
             :tasks="competition.tasks"
             :link="competition.link"
           />

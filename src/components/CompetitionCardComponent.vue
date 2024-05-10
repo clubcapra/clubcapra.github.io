@@ -6,7 +6,8 @@ defineProps<{
   /** Title */
   title: string;
   /** Location */
-  location: string;
+  city: string;
+  country: string;
   /** Tasks */
   tasks: string[];
   /** Link */
@@ -18,7 +19,7 @@ const isHovering = ref(false);
 
 <template>
   <div
-    class="bg-black flex flex-col md:flex-row rounded-lg md:h-96 h-[36rem] shadow-md"
+    class="bg-black flex flex-col md:flex-row rounded-lg md:h-96 h-[40rem] shadow-md"
   >
     <img
       :src="image"
@@ -28,13 +29,17 @@ const isHovering = ref(false);
     <div class="flex flex-col md:w-1/2 md:h-full md:py-10">
       <div class="flex flex-col p-4">
         <h2 class="text-white text-2xl font-bold">{{ title }}</h2>
-        <h5 class="text-white text-lg font-medium">{{ location }}</h5>
+        <h5 class="text-white text-lg font-medium">
+          {{ $t(city) }}, {{ $t(country) }}
+        </h5>
       </div>
       <div class="p-4">
-        <p class="text-white font-bold text-lg pb-2">Notable tasks:</p>
+        <p class="text-white font-bold text-lg pb-2">
+          {{ $t('notable_tasks_title') }}:
+        </p>
         <ul class="list-inside text-white">
           <li v-for="task in tasks" :key="task">
-            {{ task }}
+            {{ $t(task) }}
           </li>
         </ul>
       </div>
@@ -48,7 +53,7 @@ const isHovering = ref(false);
         @mouseover="isHovering = true"
         @mouseleave="isHovering = false"
       >
-        Learn more
+        {{ $t('learn_more') }}
         <!-- Animated horizontal arrow on hover next to link -->
         <svg
           id="arrow"
