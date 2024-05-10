@@ -43,7 +43,7 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
       </div>
 
       <iframe
-        class="aspect-square md:absolute md:right-0 md:w-1/2 md:h-full z-0"
+        class="aspect-square h-1/2 w-full md:absolute md:right-0 md:w-1/2 md:h-full z-0"
         style="border: none"
         width="100%"
         height="100%"
@@ -117,7 +117,7 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
           </p>
         </div>
         <iframe
-          class="md:w-1/2 rounded-lg"
+          class="md:w-1/2 rounded-lg w-full"
           style="border: none"
           height="400"
           src="https://rive.app/community/files/9884-18863-guy-designing/embed"
