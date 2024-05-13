@@ -63,7 +63,7 @@ import syndneyTakinAssemblage from '@clubcapra/assets/media/sydney/takin_assembl
                 />
               </div>
               <div class="col-md-4 col-sm-6" data-aos="fade-right">
-                <h2 class="mb-4">ENRICH &amp; ENRICH</h2>
+                <h2 class="mb-4">ENRICH &amp; ELROB</h2>
                 <h5>{{ $t('competition_enrich_elrob_description') }}</h5>
                 <div class="row justify-content-center">
                   <a
