@@ -48,6 +48,11 @@ const administration: Member[] = [
     program: 'engineering_gpa',
     title: 'title_technical_director',
   },
+  {
+    name: 'Iliana De Carufel',
+    program: 'engineering_software',
+    title: 'title_technical_director_f',
+  },
 ];
 const mechanical: Member[] = [
   {
@@ -74,7 +79,7 @@ const mechanical: Member[] = [
     program: 'engineering_mechanical',
   },
   {
-    name: 'Philippe-Antoine',
+    name: 'Philippe-Antoine Fortin',
     program: 'engineering_mechanical',
   },
   {
@@ -171,10 +176,6 @@ const software: Member[] = [
   },
   {
     name: 'Denis Turk',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Iliana De Carufel',
     program: 'engineering_software',
   },
   {

@@ -7,7 +7,7 @@ import SponsorComponent from '@clubcapra/components/SponsorComponent.vue';
 // Media
 import introTrimmed from '@clubcapra/assets/media/intro_trimmed.mp4';
 import prototypes from '@clubcapra/assets/media/prototypes.jpg';
-import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
+import teamcaprarobot2024 from '@clubcapra/assets/media/team_capra_robot_2024.jpg';
 </script>
 
 <template>
@@ -67,7 +67,7 @@ import teamcaprarobot from '@clubcapra/assets/media/teamcaprarobot.png';
                 class="col-md-8 offset-md-right-2 col-sm-6"
                 data-aos="flip-right"
               >
-                <v-img class="my-5" :src="teamcaprarobot" />
+                <v-img class="my-5" :src="teamcaprarobot2024" />
               </div>
             </div>
           </v-col>

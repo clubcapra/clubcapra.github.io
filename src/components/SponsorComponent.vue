@@ -9,8 +9,6 @@ import logoETSTypoGrise from '@clubcapra/assets/media/partners/Logo_ETS_TypoGris
 import aeets from '@clubcapra/assets/media/partners/aeets.svg';
 import altium from '@clubcapra/assets/media/partners/altium.svg';
 import automatech from '@clubcapra/assets/media/partners/automatech.png';
-import goLabo from '@clubcapra/assets/media/partners/go-labo.png';
-import mtt from '@clubcapra/assets/media/partners/mtt.png';
 
 const sponsorsUp = [
   { img: logoETSTypoGrise },
@@ -18,12 +16,7 @@ const sponsorsUp = [
   { img: automatech },
   { img: ixiasoftMadcapLogoRgbC },
 ];
-const sponsorsDown = [
-  { img: altium },
-  { img: aeets },
-  { img: mtt },
-  { img: goLabo },
-];
+const sponsorsDown = [{ img: altium }, { img: aeets }];
 </script>
 
 <template>
