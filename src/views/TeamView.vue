@@ -84,7 +84,7 @@ const mechanical: Member[] = [
   },
   {
     name: 'Antony Afif',
-    program: 'engineering_mechanical',
+    program: 'engineering_electrical',
   },
 ];
 const electrical: Member[] = [
