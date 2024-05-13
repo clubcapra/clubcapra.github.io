@@ -183,7 +183,7 @@ const software: Member[] = [
     program: 'engineering_gpa',
   },
   {
-    name: 'Suzon Orlando',
+    name: 'Suzon Olory',
     program: 'engineering_software_master',
   },
   {
