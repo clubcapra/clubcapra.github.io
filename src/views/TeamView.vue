@@ -12,7 +12,6 @@ import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
 import davidCaron from '@clubcapra/assets/media/team/davidCaron.jpg';
 import benoitMalenfant from '@clubcapra/assets/media/team/benoitMalenfant.jpg';
 import kevinLarochelle from '@clubcapra/assets/media/team/kevinLarochelle.jpg';
-import maximeBernard from '@clubcapra/assets/media/team/maximeBernard.jpg';
 import maximeRolland from '@clubcapra/assets/media/team/maximeRolland.jpg';
 import amberLouie from '@clubcapra/assets/media/team/amberLouie.jpg';
 import leoDanielGosselin from '@clubcapra/assets/media/team/leoDanielGosselin.jpg';
@@ -49,6 +48,11 @@ const administration: Member[] = [
     program: 'engineering_gpa',
     title: 'title_technical_director',
   },
+  {
+    name: 'Iliana De Carufel',
+    program: 'engineering_software',
+    title: 'title_technical_director_f',
+  },
 ];
 const mechanical: Member[] = [
   {
@@ -60,11 +64,6 @@ const mechanical: Member[] = [
   {
     name: 'Bonzly Noël',
     program: 'engineering_mechanical',
-  },
-  {
-    name: 'Maxime Bernard',
-    img: maximeBernard,
-    program: 'engineering_gpa_master',
   },
   {
     name: 'Maxime Rolland',
@@ -80,7 +79,7 @@ const mechanical: Member[] = [
     program: 'engineering_mechanical',
   },
   {
-    name: 'Philippe-Antoine',
+    name: 'Philippe-Antoine Fortin',
     program: 'engineering_mechanical',
   },
   {
@@ -177,10 +176,6 @@ const software: Member[] = [
   },
   {
     name: 'Denis Turk',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Iliana De Carufel',
     program: 'engineering_software',
   },
   {

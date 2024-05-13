@@ -9,8 +9,6 @@ import EtsTypoGrise from '@clubcapra/assets/media/partners/Logo_ETS_TypoGrise_D_
 import aeets from '@clubcapra/assets/media/partners/aeets.svg';
 import altium from '@clubcapra/assets/media/partners/altium.svg';
 import automatech from '@clubcapra/assets/media/partners/automatech.png';
-import goLabo from '@clubcapra/assets/media/partners/go-labo.png';
-import mtt from '@clubcapra/assets/media/partners/mtt.png';
 import stelpro from '@clubcapra/assets/media/partners/stelpro.png';
 import opnor from '@clubcapra/assets/media/partners/opnor.png';
 import hako from '@clubcapra/assets/media/partners/hako.png';
@@ -96,12 +94,6 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
           <h2 class="section-title">{{ $t('partner_bronze') }}</h2>
         </div>
         <div class="row justify-content-center align-items-center py-5">
-          <div class="col-md-2 col-4">
-            <img :src="goLabo" alt="Go Labo" />
-          </div>
-          <div class="col-md-2 col-4">
-            <img :src="mtt" alt="MTT" />
-          </div>
           <div class="col-md-2 col-4">
             <img :src="monday" alt="monday" />
           </div>
