@@ -5,9 +5,7 @@
     "es2022": true,
     "node": false
   },
-  "ignorePatterns": [
-    "**/*.min.js"
-  ],
+  "ignorePatterns": ["**/*.min.js"],
   "extends": [
     "eslint:recommended",
     "google",
@@ -18,18 +16,10 @@
     "plugin:jsdoc/recommended",
     "plugin:prettier/recommended",
     "plugin:vue/vue3-recommended",
-    "plugin:vuetify/base",
     "plugin:yaml/recommended",
     "@vue/eslint-config-prettier"
   ],
-  "plugins": [
-    "@typescript-eslint",
-    "jsdoc",
-    "tsdoc",
-    "html",
-    "yaml",
-    "vue"
-  ],
+  "plugins": ["@typescript-eslint", "jsdoc", "tsdoc", "html", "yaml", "vue"],
   "parser": "vue-eslint-parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -64,44 +54,25 @@
         }
       }
     ],
-    "vue/multi-word-component-names": "warn",
-    "vuetify/no-deprecated-components": "off"
+    "vue/multi-word-component-names": "warn"
   },
   "overrides": [
     {
-      "files": [
-        "*.html"
-      ],
+      "files": ["*.html"],
       "processor": "vue/.vue"
     }
   ],
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [
-        "*.ts",
-        "*.tsx"
-      ],
-      "vue-eslint-parser": [
-        "*.vue"
-      ]
+      "@typescript-eslint/parser": ["*.ts", "*.tsx"],
+      "vue-eslint-parser": ["*.vue"]
     },
     "import/resolver": {
       "typescript": true,
       "node": true,
       "alias": {
-        "map": [
-          [
-            "@clubcapra",
-            "./src"
-          ]
-        ],
-        "extensions": [
-          ".js",
-          ".ts",
-          ".jsx",
-          ".tsx",
-          ".vue"
-        ]
+        "map": [["@clubcapra", "./src"]],
+        "extensions": [".js", ".ts", ".jsx", ".tsx", ".vue"]
       }
     },
     "vite": {

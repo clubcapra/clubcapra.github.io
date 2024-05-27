@@ -8,15 +8,15 @@ defineProps<{
 </script>
 
 <template>
-  <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
-    <div class="team text-center rounded p-3 py-4">
+  <div class="mt-4 pt-2">
+    <div class="flex flex-col items-center text-center rounded-full p-3 py-4">
       <img
         :src="img"
-        class="img-fluid avatar avatar-medium shadow rounded-pill"
+        class="rounded-full h-64 w-64 object-cover shadow-md"
         alt="capra member"
       />
-      <div class="content mt-3">
-        <h4 class="member-title mb-0">{{ name }}</h4>
+      <div class="mt-3">
+        <h4 class="text-lg font-medium mb-0">{{ name }}</h4>
         <small>{{ title }}</small>
         <br />
         <small class="text-muted">{{ program }}</small>

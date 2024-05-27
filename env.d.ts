@@ -2,9 +2,6 @@
 /* eslint spaced-comment: off */
 /// <reference types="vite/client" />
 
-// Vuetify color fix.
-declare module 'vuetify/lib/util/colors.mjs';
-
 // Fullpage.js fix.
 declare module 'vue-fullpage.js';
 
