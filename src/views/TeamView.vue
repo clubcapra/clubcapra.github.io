@@ -86,6 +86,14 @@ const mechanical: Member[] = [
     name: 'Antony Afif',
     program: 'engineering_electrical',
   },
+  {
+    name: 'Gabriel Rondeau-Bouvrette',
+    program: 'engineering_mechanical',
+  },
+  {
+    name: 'Martin-Nicolas Primeau-Vincelette',
+    program: 'engineering_mechanical',
+  },
 ];
 const electrical: Member[] = [
   {
