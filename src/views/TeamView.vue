@@ -109,6 +109,10 @@ const electrical: Member[] = [
     program: 'engineering_electrical',
   },
   {
+    name: 'Guy-Philippe Nadon',
+    program: 'engineering_software',
+  },
+  {
     name: 'Christian Bourget',
     program: 'engineering_gpa',
   },
@@ -145,10 +149,6 @@ const software: Member[] = [
   },
   {
     name: 'Samuel Lachance',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Guy-Philippe Nadon',
     program: 'engineering_software',
   },
   {
