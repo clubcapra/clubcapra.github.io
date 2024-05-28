@@ -194,6 +194,14 @@ const software: Member[] = [
     name: 'Charles Albert Choupin',
     program: 'engineering_software',
   },
+  {
+    name: 'Samuel Barbeau',
+    program: 'engineering_software',
+  },
+  {
+    name: 'Laurent St-Hilaire',
+    program: 'engineering_software',
+  },
 ];
 
 const { t } = useI18n();
