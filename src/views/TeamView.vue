@@ -86,6 +86,14 @@ const mechanical: Member[] = [
     name: 'Antony Afif',
     program: 'engineering_electrical',
   },
+  {
+    name: 'Gabriel Rondeau-Bouvrette',
+    program: 'engineering_mechanical',
+  },
+  {
+    name: 'Martin-Nicolas Primeau-Vincelette',
+    program: 'engineering_mechanical',
+  },
 ];
 const electrical: Member[] = [
   {
@@ -107,6 +115,10 @@ const electrical: Member[] = [
   {
     name: 'Antoine Maltais',
     program: 'engineering_electrical',
+  },
+  {
+    name: 'Guy-Philippe Nadon',
+    program: 'engineering_software',
   },
   {
     name: 'Christian Bourget',
@@ -145,10 +157,6 @@ const software: Member[] = [
   },
   {
     name: 'Samuel Lachance',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Guy-Philippe Nadon',
     program: 'engineering_software',
   },
   {
@@ -192,6 +200,14 @@ const software: Member[] = [
   },
   {
     name: 'Charles Albert Choupin',
+    program: 'engineering_software',
+  },
+  {
+    name: 'Samuel Barbeau',
+    program: 'engineering_software',
+  },
+  {
+    name: 'Laurent St-Hilaire',
     program: 'engineering_software',
   },
 ];
