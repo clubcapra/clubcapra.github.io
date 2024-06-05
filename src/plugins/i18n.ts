@@ -282,7 +282,8 @@ for (const [key, trads] of Object.entries(rawMessages)) {
 
 const i18n = createI18n({
   legacy: false, // we must set `false`, to use Compostion API
-  locale: 'fr',
+  // Get locale from store
+  locale: (localStorage.getItem('locale') as Lang) || 'fr',
   fallbackLocale: 'fr',
   allowComposition: true,
   messages,

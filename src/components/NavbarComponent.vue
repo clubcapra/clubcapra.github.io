@@ -60,6 +60,14 @@ onMounted(() => {
     }
   }
 });
+
+// Set locale on select change
+const onLocaleChange = (event: Event) => {
+  window.localStorage.setItem(
+    'locale',
+    (event.target as HTMLSelectElement).value
+  );
+};
 </script>
 
 <template>
@@ -102,6 +110,15 @@ onMounted(() => {
           >
             {{ item.name }}
           </a>
+          <select
+            v-model="$i18n.locale"
+            type="button"
+            class="text-gray-500 hover:text-primary-700 focus:text-gray-600 focus:outline-none pr-2"
+            @change="onLocaleChange"
+          >
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+          </select>
         </div>
       </div>
     </div>
