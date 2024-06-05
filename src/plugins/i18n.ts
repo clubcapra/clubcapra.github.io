@@ -230,6 +230,22 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Technical Director',
     fr: 'Directeur Technique',
   },
+  partners: {
+    en: 'Partners',
+    fr: 'Partenaires',
+  },
+  partner_gold: {
+    en: 'Gold Partners',
+    fr: 'Partenaires Or',
+  },
+  partner_silver: {
+    en: 'Silver Partners',
+    fr: 'Partenaires Argent',
+  },
+  partner_bronze: {
+    en: 'Bronze Partners',
+    fr: 'Partenaires Bronze',
+  },
 };
 
 const messages: Record<Lang, Record<string, string>> = {

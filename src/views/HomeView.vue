@@ -1,14 +1,10 @@
 <script setup lang="ts">
 import robotStory from '@clubcapra/assets/media/robot_story.jpg';
 import yoloV9 from '@clubcapra/assets/media/yolov9.jpeg';
-import codeIcon from '@clubcapra/assets/media/icons8-code-100.png';
-import circuitIcon from '@clubcapra/assets/media/icons8-circuit-100.png';
-import gearIcon from '@clubcapra/assets/media/icons8-gear-100.png';
-
+import team2024 from '@clubcapra/assets/media/team/team2024.jpg';
 import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
 import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarouselComponent.vue';
 
-import TeamProjectCardComponent from '@clubcapra/components/TeamProjectCardComponent.vue';
 import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselComponent.vue';
 </script>
 
@@ -175,52 +171,26 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
     </div>
   </section>
   <CompetitionCarouselComponent />
-  <section class="container px-4 mx-auto py-20">
-    <div>
-      <h2
-        class="font-bold font-sans text-4xl md:text-5xl text-center"
-        data-aos="fade-up"
-        data-aos-delay="400"
-      >
-        Contribute to one of our teams
-      </h2>
-      <!-- Team card-->
-      <div
-        class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 md:mt-12 w-full md:w-3/4 mx-auto"
-      >
-        <TeamProjectCardComponent
-          :icon="gearIcon"
-          title="Mechanical Engineering"
-          :tasks="[
-            'Design and build the mechanical components of our robot',
-            'Work with 3D modeling software to create detailed designs',
-            'Collaborate with other team members to integrate mechanical components',
-          ]"
-          data-aos="fade-up"
-          data-aos-delay="800"
-        />
-        <TeamProjectCardComponent
-          :icon="circuitIcon"
-          title="Electrical Engineering"
-          :tasks="[
-            'Design and build the electrical systems of our robot',
-            'Work with microcontrollers and sensors to control the robot',
-            'Collaborate with other team members to integrate electrical systems',
-          ]"
-          data-aos="fade-up"
-          data-aos-delay="1200"
-        />
-        <TeamProjectCardComponent
-          :icon="codeIcon"
-          title="Software Engineering"
-          :tasks="[
-            'Develop the software that controls the robot',
-            'Implement algorithms for object detection and path planning',
-            'Collaborate with other team members to integrate software components',
-          ]"
-          data-aos="fade-up"
-          data-aos-delay="1600"
-        />
+  <section class="container mx-auto px-4 py-20">
+    <div class="flex flex-col md:flex-row gap-8 items-center">
+      <div class="flex md:w-1/2 flex-col gap-8" data-aos="fade-up">
+        <h2 class="font-bold font-sans text-4xl md:text-5xl">Join our team</h2>
+        <p>
+          We are always looking for new members to join our team. If you are
+          interested in robotics, AI, or just want to learn more about
+          technology, we would love to have you on board. No experience is
+          necessary, just a passion for learning and a desire to make a
+          difference.
+        </p>
+        <a
+          class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 px-4 rounded-lg w-fit"
+          href="#footer"
+        >
+          Join us
+        </a>
+      </div>
+      <div class="md:w-1/2" data-aos="fade-up" data-aos-delay="400">
+        <img :src="team2024" alt="robot" class="rounded-lg" />
       </div>
     </div>
   </section>

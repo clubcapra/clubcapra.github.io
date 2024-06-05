@@ -16,6 +16,11 @@ const navbarItems = [
     selected: false,
   },
   {
+    name: 'Partners',
+    link: '/partners',
+    selected: false,
+  },
+  {
     name: 'Publications',
     link: '#',
     selected: false,

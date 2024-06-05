@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import partnerHandshake from '@clubcapra/assets/media/partners-handshake.jpg';
-import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
-
 // Partners logos
 import hsLogoCouleur from '@clubcapra/assets/media/partners/HS_logo_couleur.png';
 import ixiasoftMadcapLogoRgbC from '@clubcapra/assets/media/partners/IXIASOFT-Madcap-logo-RGB-C.jpg';
@@ -19,124 +16,51 @@ import odrive from '@clubcapra/assets/media/partners/odrive.png';
 </script>
 
 <template>
-  <JumbotronVideoComponent
-    :title="$t('page_partners')"
-    :img="partnerHandshake"
-  />
-  <section class="bg-white">
-    <div class="container">
-      <div class="section-content">
-        <div
-          class="title-wrap partner-title diamond-title"
-          data-aos="fade-up"
-          style="display: none"
-        >
-          <h2 class="section-title">{{ $t('partner_diamond') }}</h2>
-        </div>
-        <div
-          class="row justify-content-center align-items-center py-5"
-          style="display: none"
-        >
-          <!-- Add new Diamond members -->
-        </div>
-        <div
-          class="title-wrap partner-title plat-title"
-          data-aos="fade-up"
-          style="display: none"
-        >
-          <h2 class="section-title">{{ $t('partner_plat') }}</h2>
-        </div>
-        <div
-          class="row justify-content-center align-items-center py-5"
-          style="display: none"
-        >
-          <!-- Add new Platinum members -->
-        </div>
-        <div class="title-wrap partner-title gold-title" data-aos="fade-up">
-          <h2 class="section-title">{{ $t('partner_gold') }}</h2>
-        </div>
-        <div class="row justify-content-center align-items-center py-5">
-          <div class="col-md-6 col-12">
-            <img :src="EtsTypoGrise" alt="ETS TypoGrise" />
-          </div>
-          <div class="col-md-6 col-12">
-            <img :src="hsLogoCouleur" alt="HS logo couleur" />
-          </div>
-          <div class="col-md-6 col-12">
-            <img :src="automatech" alt="Automatech" />
-          </div>
-          <div class="col-md-6 col-12">
-            <img
-              :src="ixiasoftMadcapLogoRgbC"
-              alt="IXIASOFT Madcap logo RGB C"
-            />
-          </div>
-        </div>
-        <div class="title-wrap partner-title silver-title" data-aos="fade-up">
-          <h2 class="section-title">{{ $t('partner_silver') }}</h2>
-        </div>
-        <div class="row justify-content-center align-items-center py-5">
-          <div class="col-md-3 col-6">
-            <img :src="aeets" alt="AEETS" />
-          </div>
-          <div class="col-md-3 col-6">
-            <img :src="stelpro" alt="stelpro" />
-          </div>
-          <div class="col-md-3 col-6">
-            <img :src="opnor" alt="opnor" />
-          </div>
-          <div class="col-md-3 col-6">
-            <img :src="altium" alt="Altium" />
-          </div>
-          <div class="col-md-3 col-6">
-            <img :src="hako" alt="hako" />
-          </div>
-        </div>
-        <div class="title-wrap partner-title bronze-title" data-aos="fade-up">
-          <h2 class="section-title">{{ $t('partner_bronze') }}</h2>
-        </div>
-        <div class="row justify-content-center align-items-center py-5">
-          <div class="col-md-2 col-4">
-            <img :src="goLabo" alt="Go Labo" />
-          </div>
-          <div class="col-md-2 col-4">
-            <img :src="mtt" alt="MTT" />
-          </div>
-          <div class="col-md-2 col-4">
-            <img :src="monday" alt="monday" />
-          </div>
-          <div class="col-md-2 col-4">
-            <img :src="odrive" alt="odrive" />
-          </div>
-        </div>
+  <section class="container px-4 mx-auto pt-20">
+    <div class="pt-10">
+      <h2 class="font-bold font-sans text-4xl md:text-5xl text-center">
+        {{ $t('partner_gold') }}
+      </h2>
+      <div
+        class="flex flex-col md:flex-row md:flex-wrap items-center justify-center py-5 gap-4"
+      >
+        <img :src="EtsTypoGrise" alt="ETS TypoGrise" class="md:w-1/3" />
+        <img :src="hsLogoCouleur" alt="HS logo couleur" class="md:w-1/3" />
+        <img :src="automatech" alt="Automatech" class="md:w-1/3" />
+        <img
+          :src="ixiasoftMadcapLogoRgbC"
+          alt="IXIASOFT Madcap logo RGB C"
+          class="w-1/3"
+        />
+      </div>
+    </div>
+
+    <div class="pt-10">
+      <h2 class="font-bold font-sans text-4xl md:text-5xl text-center">
+        {{ $t('partner_silver') }}
+      </h2>
+      <div
+        class="flex flex-col md:flex-row md:flex-wrap items-center justify-center py-5 gap-4"
+      >
+        <img :src="aeets" alt="AEETS" class="md:w-1/4" />
+        <img :src="stelpro" alt="stelpro" class="md:w-1/4" />
+        <img :src="opnor" alt="opnor" class="md:w-1/4" />
+        <img :src="altium" alt="Altium" class="md:w-1/4" />
+        <img :src="hako" alt="hako" class="md:w-1/4" />
+      </div>
+    </div>
+    <div class="pt-10 pb-20">
+      <h2 class="font-bold font-sans text-4xl md:text-5xl text-center">
+        {{ $t('partner_bronze') }}
+      </h2>
+      <div
+        class="flex flex-col md:flex-row md:flex-wrap items-center justify-center py-5 gap-4"
+      >
+        <img :src="goLabo" alt="Go Labo" class="md:w-1/5" />
+        <img :src="mtt" alt="MTT" class="md:w-1/5" />
+        <img :src="monday" alt="monday" class="md:w-1/5" />
+        <img :src="odrive" alt="odrive" class="md:w-1/5" />
       </div>
     </div>
   </section>
 </template>
-
-<style>
-.partner-title {
-  border-radius: 4rem;
-  padding: 1rem;
-}
-
-.diamond-title {
-  background-color: #9ac5db;
-}
-
-.plat-title {
-  background-color: #e5e4e2;
-}
-
-.gold-title {
-  background-color: gold;
-}
-
-.silver-title {
-  background-color: rgb(173, 173, 173);
-}
-
-.bronze-title {
-  background-color: rgba(170, 84, 63, 0.884);
-}
-</style>
