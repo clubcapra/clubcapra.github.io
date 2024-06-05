@@ -282,8 +282,8 @@ for (const [key, trads] of Object.entries(rawMessages)) {
 
 const i18n = createI18n({
   legacy: false, // we must set `false`, to use Compostion API
-  locale: navigator.language.split('-')[0] || 'en',
-  fallbackLocale: 'en',
+  locale: 'fr',
+  fallbackLocale: 'fr',
   allowComposition: true,
   messages,
 });

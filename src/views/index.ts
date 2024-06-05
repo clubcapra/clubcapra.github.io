@@ -21,14 +21,6 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
-    path: '/competitions',
-    name: 'competition',
-    component: () => import('./CompetitionView.vue'),
-    meta: {
-      title: i18n.global.t('page_competitions'),
-    },
-  },
-  {
     path: '/partners',
     name: 'partners',
     component: () => import('./PartnersView.vue'),
@@ -42,14 +34,6 @@ const routes: RouteRecordRaw[] = [
     component: () => import('./PublicationsView.vue'),
     meta: {
       title: i18n.global.t('page_publications'),
-    },
-  },
-  {
-    path: '/contact',
-    name: 'contact',
-    component: () => import('./ContactView.vue'),
-    meta: {
-      title: i18n.global.t('page_contact'),
     },
   },
 ];
