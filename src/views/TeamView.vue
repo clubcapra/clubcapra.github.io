@@ -10,11 +10,8 @@ import defaultAvatar from '@clubcapra/assets/media/team/avatar.png';
 import davidCaron from '@clubcapra/assets/media/team/davidCaron.jpg';
 import benoitMalenfant from '@clubcapra/assets/media/team/benoitMalenfant.jpg';
 import kevinLarochelle from '@clubcapra/assets/media/team/kevinLarochelle.jpg';
-import maximeBernard from '@clubcapra/assets/media/team/maximeBernard.jpg';
-import maximeRolland from '@clubcapra/assets/media/team/maximeRolland.jpg';
 import amberLouie from '@clubcapra/assets/media/team/amberLouie.jpg';
 import leoDanielGosselin from '@clubcapra/assets/media/team/leoDanielGosselin.jpg';
-import marcOlivierChampagne from '@clubcapra/assets/media/team/marcOlivierChampagne.jpg';
 import gabrielLevesqueDuval from '@clubcapra/assets/media/team/gabrielLevesqueDuval.jpg';
 import alexisMartin from '@clubcapra/assets/media/team/alexisMartin.jpg';
 
@@ -60,16 +57,6 @@ const mechanical: Member[] = [
     program: 'engineering_mechanical',
   },
   {
-    name: 'Maxime Bernard',
-    img: maximeBernard,
-    program: 'engineering_gpa_master',
-  },
-  {
-    name: 'Maxime Rolland',
-    img: maximeRolland,
-    program: 'engineering_gpa',
-  },
-  {
     name: 'William Zamudio-Turcotte',
     program: 'engineering_gpa',
   },
@@ -78,11 +65,15 @@ const mechanical: Member[] = [
     program: 'engineering_mechanical',
   },
   {
-    name: 'Philippe-Antoine',
+    name: 'Philippe-Antoine Fortin',
     program: 'engineering_mechanical',
   },
   {
     name: 'Antony Afif',
+    program: 'engineering_mechanical',
+  },
+  {
+    name: 'Martin-Nicolas Primeau-Vincelette',
     program: 'engineering_mechanical',
   },
 ];
@@ -116,10 +107,6 @@ const electrical: Member[] = [
     program: 'engineering_electrical',
   },
   {
-    name: 'Jordan Morinville',
-    program: 'engineering_electrical',
-  },
-  {
     name: 'Alexis Girardin',
     program: 'engineering_electrical',
   },
@@ -148,11 +135,6 @@ const software: Member[] = [
   },
   {
     name: 'Guy-Philippe Nadon',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Marc-Olivier Champagne',
-    img: marcOlivierChampagne,
     program: 'engineering_software',
   },
   {
@@ -197,6 +179,14 @@ const software: Member[] = [
     name: 'Charles Albert Choupin',
     program: 'engineering_software',
   },
+  {
+    name: 'Samuel Barbeau',
+    program: 'engineering_software',
+  },
+  {
+    name: 'Laurent St-Hilaire',
+    program: 'engineering_software',
+  },
 ];
 
 const { t } = useI18n();
@@ -210,8 +200,8 @@ const sections = [
 
 <template>
   <section>
-    <div class="container mx-auto px-4">
-      <div class="pt-40 pb-20">
+    <div class="container mx-auto px-4 pt-10 pb-20">
+      <div class="pt-20 pb-10">
         <h2 class="text-5xl font-bold font-sans text-center">
           {{ t('our_team_title') }}
         </h2>

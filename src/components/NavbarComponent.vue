@@ -22,7 +22,7 @@ const navbarItems = [
   },
   {
     name: 'Publications',
-    link: '#',
+    link: '/publications',
     selected: false,
   },
 ];

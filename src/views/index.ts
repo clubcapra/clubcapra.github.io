@@ -37,11 +37,11 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
-    path: '/ressources',
-    name: 'ressources',
-    component: () => import('./RessourcesView.vue'),
+    path: '/publications',
+    name: 'publications',
+    component: () => import('./PublicationsView.vue'),
     meta: {
-      title: i18n.global.t('page_ressources'),
+      title: i18n.global.t('page_publications'),
     },
   },
   {

@@ -246,6 +246,26 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Bronze Partners',
     fr: 'Partenaires Bronze',
   },
+  engineering_mechanical: {
+    en: 'Mechanical Engineering',
+    fr: 'Génie Mécanique',
+  },
+  engineering_electrical: {
+    en: 'Electrical Engineering',
+    fr: 'Génie Électrique',
+  },
+  engineering_software: {
+    en: 'Software Engineering',
+    fr: 'Génie Logiciel',
+  },
+  engineering_gpa: {
+    en: 'Automated Production Engineering',
+    fr: 'Génie de la Production Automatisée',
+  },
+  engineering_software_master: {
+    en: 'Master in Software Engineering',
+    fr: 'Maîtrise en Génie Logiciel',
+  },
 };
 
 const messages: Record<Lang, Record<string, string>> = {
