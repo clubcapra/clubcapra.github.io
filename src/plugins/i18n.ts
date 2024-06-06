@@ -266,6 +266,14 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Master in Software Engineering',
     fr: 'Maîtrise en Génie Logiciel',
   },
+  page_home: {
+    en: 'About Us',
+    fr: 'À propos',
+  },
+  page_team: {
+    en: 'Team',
+    fr: 'Équipe',
+  },
 };
 
 const messages: Record<Lang, Record<string, string>> = {

@@ -1,22 +1,25 @@
 <script setup lang="ts">
 import { onBeforeMount, onMounted, ref } from 'vue';
 import logo from '@clubcapra/assets/media/Capra_Cercle_Full.png';
+import { useI18n } from 'vue-i18n';
 
 const isOpen = ref(false);
 
+const { t } = useI18n();
+
 const navbarItems = [
   {
-    name: 'About us',
+    name: t('about_us_title'),
     link: '/',
     selected: false,
   },
   {
-    name: 'Team',
+    name: t('team_title'),
     link: '/team',
     selected: false,
   },
   {
-    name: 'Partners',
+    name: t('partners'),
     link: '/partners',
     selected: false,
   },
