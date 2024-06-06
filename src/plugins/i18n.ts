@@ -23,8 +23,8 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     fr: 'Notre histoire',
   },
   our_story_content_1: {
-    en: 'At Capra, we are a dynamic student club affiliated with École de technologie supérieure (ÉTS) in Montréal. Since our inception in 1999, we’ve passionately dedicated ourselves to the fascinating world of robotics. Our journey has been one of innovation, collaboration, and hands-on learning.',
-    fr: "Chez Capra, nous sommes un club étudiant dynamique affilié à l'École de technologie supérieure (ÉTS) à Montréal. Depuis notre création en 1999, nous nous sommes passionnés pour le monde fascinant de la robotique. Notre parcours a été marqué par l'innovation, la collaboration et l'apprentissage pratique.",
+    en: 'At Capra, we are a dynamic student club from École de technologie supérieure (ÉTS) in Montréal. Since our inception in 1999, we’ve passionately dedicated ourselves to the fascinating world of robotics. Our journey has been one of innovation, collaboration, and hands-on learning.',
+    fr: "Chez Capra, nous sommes un club étudiant dynamique de l'École de technologie supérieure (ÉTS) à Montréal. Depuis notre création en 1999, nous nous sommes passionnés pour le monde fascinant de la robotique. Notre parcours a été marqué par l'innovation, la collaboration et l'apprentissage pratique.",
   },
   our_story_content_2: {
     en: 'In 2016, we decided to focus on building search and rescue robots. With our expertise, we aim to make a tangible impact on real-world emergency scenarios. From rugged terrains to critical situations, Capra’s robots are designed to save lives and make a significant impact on the evolution of robotics.',
