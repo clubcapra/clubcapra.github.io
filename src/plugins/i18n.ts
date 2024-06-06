@@ -7,7 +7,7 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     fr: "Construisons l'avenir de la robotique ensemble",
   },
   home_subtitle: {
-    en: 'We are a student initiative that aims to develop the next generation of search and rescue robots.',
+    en: 'We are a student club that aims to develop the next generation of search and rescue robots.',
     fr: 'Nous sommes un club étudiant qui vise à développer la prochaine génération de robots de recherche et de sauvetage.',
   },
   get_in_touch_button: {
@@ -35,8 +35,8 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     fr: 'Regardez notre robot en action',
   },
   watch_our_robot_subtitle: {
-    en: 'Our robot Markhor winning the best in class in Search & Rescue at EnRicH 2023',
-    fr: 'Notre robot Markhor remportant le prix de la meilleure classe en recherche et sauvetage à EnRicH 2023',
+    en: 'Our robot Markhor winning the best in class in Search & Rescue award at EnRicH 2023',
+    fr: 'Notre robot Markhor remportant le prix du meilleur robot en recherche et sauvetage à EnRicH 2023',
   },
   robots_design_title: {
     en: 'Robots designed from',
@@ -61,6 +61,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   powered_by_content: {
     en: 'Our robots are equipped with artificial intelligence that enables them to make autonomous decisions in real-time. From object detection to path planning, our robots are designed to be intelligent and efficient in their operations.',
     fr: "Nos robots sont équipés d'intelligence artificielle qui leur permet de prendre des décisions autonomes en temps réel. De la détection d'objets à la planification de trajectoires, nos robots sont conçus pour être intelligents et efficaces dans leurs opérations.",
+  },
+  view_projects_button: {
+    en: 'View our projects',
+    fr: 'Voir nos projets',
   },
   global_impact_title: {
     en: 'Impact on a global scale',
@@ -174,6 +178,18 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Room D-2014',
     fr: 'Local D-2014',
   },
+  join_our_team_title: {
+    en: 'Join our team',
+    fr: 'Rejoins notre équipe',
+  },
+  join_our_team_content: {
+    en: 'Are you passionate about robotics and want to make a difference? Join our team and be part of the next generation of search and rescue robots.',
+    fr: 'Tu es passionné par la robotique et tu veux faire une différence? Rejoins notre équipe et fais partie de la prochaine génération de robots de recherche et de sauvetage.',
+  },
+  join_us: {
+    en: 'Join us',
+    fr: 'Rejoins nous',
+  },
   our_team_title: {
     en: 'Our Team',
     fr: 'Notre équipe',
@@ -181,6 +197,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   people_that_love_to_work_with_us: {
     en: 'People that love to work with us',
     fr: 'Ceux qui aiment travailler avec nous',
+  },
+  view_partner_plan: {
+    en: 'View our partner plan',
+    fr: 'Voir notre plan de partenariat',
   },
   team_administration: {
     en: 'Administration',
@@ -273,6 +293,14 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   page_team: {
     en: 'Team',
     fr: 'Équipe',
+  },
+  page_partners: {
+    en: 'Partners',
+    fr: 'Partenaires',
+  },
+  page_publications: {
+    en: 'Publications',
+    fr: 'Publications',
   },
 };
 

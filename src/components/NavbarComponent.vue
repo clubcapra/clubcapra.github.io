@@ -1,25 +1,22 @@
 <script setup lang="ts">
 import { onBeforeMount, onMounted, ref } from 'vue';
 import logo from '@clubcapra/assets/media/Capra_Cercle_Full.png';
-import { useI18n } from 'vue-i18n';
 
 const isOpen = ref(false);
 
-const { t } = useI18n();
-
 const navbarItems = [
   {
-    name: t('about_us_title'),
+    name: 'page_home',
     link: '/',
     selected: false,
   },
   {
-    name: t('team_title'),
+    name: 'page_team',
     link: '/team',
     selected: false,
   },
   {
-    name: t('partners'),
+    name: 'partners',
     link: '/partners',
     selected: false,
   },
@@ -111,7 +108,7 @@ const onLocaleChange = (event: Event) => {
             class="block md:inline-block px-2 py-1 text-gray-800 hover:text-primary-700 md:px-4 md:py-2 md:text-lg"
             :class="item.selected ? 'text-primary-700' : ''"
           >
-            {{ item.name }}
+            {{ $t(item.name) }}
           </a>
           <select
             v-model="$i18n.locale"

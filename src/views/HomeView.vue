@@ -2,6 +2,7 @@
 import robotStory from '@clubcapra/assets/media/robot_story.jpg';
 import yoloV9 from '@clubcapra/assets/media/yolov9.jpeg';
 import team2024 from '@clubcapra/assets/media/team/team2024.jpg';
+import partnerPlan from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
 import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
 import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarouselComponent.vue';
 
@@ -138,6 +139,13 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
           <p>
             {{ $t('powered_by_content') }}
           </p>
+          <a
+            class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 px-4 rounded-lg w-fit"
+            href="https://github.com/clubcapra"
+            target="_blank"
+          >
+            {{ $t('view_projects_button') }}
+          </a>
         </div>
         <img
           :src="yoloV9"
@@ -174,19 +182,18 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
   <section class="container mx-auto px-4 py-20">
     <div class="flex flex-col md:flex-row gap-8 items-center">
       <div class="flex md:w-1/2 flex-col gap-8" data-aos="fade-up">
-        <h2 class="font-bold font-sans text-4xl md:text-5xl">Join our team</h2>
+        <h2 class="font-bold font-sans text-4xl md:text-5xl">
+          {{ $t('join_our_team_title') }}
+        </h2>
         <p>
-          We are always looking for new members to join our team. If you are
-          interested in robotics, AI, or just want to learn more about
-          technology, we would love to have you on board. No experience is
-          necessary, just a passion for learning and a desire to make a
-          difference.
+          {{ $t('join_our_team_content') }}
         </p>
         <a
           class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 px-4 rounded-lg w-fit"
-          href="#footer"
+          href="https://formulaires.etsmtl.ca/ClubEtudiantAdhesion?requete=capra&categorie=0"
+          target="_blank"
         >
-          Join us
+          {{ $t('join_us') }}
         </a>
       </div>
       <div class="md:w-1/2" data-aos="fade-up" data-aos-delay="400">
@@ -194,10 +201,17 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
       </div>
     </div>
   </section>
-  <section class="container px-4 mx-auto pb-20">
+  <section class="container px-4 mx-auto pb-20 flex flex-col items-center">
     <h2 class="font-bold font-sans text-4xl md:text-5xl text-center mb-8">
       {{ $t('people_that_love_to_work_with_us') }}
     </h2>
     <SponsorCarouselComponent />
+    <a
+      class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 mt-10 px-4 rounded-lg w-fit"
+      :href="partnerPlan"
+      target="_blank"
+    >
+      {{ $t('view_partner_plan') }}
+    </a>
   </section>
 </template>
