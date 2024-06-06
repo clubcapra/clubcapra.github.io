@@ -11,7 +11,7 @@ import {
 </script>
 
 <template>
-  <footer id="footer" class="pt-10 bg-black">
+  <footer id="footer" class="py-10 bg-black">
     <div class="container mx-auto text-white px-4">
       <div class="flex flex-col md:flex-row justify-between">
         <div class="flex flex-col gap-4 md:w-1/3">
