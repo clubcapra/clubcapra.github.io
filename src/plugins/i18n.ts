@@ -250,6 +250,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Technical Director',
     fr: 'Directeur Technique',
   },
+  title_technical_director_f: {
+    en: 'Technical Director',
+    fr: 'Directrice Technique',
+  },
   partners: {
     en: 'Partners',
     fr: 'Partenaires',

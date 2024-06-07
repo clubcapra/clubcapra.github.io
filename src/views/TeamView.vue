@@ -40,9 +40,9 @@ const administration: Member[] = [
     title: 'title_co_captain_treasury',
   },
   {
-    name: 'Nicolas Vigneault',
-    program: 'engineering_gpa',
-    title: 'title_technical_director',
+    name: 'Iliana De Carufel',
+    program: 'engineering_software',
+    title: 'title_technical_director_f',
   },
 ];
 const mechanical: Member[] = [
@@ -70,6 +70,10 @@ const mechanical: Member[] = [
   },
   {
     name: 'Antony Afif',
+    program: 'engineering_electrical',
+  },
+  {
+    name: 'Gabriel Rondeau-Brouvette',
     program: 'engineering_mechanical',
   },
   {
@@ -122,6 +126,14 @@ const electrical: Member[] = [
     name: 'Émile Lacroix',
     program: 'engineering_electrical',
   },
+  {
+    name: 'Guy-Philippe Nadon',
+    program: 'engineering_software',
+  },
+  {
+    name: 'Nicolas Vigneault',
+    program: 'engineering_gpa',
+  },
 ];
 const software: Member[] = [
   {
@@ -131,10 +143,6 @@ const software: Member[] = [
   },
   {
     name: 'Samuel Lachance',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Guy-Philippe Nadon',
     program: 'engineering_software',
   },
   {
@@ -160,15 +168,11 @@ const software: Member[] = [
     program: 'engineering_software',
   },
   {
-    name: 'Iliana De Carufel',
-    program: 'engineering_software',
-  },
-  {
     name: 'Raphaël Vigneault',
     program: 'engineering_gpa',
   },
   {
-    name: 'Suzon Orlando',
+    name: 'Suzon Olory',
     program: 'engineering_software_master',
   },
   {
