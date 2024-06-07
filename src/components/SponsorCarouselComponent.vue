@@ -1,36 +1,9 @@
 <script setup lang="ts">
 import emblaCarouselVue from 'embla-carousel-vue';
 import AutoPlay from 'embla-carousel-autoplay';
-import aeets from '@clubcapra/assets/media/partners/aeets.png';
-import monday from '@clubcapra/assets/media/partners/monday.png';
-import odrive from '@clubcapra/assets/media/partners/odrive.png';
-import opnor from '@clubcapra/assets/media/partners/opnor.png';
-import stelpro from '@clubcapra/assets/media/partners/stelpro.png';
+import { goldPartners, silverPartners } from '@clubcapra/data/partners';
 
 const [emblaRef] = emblaCarouselVue({}, [AutoPlay({ delay: 5000 })]);
-
-const sponsors = [
-  {
-    image: aeets,
-    alt: 'AEETS',
-  },
-  {
-    image: monday,
-    alt: 'Monday',
-  },
-  {
-    image: odrive,
-    alt: 'ODrive',
-  },
-  {
-    image: opnor,
-    alt: 'Opnor',
-  },
-  {
-    image: stelpro,
-    alt: 'Stelpro',
-  },
-];
 </script>
 
 <template>
@@ -38,11 +11,11 @@ const sponsors = [
     <div ref="emblaRef" class="relative overflow-hidden">
       <div class="embla__container">
         <div
-          v-for="(sponsor, index) in sponsors"
+          v-for="(sponsor, index) in [...goldPartners, ...silverPartners]"
           :key="index"
           class="embla__slide"
         >
-          <img :src="sponsor.image" :alt="sponsor.alt" class="h-24" />
+          <img :src="sponsor.img" :alt="sponsor.name" class="h-24" />
         </div>
       </div>
     </div>
