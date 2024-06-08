@@ -13,27 +13,11 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
-    path: '/robots',
-    name: 'robots',
-    component: () => import('./RobotsView.vue'),
-    meta: {
-      title: i18n.global.t('page_robots'),
-    },
-  },
-  {
     path: '/team',
     name: 'team',
     component: () => import('./TeamView.vue'),
     meta: {
       title: i18n.global.t('page_team'),
-    },
-  },
-  {
-    path: '/competitions',
-    name: 'competition',
-    component: () => import('./CompetitionView.vue'),
-    meta: {
-      title: i18n.global.t('page_competitions'),
     },
   },
   {
@@ -45,19 +29,11 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
-    path: '/ressources',
-    name: 'ressources',
-    component: () => import('./RessourcesView.vue'),
+    path: '/publications',
+    name: 'publications',
+    component: () => import('./PublicationsView.vue'),
     meta: {
-      title: i18n.global.t('page_ressources'),
-    },
-  },
-  {
-    path: '/contact',
-    name: 'contact',
-    component: () => import('./ContactView.vue'),
-    meta: {
-      title: i18n.global.t('page_contact'),
+      title: i18n.global.t('page_publications'),
     },
   },
 ];
