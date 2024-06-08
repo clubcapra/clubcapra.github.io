@@ -67,13 +67,6 @@ export default defineConfig(async ({ mode, command }): Promise<UserConfig> => {
           manualChunks: {
             // Split external library from transpiled code.
             vue: ['vue', 'vue-router', 'pinia', 'pinia-plugin-persistedstate'],
-            vuetify: [
-              'vuetify',
-              'vuetify/components',
-              'vuetify/directives',
-              'webfontloader',
-            ],
-            materialdesignicons: ['@mdi/font/css/materialdesignicons.css'],
           },
           plugins: [
             mode === 'analyze'
