@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import emblaCarouselVue from 'embla-carousel-vue';
 import AutoPlay from 'embla-carousel-autoplay';
-import { goldPartners, silverPartners } from '@clubcapra/data/partners';
+import {
+  principalPartners,
+  platinumPartners,
+  goldPartners,
+  silverPartners,
+} from '@clubcapra/data/partners';
 
 const [emblaRef] = emblaCarouselVue({}, [AutoPlay({ delay: 5000 })]);
 </script>
@@ -11,7 +16,12 @@ const [emblaRef] = emblaCarouselVue({}, [AutoPlay({ delay: 5000 })]);
     <div ref="emblaRef" class="relative overflow-hidden">
       <div class="embla__container">
         <div
-          v-for="(sponsor, index) in [...goldPartners, ...silverPartners]"
+          v-for="(sponsor, index) in [
+            ...principalPartners,
+            ...platinumPartners,
+            ...goldPartners,
+            ...silverPartners,
+          ]"
           :key="index"
           class="embla__slide"
         >
