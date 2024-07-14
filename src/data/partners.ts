@@ -23,6 +23,7 @@ import aluminerieAlouette from '@clubcapra/assets/media/partners/aluminerie-alou
 import beonyx from '@clubcapra/assets/media/partners/beonyx.svg';
 import rei from '@clubcapra/assets/media/partners/rei.png';
 import usinageLR from '@clubcapra/assets/media/partners/usinage_LR.svg';
+import harting from '@clubcapra/assets/media/partners/harting.svg';
 
 interface Partner {
   name: string;
@@ -75,6 +76,11 @@ export const goldPartners: Partner[] = [
     name: 'Fondation J. Armand Bombardier',
     img: jaBombardier,
     url: 'https://www.fondationbombardier.ca',
+  },
+  {
+    name: 'HARTING',
+    img: harting,
+    url: 'https://www.harting.com',
   },
 ];
 
