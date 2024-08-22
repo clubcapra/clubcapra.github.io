@@ -8,6 +8,7 @@ import {
   faInstagram,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
+const email = 'capra@ens.etsmtl.ca';
 </script>
 
 <template>
@@ -18,7 +19,7 @@ import {
           <img :src="logo" alt="logo" class="h-16 w-16" />
           <div class="flex flex-row items-center text-lg gap-1">
             <FontAwesomeIcon :icon="faEnvelope" class="w-6" />
-            <p>clubcapra@etsmtl.ca</p>
+            <a :href="'mailto:' + email">{{ email }}</a>
           </div>
           <div class="flex flex-row items-center text-lg gap-1">
             <FontAwesomeIcon :icon="faLocationDot" class="w-6" />
