@@ -2,6 +2,7 @@ import { createI18n } from 'vue-i18n';
 
 type Lang = 'fr' | 'en';
 const rawMessages: Record<string, Record<Lang, string>> = {
+  // home
   home_title: {
     en: 'Building the future of robotics together',
     fr: "Construisons l'avenir de la robotique ensemble",
@@ -13,10 +14,6 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   get_in_touch_button: {
     en: 'Get in touch with us',
     fr: 'Contactez-nous pour en savoir plus',
-  },
-  about_us_title: {
-    en: 'About Us',
-    fr: 'À propos de nous',
   },
   our_story_title: {
     en: 'Our story',
@@ -74,6 +71,27 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Our robots participate in international competitions and events every year. We have showcased our robots in countries like Thailand, Germany, Austria, and Australia. Our goal is to make a global impact and inspire the next generation of roboticists.',
     fr: "Nos robots participent à des compétitions et événements internationaux chaque année. Nous avons présenté nos robots dans des pays comme la Thaïlande, l'Allemagne, l'Autriche et l'Australie. Notre objectif est de faire un impact mondial et d'inspirer la prochaine génération de roboticiens.",
   },
+  join_our_team_title: {
+    en: 'Join our team',
+    fr: 'Rejoins notre équipe',
+  },
+  join_our_team_content: {
+    en: 'Are you passionate about robotics and want to make a difference? Join our team and be part of the next generation of search and rescue robots.',
+    fr: 'Tu es passionné par la robotique et tu veux faire une différence? Rejoins notre équipe et fais partie de la prochaine génération de robots de recherche et de sauvetage.',
+  },
+  join_us: {
+    en: 'Join us',
+    fr: 'Rejoins nous',
+  },
+  people_that_love_to_work_with_us: {
+    en: 'People that love to work with us',
+    fr: 'Ceux qui aiment travailler avec nous',
+  },
+  view_partner_plan: {
+    en: 'View our partner plan',
+    fr: 'Voir notre plan de partenariat',
+  },
+  // competitions
   competitions_title: {
     en: 'Our competitions',
     fr: 'Nos compétitions',
@@ -162,6 +180,7 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Learn more',
     fr: 'En savoir plus',
   },
+  // footer
   copyright: {
     en: '© 2024 Club Capra. All rights reserved.',
     fr: '© 2024 Club Capra. Tous droits réservés.',
@@ -178,29 +197,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Room D-2014',
     fr: 'Local D-2014',
   },
-  join_our_team_title: {
-    en: 'Join our team',
-    fr: 'Rejoins notre équipe',
-  },
-  join_our_team_content: {
-    en: 'Are you passionate about robotics and want to make a difference? Join our team and be part of the next generation of search and rescue robots.',
-    fr: 'Tu es passionné par la robotique et tu veux faire une différence? Rejoins notre équipe et fais partie de la prochaine génération de robots de recherche et de sauvetage.',
-  },
-  join_us: {
-    en: 'Join us',
-    fr: 'Rejoins nous',
-  },
+  // team
   our_team_title: {
     en: 'Our Team',
     fr: 'Notre équipe',
-  },
-  people_that_love_to_work_with_us: {
-    en: 'People that love to work with us',
-    fr: 'Ceux qui aiment travailler avec nous',
-  },
-  view_partner_plan: {
-    en: 'View our partner plan',
-    fr: 'Voir notre plan de partenariat',
   },
   team_administration: {
     en: 'Administration',
@@ -254,6 +254,27 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Technical Director',
     fr: 'Directrice Technique',
   },
+  engineering_mechanical: {
+    en: 'Mechanical Engineering',
+    fr: 'Génie Mécanique',
+  },
+  engineering_electrical: {
+    en: 'Electrical Engineering',
+    fr: 'Génie Électrique',
+  },
+  engineering_software: {
+    en: 'Software Engineering',
+    fr: 'Génie Logiciel',
+  },
+  engineering_gpa: {
+    en: 'Automated Production Engineering',
+    fr: 'Génie de la Production Automatisée',
+  },
+  engineering_software_master: {
+    en: 'Master in Software Engineering',
+    fr: 'Maîtrise en Génie Logiciel',
+  },
+  // partners
   partners: {
     en: 'Partners',
     fr: 'Partenaires',
@@ -278,26 +299,7 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Bronze Partners',
     fr: 'Partenaires Bronze',
   },
-  engineering_mechanical: {
-    en: 'Mechanical Engineering',
-    fr: 'Génie Mécanique',
-  },
-  engineering_electrical: {
-    en: 'Electrical Engineering',
-    fr: 'Génie Électrique',
-  },
-  engineering_software: {
-    en: 'Software Engineering',
-    fr: 'Génie Logiciel',
-  },
-  engineering_gpa: {
-    en: 'Automated Production Engineering',
-    fr: 'Génie de la Production Automatisée',
-  },
-  engineering_software_master: {
-    en: 'Master in Software Engineering',
-    fr: 'Maîtrise en Génie Logiciel',
-  },
+  // pages titles
   page_home: {
     en: 'About Us',
     fr: 'À propos',
