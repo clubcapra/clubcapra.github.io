@@ -16,13 +16,18 @@ const navbarItems = [
     selected: false,
   },
   {
-    name: 'partners',
+    name: 'page_partners',
     link: '/partners',
     selected: false,
   },
   {
-    name: 'Publications',
+    name: 'page_publications',
     link: '/publications',
+    selected: false,
+  },
+  {
+    name: 'page_join',
+    link: '/join',
     selected: false,
   },
 ];
