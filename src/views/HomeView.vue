@@ -7,6 +7,7 @@ import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
 import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarouselComponent.vue';
 
 import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselComponent.vue';
+import DescriptiveContentComponent from '@clubcapra/components/DescriptiveContentComponent.vue';
 </script>
 
 <template>
@@ -52,23 +53,21 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
   </section>
 
   <!-- About us -->
-  <section class="container mx-auto px-4 pt-20">
-    <div class="flex flex-col md:flex-row gap-8 items-center">
-      <div class="flex md:w-1/2 flex-col gap-8" data-aos="fade-up">
-        <h2 class="font-bold font-sans text-4xl md:text-5xl">
-          {{ $t('our_story_title') }}
-        </h2>
-        <p>
-          {{ $t('our_story_content_1') }}
-        </p>
-        <p>
-          {{ $t('our_story_content_2') }}
-        </p>
-      </div>
-      <div class="md:w-1/2" data-aos="fade-up" data-aos-delay="400">
-        <img :src="robotStory" alt="robot" class="rounded-lg" />
-      </div>
-    </div>
+  <section>
+    <DescriptiveContentComponent class="pb-0" :image-right="true">
+      <template #title>
+        {{ $t('our_story_title') }}
+      </template>
+      <template #content1>
+        {{ $t('our_story_content_1') }}
+      </template>
+      <template #content2>
+        {{ $t('our_story_content_2') }}
+      </template>
+      <template #image>
+        <img :src="robotStory" alt="robot" class="rounded-lg w-full" />
+      </template>
+    </DescriptiveContentComponent>
   </section>
   <section class="bg-black py-20 mt-20">
     <div
@@ -98,64 +97,41 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
     </div>
   </section>
   <section>
-    <div class="container mx-auto px-4 py-20">
-      <div class="flex flex-col md:flex-row gap-8 items-center w-full">
-        <div
-          class="flex flex-col gap-8 md:w-1/2"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <h2 class="font-bold font-sans text-4xl md:text-5xl">
-            {{ $t('robots_design_title') }}
-            <span class="text-primary-500">{{ $t('scratch_title') }}</span>
-          </h2>
-          <p>
-            {{ $t('robots_design_content') }}
-          </p>
-        </div>
+    <DescriptiveContentComponent :image-right="true">
+      <template #title>
+        {{ $t('robots_design_title') }}
+        <span class="text-primary-500">{{ $t('scratch_title') }}</span>
+      </template>
+      <template #content1>
+        {{ $t('robots_design_content') }}
+      </template>
+      <template #image>
         <iframe
-          class="md:w-1/2 rounded-lg w-full"
           style="border: none"
           height="400"
+          class="rounded-lg w-full"
           src="https://rive.app/community/files/9884-18863-guy-designing/embed"
-          data-aos="fade-up"
-          data-aos-delay="400"
         />
-      </div>
-    </div>
+      </template>
+    </DescriptiveContentComponent>
   </section>
   <section>
-    <div class="container mx-auto px-4 py-20">
-      <div class="flex flex-col md:flex-row-reverse gap-8 items-center w-full">
-        <div
-          class="flex flex-col gap-8 md:w-1/2"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <h2 class="font-bold font-sans text-4xl md:text-5xl">
-            {{ $t('powered_by_title') }}
-            <span class="text-primary-500">{{ $t('ai') }}</span>
-          </h2>
-          <p>
-            {{ $t('powered_by_content') }}
-          </p>
-          <a
-            class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 px-4 rounded-lg w-fit"
-            href="https://github.com/clubcapra"
-            target="_blank"
-          >
-            {{ $t('view_projects_button') }}
-          </a>
-        </div>
-        <img
-          :src="yoloV9"
-          alt="yolo"
-          class="md:w-1/2 rounded-lg"
-          data-aos="fade-right"
-          data-aos-delay="400"
-        />
-      </div>
-    </div>
+    <DescriptiveContentComponent
+      :button="$t('view_projects_button')"
+      link="https://github.com/clubcapra"
+      :image-right="false"
+    >
+      <template #title>
+        {{ $t('powered_by_title') }}
+        <span class="text-primary-500">{{ $t('ai') }}</span>
+      </template>
+      <template #content1>
+        {{ $t('powered_by_content') }}
+      </template>
+      <template #image>
+        <img :src="yoloV9" alt="yolo" class="rounded-lg w-full" />
+      </template>
+    </DescriptiveContentComponent>
   </section>
   <section class="bg-black py-20">
     <div
@@ -179,27 +155,22 @@ import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselCompo
     </div>
   </section>
   <CompetitionCarouselComponent />
-  <section class="container mx-auto px-4 py-20">
-    <div class="flex flex-col md:flex-row gap-8 items-center">
-      <div class="flex md:w-1/2 flex-col gap-8" data-aos="fade-up">
-        <h2 class="font-bold font-sans text-4xl md:text-5xl">
-          {{ $t('join_our_team_title') }}
-        </h2>
-        <p>
-          {{ $t('join_our_team_content') }}
-        </p>
-        <a
-          class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 px-4 rounded-lg w-fit"
-          href="https://formulaires.etsmtl.ca/ClubEtudiantAdhesion?requete=capra&categorie=0"
-          target="_blank"
-        >
-          {{ $t('join_us') }}
-        </a>
-      </div>
-      <div class="md:w-1/2" data-aos="fade-up" data-aos-delay="400">
-        <img :src="team2024" alt="robot" class="rounded-lg" />
-      </div>
-    </div>
+  <section>
+    <DescriptiveContentComponent
+      :button="$t('join_us')"
+      link="https://formulaires.etsmtl.ca/ClubEtudiantAdhesion?requete=capra&categorie=0"
+      :image-right="true"
+    >
+      <template #title>
+        {{ $t('join_our_team_title') }}
+      </template>
+      <template #content1>
+        {{ $t('join_our_team_content') }}
+      </template>
+      <template #image>
+        <img :src="team2024" alt="robot" class="rounded-lg w-full" />
+      </template>
+    </DescriptiveContentComponent>
   </section>
   <section class="container px-4 mx-auto pb-20 flex flex-col items-center">
     <h2 class="font-bold font-sans text-4xl md:text-5xl text-center mb-8">

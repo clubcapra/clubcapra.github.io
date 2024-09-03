@@ -36,6 +36,14 @@ const routes: RouteRecordRaw[] = [
       title: i18n.global.t('page_publications'),
     },
   },
+  {
+    path: '/join/:id?',
+    name: 'join',
+    component: () => import('./JoinView.vue'),
+    meta: {
+      title: i18n.global.t('page_join'),
+    },
+  },
 ];
 
 export { routes };
