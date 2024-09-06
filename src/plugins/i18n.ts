@@ -254,6 +254,22 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Technical Director',
     fr: 'Directrice Technique',
   },
+  title_social_coordinator: {
+    en: 'Social Coordiantor',
+    fr: 'Coordinateur Social',
+  },
+  title_social_manager: {
+    en: 'Social Manager',
+    fr: 'Responsable Social',
+  },
+  title_event_manager: {
+    en: 'Event Manager',
+    fr: 'Responsable Événementiel',
+  },
+  title_partnership_manager: {
+    en: 'Partnership Manager',
+    fr: 'Responsable Partenariat',
+  },
   engineering_mechanical: {
     en: 'Mechanical Engineering',
     fr: 'Génie Mécanique',
