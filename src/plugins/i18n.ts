@@ -230,9 +230,9 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Co-Captain',
     fr: 'Co-Capitaine',
   },
-  title_co_captain_treasury: {
-    en: 'Treasury & Co-Captain',
-    fr: 'Trésorerie & Co-Capitaine',
+  title_treasury: {
+    en: 'Treasury',
+    fr: 'Trésorerie',
   },
   title_electrical_team_leader: {
     en: 'Electrical Team Lead',
@@ -253,6 +253,22 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   title_technical_director_f: {
     en: 'Technical Director',
     fr: 'Directrice Technique',
+  },
+  title_social_coordinator: {
+    en: 'Social Coordiantor',
+    fr: 'Coordinateur Social',
+  },
+  title_social_manager: {
+    en: 'Social Manager',
+    fr: 'Responsable Social',
+  },
+  title_event_manager: {
+    en: 'Event Manager',
+    fr: 'Responsable Événementiel',
+  },
+  title_partnership_manager: {
+    en: 'Partnership Manager',
+    fr: 'Responsable Partenariat',
   },
   engineering_mechanical: {
     en: 'Mechanical Engineering',
@@ -410,7 +426,7 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   },
   electrical_stack_content: {
     en: 'Our robots are equipped with a wide range of electrical components such as motor drivers to power supplies. We therefore have an electric stack that allows our robots to be reliable and robust in their operations while being safe.',
-    fr: "Nos robots sont équipés d'une large gamme de composants électriques tels que des pilotes de moteur aux alimentations électriques. Nous avons donc une pile électrique qui permet à nos robots d'être fiables et robustes dans leurs opérations tout en étant sécuritaire.",
+    fr: "Nos robots sont équipés d'une large gamme de composants électriques tels que des contrôleurs de moteur aux alimentations électriques. Nous avons donc une pile électrique qui permet à nos robots d'être fiables et robustes dans leurs opérations tout en étant sécuritaire.",
   },
   ai_title: {
     en: 'AI - Machine Learning',

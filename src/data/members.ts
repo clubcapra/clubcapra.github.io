@@ -2,7 +2,6 @@
 import davidCaron from '@clubcapra/assets/media/team/davidCaron.jpg';
 import benoitMalenfant from '@clubcapra/assets/media/team/benoitMalenfant.jpg';
 import kevinLarochelle from '@clubcapra/assets/media/team/kevinLarochelle.jpg';
-import amberLouie from '@clubcapra/assets/media/team/amberLouie.jpg';
 import leoDanielGosselin from '@clubcapra/assets/media/team/leoDanielGosselin.jpg';
 import gabrielLevesqueDuval from '@clubcapra/assets/media/team/gabrielLevesqueDuval.jpg';
 import alexisMartin from '@clubcapra/assets/media/team/alexisMartin.jpg';
@@ -16,20 +15,19 @@ interface Member {
 
 export const administrationTeam: Member[] = [
   {
-    name: 'David Caron',
-    img: davidCaron,
-    program: 'engineering_electrical',
+    name: 'Nathan Gueissaz-Teufel',
+    program: 'engineering_software',
     title: 'title_captain',
+  },
+  {
+    name: 'Étienne Le Guerrier',
+    program: 'engineering_electrical',
+    title: 'title_co_captain',
   },
   {
     name: 'William Jarry',
     program: 'engineering_software',
     title: 'title_co_captain',
-  },
-  {
-    name: 'Mathieu Salois',
-    program: 'engineering_software',
-    title: 'title_co_captain_treasury',
   },
   {
     name: 'Iliana De Carufel',
@@ -40,10 +38,14 @@ export const administrationTeam: Member[] = [
 
 export const mechanicalTeam: Member[] = [
   {
+    name: 'Gabriel Massicotte-Duhamel',
+    program: 'engineering_mechanical',
+    title: 'title_mechanical_team_leader',
+  },
+  {
     name: 'Kevin Larochelle',
     img: kevinLarochelle,
     program: 'engineering_gpa',
-    title: 'title_mechanical_team_leader',
   },
   {
     name: 'Bonzly Noël',
@@ -52,6 +54,7 @@ export const mechanicalTeam: Member[] = [
   {
     name: 'William Zamudio-Turcotte',
     program: 'engineering_gpa',
+    title: 'title_event_manager',
   },
   {
     name: 'Samuel Lagassé',
@@ -77,10 +80,20 @@ export const mechanicalTeam: Member[] = [
 
 export const electricalTeam: Member[] = [
   {
-    name: 'Amber Louie',
-    img: amberLouie,
+    name: 'Antoine Maltais',
     program: 'engineering_electrical',
     title: 'title_electrical_team_leader',
+  },
+  {
+    name: 'Philippe Desbiens',
+    program: 'engineering_electrical',
+    title: 'title_electrical_team_leader',
+  },
+  {
+    name: 'David Caron',
+    img: davidCaron,
+    program: 'engineering_electrical',
+    title: 'title_partnership_manager',
   },
   {
     name: 'Benoit Malenfant',
@@ -93,16 +106,8 @@ export const electricalTeam: Member[] = [
     program: 'engineering_gpa',
   },
   {
-    name: 'Antoine Maltais',
-    program: 'engineering_electrical',
-  },
-  {
     name: 'Christian Bourget',
     program: 'engineering_gpa',
-  },
-  {
-    name: 'Étienne Le Guerrier',
-    program: 'engineering_electrical',
   },
   {
     name: 'Alexis Girardin',
@@ -110,10 +115,6 @@ export const electricalTeam: Member[] = [
   },
   {
     name: 'Karl Aidans',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Philippe Desbiens',
     program: 'engineering_electrical',
   },
   {
@@ -132,7 +133,7 @@ export const electricalTeam: Member[] = [
 
 export const softwareTeam: Member[] = [
   {
-    name: 'Nathan Gueissaz-Teufel',
+    name: 'Denis Turk',
     program: 'engineering_software',
     title: 'title_software_team_leader',
   },
@@ -150,16 +151,16 @@ export const softwareTeam: Member[] = [
     program: 'engineering_software',
   },
   {
+    name: 'Mathieu Salois',
+    program: 'engineering_software',
+  },
+  {
     name: 'Alexis Martin',
     img: alexisMartin,
     program: 'engineering_software',
   },
   {
     name: 'Jacob Clermont',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Denis Turk',
     program: 'engineering_software',
   },
   {
