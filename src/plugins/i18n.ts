@@ -426,7 +426,7 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   },
   electrical_stack_content: {
     en: 'Our robots are equipped with a wide range of electrical components such as motor drivers to power supplies. We therefore have an electric stack that allows our robots to be reliable and robust in their operations while being safe.',
-    fr: "Nos robots sont équipés d'une large gamme de composants électriques tels que des pilotes de moteur aux alimentations électriques. Nous avons donc une pile électrique qui permet à nos robots d'être fiables et robustes dans leurs opérations tout en étant sécuritaire.",
+    fr: "Nos robots sont équipés d'une large gamme de composants électriques tels que des contrôleurs de moteur aux alimentations électriques. Nous avons donc une pile électrique qui permet à nos robots d'être fiables et robustes dans leurs opérations tout en étant sécuritaire.",
   },
   ai_title: {
     en: 'AI - Machine Learning',
