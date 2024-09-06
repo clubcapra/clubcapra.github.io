@@ -29,7 +29,7 @@ export const administrationTeam: Member[] = [
   {
     name: 'Mathieu Salois',
     program: 'engineering_software',
-    title: 'title_co_captain_treasury',
+    title: 'title_treasury',
   },
   {
     name: 'Iliana De Carufel',

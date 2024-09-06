@@ -230,9 +230,9 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Co-Captain',
     fr: 'Co-Capitaine',
   },
-  title_co_captain_treasury: {
-    en: 'Treasury & Co-Captain',
-    fr: 'Trésorerie & Co-Capitaine',
+  title_treasury: {
+    en: 'Treasury',
+    fr: 'Trésorerie',
   },
   title_electrical_team_leader: {
     en: 'Electrical Team Lead',
