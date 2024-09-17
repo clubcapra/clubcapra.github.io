@@ -14,13 +14,25 @@ import newArm from '@clubcapra/assets/media/join/new_arm.jpg';
 import nuclearPlant from '@clubcapra/assets/media/join/nuclear_plant.jpg';
 import pcbWorking from '@clubcapra/assets/media/join/pcb_working.jpg';
 import poseDetection from '@clubcapra/assets/media/join/pose_detection.mp4';
+import pizza from '@clubcapra/assets/media/join/pizza.png';
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const route = useRoute();
 
 const selectedTab = ref('MEC');
 
+const nextPizzaParty = new Date('2024-09-26:17:00:00 gmt-0400');
+const nextPizzaPartyLink = 'https://forms.office.com/r/UjRvbafzMg';
+const nextPizzaPartyLocation = 'D-3014';
+
+const dateStr = ref('');
+const timeStr = ref('');
+
+updateDateTimeStr();
+
 watch(() => route.hash, scrollToId);
+
+watch(() => locale.value, updateDateTimeStr);
 
 onMounted(() => {
   scrollToId();
@@ -38,6 +50,21 @@ function scrollToId() {
 
     document.getElementById(id)?.scrollIntoView({ behavior: 'instant' });
   }
+}
+
+/**
+ * Update the date and time strings based on the locale
+ */
+function updateDateTimeStr() {
+  dateStr.value = nextPizzaParty.toLocaleDateString(locale.value, {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+  timeStr.value = nextPizzaParty.toLocaleTimeString(locale.value, {
+    hour: 'numeric',
+  });
 }
 </script>
 
@@ -309,104 +336,37 @@ function scrollToId() {
     </DescriptiveContentComponent>
   </section>
 
-  <!-- <section id="MEC" class="container mx-auto px-4 pt-10">
+  <section
+    v-if="nextPizzaParty > new Date()"
+    id="PIZZA"
+    class="container mx-auto px-4 pt-10"
+  >
     <h2 class="text-5xl md:text-6xl font-bold font-sans text-center pt-10">
-      <a href="#MEC">{{ t('team_mechanical') }}</a>
+      <a href="#PIZZA">{{ t('our_next_event') }}</a>
     </h2>
-    <DescriptiveContentComponent :image-right="false">
+    <DescriptiveContentComponent
+      :image-right="false"
+      :button="$t('i_will_be_there')"
+      :link="nextPizzaPartyLink"
+    >
       <template #title>
-        {{ $t('custom_robot_title') }}
+        {{ $t('information_evening_title') }}
       </template>
       <template #content1>
-        {{ $t('custom_robot_content') }}
+        <b>
+          {{ $t('meet_us') }} {{ dateStr }} {{ $t('at_time') }} {{ timeStr }}
+          {{ $t('at_location') }} {{ nextPizzaPartyLocation }}
+          {{ $t('treat_pizza') }}
+        </b>
+      </template>
+      <template #content2>
+        {{ $t('information_evening_content') }}
       </template>
       <template #image>
-        <img
-          :src="customDesign"
-          alt="custom design"
-          class="rounded-lg w-full"
-        />
-      </template>
-    </DescriptiveContentComponent>
-    <DescriptiveContentComponent :image-right="true">
-      <template #title>
-        {{ $t('robot_optimisation_title') }}
-      </template>
-      <template #content1>
-        {{ $t('robot_optimisation_content') }}
-      </template>
-      <template #image>
-        <img :src="newArm" alt="new robotic arm" class="rounded-lg w-full" />
+        <img :src="pizza" alt="pizza" class="animate-spin-slow w-full" />
       </template>
     </DescriptiveContentComponent>
   </section>
-
-  <section id="ELE" class="container mx-auto px-4 pt-10">
-    <h2 class="text-5xl md:text-6xl font-bold font-sans text-center pt-10">
-      <a href="#ELE">{{ t('team_electrical') }}</a>
-    </h2>
-    <DescriptiveContentComponent :image-right="false">
-      <template #title>
-        {{ $t('pcb_design_title') }}
-      </template>
-      <template #content1>
-        {{ $t('pcb_design_content') }}
-      </template>
-      <template #image>
-        <img :src="pcbWorking" alt="PCB design" class="rounded-lg w-full" />
-      </template>
-    </DescriptiveContentComponent>
-    <DescriptiveContentComponent :image-right="true">
-      <template #title>
-        {{ $t('electrical_stack_title') }}
-      </template>
-      <template #content1>
-        {{ $t('electrical_stack_content') }}
-      </template>
-      <template #image>
-        <img
-          :src="eleWorking"
-          alt="eletrical team working"
-          class="rounded-lg w-full"
-        />
-      </template>
-    </DescriptiveContentComponent>
-  </section>
-
-  <section id="LOG" class="container mx-auto px-4 pt-10">
-    <h2 class="text-5xl md:text-6xl font-bold font-sans text-center pt-10">
-      <a href="#LOG">{{ t('team_software') }}</a>
-    </h2>
-    <DescriptiveContentComponent :image-right="false">
-      <template #title>
-        {{ $t('ai_title') }}
-      </template>
-      <template #content1>
-        {{ $t('ai_content') }}
-      </template>
-      <template #image>
-        <video
-          :src="poseDetection"
-          alt="AI pose detection"
-          class="rounded-lg w-full"
-          loop
-          autoplay
-          muted
-        />
-      </template>
-    </DescriptiveContentComponent>
-    <DescriptiveContentComponent :image-right="true">
-      <template #title>
-        {{ $t('mapping_title') }}
-      </template>
-      <template #content1>
-        {{ $t('mapping_content') }}
-      </template>
-      <template #image>
-        <img :src="mapping" alt="mapping" class="rounded-lg w-full" />
-      </template>
-    </DescriptiveContentComponent>
-  </section> -->
 
   <section class="container px-4 mx-auto pb-20 flex flex-col items-center">
     <a

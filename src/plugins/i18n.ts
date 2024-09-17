@@ -320,6 +320,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Our next competition',
     fr: 'Notre prochaine compétition',
   },
+  our_next_event: {
+    en: 'Our next event',
+    fr: 'Notre prochain événement',
+  },
   faq: {
     en: 'FAQ',
     fr: 'FAQ',
@@ -395,6 +399,34 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   nuclear_plant_content: {
     en: 'Our next competition (ENRICH 2025) will be held at the Zwentendorf nuclear power plant in Austria. We will be competing against teams from around the world to demonstrate the capabilities of our robots in a real-world emergency scenario.',
     fr: "Notre prochaine compétition (ENRICH 2025) se tiendra à la centrale nucléaire de Zwentendorf en Autriche. Nous affronterons des équipes du monde entier pour démontrer les capacités de nos robots dans un scénario d'urgence réel.",
+  },
+  i_will_be_there: {
+    en: 'Regester',
+    fr: "M'inscrire",
+  },
+  information_evening_title: {
+    en: 'Information Evening',
+    fr: 'Soirée d’information',
+  },
+  information_evening_content: {
+    en: 'We will present our club and our various projects for each department. This session is intended for all students wanting to learn more about our club, regardless of their field of study or level of experience.',
+    fr: "Nous allons présenter notre club et nos divers projets pour chaque département. Cette séance est destiné à tous les étudiants voulant en apprendre plus sur notre club, peu importe leur domaine d'étude ou leur degré d'expérience.",
+  },
+  treat_pizza: {
+    en: "and we'll treat you with pizza!",
+    fr: "et on t'offre la pizza!",
+  },
+  meet_us: {
+    en: 'Come meet us on',
+    fr: 'Viens nous rencontrer le',
+  },
+  at_time: {
+    en: 'at',
+    fr: 'à',
+  },
+  at_location: {
+    en: 'at',
+    fr: 'au',
   },
   custom_robot_title: {
     en: 'Custom Robot',
