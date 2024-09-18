@@ -20,7 +20,6 @@ import prolab from '@clubcapra/assets/media/partners/prolab.png';
 import pcbWay from '@clubcapra/assets/media/partners/pcbWay.png';
 import pretATable from '@clubcapra/assets/media/partners/pret-a-table.avif';
 import aluminerieAlouette from '@clubcapra/assets/media/partners/aluminerie-alouette.png';
-import beonyx from '@clubcapra/assets/media/partners/beonyx.svg';
 import rei from '@clubcapra/assets/media/partners/rei.png';
 import usinageLR from '@clubcapra/assets/media/partners/usinage_LR.svg';
 import harting from '@clubcapra/assets/media/partners/harting.svg';
@@ -142,11 +141,6 @@ export const bronzePartners: Partner[] = [
     name: 'REI',
     img: rei,
     url: 'https://www.reseauei.com',
-  },
-  {
-    name: 'Beonyx',
-    img: beonyx,
-    url: 'https://www.beonyx.ca',
   },
   {
     name: 'Aluminerie Alouette',
