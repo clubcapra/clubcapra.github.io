@@ -23,7 +23,7 @@ const selectedTab = ref('MEC');
 
 const nextPizzaParty = new Date('2024-09-26:17:00:00 gmt-0400');
 const nextPizzaPartyLink = 'https://forms.office.com/r/UjRvbafzMg';
-const nextPizzaPartyLocation = 'D-3014';
+const nextPizzaPartyLocation = 'D-4025';
 
 const dateStr = ref('');
 const timeStr = ref('');
