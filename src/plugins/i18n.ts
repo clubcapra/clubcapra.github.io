@@ -270,6 +270,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Partnership Manager',
     fr: 'Responsable Partenariat',
   },
+  title_merchandise_manager: {
+    en: 'Merchandise Manager',
+    fr: 'Responsable Marchandise',
+  },
   engineering_mechanical: {
     en: 'Mechanical Engineering',
     fr: 'Génie Mécanique',
