@@ -187,4 +187,9 @@ export const softwareTeam: Member[] = [
     name: 'Laurent St-Hilaire',
     program: 'engineering_software',
   },
+  {
+    name: 'Etienne Tardif',
+    program: 'engineering_software',
+    title: 'title_merchandise_manager',
+  },
 ];
