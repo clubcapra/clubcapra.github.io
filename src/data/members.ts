@@ -93,7 +93,6 @@ export const electricalTeam: Member[] = [
     name: 'David Caron',
     img: davidCaron,
     program: 'engineering_electrical',
-    title: 'title_partnership_manager',
   },
   {
     name: 'Benoit Malenfant',
@@ -128,6 +127,11 @@ export const electricalTeam: Member[] = [
   {
     name: 'Nicolas Vigneault',
     program: 'engineering_gpa',
+  },
+  {
+    name: 'Jean-Charles Fortin',
+    program: 'engineering_gpa',
+    title: 'title_partnership_manager',
   },
 ];
 
