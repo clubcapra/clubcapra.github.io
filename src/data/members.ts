@@ -34,6 +34,16 @@ export const administrationTeam: Member[] = [
     program: 'engineering_software',
     title: 'title_technical_director_f',
   },
+  {
+    name: 'Olivier Genest',
+    program: 'engineering_electrical',
+    title: 'title_treasury',
+  },
+  {
+    name: 'Olivier Raymond',
+    program: 'engineering_software',
+    title: 'title_social_coordinator',
+  },
 ];
 
 export const mechanicalTeam: Member[] = [
