@@ -485,6 +485,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'About Us',
     fr: 'À propos',
   },
+  page_members: {
+    en: 'Members',
+    fr: 'Membres',
+  },
   page_team: {
     en: 'Team',
     fr: 'Équipe',
