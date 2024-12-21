@@ -124,14 +124,14 @@ async function feed() {
 </script>
 
 <template>
-  <div class="news flex p-2.5 flex-row">
+  <div class="news flex p-2.5 flex-row bg-gray-100">
     <div>
       <img class="m-auto max-w-fit news-logo" :src="radioCanadaLogo" />
     </div>
     <div id="news-container" class="m-y-auto h-full overflow-hidden">
       <div
         id="news-content"
-        class="relative whitespace-pre h-fit"
+        class="relative whitespace-pre h-fit font-medium"
         :style="`left: ${pos}px`"
       />
     </div>
@@ -140,10 +140,11 @@ async function feed() {
 
 <style>
 .news-logo {
-  height: 6vh;
+  height: 40px;
 }
 #news-content {
-  font-size: 3vh;
+  font-size: 24px;
+  line-height: 24px;
   margin-top: calc((3vh - 10px) / 2);
 }
 </style>

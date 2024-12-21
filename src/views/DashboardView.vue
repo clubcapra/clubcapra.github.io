@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue';
+import { ref } from 'vue';
 import capraLongLogo from '@clubcapra/assets/media/capra_long.svg';
 import pedro from '@clubcapra/assets/media/dashboard/pedro.gif';
 
@@ -13,8 +13,6 @@ const filteredEvents = ref<Event[]>([]);
 const competitionEvents = ref<Event[]>([]);
 
 filterEvents();
-
-let interval: number;
 
 /**
  * Filter the events to only show the ones that are in the future.
@@ -51,29 +49,6 @@ function updateEvents() {
     );
   });
 }
-
-onMounted(() => {
-  const events = document.querySelector('.events');
-  interval = setInterval(() => {
-    if (events) {
-      if (events.scrollTop + events.clientHeight >= events.scrollHeight) {
-        events.scrollTo({
-          top: 0,
-          behavior: 'smooth',
-        });
-      } else {
-        events.scrollTo({
-          top: events.scrollTop + 1,
-          behavior: 'smooth',
-        });
-      }
-    }
-  }, 100);
-});
-
-onUnmounted(() => {
-  clearInterval(interval);
-});
 </script>
 
 <template>
@@ -83,7 +58,7 @@ onUnmounted(() => {
         v-if="competitionEvents.length > 0"
         :event="competitionEvents[0]"
       />
-      <img class="h-full w-auto" :src="capraLongLogo" />
+      <img class="w-0" :src="capraLongLogo" />
       <TimerComponent
         v-if="competitionEvents.length > 0"
         :event="
@@ -101,7 +76,9 @@ onUnmounted(() => {
           alt="Pedro"
         />
       </div>
-      <div class="events scroll-auto flex flex-col overflow-y-hidden">
+      <div
+        class="events scroll-auto flex flex-col flex-wrap overflow-hidden w-96"
+      >
         <div
           v-for="event in filteredEvents"
           :key="event.title"
@@ -148,7 +125,6 @@ onUnmounted(() => {
 }
 
 .header {
-  height: 11vh;
   padding: 0.5%;
 }
 
