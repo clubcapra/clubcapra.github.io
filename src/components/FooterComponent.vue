@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import logo from '@clubcapra/assets/media/Capra_Cercle_Full.png';
@@ -9,10 +10,15 @@ import {
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 const email = 'capra@ens.etsmtl.ca';
+const hidden = ref(false);
+
+onMounted(() => {
+  hidden.value = window.location.pathname === '/dashboard';
+});
 </script>
 
 <template>
-  <footer id="footer" class="py-10 bg-black">
+  <footer v-if="!hidden" id="footer" class="py-10 bg-black">
     <div class="container mx-auto text-white px-4">
       <div class="flex flex-col md:flex-row justify-between">
         <div class="flex flex-col gap-4 md:w-1/3">
