@@ -197,6 +197,10 @@ export const softwareTeam: Member[] = [
     title: 'title_merchandise_manager',
   },
   {
+    name: 'Simon Biard',
+    program: 'engineering_software',
+  },
+  {
     name: 'Ange Olive Dagang Nyappa',
     program: 'engineering_software',
   },
