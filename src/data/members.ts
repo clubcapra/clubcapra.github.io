@@ -199,5 +199,5 @@ export const softwareTeam: Member[] = [
   {
     name: 'Ange Olive Dagang Nyappa',
     program: 'engineering_software',
-  },  
+  },
 ];
