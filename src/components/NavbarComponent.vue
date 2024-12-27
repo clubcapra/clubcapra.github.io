@@ -11,6 +11,11 @@ const navbarItems = [
     selected: false,
   },
   {
+    name: 'page_members',
+    link: '/members',
+    selected: false,
+  },
+  {
     name: 'page_team',
     link: '/team',
     selected: false,
