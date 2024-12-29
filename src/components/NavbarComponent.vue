@@ -30,6 +30,11 @@ const navbarItems = [
     link: '/join',
     selected: false,
   },
+  {
+    name: 'page_projets',
+    link: '/projets',
+    selected: false,
+  },
 ];
 
 // Hide navbar until scroll

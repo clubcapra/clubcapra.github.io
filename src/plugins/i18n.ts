@@ -480,6 +480,35 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'During our competitions, our robots must be capable of making autonomous decisions. To achieve this, they are equipped with 3D mapping, path planning and autonomy systems that allow them to navigate difficult terrain.',
     fr: "Durant nos compétitions, nos robots doivent être capables de prendre des décisions autonomes. Afin de réaliser cela, ils sont équipés de systèmes de cartographie 3D, de planification de trajectoires et d'autonomie qui leur permettent de naviguer dans des terrains difficiles.",
   },
+  // projets
+  tout_projets: {
+    en: 'Our current projects',
+    fr: 'Nos projets en cours',
+  },
+  cable_management: {
+    en: 'Cable Management',
+    fr: 'Gestions des câbles',
+  },
+  description_cable_management: {
+    en: 'We need to do some clean cable management for the competitions or else we wont be able to solve problems.',
+    fr: 'Nous devons faire une gestion propre des câbles pour les compétitions, sinon nous ne pourrons pas résoudre les problèmes.',
+  },
+  gripper_arm: {
+    en: 'Gripper',
+    fr: 'Pince',
+  },
+  description_gripper_arm: {
+    en: 'A gripper that is made from carbon fiber and metal. The purpose of the gripper is to take small items from one place to another.',
+    fr: "Une pince en fibre de carbone et en métal. Le but de la pince est de transporter de petits objets d'un endroit à un autre.",
+  },
+  mapping_3d: {
+    en: '3D mapping',
+    fr: 'Cartographie 3D',
+  },
+  description_mapping_3d: {
+    en: 'A 3D map that is created by our specials cameras on the robot. In competition, the 3D mapping process is very complicated and very rewarding if done correct.',
+    fr: "Une carte 3D créée par nos caméras spéciales sur le robot. En compétition, le processus de cartographie 3D est très compliqué et très gratifiant s'il est réalisé correctement.",
+  },
   // pages titles
   page_home: {
     en: 'About Us',
@@ -500,6 +529,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   page_join: {
     en: 'Join Us',
     fr: 'Rejoins-nous',
+  },
+  page_projets: {
+    en: 'Projects',
+    fr: 'Projets',
   },
 };
 
