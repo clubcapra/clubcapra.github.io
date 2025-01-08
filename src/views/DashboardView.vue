@@ -11,8 +11,11 @@ import type { Event } from '@clubcapra/data/events';
 
 const filteredEvents = ref<Event[]>([]);
 const competitionEvents = ref<Event[]>([]);
+const date = ref(new Date());
 
 filterEvents();
+
+setInterval(updateTime, 1_000);
 
 /**
  * Filter the events to only show the ones that are in the future.
@@ -49,6 +52,13 @@ function updateEvents() {
     );
   });
 }
+
+/**
+ * Update the time displayed on the page.
+ */
+function updateTime() {
+  date.value = new Date();
+}
 </script>
 
 <template>
@@ -58,7 +68,14 @@ function updateEvents() {
         v-if="competitionEvents.length > 0"
         :event="competitionEvents[0]"
       />
-      <img class="w-0" :src="capraLongLogo" />
+
+      <div class="flex flex-col">
+        <img class="" :src="capraLongLogo" />
+        <p class="text-2xl font-bold">
+          {{ date.getHours() }}:{{ date.getMinutes() }}
+        </p>
+      </div>
+
       <TimerComponent
         v-if="competitionEvents.length > 0"
         :event="

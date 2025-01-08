@@ -11,6 +11,7 @@ const formatter = new Intl.NumberFormat('en-US', {
   useGrouping: false,
 });
 
+const weeks = ref(0);
 const days = ref(0);
 const hours = ref(formatter.format(0));
 const minutes = ref(formatter.format(0));
@@ -30,6 +31,7 @@ function updateTimer() {
   }
 
   days.value = Math.floor(distance / (1000 * 60 * 60 * 24));
+  weeks.value = Math.floor(days.value / 7);
   hours.value = formatter.format(
     Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
   );
@@ -68,6 +70,7 @@ onUnmounted(() => {
         <p class="timer-tag">secondes</p>
       </div>
     </div>
+    <p class="timer-tag font-bold">{{ weeks }} semaines</p>
   </div>
 </template>
 
