@@ -13,6 +13,11 @@ const filteredEvents = ref<Event[]>([]);
 const competitionEvents = ref<Event[]>([]);
 const date = ref(new Date());
 
+const formatter = new Intl.NumberFormat('en-US', {
+  minimumIntegerDigits: 2,
+  useGrouping: false,
+});
+
 filterEvents();
 
 setInterval(updateTime, 1_000);
@@ -72,7 +77,8 @@ function updateTime() {
       <div class="flex flex-col">
         <img class="" :src="capraLongLogo" />
         <p class="text-2xl font-bold">
-          {{ date.getHours() }}:{{ date.getMinutes() }}
+          {{ formatter.format(date.getHours()) }} :
+          {{ formatter.format(date.getMinutes()) }}
         </p>
       </div>
 
