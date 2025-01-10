@@ -27,6 +27,7 @@ onMounted(() => {
   newsContainer = document.getElementById('news-container');
   feed();
 });
+
 /**
  * @see https://stackoverflow.com/questions/118241/calculate-text-width-with-javascript/21015393#21015393
  * @param text - The text to measure.
@@ -80,9 +81,22 @@ async function feed() {
     return;
   }
 
+  let response: Response;
+  let responseText: string = '';
+
   while (scrollNews) {
-    const response = await fetch(rssFeed);
-    const responseText = await response.text();
+    try {
+      response = await fetch(rssFeed);
+      responseText = await response.text();
+    } catch (error) {
+      console.error('Error fetching RSS feed:', error);
+      if (responseText === '') {
+        console.log('Retrying in 5 seconds...');
+        const promise = new Promise(r => setTimeout(r, 5_000));
+        await promise;
+        continue;
+      }
+    }
 
     const xmlDoc = parser.parseFromString(responseText, 'text/xml');
     const items = xmlDoc.getElementsByTagName('item');
