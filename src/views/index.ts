@@ -52,6 +52,14 @@ const routes: RouteRecordRaw[] = [
       title: i18n.global.t('page_join'),
     },
   },
+  {
+    path: '/dashboard',
+    name: 'dashboard',
+    component: () => import('./DashboardView.vue'),
+    meta: {
+      title: 'Dashboard',
+    },
+  },
 ];
 
 export { routes };

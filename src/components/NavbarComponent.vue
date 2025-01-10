@@ -62,7 +62,10 @@ onBeforeMount(() => {
 });
 
 onMounted(() => {
-  if (window.location.pathname !== '/') {
+  if (
+    window.location.pathname !== '/' &&
+    window.location.pathname !== '/dashboard'
+  ) {
     const navbar = document.getElementById('navbar');
     if (navbar) {
       navbar.classList.add('bg-white');
