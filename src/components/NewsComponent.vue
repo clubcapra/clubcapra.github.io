@@ -102,6 +102,7 @@ async function feed() {
       responseText.replaceAll('\r', ' ').replaceAll('\n', ' '),
       'text/xml'
     );
+    
     const items = xmlDoc.getElementsByTagName('item');
     newsContent.innerHTML = ''; // using innerHTML because of em tags
 
