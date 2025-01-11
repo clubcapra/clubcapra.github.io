@@ -98,7 +98,11 @@ async function feed() {
       }
     }
 
-    const xmlDoc = parser.parseFromString(responseText, 'text/xml');
+    const xmlDoc = parser.parseFromString(
+      responseText.replaceAll('\r', ' ').replaceAll('\n', ' '),
+      'text/xml'
+    );
+    
     const items = xmlDoc.getElementsByTagName('item');
     newsContent.innerHTML = ''; // using innerHTML because of em tags
 
