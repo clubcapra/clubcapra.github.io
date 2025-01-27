@@ -28,10 +28,10 @@ const isHovering = ref(false);
     />
     <div class="flex flex-col md:w-1/2 md:h-full md:py-10">
       <div class="flex flex-col p-4">
-        <h2 class="text-white text-2xl font-bold">{{ title }}</h2>
-        <h5 class="text-white text-lg font-medium">
+        <h3 class="text-white text-2xl font-bold">{{ title }}</h3>
+        <h4 class="text-white text-lg font-medium">
           {{ $t(city) }}, {{ $t(country) }}
-        </h5>
+        </h4>
       </div>
       <div class="p-4">
         <p class="text-white font-bold text-lg pb-2">

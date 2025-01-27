@@ -118,6 +118,7 @@ function updateDateTimeStr() {
         :tabindex="selectedTab === 'MEC' ? 0 : -1"
         :aria-selected="selectedTab === 'MEC'"
         aria-controls="tabpanel-MEC"
+        role="tab"
         @click="selectedTab = 'MEC'"
         @focus="selectedTab = 'MEC'"
       >
@@ -135,6 +136,7 @@ function updateDateTimeStr() {
         :tabindex="selectedTab === 'ELE' ? 0 : -1"
         :aria-selected="selectedTab === 'ELE'"
         aria-controls="tabpanel-ELE"
+        role="tab"
         @click="selectedTab = 'ELE'"
         @focus="selectedTab = 'ELE'"
       >
@@ -152,6 +154,7 @@ function updateDateTimeStr() {
         :tabindex="selectedTab === 'LOG' ? 0 : -1"
         :aria-selected="selectedTab === 'LOG'"
         aria-controls="tabpanel-LOG"
+        role="tab"
         @click="selectedTab = 'LOG'"
         @focus="selectedTab = 'LOG'"
       >
