@@ -115,6 +115,7 @@ const competitions = [
         <div class="md:absolute z-10 md:top-3/4 md:left-5">
           <button
             id="prev-button"
+            :title="$t('previous')"
             :disabled="prevButtonDisabled"
             class="bg-black text-primary-50 font-medium text-lg py-2 px-2 rounded-full transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
@@ -138,6 +139,7 @@ const competitions = [
         <div class="md:absolute z-10 md:top-3/4 md:right-5">
           <button
             id="next-button"
+            :title="$t('next')"
             :disabled="nextButtonDisabled"
             class="bg-black text-primary-50 font-medium text-lg py-2 px-2 rounded-full transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >

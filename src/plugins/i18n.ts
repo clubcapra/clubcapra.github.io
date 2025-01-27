@@ -31,6 +31,10 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Watch our robot in action',
     fr: 'Regardez notre robot en action',
   },
+  video_robot_in_action: {
+    en: 'Video of our robot in action',
+    fr: 'Vidéo de notre robot en action',
+  },
   watch_our_robot_subtitle: {
     en: 'Our robot Markhor winning the best in class in Search & Rescue award at EnRicH 2023',
     fr: 'Notre robot Markhor remportant le prix du meilleur robot en recherche et sauvetage à EnRicH 2023',
@@ -504,6 +508,18 @@ const rawMessages: Record<string, Record<Lang, string>> = {
   page_join: {
     en: 'Join Us',
     fr: 'Rejoins-nous',
+  },
+  language: {
+    en: 'Language',
+    fr: 'Langue',
+  },
+  previous: {
+    en: 'Previous',
+    fr: 'Précédent',
+  },
+  next: {
+    en: 'Next',
+    fr: 'Suivant',
   },
 };
 

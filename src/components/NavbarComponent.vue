@@ -125,6 +125,7 @@ const onLocaleChange = (event: Event) => {
           </a>
           <select
             v-model="$i18n.locale"
+            :aria-label="$t('language')"
             type="button"
             class="text-gray-500 hover:text-primary-700 focus:text-gray-600 focus:outline-none pr-2"
             @change="onLocaleChange"

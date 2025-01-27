@@ -7,6 +7,7 @@ import BibBaseComponent from '@clubcapra/components/BibBaseComponent.vue';
     <h2 class="font-bold font-sans text-4xl md:text-5xl">Publications</h2>
     <div class="pt-4">
       <BibBaseComponent
+        :title="$t('page_publications')"
         url="https://raw.githubusercontent.com/clubcapra/papers/master/papers.bib"
       />
     </div>

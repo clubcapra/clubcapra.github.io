@@ -23,13 +23,13 @@ import DescriptiveContentComponent from '@clubcapra/components/DescriptiveConten
         >
           {{ $t('home_title') }}
         </h1>
-        <h3
+        <p
           class="mx-auto text-primary-100 font-medium font-sans text-2xl md:text-3xl"
           data-aos="fade-up"
           data-aos-delay="700"
         >
           {{ $t('home_subtitle') }}
-        </h3>
+        </p>
         <a
           class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 px-4 rounded-lg w-fit"
           data-aos="fade-up"
@@ -41,6 +41,7 @@ import DescriptiveContentComponent from '@clubcapra/components/DescriptiveConten
       </div>
 
       <iframe
+        aria-hidden="true"
         class="aspect-square h-1/2 w-full md:absolute md:right-0 md:w-1/2 md:h-full z-0 hidden sm:block"
         style="border: none"
         width="100%"
@@ -80,18 +81,19 @@ import DescriptiveContentComponent from '@clubcapra/components/DescriptiveConten
         <h2 class="font-bold font-sans text-3xl md:text-5xl text-white">
           {{ $t('watch_our_robot_title') }}
         </h2>
-        <h5 class="font-sans text-lg md:text-xl text-white">
+        <p class="font-sans text-lg md:text-xl text-white">
           {{ $t('watch_our_robot_subtitle') }}
-        </h5>
+        </p>
       </div>
 
       <div class="w-full max-w-4xl" data-aos-delay="400" data-aos="zoom-in">
         <!-- YouTube video iframe -->
         <iframe
-          width="100%"
           height="100%"
+          width="100%"
           class="rounded-l aspect-video"
           src="https://www.youtube.com/embed/_KpCUCoCCqU"
+          :title="$t('video_robot_in_action')"
         />
       </div>
     </div>
@@ -107,6 +109,7 @@ import DescriptiveContentComponent from '@clubcapra/components/DescriptiveConten
       </template>
       <template #image>
         <iframe
+          aria-hidden="true"
           style="border: none"
           height="400"
           class="rounded-lg w-full"

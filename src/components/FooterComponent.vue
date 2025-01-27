@@ -39,26 +39,39 @@ onMounted(() => {
           <p />
         </div>
         <div class="flex flex-col gap-4">
-          <h5 class="font-sans font-bold text-xl md:text-2xl">
+          <p class="font-sans font-bold text-xl md:text-2xl">
             {{ $t('our_socials') }}
-          </h5>
-          <div class="flex flex-row gap-4">
-            <a class="text-xl" href="https://www.facebook.com/clubcapra/">
+          </p>
+          <nav class="flex flex-row gap-4">
+            <a
+              class="text-xl"
+              href="https://www.facebook.com/clubcapra/"
+              aria-label="LinkedIn"
+            >
               <FontAwesomeIcon :icon="faLinkedin" />
             </a>
-            <a class="text-xl" href="https://www.instagram.com/capra_ets/">
+            <a
+              class="text-xl"
+              href="https://www.instagram.com/capra_ets/"
+              aria-label="Instagram"
+            >
               <FontAwesomeIcon :icon="faInstagram" />
             </a>
             <a
               class="text-xl"
               href="https://www.linkedin.com/company/club-capra/"
+              aria-label="FaceBook"
             >
               <FontAwesomeIcon :icon="faFacebook" />
             </a>
-            <a class="text-xl" href="https://github.com/clubcapra">
+            <a
+              class="text-xl"
+              href="https://github.com/clubcapra"
+              aria-label="GitHub"
+            >
               <FontAwesomeIcon :icon="faGithub" />
             </a>
-          </div>
+          </nav>
         </div>
       </div>
       <hr class="border-white my-8" />
