@@ -13,14 +13,6 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
-    path: '/robots',
-    name: 'robots',
-    component: () => import('./RobotsView.vue'),
-    meta: {
-      title: i18n.global.t('page_robots'),
-    },
-  },
-  {
     path: '/team',
     name: 'team',
     component: () => import('./TeamView.vue'),
@@ -29,11 +21,11 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
-    path: '/competitions',
-    name: 'competition',
-    component: () => import('./CompetitionView.vue'),
+    path: '/members',
+    name: 'members',
+    component: () => import('./MembersView.vue'),
     meta: {
-      title: i18n.global.t('page_competitions'),
+      title: i18n.global.t('page_members'),
     },
   },
   {
@@ -45,19 +37,27 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
-    path: '/ressources',
-    name: 'ressources',
-    component: () => import('./RessourcesView.vue'),
+    path: '/publications',
+    name: 'publications',
+    component: () => import('./PublicationsView.vue'),
     meta: {
-      title: i18n.global.t('page_ressources'),
+      title: i18n.global.t('page_publications'),
     },
   },
   {
-    path: '/contact',
-    name: 'contact',
-    component: () => import('./ContactView.vue'),
+    path: '/join/:id?',
+    name: 'join',
+    component: () => import('./JoinView.vue'),
     meta: {
-      title: i18n.global.t('page_contact'),
+      title: i18n.global.t('page_join'),
+    },
+  },
+  {
+    path: '/dashboard',
+    name: 'dashboard',
+    component: () => import('./DashboardView.vue'),
+    meta: {
+      title: 'Dashboard',
     },
   },
 ];

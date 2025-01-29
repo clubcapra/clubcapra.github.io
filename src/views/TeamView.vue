@@ -1,365 +1,372 @@
 <script setup lang="ts">
+import { watch, onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-// Components
-import JumbotronVideoComponent from '@clubcapra/components/JumbotronVideoComponent.vue';
-import MemberItemComponent from '@clubcapra/components/MemberItemComponent.vue';
+import { useRoute } from 'vue-router';
+import DescriptiveContentComponent from '@clubcapra/components/DescriptiveContentComponent.vue';
 
-// Media
-import defaultAvatar from '@clubcapra/assets/media/team/avatar.png';
-import teamCapra from '@clubcapra/assets/media/teamcapra.jpg';
+import bbq from '@clubcapra/assets/media/join/bbq.jpg';
+import customDesign from '@clubcapra/assets/media/join/custom_design.jpg';
+import eleWorking from '@clubcapra/assets/media/join/ele_working.jpg';
+import mapping from '@clubcapra/assets/media/join/mapping.jpg';
+import meetingMec from '@clubcapra/assets/media/join/meeting_mec.jpg';
+import newArm from '@clubcapra/assets/media/join/new_arm.jpg';
+import nuclearPlant from '@clubcapra/assets/media/join/nuclear_plant.jpg';
+import pcbWorking from '@clubcapra/assets/media/join/pcb_working.jpg';
+import poseDetection from '@clubcapra/assets/media/join/pose_detection.mp4';
+import pizza from '@clubcapra/assets/media/join/pizza.png';
 
-// Members pictures
-import davidCaron from '@clubcapra/assets/media/team/davidCaron.jpg';
-import benoitMalenfant from '@clubcapra/assets/media/team/benoitMalenfant.jpg';
-import kevinLarochelle from '@clubcapra/assets/media/team/kevinLarochelle.jpg';
-import maximeBernard from '@clubcapra/assets/media/team/maximeBernard.jpg';
-import maximeRolland from '@clubcapra/assets/media/team/maximeRolland.jpg';
-import amberLouie from '@clubcapra/assets/media/team/amberLouie.jpg';
-import leoDanielGosselin from '@clubcapra/assets/media/team/leoDanielGosselin.jpg';
-import marcOlivierChampagne from '@clubcapra/assets/media/team/marcOlivierChampagne.jpg';
-import gabrielLevesqueDuval from '@clubcapra/assets/media/team/gabrielLevesqueDuval.jpg';
-import alexisMartin from '@clubcapra/assets/media/team/alexisMartin.jpg';
+const { t, locale } = useI18n();
+const route = useRoute();
 
-interface Member {
-  name: string;
-  program: string;
-  img?: string; // Default to defaultAvatars
-  title?: string; // Default to 'Membre'
+const selectedTab = ref('MEC');
+
+const nextPizzaParty = new Date('2024-09-26:17:00:00 gmt-0400');
+const nextPizzaPartyLink = 'https://forms.office.com/r/UjRvbafzMg';
+const nextPizzaPartyLocation = 'D-4025';
+
+const dateStr = ref('');
+const timeStr = ref('');
+
+updateDateTimeStr();
+
+watch(() => route.hash, scrollToId);
+
+watch(() => locale.value, updateDateTimeStr);
+
+onMounted(() => {
+  scrollToId();
+});
+
+/**
+ * Scroll to the element with the id in the route params
+ */
+function scrollToId() {
+  if (route.hash) {
+    const id = route.hash.replace('#', '').toUpperCase();
+    if (id === 'MEC' || id === 'ELE' || id === 'LOG') {
+      selectedTab.value = id;
+    }
+
+    document.getElementById(id)?.scrollIntoView({ behavior: 'instant' });
+  }
 }
 
-const administration: Member[] = [
-  {
-    name: 'David Caron',
-    img: davidCaron,
-    program: 'engineering_electrical',
-    title: 'title_captain',
-  },
-  {
-    name: 'William Jarry',
-    program: 'engineering_software',
-    title: 'title_co_captain',
-  },
-  {
-    name: 'Mathieu Salois',
-    program: 'engineering_software',
-    title: 'title_co_captain_treasury',
-  },
-  {
-    name: 'Benoit Malenfant',
-    img: benoitMalenfant,
-    program: 'engineering_electrical',
-    title: 'title_technical_director',
-  },
-  {
-    name: 'Nicolas Vigneault',
-    program: 'engineering_gpa',
-    title: 'title_technical_director',
-  },
-];
-const mechanical: Member[] = [
-  {
-    name: 'Kevin Larochelle',
-    img: kevinLarochelle,
-    program: 'engineering_gpa',
-    title: 'title_mechanical_team_leader',
-  },
-  {
-    name: 'Bonzly Noël',
-    program: 'engineering_mechanical',
-  },
-  {
-    name: 'Maxime Bernard',
-    img: maximeBernard,
-    program: 'engineering_gpa_master',
-  },
-  {
-    name: 'Maxime Rolland',
-    img: maximeRolland,
-    program: 'engineering_gpa',
-  },
-  {
-    name: 'William Zamudio-Turcotte',
-    program: 'engineering_gpa',
-  },
-  {
-    name: 'Samuel Lagassé',
-    program: 'engineering_mechanical',
-  },
-  {
-    name: 'Philippe-Antoine',
-    program: 'engineering_mechanical',
-  },
-  {
-    name: 'Antony Afif',
-    program: 'engineering_mechanical',
-  },
-];
-const electrical: Member[] = [
-  {
-    name: 'Amber Louie',
-    img: amberLouie,
-    program: 'engineering_electrical',
-    title: 'title_electrical_team_leader',
-  },
-  {
-    name: 'Benoit Malenfant',
-    img: benoitMalenfant,
-    program: 'Génie Électrique',
-  },
-  {
-    name: 'Léo-Daniel Gosselin',
-    img: leoDanielGosselin,
-    program: 'engineering_gpa',
-  },
-  {
-    name: 'Antoine Maltais',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Christian Bourget',
-    program: 'engineering_gpa',
-  },
-  {
-    name: 'Étienne Le Guerrier',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Jordan Morinville',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Alexis Girardin',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Karl Aidans',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Philippe Desbiens',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Émile Lacroix',
-    program: 'engineering_electrical',
-  },
-];
-const software: Member[] = [
-  {
-    name: 'Nathan Gueissaz-Teufel',
-    program: 'engineering_software',
-    title: 'title_software_team_leader',
-  },
-  {
-    name: 'Samuel Lachance',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Guy-Philippe Nadon',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Marc-Olivier Champagne',
-    img: marcOlivierChampagne,
-    program: 'engineering_software',
-  },
-  {
-    name: 'Gabriel Lévesque-Duval',
-    img: gabrielLevesqueDuval,
-    program: 'engineering_software',
-  },
-  {
-    name: 'Simon Roy',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Alexis Martin',
-    img: alexisMartin,
-    program: 'engineering_software',
-  },
-  {
-    name: 'Jacob Clermont',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Denis Turk',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Iliana De Carufel',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Raphaël Vigneault',
-    program: 'engineering_gpa',
-  },
-  {
-    name: 'Suzon Orlando',
-    program: 'engineering_software_master',
-  },
-  {
-    name: 'Simon St-André',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Charles Albert Choupin',
-    program: 'engineering_software',
-  },
-];
-
-const { t } = useI18n();
-const sections = [
-  { title: 'team_administration', members: administration },
-  { title: 'team_mechanical', members: mechanical },
-  { title: 'team_electrical', members: electrical },
-  { title: 'team_software', members: software },
-];
+/**
+ * Update the date and time strings based on the locale
+ */
+function updateDateTimeStr() {
+  dateStr.value = nextPizzaParty.toLocaleDateString(locale.value, {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+  timeStr.value = nextPizzaParty.toLocaleTimeString(locale.value, {
+    hour: 'numeric',
+  });
+}
 </script>
 
 <template>
-  <JumbotronVideoComponent :title="$t('our_team_title')" :img="teamCapra" />
-  <section id="features">
-    <div class="container">
-      <div class="section-content">
-        <template v-for="(section, key) in sections" :key="key">
-          <div class="title-wrap" data-aos="fade-up">
-            <h2 class="section-title">{{ t(section.title) }}</h2>
-          </div>
+  <section id="TEAM" class="container mx-auto px-4 pt-20">
+    <h2 class="text-5xl md:text-6xl font-bold font-sans text-center pt-10">
+      <a href="#TEAM">{{ t('our_team_title') }}</a>
+    </h2>
+    <DescriptiveContentComponent :image-right="true">
+      <template #title>
+        {{ $t('passionate_students_title') }}
+      </template>
+      <template #content1>
+        {{ $t('passionate_students_content') }}
+      </template>
+      <template #image>
+        <img
+          :src="meetingMec"
+          alt="mechanical team meeting"
+          class="rounded-lg w-full"
+        />
+      </template>
+    </DescriptiveContentComponent>
+    <DescriptiveContentComponent :image-right="false">
+      <template #title>
+        {{ $t('social_title') }}
+      </template>
+      <template #content1>
+        {{ $t('social_content') }}
+      </template>
+      <template #image>
+        <img :src="bbq" alt="bbq" class="rounded-lg w-full" />
+      </template>
+    </DescriptiveContentComponent>
+  </section>
 
-          <div class="row justify-content-center">
-            <MemberItemComponent
-              v-for="(member, j) in section.members"
-              :key="j"
-              :name="member.name"
-              :img="member.img ?? defaultAvatar"
-              :program="$t(member.program)"
-              :title="
-                member.title == undefined ? $t('team_member') : $t(member.title)
-              "
-            />
-          </div>
-        </template>
-      </div>
+  <!-- Buttons -->
+  <div class="flex justify-center">
+    <div
+      role="tablist"
+      class="inline-flex flex-wrap justify-center p-1 gap-8 z-40"
+    >
+      <!-- Button #1 -->
+      <button
+        id="MEC"
+        class="flex-1 text-2xl h-12 font-medium px-4 rounded-full whitespace-nowrap focus:outline-none transition-colors duration-500 ease-in-out"
+        :class="
+          selectedTab === 'MEC'
+            ? 'bg-white ring-2 ring-black ring-inset'
+            : 'bg-black text-white'
+        "
+        :tabindex="selectedTab === 'MEC' ? 0 : -1"
+        :aria-selected="selectedTab === 'MEC'"
+        aria-controls="tabpanel-MEC"
+        role="tab"
+        @click="selectedTab = 'MEC'"
+        @focus="selectedTab = 'MEC'"
+      >
+        {{ t('team_mechanical') }}
+      </button>
+      <!-- Button #2 -->
+      <button
+        id="ELE"
+        class="flex-1 text-2xl h-12 font-medium px-4 rounded-full whitespace-nowrap focus:outline-none transition-colors duration-500 ease-in-out"
+        :class="
+          selectedTab === 'ELE'
+            ? 'bg-white ring-2 ring-black ring-inset'
+            : 'bg-black text-white'
+        "
+        :tabindex="selectedTab === 'ELE' ? 0 : -1"
+        :aria-selected="selectedTab === 'ELE'"
+        aria-controls="tabpanel-ELE"
+        role="tab"
+        @click="selectedTab = 'ELE'"
+        @focus="selectedTab = 'ELE'"
+      >
+        {{ t('team_electrical') }}
+      </button>
+      <!-- Button #3 -->
+      <button
+        id="LOG"
+        class="flex-1 text-2xl h-12 font-medium px-4 rounded-full whitespace-nowrap focus:outline-none transition-colors duration-500 ease-in-out"
+        :class="
+          selectedTab === 'LOG'
+            ? 'bg-white ring-2 ring-black ring-inset'
+            : 'bg-black text-white'
+        "
+        :tabindex="selectedTab === 'LOG' ? 0 : -1"
+        :aria-selected="selectedTab === 'LOG'"
+        aria-controls="tabpanel-LOG"
+        role="tab"
+        @click="selectedTab = 'LOG'"
+        @focus="selectedTab = 'LOG'"
+      >
+        {{ t('team_software') }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Tab panels -->
+  <section class="container mx-auto px-4">
+    <div class="relative flex flex-col">
+      <!-- Panel #1 -->
+      <Transition
+        enter-active-class="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+        enter-from-class="opacity-0 -translate-y-8"
+        enter-to-class="opacity-100 translate-y-0"
+        leave-active-class="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+        leave-from-class="opacity-100 translate-y-0"
+        leave-to-class="opacity-0 translate-y-12"
+      >
+        <div
+          v-if="selectedTab === 'MEC'"
+          id="tabpanel-MEC"
+          class="w-full bg-white rounded-2xl shadow-xl focus-visible:outline-none"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="MEC"
+        >
+          <DescriptiveContentComponent :image-right="true">
+            <template #title>
+              {{ $t('custom_robot_title') }}
+            </template>
+            <template #content1>
+              {{ $t('custom_robot_content') }}
+            </template>
+            <template #image>
+              <img
+                :src="customDesign"
+                alt="custom design"
+                class="rounded-lg w-full"
+              />
+            </template>
+          </DescriptiveContentComponent>
+          <DescriptiveContentComponent :image-right="false">
+            <template #title>
+              {{ $t('robot_optimisation_title') }}
+            </template>
+            <template #content1>
+              {{ $t('robot_optimisation_content') }}
+            </template>
+            <template #image>
+              <img
+                :src="newArm"
+                alt="new robotic arm"
+                class="rounded-lg w-full"
+              />
+            </template>
+          </DescriptiveContentComponent>
+        </div>
+      </Transition>
+      <!-- Panel #2 -->
+
+      <Transition
+        enter-active-class="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+        enter-from-class="opacity-0 -translate-y-8"
+        enter-to-class="opacity-100 translate-y-0"
+        leave-active-class="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+        leave-from-class="opacity-100 translate-y-0"
+        leave-to-class="opacity-0 translate-y-12"
+      >
+        <div
+          v-if="selectedTab === 'ELE'"
+          id="tabpanel-ELE"
+          class="w-full bg-white rounded-2xl shadow-xl focus-visible:outline-none"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="ELE"
+        >
+          <DescriptiveContentComponent :image-right="true">
+            <template #title>
+              {{ $t('pcb_design_title') }}
+            </template>
+            <template #content1>
+              {{ $t('pcb_design_content') }}
+            </template>
+            <template #image>
+              <img
+                :src="pcbWorking"
+                alt="PCB design"
+                class="rounded-lg w-full"
+              />
+            </template>
+          </DescriptiveContentComponent>
+          <DescriptiveContentComponent :image-right="false">
+            <template #title>
+              {{ $t('electrical_stack_title') }}
+            </template>
+            <template #content1>
+              {{ $t('electrical_stack_content') }}
+            </template>
+            <template #image>
+              <img
+                :src="eleWorking"
+                alt="eletrical team working"
+                class="rounded-lg w-full"
+              />
+            </template>
+          </DescriptiveContentComponent>
+        </div>
+      </Transition>
+      <!-- Panel #3 -->
+
+      <Transition
+        enter-active-class="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+        enter-from-class="opacity-0 -translate-y-8"
+        enter-to-class="opacity-100 translate-y-0"
+        leave-active-class="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+        leave-from-class="opacity-100 translate-y-0"
+        leave-to-class="opacity-0 translate-y-12"
+      >
+        <div
+          v-if="selectedTab === 'LOG'"
+          id="tabpanel-LOG"
+          class="w-full bg-white rounded-2xl shadow-xl focus-visible:outline-none"
+          role="tabpanel"
+          tabindex="0"
+          aria-labelledby="LOG"
+        >
+          <DescriptiveContentComponent :image-right="true">
+            <template #title>
+              {{ $t('ai_title') }}
+            </template>
+            <template #content1>
+              {{ $t('ai_content') }}
+            </template>
+            <template #image>
+              <video
+                :src="poseDetection"
+                alt="AI pose detection"
+                class="rounded-lg w-full"
+                loop
+                autoplay
+                muted
+              />
+            </template>
+          </DescriptiveContentComponent>
+          <DescriptiveContentComponent :image-right="false">
+            <template #title>
+              {{ $t('mapping_title') }}
+            </template>
+            <template #content1>
+              {{ $t('mapping_content') }}
+            </template>
+            <template #image>
+              <img :src="mapping" alt="mapping" class="rounded-lg w-full" />
+            </template>
+          </DescriptiveContentComponent>
+        </div>
+      </Transition>
     </div>
   </section>
+
+  <section id="COMPETITION" class="container mx-auto px-4 pt-10">
+    <h2 class="text-5xl md:text-6xl font-bold font-sans text-center pt-10">
+      <a href="#COMPETITION">{{ t('our_next_competition') }}</a>
+    </h2>
+    <DescriptiveContentComponent :image-right="true">
+      <template #title>
+        {{ $t('nuclear_plant_title') }}
+      </template>
+      <template #content1>
+        {{ $t('nuclear_plant_content') }}
+      </template>
+      <template #image>
+        <img
+          :src="nuclearPlant"
+          alt="nuclear plant"
+          class="rounded-lg w-full"
+        />
+      </template>
+    </DescriptiveContentComponent>
+  </section>
+
+  <section
+    v-if="nextPizzaParty > new Date()"
+    id="PIZZA"
+    class="container mx-auto px-4 pt-10"
+  >
+    <h2 class="text-5xl md:text-6xl font-bold font-sans text-center pt-10">
+      <a href="#PIZZA">{{ t('our_next_event') }}</a>
+    </h2>
+    <DescriptiveContentComponent
+      :image-right="false"
+      :button="$t('i_will_be_there')"
+      :link="nextPizzaPartyLink"
+    >
+      <template #title>
+        {{ $t('information_evening_title') }}
+      </template>
+      <template #content1>
+        <b>
+          {{ $t('meet_us') }} {{ dateStr }} {{ $t('at_time') }} {{ timeStr }}
+          {{ $t('at_location') }} {{ nextPizzaPartyLocation }}
+          {{ $t('treat_pizza') }}
+        </b>
+      </template>
+      <template #content2>
+        {{ $t('information_evening_content') }}
+      </template>
+      <template #image>
+        <img :src="pizza" alt="pizza" class="animate-spin-slow w-full" />
+      </template>
+    </DescriptiveContentComponent>
+  </section>
 </template>
-
-<style>
-.team-list img {
-  width: 50%;
-}
-
-.rounded-pill {
-  border-radius: 50rem !important;
-}
-
-.team-list .content {
-  width: 50%;
-}
-
-.team-list .content .follow {
-  position: absolute;
-  bottom: 24px;
-}
-
-.team-list:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.team,
-.team-list {
-  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
-}
-
-.team .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.team .member-position,
-.team .team-social {
-  position: absolute;
-  bottom: -35px;
-  right: 0;
-  left: 0;
-  margin: auto 10%;
-  z-index: 99;
-}
-
-.team .team-social {
-  bottom: 40px;
-  opacity: 0;
-  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
-}
-
-.team:hover {
-  -webkit-transform: translateY(-7px);
-  transform: translateY(-7px);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
-
-.team:hover .overlay {
-  opacity: 0.6;
-}
-
-.team:hover .team-social {
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .team-list img,
-  .team-list .content {
-    width: 100%;
-    float: none !important;
-  }
-  .team-list img .follow,
-  .team-list .content .follow {
-    position: relative;
-    bottom: 0;
-  }
-}
-
-.social-icon.social li a {
-  color: #adb5bd;
-  border-color: #adb5bd;
-}
-.social-icon li a {
-  color: #35404e;
-  border: 1px solid #35404e;
-  display: inline-block;
-  height: 32px;
-  text-align: center;
-  font-size: 15px;
-  width: 32px;
-  line-height: 30px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  overflow: hidden;
-  position: relative;
-}
-.rounded {
-  border-radius: 5px !important;
-}
-
-.para-desc {
-  max-width: 600px;
-}
-.text-muted {
-  color: #8492a6 !important;
-}
-
-.section-title .member-title {
-  letter-spacing: 0.5px;
-  font-size: 30px;
-}
-</style>

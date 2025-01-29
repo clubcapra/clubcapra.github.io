@@ -5,7 +5,6 @@ import vue from '@vitejs/plugin-vue';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig, type UserConfig } from 'vite';
 import { checker } from 'vite-plugin-checker';
-import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 
 /**
  * Vite Configure
@@ -19,16 +18,7 @@ export default defineConfig(async ({ mode, command }): Promise<UserConfig> => {
     plugins: [
       // Vue3
       vue({
-        template: {
-          // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin#image-loading
-          transformAssetUrls,
-        },
-      }),
-      // Vuetify Loader
-      // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin#vite-plugin-vuetify
-      vuetify({
-        autoImport: true,
-        styles: { configFile: 'src/styles/settings.scss' },
+        template: {},
       }),
       // vite-plugin-checker
       // https://github.com/fi3ework/vite-plugin-checker
@@ -77,13 +67,6 @@ export default defineConfig(async ({ mode, command }): Promise<UserConfig> => {
           manualChunks: {
             // Split external library from transpiled code.
             vue: ['vue', 'vue-router', 'pinia', 'pinia-plugin-persistedstate'],
-            vuetify: [
-              'vuetify',
-              'vuetify/components',
-              'vuetify/directives',
-              'webfontloader',
-            ],
-            materialdesignicons: ['@mdi/font/css/materialdesignicons.css'],
           },
           plugins: [
             mode === 'analyze'
