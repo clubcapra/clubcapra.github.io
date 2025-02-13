@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ParnershipButtonComponent from '@clubcapra/components/ParnershipButtonComponent.vue';
 import {
   principalPartners,
   platinumPartners,
@@ -38,6 +39,9 @@ const partnersTiers = [
 
 <template>
   <section class="container px-4 mx-auto pt-20">
+    <section class="container px-4 mx-auto flex flex-col items-center">
+      <ParnershipButtonComponent />
+    </section>
     <template v-for="(tier, tierKey) in partnersTiers" :key="tierKey">
       <div v-if="tier.partners.length" class="pt-10">
         <h2 class="font-bold font-sans text-4xl md:text-5xl text-center">

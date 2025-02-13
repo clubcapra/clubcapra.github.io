@@ -2,9 +2,9 @@
 import robotStory from '@clubcapra/assets/media/robot_story.jpg';
 import yoloV9 from '@clubcapra/assets/media/yolov9.jpeg';
 import team2024 from '@clubcapra/assets/media/team/team2024.jpg';
-import partnerPlan from '@clubcapra/assets/documents/CAPRA_PlanPartenariat.pdf';
 import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
 import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarouselComponent.vue';
+import ParnershipButtonComponent from '@clubcapra/components/ParnershipButtonComponent.vue';
 
 import SponsorCarouselComponent from '@clubcapra/components/SponsorCarouselComponent.vue';
 import DescriptiveContentComponent from '@clubcapra/components/DescriptiveContentComponent.vue';
@@ -180,12 +180,6 @@ import DescriptiveContentComponent from '@clubcapra/components/DescriptiveConten
       {{ $t('people_that_love_to_work_with_us') }}
     </h2>
     <SponsorCarouselComponent />
-    <a
-      class="bg-black hover:border-primary-50 border-2 border-black transition-colors text-white font-medium text-lg py-2 mt-10 px-4 rounded-lg w-fit"
-      :href="partnerPlan"
-      target="_blank"
-    >
-      {{ $t('view_partner_plan') }}
-    </a>
+    <ParnershipButtonComponent />
   </section>
 </template>
