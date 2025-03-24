@@ -1,10 +1,10 @@
 // Members pictures
-import davidCaron from '@clubcapra/assets/media/team/davidCaron.jpg';
-import benoitMalenfant from '@clubcapra/assets/media/team/benoitMalenfant.jpg';
-import kevinLarochelle from '@clubcapra/assets/media/team/kevinLarochelle.jpg';
-import leoDanielGosselin from '@clubcapra/assets/media/team/leoDanielGosselin.jpg';
-import gabrielLevesqueDuval from '@clubcapra/assets/media/team/gabrielLevesqueDuval.jpg';
-import alexisMartin from '@clubcapra/assets/media/team/alexisMartin.jpg';
+import davidCaron from '@clubcapra/assets/media/members/davidCaron.jpg';
+import benoitMalenfant from '@clubcapra/assets/media/members/benoitMalenfant.jpg';
+import kevinLarochelle from '@clubcapra/assets/media/members/kevinLarochelle.jpg';
+import leoDanielGosselin from '@clubcapra/assets/media/members/leoDanielGosselin.jpg';
+import gabrielLevesqueDuval from '@clubcapra/assets/media/members/gabrielLevesqueDuval.jpg';
+import alexisMartin from '@clubcapra/assets/media/members/alexisMartin.jpg';
 
 interface Member {
   name: string;
