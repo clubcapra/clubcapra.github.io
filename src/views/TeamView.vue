@@ -4,16 +4,16 @@ import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
 import DescriptiveContentComponent from '@clubcapra/components/DescriptiveContentComponent.vue';
 
-import bbq from '@clubcapra/assets/media/join/bbq.jpg';
-import customDesign from '@clubcapra/assets/media/join/custom_design.jpg';
-import eleWorking from '@clubcapra/assets/media/join/ele_working.jpg';
-import mapping from '@clubcapra/assets/media/join/mapping.jpg';
-import meetingMec from '@clubcapra/assets/media/join/meeting_mec.jpg';
-import newArm from '@clubcapra/assets/media/join/new_arm.jpg';
-import nuclearPlant from '@clubcapra/assets/media/join/nuclear_plant.jpg';
-import pcbWorking from '@clubcapra/assets/media/join/pcb_working.jpg';
-import poseDetection from '@clubcapra/assets/media/join/pose_detection.mp4';
-import pizza from '@clubcapra/assets/media/join/pizza.png';
+import voyage from '@clubcapra/assets/media/team/voyage.jpg';
+import customDesign from '@clubcapra/assets/media/team/custom_design.jpg';
+import eleWorking from '@clubcapra/assets/media/team/ele_working.jpg';
+import mapping from '@clubcapra/assets/media/team/mapping.jpg';
+import meetingMec from '@clubcapra/assets/media/team/meeting_mec.jpg';
+import newArm from '@clubcapra/assets/media/team/new_arm.jpg';
+import nuclearPlant from '@clubcapra/assets/media/team/nuclear_plant.jpg';
+import pcbWorking from '@clubcapra/assets/media/team/pcb_working.jpg';
+import poseDetection from '@clubcapra/assets/media/team/pose_detection.mp4';
+import pizza from '@clubcapra/assets/media/team/pizza.png';
 
 const { t, locale } = useI18n();
 const route = useRoute();
@@ -95,7 +95,7 @@ function updateDateTimeStr() {
         {{ $t('social_content') }}
       </template>
       <template #image>
-        <img :src="bbq" alt="bbq" class="rounded-lg w-full" />
+        <img :src="voyage" alt="bbq" class="rounded-lg w-full" />
       </template>
     </DescriptiveContentComponent>
   </section>

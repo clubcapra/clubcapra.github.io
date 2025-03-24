@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n';
 import MemberItemComponent from '@clubcapra/components/MemberItemComponent.vue';
 
 // Media
-import defaultAvatar from '@clubcapra/assets/media/team/avatar.png';
+import defaultAvatar from '@clubcapra/assets/media/members/avatar.png';
 import {
   administrationTeam,
   electricalTeam,
