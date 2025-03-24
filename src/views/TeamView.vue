@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
 import DescriptiveContentComponent from '@clubcapra/components/DescriptiveContentComponent.vue';
 
-import bbq from '@clubcapra/assets/media/join/bbq.jpg';
+import voyage from '@clubcapra/assets/media/join/voyage.jpg';
 import customDesign from '@clubcapra/assets/media/join/custom_design.jpg';
 import eleWorking from '@clubcapra/assets/media/join/ele_working.jpg';
 import mapping from '@clubcapra/assets/media/join/mapping.jpg';
@@ -95,7 +95,7 @@ function updateDateTimeStr() {
         {{ $t('social_content') }}
       </template>
       <template #image>
-        <img :src="bbq" alt="bbq" class="rounded-lg w-full" />
+        <img :src="voyage" alt="bbq" class="rounded-lg w-full" />
       </template>
     </DescriptiveContentComponent>
   </section>
