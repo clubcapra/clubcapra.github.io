@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import robotStory from '@clubcapra/assets/media/robot_story.jpg';
 import yoloV9 from '@clubcapra/assets/media/yolov9.jpeg';
-import team2024 from '@clubcapra/assets/media/team/team2024.jpg';
+import team2024 from '@clubcapra/assets/media/members/team2024.jpg';
 import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
 import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarouselComponent.vue';
 import ParnershipButtonComponent from '@clubcapra/components/ParnershipButtonComponent.vue';
