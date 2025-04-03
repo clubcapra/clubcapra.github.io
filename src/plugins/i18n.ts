@@ -294,9 +294,17 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Software Engineering',
     fr: 'Génie Logiciel',
   },
+  engineering_construction: {
+    en: 'Construction Engineering',
+    fr: 'Génie de la Construction',
+  },
   engineering_gpa: {
     en: 'Automated Production Engineering',
     fr: 'Génie de la Production Automatisée',
+  },
+  engineering_gol: {
+    en: 'Operations and Logistics Engineering',
+    fr: 'Génie des Opérations et de la Logistique',
   },
   engineering_software_master: {
     en: 'Master in Software Engineering',
@@ -308,8 +316,8 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     fr: 'Roboguard',
   },
   project_roboguard_description: {
-    en: 'Robot safety. It is used to analyze the battery and current. Allows remote emergency stop activation.',
-    fr: "Sécurité du robot. Il est utilisé pour analyser la batterie et le courant. Permet d'enclencherer l'arrêt d'urgence à distance.",
+    en: 'Robot safety. It is used to analyze the battery. Allows remote emergency stop activation.',
+    fr: "Sécurité du robot. Il est utilisé pour analyser la batterie. Permet d'enclencherer l'arrêt d'urgence à distance.",
   },
   project_stackele_title: {
     en: 'Electrical Stack',

@@ -27,7 +27,7 @@ const ÉtienneLG: Member = {
 
 const JohnE: Member = {
   name: 'John Ephrem',
-  program: 'engineering_software',
+  program: 'engineering_gol',
   title: 'title_logistics_manager',
 };
 
