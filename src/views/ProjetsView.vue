@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n';
 // Composants
 import ProjectItemComponent from '@clubcapra/components/ProjectItemComponent.vue';
 // Médias
-import defaultImage from '@clubcapra/assets/media/sydney/sydney.jpg';
+
 import cablemanagementImage from '@clubcapra/assets/media/cablemanagement.jpg';
 import gripperImage from '@clubcapra/assets/media/gripperimage.jpg';
 import mappingImage from '@clubcapra/assets/media/mappingimage.jpeg';
@@ -45,7 +45,7 @@ const { t } = useI18n();
             <ProjectItemComponent
               :title="t(project.title)"
               :description="t(project.description)"
-              :img="project.img ?? defaultImage"
+              :img="project.img"
             />
           </div>
         </template>
