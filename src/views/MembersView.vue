@@ -5,7 +5,12 @@ import MemberItemComponent from '@clubcapra/components/MemberItemComponent.vue';
 
 // Media
 import defaultAvatar from '@clubcapra/assets/media/members/avatar.png';
-import { teams } from '@clubcapra/data/teams';
+import {
+  administrationTeam,
+  electricalTeam,
+  mechanicalTeam,
+  softwareTeam,
+} from '@clubcapra/data/members';
 
 const { t } = useI18n();
 </script>
