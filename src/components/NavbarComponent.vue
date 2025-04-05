@@ -39,20 +39,6 @@ const navbarItems = [
 
 // Hide navbar until scroll
 onBeforeMount(() => {
-  // Hide navbar on home page until scroll
-
-  window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    if (navbar) {
-      if (window.location.pathname === '/') {
-        if (window.scrollY > 100) {
-          navbar.classList.add('bg-white');
-          navbar.classList.remove('hidden');
-        }
-      }
-    }
-  });
-
   // Check which page we are on
   for (const item of navbarItems) {
     if (window.location.pathname === item.link) {
@@ -62,14 +48,11 @@ onBeforeMount(() => {
 });
 
 onMounted(() => {
-  if (
-    window.location.pathname !== '/' &&
-    window.location.pathname !== '/dashboard'
-  ) {
+  if (window.location.pathname === '/dashboard') {
     const navbar = document.getElementById('navbar');
     if (navbar) {
-      navbar.classList.add('bg-white');
-      navbar.classList.remove('hidden');
+      navbar.classList.remove('bg-white');
+      navbar.classList.add('hidden');
     }
   }
 });
@@ -86,7 +69,7 @@ const onLocaleChange = (event: Event) => {
 <template>
   <nav
     id="navbar"
-    class="fixed w-full top-0 z-50 shadow hidden animate-fade animate-duration-150"
+    class="fixed w-full top-0 z-50 shadow bg-white animate-fade animate-duration-150"
   >
     <div class="container px-4 py-3 mx-auto">
       <div class="md:flex justify-between items-center">

@@ -6,202 +6,207 @@ import leoDanielGosselin from '@clubcapra/assets/media/members/leoDanielGosselin
 import gabrielLevesqueDuval from '@clubcapra/assets/media/members/gabrielLevesqueDuval.jpg';
 import alexisMartin from '@clubcapra/assets/media/members/alexisMartin.jpg';
 
-interface Member {
+export interface Member {
   name: string;
   program: string;
   img?: string; // Default to defaultAvatars
   title?: string; // Default to 'Membre'
 }
 
-export const administrationTeam: Member[] = [
-  {
-    name: 'Nathan Gueissaz-Teufel',
-    program: 'engineering_software',
-    title: 'title_captain',
-  },
-  {
-    name: 'Étienne Le Guerrier',
-    program: 'engineering_electrical',
-    title: 'title_co_captain',
-  },
-  {
-    name: 'William Jarry',
-    program: 'engineering_software',
-    title: 'title_co_captain',
-  },
-  {
-    name: 'Iliana De Carufel',
-    program: 'engineering_software',
-    title: 'title_technical_director_f',
-  },
-];
+const NathanGT: Member = {
+  name: 'Nathan Gueissaz-Teufel',
+  program: 'engineering_software',
+  title: 'title_captain',
+};
 
-export const mechanicalTeam: Member[] = [
-  {
-    name: 'Gabriel Massicotte-Duhamel',
-    program: 'engineering_mechanical',
-    title: 'title_mechanical_team_leader',
-  },
-  {
-    name: 'Kevin Larochelle',
-    img: kevinLarochelle,
-    program: 'engineering_gpa',
-  },
-  {
-    name: 'Bonzly Noël',
-    program: 'engineering_mechanical',
-  },
-  {
-    name: 'William Zamudio-Turcotte',
-    program: 'engineering_gpa',
-    title: 'title_event_manager',
-  },
-  {
-    name: 'Samuel Lagassé',
-    program: 'engineering_mechanical',
-  },
-  {
-    name: 'Philippe-Antoine Fortin',
-    program: 'engineering_mechanical',
-  },
-  {
-    name: 'Antony Afif',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Gabriel Rondeau-Brouvette',
-    program: 'engineering_mechanical',
-  },
-  {
-    name: 'Martin-Nicolas Primeau-Vincelette',
-    program: 'engineering_mechanical',
-  },
-];
+const ÉtienneLG: Member = {
+  name: 'Étienne Le Guerrier',
+  program: 'engineering_electrical',
+  title: 'title_co_captain',
+};
 
-export const electricalTeam: Member[] = [
-  {
-    name: 'Antoine Maltais',
-    program: 'engineering_electrical',
-    title: 'title_electrical_team_leader',
-  },
-  {
-    name: 'Philippe Desbiens',
-    program: 'engineering_electrical',
-    title: 'title_electrical_team_leader',
-  },
-  {
-    name: 'David Caron',
-    img: davidCaron,
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Benoit Malenfant',
-    img: benoitMalenfant,
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Léo-Daniel Gosselin',
-    img: leoDanielGosselin,
-    program: 'engineering_gpa',
-  },
-  {
-    name: 'Christian Bourget',
-    program: 'engineering_gpa',
-  },
-  {
-    name: 'Alexis Girardin',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Karl Aidans',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Émile Lacroix',
-    program: 'engineering_electrical',
-  },
-  {
-    name: 'Guy-Philippe Nadon',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Nicolas Vigneault',
-    program: 'engineering_gpa',
-  },
-  {
-    name: 'Jean-Charles Fortin',
-    program: 'engineering_gpa',
-    title: 'title_partnership_manager',
-  },
-];
+const JohnE: Member = {
+  name: 'John Ephrem',
+  program: 'engineering_gol',
+  title: 'title_logistics_manager',
+};
 
-export const softwareTeam: Member[] = [
-  {
-    name: 'Denis Turk',
-    program: 'engineering_software',
-    title: 'title_software_team_leader',
-  },
-  {
-    name: 'Samuel Lachance',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Gabriel Lévesque-Duval',
-    img: gabrielLevesqueDuval,
-    program: 'engineering_software',
-  },
-  {
-    name: 'Simon Roy',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Mathieu Salois',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Alexis Martin',
-    img: alexisMartin,
-    program: 'engineering_software',
-  },
-  {
-    name: 'Jacob Clermont',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Raphaël Vigneault',
-    program: 'engineering_gpa',
-  },
-  {
-    name: 'Suzon Olory',
-    program: 'engineering_software_master',
-  },
-  {
-    name: 'Simon St-André',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Charles Albert Choupin',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Samuel Barbeau',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Laurent St-Hilaire',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Etienne Tardif',
-    program: 'engineering_software',
-    title: 'title_merchandise_manager',
-  },
-  {
-    name: 'Simon Biard',
-    program: 'engineering_software',
-  },
-  {
-    name: 'Ange Olive Dagang Nyappa',
-    program: 'engineering_software',
-  },
-];
+const GabrielMD: Member = {
+  name: 'Gabriel Massicotte-Duhamel',
+  program: 'engineering_mechanical',
+  title: 'title_project_manager',
+};
+
+const KevinL: Member = {
+  name: 'Kevin Larochelle',
+  img: kevinLarochelle,
+  program: 'engineering_gpa',
+};
+
+const AntonyA: Member = {
+  name: 'Antony Afif',
+  program: 'engineering_electrical',
+};
+
+const AntoineM: Member = {
+  name: 'Antoine Maltais',
+  program: 'engineering_electrical',
+  title: 'title_project_manager',
+};
+
+const PhilippeD: Member = {
+  name: 'Philippe Desbiens',
+  program: 'engineering_electrical',
+  title: 'title_project_manager',
+};
+
+const DavidC: Member = {
+  name: 'David Caron',
+  img: davidCaron,
+  program: 'engineering_electrical',
+  title: 'title_partnership_manager',
+};
+
+const ChristianB: Member = {
+  name: 'Christian Bourget',
+  program: 'engineering_gpa',
+};
+
+const ÉmileL: Member = {
+  name: 'Émile Lacroix',
+  program: 'engineering_electrical',
+};
+
+const GuyPhilippeN: Member = {
+  name: 'Guy-Philippe Nadon',
+  program: 'engineering_software',
+};
+
+const JeanCharlesF: Member = {
+  name: 'Jean-Charles Fortin',
+  program: 'engineering_gpa',
+};
+
+const DenisT: Member = {
+  name: 'Denis Turk',
+  program: 'engineering_software',
+  title: 'title_project_manager',
+};
+
+const WilliamJ: Member = {
+  name: 'William Jarry',
+  program: 'engineering_software',
+};
+
+const SamuelB: Member = {
+  name: 'Samuel Barbeau',
+  program: 'engineering_software',
+  title: 'title_project_manager',
+};
+
+const EtienneT: Member = {
+  name: 'Etienne Tardif',
+  program: 'engineering_software',
+  title: 'title_merchandise_manager',
+};
+
+const SimonB: Member = {
+  name: 'Simon Biard',
+  program: 'engineering_software',
+};
+
+const AngeOliveDN: Member = {
+  name: 'Ange Olive Dagang Nyappa',
+  program: 'engineering_software',
+};
+
+const MargotM: Member = {
+  name: 'Margot Metzger',
+  program: 'engineering_mechanical',
+  title: 'title_project_manager',
+};
+
+const PierreAlixP: Member = {
+  name: 'Pierre-Alix Paugain',
+  program: 'engineering_mechanical',
+};
+
+const SteaveJonathanI: Member = {
+  name: 'Steave-Jonathan Ibrango',
+  program: 'engineering_construction',
+};
+
+const YanniH: Member = {
+  name: 'Yanni Haddar',
+  program: 'engineering_software',
+};
+
+const ThomasJ: Member = {
+  name: 'Thomas Journault',
+  program: 'engineering_software',
+};
+
+const ThomasRS: Member = {
+  name: 'Thomas Rousseau-Senecal',
+  program: 'engineering_electrical',
+};
+
+const JaniceB: Member = {
+  name: 'Janice Bessard',
+  program: 'engineering_software',
+};
+
+const LouisM: Member = {
+  name: 'Louis Marois',
+  program: 'engineering_software',
+};
+
+const JulesL: Member = {
+  name: 'Jules Lachapelle',
+  program: 'engineering_gpa',
+  title: 'title_project_manager',
+};
+
+const ZackaryB: Member = {
+  name: 'Zackary Bélanger',
+  program: 'engineering_mechanical',
+  title: 'title_project_manager',
+};
+
+const AppolinaireSF: Member = {
+  name: 'Appolinaire Simo-Fotso',
+  program: 'engineering_mechanical',
+};
+
+export default {
+  NathanGT,
+  ÉtienneLG,
+  JohnE,
+  GabrielMD,
+  KevinL,
+  AntonyA,
+  AntoineM,
+  PhilippeD,
+  DavidC,
+  ChristianB,
+  ÉmileL,
+  GuyPhilippeN,
+  JeanCharlesF,
+  DenisT,
+  WilliamJ,
+  SamuelB,
+  EtienneT,
+  SimonB,
+  AngeOliveDN,
+  MargotM,
+  PierreAlixP,
+  SteaveJonathanI,
+  YanniH,
+  ThomasJ,
+  ThomasRS,
+  JaniceB,
+  LouisM,
+  JulesL,
+  ZackaryB,
+  AppolinaireSF,
+};

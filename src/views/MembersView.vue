@@ -13,12 +13,6 @@ import {
 } from '@clubcapra/data/members';
 
 const { t } = useI18n();
-const sections = [
-  { title: 'team_administration', members: administrationTeam },
-  { title: 'team_mechanical', members: mechanicalTeam },
-  { title: 'team_electrical', members: electricalTeam },
-  { title: 'team_software', members: softwareTeam },
-];
 </script>
 
 <template>
@@ -30,16 +24,44 @@ const sections = [
         </h2>
       </div>
       <div class="flex flex-col gap-8 items-center">
-        <template v-for="(section, key) in sections" :key="key">
+        <template v-for="(team, key) in teams" :key="key">
           <div>
-            <h2 class="font-bold font-sans text-3xl md:text-4xl">
-              {{ t(section.title) }}
+            <h2 class="font-bold font-sans text-3xl md:text-4xl text-center">
+              {{
+                t(
+                  'name' in team
+                    ? team.name
+                    : 'project' in team
+                      ? team.project.name
+                      : ''
+                )
+              }}
             </h2>
+            <p class="text-center text-lg font-medium pt-3">
+              {{
+                'description' in team
+                  ? t(team.description)
+                  : 'project' in team
+                    ? t(team.project.description)
+                    : ''
+              }}
+            </p>
           </div>
 
           <div class="flex flex-wrap justify-center items-center">
             <MemberItemComponent
-              v-for="(member, j) in section.members"
+              v-if="'leader' in team && team.leader"
+              :name="team.leader.name"
+              :img="team.leader.img ?? defaultAvatar"
+              :program="$t(team.leader.program)"
+              :title="
+                team.leader.title == undefined
+                  ? $t('title_project_manager')
+                  : $t(team.leader.title)
+              "
+            />
+            <MemberItemComponent
+              v-for="(member, j) in team.members"
               :key="j"
               :name="member.name"
               :img="member.img ?? defaultAvatar"
