@@ -214,6 +214,26 @@ const rawMessages: Record<string, Record<Lang, string>> = {
     en: 'Management team of the club',
     fr: 'Équipe administrative du club',
   },
+  team_administration: {
+    en: 'Administration',
+    fr: 'Administration',
+  },
+  team_electrical: {
+    en: 'Electrical',
+    fr: 'Électrique',
+  },
+  team_mechanical: {
+    en: 'Mechanical',
+    fr: 'Mécanique',
+  },
+  team_member: {
+    en: 'Member',
+    fr: 'Membre',
+  },
+  team_software: {
+    en: 'Software',
+    fr: 'Logiciel',
+  },
   team_maintenance_title: {
     en: 'Maintenance',
     fr: 'Maintenance',
