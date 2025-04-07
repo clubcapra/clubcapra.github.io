@@ -29,7 +29,7 @@ export const events: Event[] = [
   {
     title: 'SHIPPING DE ROVE',
     description: 'Tout doit être prêt pour le shipping de Rove!',
-    date: new Date('06/09/2025 00:00:00 GMT-0500'),
+    date: new Date('06/16/2025 00:00:00 GMT-0500'),
     eventType: EventTypes.COMPETITION,
   },
   {
