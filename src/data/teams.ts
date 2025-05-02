@@ -49,7 +49,7 @@ const StackEleTeam: ProjectTeam = {
 
 const RadiationTeam: ProjectTeam = {
   project: DetecteurRadiation,
-  members: [m.ÉmileL, m.ThomasRS, m.DavidC],
+  members: [m.ÉmileL, m.ThomasRS, m.DavidC, m.WilliamT],
 };
 
 const WinchTeam: ProjectTeam = {
