@@ -176,8 +176,8 @@ const ThomasJ: Member = {
 };
 
 const ThomasRS: Member = {
-  name: 'Thomas Rousseau-Senecal',
-  program: 'engineering_electrical',
+  name: 'Thomas Rousseau-Sénécal',
+  program: 'engineering_gpa',
   img: thommasRousseauSenecal,
   link: 'https://www.linkedin.com/in/thomas-rousseau-sénécal-14723b346/',
 };
