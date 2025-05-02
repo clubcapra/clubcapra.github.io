@@ -206,6 +206,11 @@ const IlianaDC: Member = {
   img: ilianaDeCarufel,
 };
 
+const WilliamT: Member = {
+  name: 'William Tramblay',
+  program: 'engineering_gpa',
+};
+
 export default {
   NathanGT,
   ÉtienneLG,
