@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import robotStory from '@clubcapra/assets/media/robot_story.jpg';
 import yoloV9 from '@clubcapra/assets/media/yolov9.jpeg';
-import team2024 from '@clubcapra/assets/media/members/team2024.jpg';
+import team from '@clubcapra/assets/media/members/EQUIPE.jpg';
 import GlobeComponent from '@clubcapra/components/GlobeComponent.vue';
 import CompetitionCarouselComponent from '@clubcapra/components/CompetitionCarouselComponent.vue';
 import ParnershipButtonComponent from '@clubcapra/components/ParnershipButtonComponent.vue';
@@ -171,7 +171,7 @@ import DescriptiveContentComponent from '@clubcapra/components/DescriptiveConten
         {{ $t('join_our_team_content') }}
       </template>
       <template #image>
-        <img :src="team2024" alt="robot" class="rounded-lg w-full" />
+        <img :src="team" alt="robot" class="rounded-lg w-full" />
       </template>
     </DescriptiveContentComponent>
   </section>
