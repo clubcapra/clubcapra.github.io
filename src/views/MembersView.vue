@@ -54,6 +54,7 @@ const { t } = useI18n();
                   ? $t('title_project_manager')
                   : $t(team.leader.title)
               "
+              :link="team.leader.link"
             />
             <MemberItemComponent
               v-for="(member, j) in team.members"
@@ -64,6 +65,7 @@ const { t } = useI18n();
               :title="
                 member.title == undefined ? $t('team_member') : $t(member.title)
               "
+              :link="member.link"
             />
           </div>
         </template>

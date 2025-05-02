@@ -20,6 +20,7 @@ export interface Member {
   name: string;
   program: string;
   img?: string; // Default to defaultAvatars
+  link?: string;
   title?: string; // Default to 'Membre'
 }
 
@@ -28,6 +29,7 @@ const NathanGT: Member = {
   program: 'engineering_software',
   title: 'title_captain',
   img: nathanGueissazTeufel,
+  link: 'https://www.linkedin.com/in/nathan-gueissaz-teufel-04655b1ab/',
 };
 
 const ÉtienneLG: Member = {
@@ -35,6 +37,7 @@ const ÉtienneLG: Member = {
   program: 'engineering_electrical',
   title: 'title_co_captain',
   img: etienneLeGuerrier,
+  link: 'https://www.linkedin.com/in/%C3%A9tienne-le-guerrier-4544b515a/',
 };
 
 const JohnE: Member = {
@@ -65,6 +68,7 @@ const AntoineM: Member = {
   program: 'engineering_electrical',
   title: 'title_project_manager',
   img: antoineMaltais,
+  link: 'https://www.linkedin.com/in/antoine-maltais-72923017a/',
 };
 
 const PhilippeD: Member = {
@@ -101,6 +105,7 @@ const GuyPhilippeN: Member = {
 const JeanCharlesF: Member = {
   name: 'Jean-Charles Fortin',
   program: 'engineering_gpa',
+  link: 'https://www.linkedin.com/in/jean-charles-fortin-45a0b02a5/',
 };
 
 const DenisT: Member = {
@@ -108,6 +113,7 @@ const DenisT: Member = {
   program: 'engineering_software',
   title: 'title_project_manager',
   img: denisTurk,
+  link: 'https://www.linkedin.com/in/denisturk/',
 };
 
 const WilliamJ: Member = {
@@ -127,6 +133,7 @@ const EtienneT: Member = {
   program: 'engineering_software',
   title: 'title_merchandise_manager',
   img: etienneTardif,
+  link: 'https://www.linkedin.com/in/etienne-tardif-57b164222/',
 };
 
 const SimonB: Member = {
@@ -143,6 +150,7 @@ const MargotM: Member = {
   name: 'Margot Metzger',
   program: 'engineering_mechanical',
   title: 'title_project_manager',
+  link: 'https://www.linkedin.com/in/margot-metzger',
 };
 
 const PierreAlixP: Member = {
@@ -153,6 +161,7 @@ const PierreAlixP: Member = {
 const SteaveJonathanI: Member = {
   name: 'Steave-Jonathan Ibrango',
   program: 'engineering_construction',
+  link: 'https://www.linkedin.com/in/steavibrango/',
 };
 
 const YanniH: Member = {
@@ -170,11 +179,13 @@ const ThomasRS: Member = {
   name: 'Thomas Rousseau-Senecal',
   program: 'engineering_electrical',
   img: thommasRousseauSenecal,
+  link: 'https://www.linkedin.com/in/thomas-rousseau-sénécal-14723b346/',
 };
 
 const JaniceB: Member = {
   name: 'Janice Bessard',
   program: 'engineering_software',
+  link: 'https://www.linkedin.com/in/janice-b-858122331/',
 };
 
 const LouisM: Member = {
@@ -193,6 +204,7 @@ const ZackaryB: Member = {
   name: 'Zackary Bélanger',
   program: 'engineering_mechanical',
   title: 'title_project_manager',
+  link: 'https://www.linkedin.com/in/zackary-belanger',
 };
 
 const AppolinaireSF: Member = {
@@ -204,6 +216,7 @@ const IlianaDC: Member = {
   name: 'Iliana De Carufel',
   program: 'engineering_software',
   img: ilianaDeCarufel,
+  link: 'https://www.linkedin.com/in/iliana-de-carufel-855182193/',
 };
 
 const WilliamT: Member = {
@@ -243,4 +256,5 @@ export default {
   ZackaryB,
   AppolinaireSF,
   IlianaDC,
+  WilliamT,
 };
