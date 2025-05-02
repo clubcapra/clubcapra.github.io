@@ -1,7 +1,7 @@
 export default {
   copyright: {
-    en: '© 2024 Club Capra. All rights reserved.',
-    fr: '© 2024 Club Capra. Tous droits réservés.',
+    en: '© 2025 Club Capra. All rights reserved.',
+    fr: '© 2025 Club Capra. Tous droits réservés.',
   },
   our_socials: {
     en: 'Our socials',
