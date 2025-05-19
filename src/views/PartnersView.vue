@@ -35,6 +35,21 @@ const partnersTiers = [
     class: 'md:w-2/12 w-1/3',
   },
 ];
+
+partnersTiers.forEach(tier => {
+  let partnersToConfirm = '';
+  tier.partners.forEach(partner => {
+    if (!partner.confirmed) {
+      partnersToConfirm += `${partner.name}, `;
+    }
+  });
+  if (partnersToConfirm) {
+    partnersToConfirm = partnersToConfirm.slice(0, -2);
+    console.warn(
+      `The following partners are not confirmed in the ${tier.title} tier: ${partnersToConfirm}`
+    );
+  }
+});
 </script>
 
 <template>
