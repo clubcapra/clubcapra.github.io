@@ -202,7 +202,7 @@ const JulesL: Member = {
 
 const ZackaryB: Member = {
   name: 'Zackary Bélanger',
-  program: 'engineering_mechanical',
+  program: 'engineering_gpa',
   title: 'title_project_manager',
   link: 'https://www.linkedin.com/in/zackary-belanger',
 };
@@ -214,7 +214,7 @@ const AppolinaireSF: Member = {
 
 const IlianaDC: Member = {
   name: 'Iliana De Carufel',
-  program: 'engineering_software',
+  program: 'engineering_gpa',
   img: ilianaDeCarufel,
   link: 'https://www.linkedin.com/in/iliana-de-carufel-855182193/',
 };
