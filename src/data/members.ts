@@ -224,6 +224,11 @@ const WilliamT: Member = {
   program: 'engineering_gpa',
 };
 
+const ClementDJ: Member = {
+  name: 'Clément Desmarais-Jadin',
+  program: 'engineering_mechanical',
+};
+
 export default {
   NathanGT,
   ÉtienneLG,
@@ -257,4 +262,5 @@ export default {
   AppolinaireSF,
   IlianaDC,
   WilliamT,
+  ClementDJ,
 };
