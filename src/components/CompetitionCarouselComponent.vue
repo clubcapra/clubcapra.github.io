@@ -2,12 +2,10 @@
 import CompetitionCardComponent from '@clubcapra/components/CompetitionCardComponent.vue';
 import ClassNames from 'embla-carousel-class-names';
 import emblaCarouselVue from 'embla-carousel-vue';
-import zwentendorfTeam1 from '@clubcapra/assets/media/zwentendorf/zwentendorf_team1.avif';
-import robocup2022 from '@clubcapra/assets/media/bangkok/team_2022.jpg';
-import robocup2021 from '@clubcapra/assets/media/dortmund/team2021.jpg';
-import robocup2019 from '@clubcapra/assets/media/sydney/comp_team_2019.jpg';
 
 import { ref, watchEffect } from 'vue';
+
+import { competitions } from '@clubcapra/data/competitions';
 
 const [emblaRef, emblaApi] = emblaCarouselVue({}, [ClassNames()]);
 
@@ -45,40 +43,6 @@ watchEffect(() => {
     }
   }
 });
-
-const competitions = [
-  {
-    image: zwentendorfTeam1,
-    title: 'EnRicH 2023',
-    city: 'zwentendorf',
-    country: 'austria',
-    link: 'https://enrich2023.european-robotics.eu/',
-    tasks: ['enrich_task_1', 'enrich_task_2', 'enrich_task_3'],
-  },
-  {
-    image: robocup2022,
-    title: 'Robocup 2022',
-    city: 'bangkok',
-    country: 'thailand',
-    link: 'https://2022.robocup.org/',
-    tasks: ['robocup2022_task_1', 'robocup2022_task_2', 'robocup2022_task_3'],
-  },
-  {
-    image: robocup2021,
-    title: 'Robocup German Open 2021',
-    city: 'dortmund',
-    country: 'germany',
-    tasks: ['robocup2021_task_1', 'robocup2021_task_2', 'robocup2021_task_3'],
-  },
-  {
-    image: robocup2019,
-    title: 'RoboCup 2019',
-    city: 'sydney',
-    country: 'australia',
-    link: 'https://2019.robocup.org/',
-    tasks: ['robocup2019_task_1', 'robocup2019_task_2'],
-  },
-];
 </script>
 <template>
   <section class="container pt-10 mx-auto flex flex-col gap-8 px-4">
@@ -104,6 +68,7 @@ const competitions = [
           <CompetitionCardComponent
             :image="competition.image"
             :title="competition.title"
+            :year="competition.year"
             :city="competition.city"
             :country="competition.country"
             :tasks="competition.tasks"

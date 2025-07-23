@@ -7,48 +7,48 @@ export default {
     en: 'Notable tasks',
     fr: 'Tâches notables',
   },
-  enrich_task_1: {
+  task_mapping_nuclear_power_plant: {
     en: 'Create a 3D map of the nuclear power plant',
     fr: 'Créer une carte 3D de la centrale nucléaire',
   },
-  enrich_task_2: {
+  task_mapping_photorealistic: {
+    en: 'Create a photorealistic map of the environment',
+    fr: 'Créer une carte photoréaliste de l’environnement',
+  },
+  task_nuclear_source: {
     en: 'Locate and identify radioactive sources',
     fr: 'Localiser et identifier les sources radioactives',
   },
-  enrich_task_3: {
+  task_rescue_hazardous: {
     en: 'Rescue a dummy from a hazardous area',
     fr: "Secourir un mannequin d'une zone dangereuse",
   },
-  robocup2022_task_1: {
+  task_fast_navigation: {
     en: 'Navigate through obstacle courses as fast as possible',
     fr: "Naviguer à travers des parcours d'obstacles le plus rapidement possible",
   },
-  robocup2022_task_2: {
+  task_autonomous_navigation: {
+    en: 'Navigate autonomously through a predefined path and avoid obstacles',
+    fr: 'Naviguer de manière autonome à travers un chemin prédéfini et éviter les obstacles',
+  },
+  task_qr_scan: {
     en: 'Scan QR codes to collect information',
     fr: 'Scanner des codes QR pour collecter des informations',
   },
-  robocup2022_task_3: {
+  task_object_manipulation: {
     en: 'Use our robotic arm to pick up objects and place them in designated areas',
     fr: 'Utiliser notre bras robotique pour ramasser des objets et les placer dans des zones désignées',
   },
-  robocup2021_task_1: {
-    en: 'Navigate through obstacle courses as fast as possible',
-    fr: "Naviguer à travers des parcours d'obstacles le plus rapidement possible",
-  },
-  robocup2021_task_2: {
+  task_thermal_detection: {
     en: 'Use a thermal camera to detect heat sources',
     fr: 'Utiliser une caméra thermique pour détecter les sources de chaleur',
   },
-  robocup2021_task_3: {
+  task_co2_detection: {
     en: 'Detect CO2 levels in the environment',
     fr: "Détecter les niveaux de CO2 dans l'environnement",
   },
-  robocup2019_task_1: {
+  task_hazardous_sign_detection: {
     en: 'Identify hazardous signs with our camera system',
     fr: 'Identifier les signes dangereux avec notre système de caméra',
-  },
-  robocup2019_task_2: {
-    en: 'Navigate through obstacle courses as fast as possible',
-    fr: "Naviguer à travers des parcours d'obstacles le plus rapidement possible",
   },
 };
