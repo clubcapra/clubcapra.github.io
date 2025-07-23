@@ -5,12 +5,19 @@ import robocup2022 from '@clubcapra/assets/media/bangkok/team_2022.jpg';
 import robocup2021 from '@clubcapra/assets/media/dortmund/team2021.jpg';
 import robocup2019 from '@clubcapra/assets/media/sydney/comp_team_2019.jpg';
 
+import dummy from '@clubcapra/assets/media/elrob/dummy.png';
+import map from '@clubcapra/assets/media/elrob/map.png';
+import rocks from '@clubcapra/assets/media/elrob/rocks.png';
+
 export interface Task {
   title: string;
+  description?: string;
+  image?: string;
 }
 
 export interface Competition {
   title: string;
+  description?: string;
   year: number;
   city: string;
   country: string;
@@ -18,6 +25,33 @@ export interface Competition {
   image: string;
   tasks: Task[];
 }
+
+export const nextCompetition: Competition = {
+  title: 'ELROB',
+  description: 'elrob_difficulties',
+  year: 2026,
+  city: 'thun',
+  country: 'switzerland',
+  link: 'https://elrob.org/elrob-2026',
+  image: '',
+  tasks: [
+    {
+      title: 'task_mapping_photorealistic',
+      description: 'task_elrob_mapping_description',
+      image: map,
+    },
+    {
+      title: 'task_autonomous_navigation',
+      description: 'task_mule_description',
+      image: rocks,
+    },
+    {
+      title: 'task_elrob_rescue_hazardous',
+      description: 'task_elrob_rescue_hazardous_description',
+      image: dummy,
+    },
+  ],
+};
 
 export const competitions: Competition[] = [
   {
