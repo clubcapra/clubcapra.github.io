@@ -31,4 +31,12 @@ export default {
     en: 'Australia',
     fr: 'Australie',
   },
+  thun: {
+    en: 'Thun',
+    fr: 'Thoune',
+  },
+  switzerland: {
+    en: 'Switzerland',
+    fr: 'Suisse',
+  },
 };

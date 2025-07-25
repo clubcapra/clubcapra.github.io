@@ -3,9 +3,21 @@ export default {
     en: 'Our competitions',
     fr: 'Nos compétitions',
   },
+  next_competition_title: {
+    en: 'Our next competition',
+    fr: 'Notre prochaine compétition',
+  },
   notable_tasks_title: {
     en: 'Notable tasks',
     fr: 'Tâches notables',
+  },
+  next_competition_content: {
+    en: 'Our next competition will be held at the Thun military base in Switzerland. We will be competing against teams from around the world to demonstrate the capabilities of our robots in a real-world emergency scenario.',
+    fr: "Notre prochaine compétition se tiendra à la base militaire de Thoune en Swisse. Nous affronterons des équipes du monde entier pour démontrer les capacités de nos robots dans un scénario d'urgence réel.",
+  },
+  european_robotics_rights: {
+    fr: '© Ces images sont la propriété de l’European Robotics et peuvent être trouvées sur',
+    en: '© These images are the property of the European Robotics and can be found on',
   },
   task_mapping_nuclear_power_plant: {
     en: 'Create a 3D map of the nuclear power plant',
@@ -28,8 +40,8 @@ export default {
     fr: "Naviguer à travers des parcours d'obstacles le plus rapidement possible",
   },
   task_autonomous_navigation: {
-    en: 'Navigate autonomously through a predefined path and avoid obstacles while carrying a payload',
-    fr: 'Naviguer de manière autonome à travers un chemin prédéfini et éviter les obstacles tout en transportant une charge',
+    en: 'Navigate autonomously and avoid obstacles while carrying a payload',
+    fr: 'Naviguer de manière autonome et éviter les obstacles tout en transportant une charge',
   },
   task_qr_scan: {
     en: 'Scan QR codes to collect information',

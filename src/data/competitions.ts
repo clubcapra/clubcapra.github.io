@@ -8,6 +8,7 @@ import robocup2019 from '@clubcapra/assets/media/sydney/comp_team_2019.jpg';
 import dummy from '@clubcapra/assets/media/elrob/dummy.png';
 import map from '@clubcapra/assets/media/elrob/map.png';
 import rocks from '@clubcapra/assets/media/elrob/rocks.png';
+import motherNature from '@clubcapra/assets/media/elrob/mother_nature.png';
 
 export interface Task {
   title: string;
@@ -33,7 +34,7 @@ export const nextCompetition: Competition = {
   city: 'thun',
   country: 'switzerland',
   link: 'https://elrob.org/elrob-2026',
-  image: '',
+  image: motherNature,
   tasks: [
     {
       title: 'task_mapping_photorealistic',
@@ -42,11 +43,11 @@ export const nextCompetition: Competition = {
     },
     {
       title: 'task_autonomous_navigation',
-      description: 'task_mule_description',
+      description: 'task_elrob_mule_description',
       image: rocks,
     },
     {
-      title: 'task_elrob_rescue_hazardous',
+      title: 'task_rescue_hazardous',
       description: 'task_elrob_rescue_hazardous_description',
       image: dummy,
     },

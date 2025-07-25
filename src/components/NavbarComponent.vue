@@ -21,6 +21,11 @@ const navbarItems = [
     selected: false,
   },
   {
+    name: 'page_next_competition',
+    link: '/next-competition',
+    selected: false,
+  },
+  {
     name: 'page_partners',
     link: '/partners',
     selected: false,
