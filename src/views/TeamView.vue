@@ -10,10 +10,10 @@ import eleWorking from '@clubcapra/assets/media/team/ele_working.jpg';
 import mapping from '@clubcapra/assets/media/team/mapping.jpg';
 import meetingMec from '@clubcapra/assets/media/team/meeting_mec.jpg';
 import newArm from '@clubcapra/assets/media/team/new_arm.jpg';
-import nuclearPlant from '@clubcapra/assets/media/team/nuclear_plant.jpg';
 import pcbWorking from '@clubcapra/assets/media/team/pcb_working.jpg';
 import poseDetection from '@clubcapra/assets/media/team/pose_detection.mp4';
 import pizza from '@clubcapra/assets/media/team/pizza.png';
+import { nextCompetition } from '@clubcapra/data/competitions';
 
 const { t, locale } = useI18n();
 const route = useRoute();
@@ -323,15 +323,15 @@ function updateDateTimeStr() {
     </h2>
     <DescriptiveContentComponent :image-right="true">
       <template #title>
-        {{ $t('nuclear_plant_title') }}
+        {{ $t(nextCompetition.title) }} {{ nextCompetition.year }}
       </template>
       <template #content1>
-        {{ $t('nuclear_plant_content') }}
+        {{ $t('next_competition_content') }}
       </template>
       <template #image>
         <img
-          :src="nuclearPlant"
-          alt="nuclear plant"
+          :src="nextCompetition.image"
+          alt="scenario field"
           class="rounded-lg w-full"
         />
       </template>

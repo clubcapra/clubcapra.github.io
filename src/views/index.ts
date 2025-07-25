@@ -29,6 +29,14 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
+    path: '/next-competition',
+    name: 'next-competition',
+    component: () => import('./NextCompetitionView.vue'),
+    meta: {
+      title: i18n.global.t('page_next_competition'),
+    },
+  },
+  {
     path: '/partners',
     name: 'partners',
     component: () => import('./PartnersView.vue'),

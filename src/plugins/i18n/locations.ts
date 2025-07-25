@@ -19,6 +19,10 @@ export default {
     en: 'Dortmund',
     fr: 'Dortmund',
   },
+  trier: {
+    en: 'Trier',
+    fr: 'Trèves',
+  },
   germany: {
     en: 'Germany',
     fr: 'Allemagne',
@@ -30,5 +34,21 @@ export default {
   australia: {
     en: 'Australia',
     fr: 'Australie',
+  },
+  thun: {
+    en: 'Thun',
+    fr: 'Thoune',
+  },
+  switzerland: {
+    en: 'Switzerland',
+    fr: 'Suisse',
+  },
+  montreal: {
+    en: 'Montreal',
+    fr: 'Montréal',
+  },
+  canada: {
+    en: 'Canada',
+    fr: 'Canada',
   },
 };

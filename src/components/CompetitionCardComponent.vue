@@ -1,18 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-defineProps<{
-  /** Image source */
-  image: string;
-  /** Title */
-  title: string;
-  /** Location */
-  city: string;
-  country: string;
-  /** Tasks */
-  tasks: string[];
-  /** Link */
-  link?: string;
-}>();
+import { type Competition } from '@clubcapra/data/competitions';
+defineProps<Competition>();
 
 const isHovering = ref(false);
 </script>
@@ -28,9 +17,9 @@ const isHovering = ref(false);
     />
     <div class="flex flex-col md:w-1/2 md:h-full md:py-10">
       <div class="flex flex-col p-4">
-        <h3 class="text-white text-2xl font-bold">{{ title }}</h3>
+        <h3 class="text-white text-2xl font-bold">{{ title }} {{ year }}</h3>
         <h4 class="text-white text-lg font-medium">
-          {{ $t(city) }}, {{ $t(country) }}
+          {{ $t(location.city) }}, {{ $t(location.country) }}
         </h4>
       </div>
       <div class="p-4">
@@ -38,8 +27,8 @@ const isHovering = ref(false);
           {{ $t('notable_tasks_title') }}:
         </p>
         <ul class="list-inside text-white">
-          <li v-for="task in tasks" :key="task">
-            {{ $t(task) }}
+          <li v-for="(task, i) in tasks" :key="i">
+            {{ $t(task.title) }}
           </li>
         </ul>
       </div>

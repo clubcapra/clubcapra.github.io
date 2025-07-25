@@ -27,10 +27,6 @@ export default {
     en: 'Nuclear Power Plant',
     fr: 'Centrale Nucléaire',
   },
-  nuclear_plant_content: {
-    en: 'Our next competition (ENRICH 2025) will be held at the Zwentendorf nuclear power plant in Austria. We will be competing against teams from around the world to demonstrate the capabilities of our robots in a real-world emergency scenario.',
-    fr: "Notre prochaine compétition (ENRICH 2025) se tiendra à la centrale nucléaire de Zwentendorf en Autriche. Nous affronterons des équipes du monde entier pour démontrer les capacités de nos robots dans un scénario d'urgence réel.",
-  },
   i_will_be_there: {
     en: 'Regester',
     fr: "M'inscrire",

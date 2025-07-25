@@ -11,6 +11,10 @@ export default {
     en: 'Team',
     fr: 'Équipe',
   },
+  page_next_competition: {
+    en: 'Next Competition',
+    fr: 'Prochaine compétition',
+  },
   page_partners: {
     en: 'Partners',
     fr: 'Partenaires',
