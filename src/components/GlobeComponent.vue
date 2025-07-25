@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import { competitions } from '@clubcapra/data/competitions';
-import {
-  bangkok,
-  dortmund,
-  montreal,
-  sydney,
-  zwentendorf,
-} from '@clubcapra/data/locations';
+import { montreal } from '@clubcapra/data/locations';
 import Globe from 'globe.gl';
 import { onMounted, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
@@ -49,33 +43,18 @@ onMounted(() => {
     .atmosphereColor('black')
     .backgroundColor('black')
     .pointOfView({ lat: montreal.lat, lng: montreal.lng, altitude: 2 })
-    .arcsData([
-      // Montreal to Bangkok, Dortmund, Zwentendorf and Sydney
-      {
-        startLat: montreal.lat,
-        startLng: montreal.lng,
-        endLat: bangkok.lat,
-        endLng: bangkok.lng,
-      },
-      {
-        startLat: montreal.lat,
-        startLng: montreal.lng,
-        endLat: dortmund.lat,
-        endLng: dortmund.lng,
-      },
-      {
-        startLat: montreal.lat,
-        startLng: montreal.lng,
-        endLat: zwentendorf.lat,
-        endLng: zwentendorf.lng,
-      },
-      {
-        startLat: montreal.lat,
-        startLng: montreal.lng,
-        endLat: sydney.lat,
-        endLng: sydney.lng,
-      },
-    ])
+    .arcsData(
+      Array.from(
+        new Set(
+          competitions.map(competition => ({
+            startLat: montreal.lat,
+            startLng: montreal.lng,
+            endLat: competition.location.lat,
+            endLng: competition.location.lng,
+          }))
+        )
+      )
+    )
     .arcsTransitionDuration(0)
     .arcDashLength(0.5)
     .arcDashGap(2)
