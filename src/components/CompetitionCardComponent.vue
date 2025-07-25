@@ -19,7 +19,7 @@ const isHovering = ref(false);
       <div class="flex flex-col p-4">
         <h3 class="text-white text-2xl font-bold">{{ title }} {{ year }}</h3>
         <h4 class="text-white text-lg font-medium">
-          {{ $t(city) }}, {{ $t(country) }}
+          {{ $t(location.city) }}, {{ $t(location.country) }}
         </h4>
       </div>
       <div class="p-4">

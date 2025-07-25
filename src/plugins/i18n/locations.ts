@@ -43,4 +43,12 @@ export default {
     en: 'Switzerland',
     fr: 'Suisse',
   },
+  montreal: {
+    en: 'Montreal',
+    fr: 'Montréal',
+  },
+  canada: {
+    en: 'Canada',
+    fr: 'Canada',
+  },
 };

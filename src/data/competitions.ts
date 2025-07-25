@@ -10,6 +10,16 @@ import map from '@clubcapra/assets/media/elrob/map.png';
 import rocks from '@clubcapra/assets/media/elrob/rocks.png';
 import motherNature from '@clubcapra/assets/media/elrob/mother_nature.png';
 
+import {
+  type Location,
+  thun,
+  zwentendorf,
+  trier,
+  bangkok,
+  dortmund,
+  sydney,
+} from './locations';
+
 export interface Task {
   title: string;
   description?: string;
@@ -20,8 +30,7 @@ export interface Competition {
   title: string;
   description?: string;
   year: number;
-  city: string;
-  country: string;
+  location: Location;
   link?: string;
   image: string;
   tasks: Task[];
@@ -31,8 +40,7 @@ export const nextCompetition: Competition = {
   title: 'ELROB',
   description: 'elrob_difficulties',
   year: 2026,
-  city: 'thun',
-  country: 'switzerland',
+  location: thun,
   link: 'https://elrob.org/elrob-2026',
   image: motherNature,
   tasks: [
@@ -59,8 +67,7 @@ export const competitions: Competition[] = [
     image: enrich2025,
     title: 'EnRicH',
     year: 2025,
-    city: 'zwentendorf',
-    country: 'austria',
+    location: zwentendorf,
     link: 'https://enrich2025.european-robotics.eu/',
     tasks: [
       { title: 'task_mapping_nuclear_power_plant' },
@@ -72,8 +79,7 @@ export const competitions: Competition[] = [
     image: elrob2024,
     title: 'ELROB',
     year: 2024,
-    city: 'trier',
-    country: 'germany',
+    location: trier,
     link: 'https://elrob.org/elrob-2024',
     tasks: [
       { title: 'task_mapping_photorealistic' },
@@ -85,8 +91,7 @@ export const competitions: Competition[] = [
     image: enrich2023,
     title: 'EnRicH',
     year: 2023,
-    city: 'zwentendorf',
-    country: 'austria',
+    location: zwentendorf,
     link: 'https://enrich2023.european-robotics.eu/',
     tasks: [
       { title: 'task_mapping_nuclear_power_plant' },
@@ -98,8 +103,7 @@ export const competitions: Competition[] = [
     image: robocup2022,
     title: 'Robocup',
     year: 2022,
-    city: 'bangkok',
-    country: 'thailand',
+    location: bangkok,
     link: 'https://2022.robocup.org/',
     tasks: [
       { title: 'task_fast_navigation' },
@@ -111,8 +115,7 @@ export const competitions: Competition[] = [
     image: robocup2021,
     title: 'Robocup German Open',
     year: 2021,
-    city: 'dortmund',
-    country: 'germany',
+    location: dortmund,
     tasks: [
       { title: 'task_fast_navigation' },
       { title: 'task_thermal_detection' },
@@ -123,8 +126,7 @@ export const competitions: Competition[] = [
     image: robocup2019,
     title: 'RoboCup',
     year: 2019,
-    city: 'sydney',
-    country: 'australia',
+    location: sydney,
     link: 'https://2019.robocup.org/',
     tasks: [
       { title: 'task_hazardous_sign_detection' },

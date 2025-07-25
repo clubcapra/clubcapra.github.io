@@ -69,8 +69,7 @@ watchEffect(() => {
             :image="competition.image"
             :title="competition.title"
             :year="competition.year"
-            :city="competition.city"
-            :country="competition.country"
+            :location="competition.location"
             :tasks="competition.tasks"
             :link="competition.link"
           />
