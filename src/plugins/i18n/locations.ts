@@ -19,6 +19,10 @@ export default {
     en: 'Dortmund',
     fr: 'Dortmund',
   },
+  trier: {
+    en: 'Trier',
+    fr: 'Trèves',
+  },
   germany: {
     en: 'Germany',
     fr: 'Allemagne',
