@@ -2,15 +2,17 @@ import type { Project } from './projects';
 import type { Member } from './members';
 
 import {
+  Batterie,
+  ControleBaseMobile,
+  Communication,
   Carthographie,
-  Crate,
-  DetecteurRadiation,
   RoboticArm,
   Roboguard,
   ArtificialIntelligence,
   StackEle,
-  Support,
-  Winch,
+  GUI,
+  Telemetrie,
+  TopBox,
 } from './projects';
 
 import m from './members';
@@ -32,60 +34,80 @@ interface UnManagedTeam extends Team {
 const administrationTeam: UnManagedTeam = {
   name: 'team_administration_title',
   description: 'team_administration_description',
-  members: [m.NathanGT, m.ÉtienneLG, m.JohnE],
+  members: [
+    m.ÉtienneLG,
+    m.NathanGT,
+    m.EtienneT,
+    m.JulesL,
+    m.DenisT,
+    m.AntoineM,
+  ],
 };
 
 const RoboguardTeam: ProjectTeam = {
   project: Roboguard,
   leader: m.PhilippeD,
-  members: [m.LouisM, m.NathanGT, m.YanniH],
+  members: [],
 };
 
 const StackEleTeam: ProjectTeam = {
   project: StackEle,
   leader: m.AntoineM,
-  members: [m.AntonyA, m.JeanCharlesF],
-};
-
-const RadiationTeam: ProjectTeam = {
-  project: DetecteurRadiation,
-  members: [m.ÉmileL, m.ThomasRS, m.DavidC, m.WilliamT],
-};
-
-const WinchTeam: ProjectTeam = {
-  project: Winch,
-  leader: m.ZackaryB,
-  members: [m.KevinL],
+  members: [],
 };
 
 const OvisTeam: ProjectTeam = {
   project: RoboticArm,
-  leader: m.JulesL,
-  members: [m.EtienneT, m.ChristianB],
+  leader: m.WilliamT,
+  members: [m.EtienneT, m.RobertoL],
+};
+
+const CommunicationTeam: ProjectTeam = {
+  project: Communication,
+  leader: m.DenisT,
+  members: [m.ÉmileL],
 };
 
 const CarthographieTeam: ProjectTeam = {
   project: Carthographie,
-  leader: m.DenisT,
+  leader: m.NathanGT,
   members: [m.JaniceB, m.AngeOliveDN],
+};
+
+const ControlTeam: ProjectTeam = {
+  project: ControleBaseMobile,
+  leader: m.IlianaDC,
+  members: [],
 };
 
 const ShepperdTeam: ProjectTeam = {
   project: ArtificialIntelligence,
-  leader: m.SamuelB,
-  members: [m.ThomasJ, m.SimonB],
+  leader: m.EtienneT,
+  members: [],
 };
 
-const SupportTeam: ProjectTeam = {
-  project: Support,
-  leader: m.GabrielMD,
-  members: [m.AppolinaireSF],
+const GUITeam: ProjectTeam = {
+  project: GUI,
+  leader: m.YanniH,
+  members: [],
 };
 
-const CrateTeam: ProjectTeam = {
-  project: Crate,
-  leader: m.MargotM,
-  members: [m.PierreAlixP, m.SteaveJonathanI],
+const TelemetrieTeam: ProjectTeam = {
+  project: Telemetrie,
+  leader: m.YanniH,
+  members: [],
+};
+
+const BatterieTeam: ProjectTeam = {
+  project: Batterie,
+  leader: m.AntonyA,
+  members: [],
+};
+
+const TopBoxTeam: ProjectTeam = {
+  project: TopBox,
+  leader: m.AntoineM,
+  members: [],
 };
 
 const MaintenanceTeam: UnManagedTeam = {
@@ -108,13 +130,15 @@ const definedTeams: (ProjectTeam | UnManagedTeam)[] = [
   administrationTeam,
   RoboguardTeam,
   StackEleTeam,
-  RadiationTeam,
-  WinchTeam,
   OvisTeam,
+  CommunicationTeam,
   CarthographieTeam,
+  ControlTeam,
   ShepperdTeam,
-  SupportTeam,
-  CrateTeam,
+  GUITeam,
+  TelemetrieTeam,
+  BatterieTeam,
+  TopBoxTeam,
   MaintenanceTeam,
 ];
 
