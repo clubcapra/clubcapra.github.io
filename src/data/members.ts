@@ -229,6 +229,12 @@ const ClementDJ: Member = {
   program: 'engineering_mechanical',
 };
 
+const RobertoL: Member = {
+  name: 'Roberto Laframboise',
+  program: 'engineering_gpa',
+  link: 'https://www.linkedin.com/in/roberto-laframboise-974b31326/',
+};
+
 export default {
   NathanGT,
   ÉtienneLG,
@@ -263,4 +269,5 @@ export default {
   IlianaDC,
   WilliamT,
   ClementDJ,
+  RobertoL,
 };
