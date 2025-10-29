@@ -3,17 +3,21 @@ export default {
     en: 'Our Team',
     fr: 'Notre équipe',
   },
+  team_captain_title: {
+    en: 'Captaincy',
+    fr: 'Capitainerie',
+  },
+  team_captain_description: {
+    en: 'Leadership team of the club',
+    fr: 'Équipe de direction du club',
+  },
   team_administration_title: {
     en: 'Administration',
     fr: 'Administration',
   },
   team_administration_description: {
-    en: 'Management team of the club',
+    en: 'Administrative team of the club',
     fr: 'Équipe administrative du club',
-  },
-  team_administration: {
-    en: 'Administration',
-    fr: 'Administration',
   },
   team_electrical: {
     en: 'Electrical',

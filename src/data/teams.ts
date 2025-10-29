@@ -11,7 +11,7 @@ import {
   ArtificialIntelligence,
   StackEle,
   GUI,
-  Telemetrie,
+  Telemetry,
   TopBox,
 } from './projects';
 
@@ -29,19 +29,27 @@ interface ProjectTeam extends Team {
 interface UnManagedTeam extends Team {
   name: string;
   description: string;
+  showTitles: boolean;
 }
+
+interface CoreTeam extends Team {
+  name: string;
+  description: string;
+  leader?: Member;
+}
+
+const captainTeam: UnManagedTeam = {
+  name: 'team_captain_title',
+  description: 'team_captain_description',
+  showTitles: true,
+  members: [m.ÉtienneLG, m.NathanGT, m.EtienneT],
+};
 
 const administrationTeam: UnManagedTeam = {
   name: 'team_administration_title',
   description: 'team_administration_description',
-  members: [
-    m.ÉtienneLG,
-    m.NathanGT,
-    m.EtienneT,
-    m.JulesL,
-    m.DenisT,
-    m.AntoineM,
-  ],
+  showTitles: true,
+  members: [m.JulesL, m.DenisT, m.GhanaisM, m.ZackaryB, m.BenjaminT],
 };
 
 const RoboguardTeam: ProjectTeam = {
@@ -53,7 +61,7 @@ const RoboguardTeam: ProjectTeam = {
 const StackEleTeam: ProjectTeam = {
   project: StackEle,
   leader: m.AntoineM,
-  members: [],
+  members: [m.ThomasRS, m.AlexisGA],
 };
 
 const OvisTeam: ProjectTeam = {
@@ -71,13 +79,13 @@ const CommunicationTeam: ProjectTeam = {
 const CarthographieTeam: ProjectTeam = {
   project: Carthographie,
   leader: m.NathanGT,
-  members: [m.JaniceB, m.AngeOliveDN],
+  members: [m.HugoB, m.FelixT],
 };
 
 const ControlTeam: ProjectTeam = {
   project: ControleBaseMobile,
   leader: m.IlianaDC,
-  members: [],
+  members: [m.RodrigoATP],
 };
 
 const ShepperdTeam: ProjectTeam = {
@@ -88,12 +96,12 @@ const ShepperdTeam: ProjectTeam = {
 
 const GUITeam: ProjectTeam = {
   project: GUI,
-  leader: m.YanniH,
+  leader: m.WilliamC,
   members: [],
 };
 
 const TelemetrieTeam: ProjectTeam = {
-  project: Telemetrie,
+  project: Telemetry,
   leader: m.YanniH,
   members: [],
 };
@@ -101,18 +109,19 @@ const TelemetrieTeam: ProjectTeam = {
 const BatterieTeam: ProjectTeam = {
   project: Batterie,
   leader: m.AntonyA,
-  members: [],
+  members: [m.KoffiK],
 };
 
 const TopBoxTeam: ProjectTeam = {
   project: TopBox,
-  leader: m.AntoineM,
-  members: [],
+  leader: m.GhanaisM,
+  members: [m.ClementDJ, m.MarieJeanneB, m.TommyV, m.YoanP],
 };
 
 const MaintenanceTeam: UnManagedTeam = {
   name: 'team_maintenance_title',
   description: 'team_maintenance_description',
+  showTitles: false,
   members: [
     m.JulesL,
     m.EtienneT,
@@ -121,12 +130,12 @@ const MaintenanceTeam: UnManagedTeam = {
     m.AntoineM,
     m.PhilippeD,
     m.AntonyA,
-    m.DavidC,
-    m.KevinL,
+    m.IlianaDC,
   ],
 };
 
 const definedTeams: (ProjectTeam | UnManagedTeam)[] = [
+  captainTeam,
   administrationTeam,
   RoboguardTeam,
   StackEleTeam,
@@ -145,6 +154,7 @@ const definedTeams: (ProjectTeam | UnManagedTeam)[] = [
 const OtherProjectTeam: UnManagedTeam = {
   name: 'team_other_projects_title',
   description: 'team_other_projects_description',
+  showTitles: false,
   members: Object.values(m).filter(member => {
     return !definedTeams.some(
       team =>

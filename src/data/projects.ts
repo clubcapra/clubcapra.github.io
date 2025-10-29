@@ -419,9 +419,9 @@ export const Support: Project = {
   ],
 };
 
-export const Telemetrie: Project = {
-  name: 'project_telemetrie_title',
-  description: 'project_telemetrie_description',
+export const Telemetry: Project = {
+  name: 'project_telemetry_title',
+  description: 'project_telemetry_description',
   versions: [
     {
       year: 2025,
@@ -452,5 +452,5 @@ export const projects: Project[] = [
   Controle,
   ArtificialIntelligence,
   Support,
-  Telemetrie,
+  Telemetry,
 ];

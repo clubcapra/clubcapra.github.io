@@ -49,11 +49,7 @@ const { t } = useI18n();
               :name="team.leader.name"
               :img="team.leader.img ?? defaultAvatar"
               :program="$t(team.leader.program)"
-              :title="
-                team.leader.title == undefined
-                  ? $t('title_project_manager')
-                  : $t(team.leader.title)
-              "
+              :title="$t('title_project_manager')"
               :link="team.leader.link"
             />
             <MemberItemComponent
@@ -63,7 +59,10 @@ const { t } = useI18n();
               :img="member.img ?? defaultAvatar"
               :program="$t(member.program)"
               :title="
-                member.title == undefined ? $t('team_member') : $t(member.title)
+                'leader' in team ||
+                ('showTitles' in team && team.showTitles == false)
+                  ? $t('team_member')
+                  : $t(member.title ?? 'team_member')
               "
               :link="member.link"
             />

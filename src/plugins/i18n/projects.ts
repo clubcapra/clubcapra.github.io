@@ -68,8 +68,7 @@ export default {
     fr: 'Boite Supérieure',
   },
   project_topbox_description: {
-    en: 'Top box of the robot. It is used to protect the computer and other electronic components.',
-    fr: "Boite supérieure du robot. Elle est utilisée pour protégé l'ordinateur de calcul et les autres composantes électroniques",
+    fr: "Boite supérieure du robot. Elle est utilisée pour protégé les composantes électroniques de capteurs d'environnement et de caméra.",
   },
   project_mobile_base_title: {
     en: 'Mobile Base',
@@ -142,5 +141,29 @@ export default {
   project_support_description: {
     en: 'Robot stand. It is used to work on the robot and test motor controls.',
     fr: 'Support du robot. Il permet de travailler sur le robot et de tester les contrôles de moteur.',
+  },
+  project_communication_title: {
+    en: 'Communication',
+    fr: 'Communication',
+  },
+  project_communication_description: {
+    en: 'Robot communication system. It is used for data transmission between the robot and the operator station.',
+    fr: 'Système de communication du robot. Il est utilisé pour la transmission de données entre le robot et la station opérateur.',
+  },
+  project_telemetry_title: {
+    en: 'Telemetry',
+    fr: 'Télémétrie',
+  },
+  project_telemetry_description: {
+    en: 'Robot telemetry system. It is used to monitor the robot state and its environment in real-time.',
+    fr: "Système de télémétrie du robot. Il est utilisé pour surveiller l'état du robot et de son environnement en temps réel.",
+  },
+  project_battery_title: {
+    en: 'Battery',
+    fr: 'Batterie',
+  },
+  project_battery_description: {
+    en: 'Robot battery system. It is used to power the robot and its components.',
+    fr: 'Système de batterie du robot. Il est utilisé pour alimenter le robot et ses composantes.',
   },
 };
