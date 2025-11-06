@@ -27,7 +27,7 @@ export interface Member {
 const NathanGT: Member = {
   name: 'Nathan Gueissaz-Teufel',
   program: 'engineering_software',
-  title: 'title_captain',
+  title: 'title_co_captain',
   img: nathanGueissazTeufel,
   link: 'https://www.linkedin.com/in/nathan-gueissaz-teufel-04655b1ab/',
 };
@@ -35,21 +35,14 @@ const NathanGT: Member = {
 const ÉtienneLG: Member = {
   name: 'Étienne Le Guerrier',
   program: 'engineering_electrical',
-  title: 'title_co_captain',
+  title: 'title_captain',
   img: etienneLeGuerrier,
   link: 'https://www.linkedin.com/in/%C3%A9tienne-le-guerrier-4544b515a/',
 };
 
-const JohnE: Member = {
-  name: 'John Ephrem',
-  program: 'engineering_gol',
-  title: 'title_logistics_manager',
-};
-
-const GabrielMD: Member = {
-  name: 'Gabriel Massicotte-Duhamel',
-  program: 'engineering_mechanical',
-  title: 'title_project_manager',
+const BenoitM: Member = {
+  name: 'Malenfant, Benoit',
+  program: 'engineering_electrical',
 };
 
 const KevinL: Member = {
@@ -66,7 +59,6 @@ const AntonyA: Member = {
 const AntoineM: Member = {
   name: 'Antoine Maltais',
   program: 'engineering_electrical',
-  title: 'title_project_manager',
   img: antoineMaltais,
   link: 'https://www.linkedin.com/in/antoine-maltais-72923017a/',
 };
@@ -74,21 +66,13 @@ const AntoineM: Member = {
 const PhilippeD: Member = {
   name: 'Philippe Desbiens',
   program: 'engineering_electrical',
-  title: 'title_project_manager',
   img: philippeDesbiens,
 };
 
 const DavidC: Member = {
   name: 'David Caron',
   program: 'engineering_electrical',
-  title: 'title_partnership_manager',
   img: davidCaron,
-};
-
-const ChristianB: Member = {
-  name: 'Christian Bourget',
-  program: 'engineering_gpa',
-  img: christianBourget,
 };
 
 const ÉmileL: Member = {
@@ -102,16 +86,10 @@ const GuyPhilippeN: Member = {
   program: 'engineering_software',
 };
 
-const JeanCharlesF: Member = {
-  name: 'Jean-Charles Fortin',
-  program: 'engineering_gpa',
-  link: 'https://www.linkedin.com/in/jean-charles-fortin-45a0b02a5/',
-};
-
 const DenisT: Member = {
   name: 'Denis Turk',
   program: 'engineering_software',
-  title: 'title_project_manager',
+  title: 'title_event_manager',
   img: denisTurk,
   link: 'https://www.linkedin.com/in/denisturk/',
 };
@@ -121,24 +99,12 @@ const WilliamJ: Member = {
   program: 'engineering_software',
 };
 
-const SamuelB: Member = {
-  name: 'Samuel Barbeau',
-  program: 'engineering_software',
-  title: 'title_project_manager',
-  img: samuelBarbeau,
-};
-
 const EtienneT: Member = {
   name: 'Etienne Tardif',
   program: 'engineering_software',
-  title: 'title_merchandise_manager',
+  title: 'title_co_captain',
   img: etienneTardif,
   link: 'https://www.linkedin.com/in/etienne-tardif-57b164222/',
-};
-
-const SimonB: Member = {
-  name: 'Simon Biard',
-  program: 'engineering_software',
 };
 
 const AngeOliveDN: Member = {
@@ -146,33 +112,10 @@ const AngeOliveDN: Member = {
   program: 'engineering_software',
 };
 
-const MargotM: Member = {
-  name: 'Margot Metzger',
-  program: 'engineering_mechanical',
-  title: 'title_project_manager',
-  link: 'https://www.linkedin.com/in/margot-metzger',
-};
-
-const PierreAlixP: Member = {
-  name: 'Pierre-Alix Paugain',
-  program: 'engineering_mechanical',
-};
-
-const SteaveJonathanI: Member = {
-  name: 'Steave-Jonathan Ibrango',
-  program: 'engineering_construction',
-  link: 'https://www.linkedin.com/in/steavibrango/',
-};
-
 const YanniH: Member = {
   name: 'Yanni Haddar',
   program: 'engineering_software',
   img: yanniHaddar,
-};
-
-const ThomasJ: Member = {
-  name: 'Thomas Journault',
-  program: 'engineering_software',
 };
 
 const ThomasRS: Member = {
@@ -188,28 +131,18 @@ const JaniceB: Member = {
   link: 'https://www.linkedin.com/in/janice-b-858122331/',
 };
 
-const LouisM: Member = {
-  name: 'Louis Marois',
-  program: 'engineering_software',
-};
-
 const JulesL: Member = {
   name: 'Jules Lachapelle',
   program: 'engineering_gpa',
-  title: 'title_project_manager',
+  title: 'title_technical_director',
   img: julesLachapelle,
 };
 
 const ZackaryB: Member = {
   name: 'Zackary Bélanger',
   program: 'engineering_gpa',
-  title: 'title_project_manager',
+  title: 'title_partnership_manager',
   link: 'https://www.linkedin.com/in/zackary-belanger',
-};
-
-const AppolinaireSF: Member = {
-  name: 'Appolinaire Simo-Fotso',
-  program: 'engineering_mechanical',
 };
 
 const IlianaDC: Member = {
@@ -220,8 +153,8 @@ const IlianaDC: Member = {
 };
 
 const WilliamT: Member = {
-  name: 'William Tramblay',
-  program: 'engineering_gpa',
+  name: 'William Tremblay',
+  program: 'engineering_gpa_master',
 };
 
 const ClementDJ: Member = {
@@ -229,38 +162,115 @@ const ClementDJ: Member = {
   program: 'engineering_mechanical',
 };
 
+const RobertoL: Member = {
+  name: 'Roberto Laframboise',
+  program: 'engineering_gpa',
+  link: 'https://www.linkedin.com/in/roberto-laframboise-974b31326/',
+};
+
+const GhanaisM: Member = {
+  name: 'Ghanais Muniandy',
+  program: 'engineering_gpa',
+  title: 'title_social_coordinator',
+  link: 'https://www.linkedin.com/in/ghanais',
+};
+
+const WilliamC: Member = {
+  name: 'William Caouette',
+  program: 'engineering_software',
+};
+
+const KoffiK: Member = {
+  name: 'Koffi Kpoka',
+  program: 'engineering_electrical',
+};
+
+const AlexisGA: Member = {
+  name: 'Alexis Gabriel Aubut',
+  program: 'engineering_electrical',
+  link: 'www.linkedin.com/in/alexis-gabriel-aubut-03b821342',
+};
+
+const MarieJeanneB: Member = {
+  name: 'Marie-Jeanne Bazinet',
+  program: 'engineering_electrical',
+};
+
+const HugoB: Member = {
+  name: 'Hugo Beauregard',
+  program: 'engineering_gpa',
+  link: 'https://github.com/fugo56',
+};
+
+const FelixT: Member = {
+  name: 'Félix Thériault',
+  program: 'engineering_software',
+};
+
+const TommyV: Member = {
+  name: 'Tommy Vallée',
+  program: 'engineering_gpa',
+  link: 'https://www.linkedin.com/in/tommy-vallee-gpa/',
+};
+
+const YoanP: Member = {
+  name: 'Yoan Paradis',
+  program: 'engineering_electrical',
+  link: 'https://www.linkedin.com/in/yoan-paradis-56a657325',
+};
+
+const RodrigoATP: Member = {
+  name: 'Rodrigo Angel Torres Pérez',
+  program: 'engineering_gpa',
+  link: 'https://github.com/RodriTP, https://ca.linkedin.com/in/rodrigo-angel-torres-p%C3%A9rez-8b38332b4',
+};
+
+const BenjaminT: Member = {
+  name: 'Benjamin Theriault',
+  program: 'engineering_software',
+  title: 'title_partnership_manager',
+  link: 'https://github.com/BenjaminT02',
+};
+
+const LouisSimonL: Member = {
+  name: 'Louis-Simon Leclerc',
+  program: 'engineering_software',
+};
+
 export default {
   NathanGT,
   ÉtienneLG,
-  JohnE,
-  GabrielMD,
+  BenoitM,
   KevinL,
   AntonyA,
   AntoineM,
   PhilippeD,
   DavidC,
-  ChristianB,
   ÉmileL,
   GuyPhilippeN,
-  JeanCharlesF,
   DenisT,
   WilliamJ,
-  SamuelB,
   EtienneT,
-  SimonB,
   AngeOliveDN,
-  MargotM,
-  PierreAlixP,
-  SteaveJonathanI,
   YanniH,
-  ThomasJ,
   ThomasRS,
   JaniceB,
-  LouisM,
   JulesL,
   ZackaryB,
-  AppolinaireSF,
   IlianaDC,
   WilliamT,
   ClementDJ,
+  RobertoL,
+  GhanaisM,
+  WilliamC,
+  KoffiK,
+  AlexisGA,
+  MarieJeanneB,
+  HugoB,
+  FelixT,
+  TommyV,
+  YoanP,
+  RodrigoATP,
+  BenjaminT,
+  LouisSimonL,
 };

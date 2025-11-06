@@ -27,4 +27,8 @@ export default {
     en: 'Master in Software Engineering',
     fr: 'Maîtrise en Génie Logiciel',
   },
+  engineering_gpa_master: {
+    en: 'Master in Automated Production Engineering',
+    fr: 'Maîtrise en Génie de la Production Automatisée',
+  },
 };

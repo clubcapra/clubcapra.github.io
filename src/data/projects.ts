@@ -49,6 +49,27 @@ export const StackEle: Project = {
       members: ['Antoine Maltais', 'Antony Afif', 'Kevin Larochelle'],
       description: 'Première version du stack électrique',
     },
+    {
+      version: 'v2',
+      robot: Rove,
+      year: 2025,
+      members: ['Jules Lachapelle', 'Antoine Maltais'],
+      description: 'Optimisation du stack électrique',
+    },
+  ],
+};
+
+export const Communication: Project = {
+  name: 'project_communication_title',
+  description: 'project_communication_description',
+  versions: [
+    {
+      year: 2025,
+      robot: Rove,
+      members: ['Denis Turk', 'Émile Lacroix'],
+      description:
+        "Mise en place d'un système de communication entre le robot et la station de base",
+    },
   ],
 };
 
@@ -251,6 +272,24 @@ export const Crate: Project = {
   ],
 };
 
+export const Batterie: Project = {
+  name: 'project_battery_title',
+  description: 'project_battery_description',
+  versions: [
+    {
+      year: 2024,
+      robot: Rove,
+      members: [
+        'David Caron',
+        'Antoine Maltais',
+        'Benoit Malenfant',
+        'Kevin Larochelle',
+      ],
+      description: 'Première version de la batterie pour le robot Rove.',
+    },
+  ],
+};
+
 export const ControlBoard: Project = {
   name: 'project_control_board_title',
   description: 'project_control_board_description',
@@ -380,9 +419,24 @@ export const Support: Project = {
   ],
 };
 
+export const Telemetry: Project = {
+  name: 'project_telemetry_title',
+  description: 'project_telemetry_description',
+  versions: [
+    {
+      year: 2025,
+      robot: Rove,
+      members: ['Yanni Haddar'],
+      description:
+        'Développement d’un système de télémétrie pour le robot afin de monitorer les données en temps réel.',
+    },
+  ],
+};
+
 export const projects: Project[] = [
   Roboguard,
   StackEle,
+  Communication,
   Carthographie,
   ControleBaseMobile,
   RoboticArm,
@@ -398,4 +452,5 @@ export const projects: Project[] = [
   Controle,
   ArtificialIntelligence,
   Support,
+  Telemetry,
 ];
