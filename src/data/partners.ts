@@ -1,6 +1,4 @@
 // Partners logos
-import hsLogoCouleur from '@clubcapra/assets/media/partners/HS_logo_couleur.png';
-import ixiasoftMadcapLogoRgbC from '@clubcapra/assets/media/partners/IXIASOFT-Madcap-logo-RGB-C.jpg';
 import EtsTypoGrise from '@clubcapra/assets/media/partners/Logo_ETS_TypoGrise_D_EN.png';
 import aeets from '@clubcapra/assets/media/partners/aeets.svg';
 import altium from '@clubcapra/assets/media/partners/altium.svg';
@@ -62,18 +60,6 @@ export const platinumPartners: Partner[] = [
 ];
 
 export const goldPartners: Partner[] = [
-  {
-    name: 'HalfSerious',
-    img: hsLogoCouleur,
-    url: 'https://www.halfserious.com',
-    confirmed: false,
-  },
-  {
-    name: 'IXIASOFT',
-    img: ixiasoftMadcapLogoRgbC,
-    url: 'https://www.ixiasoft.com',
-    confirmed: false,
-  },
   {
     name: 'Premier Tech',
     img: premierTech,
