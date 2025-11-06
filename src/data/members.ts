@@ -153,8 +153,8 @@ const IlianaDC: Member = {
 };
 
 const WilliamT: Member = {
-  name: 'William Tramblay',
-  program: 'engineering_gpa',
+  name: 'William Tremblay',
+  program: 'engineering_gpa_master',
 };
 
 const ClementDJ: Member = {
