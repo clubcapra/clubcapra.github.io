@@ -78,6 +78,7 @@ const DavidC: Member = {
 const ÉmileL: Member = {
   name: 'Émile Lacroix',
   program: 'engineering_electrical',
+  title: 'title_treasury',
   img: emileLacroix,
 };
 
@@ -237,6 +238,16 @@ const LouisSimonL: Member = {
   program: 'engineering_software',
 };
 
+const AudreyCMN: Member = {
+  name: 'Audrey Carelle Mawamba Njiometio',
+  program: 'engineering_gpa',
+};
+
+const SamuelKB: Member = {
+  name: 'Samuel Klein-bichain',
+  program: 'engineering_software',
+};
+
 export default {
   NathanGT,
   ÉtienneLG,
@@ -273,4 +284,6 @@ export default {
   RodrigoATP,
   BenjaminT,
   LouisSimonL,
+  AudreyCMN,
+  SamuelKB,
 };

@@ -49,7 +49,7 @@ const administrationTeam: UnManagedTeam = {
   name: 'team_administration_title',
   description: 'team_administration_description',
   showTitles: true,
-  members: [m.JulesL, m.DenisT, m.GhanaisM, m.ZackaryB, m.BenjaminT],
+  members: [m.JulesL, m.ÉmileL, m.DenisT, m.GhanaisM, m.ZackaryB, m.BenjaminT],
 };
 
 const RoboguardTeam: ProjectTeam = {
@@ -79,13 +79,13 @@ const CommunicationTeam: ProjectTeam = {
 const CarthographieTeam: ProjectTeam = {
   project: Carthographie,
   leader: m.NathanGT,
-  members: [m.HugoB, m.FelixT],
+  members: [m.HugoB, m.FelixT, m.AudreyCMN],
 };
 
 const ControlTeam: ProjectTeam = {
   project: ControleBaseMobile,
   leader: m.IlianaDC,
-  members: [m.RodrigoATP],
+  members: [m.RodrigoATP, m.SamuelKB],
 };
 
 const ShepperdTeam: ProjectTeam = {
