@@ -115,7 +115,7 @@ const BatterieTeam: ProjectTeam = {
 const TopBoxTeam: ProjectTeam = {
   project: TopBox,
   leader: m.GhanaisM,
-  members: [m.ClementDJ, m.MarieJeanneB, m.TommyV, m.YoanP],
+  members: [m.ClementDJ, m.MarieJeanneB, m.TommyV, m.YoanP, m.MiguelDSR],
 };
 
 const MaintenanceTeam: UnManagedTeam = {

@@ -248,6 +248,11 @@ const SamuelKB: Member = {
   program: 'engineering_software',
 };
 
+const MiguelDSR: Member = {
+  name: 'Miguel Da Silva Rhodes',
+  program: 'engineering_mechanical',
+};
+
 export default {
   NathanGT,
   ÉtienneLG,
@@ -286,4 +291,5 @@ export default {
   LouisSimonL,
   AudreyCMN,
   SamuelKB,
+  MiguelDSR,
 };
