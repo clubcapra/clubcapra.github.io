@@ -6,7 +6,6 @@ import kevinLarochelle from '@clubcapra/assets/media/members/KEVIN_LAROCHELLE.jp
 import antoineMaltais from '@clubcapra/assets/media/members/ANTOINE_MALTAIS.jpg';
 import philippeDesbiens from '@clubcapra/assets/media/members/PHILIPPE_DESBIENS.jpg';
 import denisTurk from '@clubcapra/assets/media/members/DENIS_TURK.jpg';
-import davidCaron from '@clubcapra/assets/media/members/DAVID_CARON.jpg';
 import christianBourget from '@clubcapra/assets/media/members/CHRISTIAN_BOURGET.jpg';
 import emileLacroix from '@clubcapra/assets/media/members/EMILE_LACROIX.jpg';
 import samuelBarbeau from '@clubcapra/assets/media/members/SAMUEL_BARBEAU.jpg';
@@ -67,12 +66,6 @@ const PhilippeD: Member = {
   name: 'Philippe Desbiens',
   program: 'engineering_electrical',
   img: philippeDesbiens,
-};
-
-const DavidC: Member = {
-  name: 'David Caron',
-  program: 'engineering_electrical',
-  img: davidCaron,
 };
 
 const ÉmileL: Member = {
@@ -261,7 +254,6 @@ export default {
   AntonyA,
   AntoineM,
   PhilippeD,
-  DavidC,
   ÉmileL,
   GuyPhilippeN,
   DenisT,
