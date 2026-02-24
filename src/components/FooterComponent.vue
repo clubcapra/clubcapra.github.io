@@ -45,7 +45,7 @@ onMounted(() => {
           <nav class="flex flex-row gap-4">
             <a
               class="text-xl"
-              href="https://www.facebook.com/clubcapra/"
+              href="https://www.linkedin.com/company/club-capra/"
               aria-label="LinkedIn"
             >
               <FontAwesomeIcon :icon="faLinkedin" />
@@ -59,7 +59,7 @@ onMounted(() => {
             </a>
             <a
               class="text-xl"
-              href="https://www.linkedin.com/company/club-capra/"
+              href="https://www.facebook.com/clubcapra/"
               aria-label="FaceBook"
             >
               <FontAwesomeIcon :icon="faFacebook" />
