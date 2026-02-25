@@ -39,11 +39,6 @@ const ÉtienneLG: Member = {
   link: 'https://www.linkedin.com/in/%C3%A9tienne-le-guerrier-4544b515a/',
 };
 
-const BenoitM: Member = {
-  name: 'Malenfant, Benoit',
-  program: 'engineering_electrical',
-};
-
 const KevinL: Member = {
   name: 'Kevin Larochelle',
   program: 'engineering_gpa',
@@ -249,7 +244,6 @@ const MiguelDSR: Member = {
 export default {
   NathanGT,
   ÉtienneLG,
-  BenoitM,
   KevinL,
   AntonyA,
   AntoineM,
