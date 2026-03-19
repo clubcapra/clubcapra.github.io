@@ -2,13 +2,10 @@
 
 import nathanGueissazTeufel from '@clubcapra/assets/media/members/NATHAN_GUEISSAZ-TEUFEL.jpg';
 import etienneLeGuerrier from '@clubcapra/assets/media/members/ETIENNE_LE_GUERRIER.jpg';
-import kevinLarochelle from '@clubcapra/assets/media/members/KEVIN_LAROCHELLE.jpg';
 import antoineMaltais from '@clubcapra/assets/media/members/ANTOINE_MALTAIS.jpg';
 import philippeDesbiens from '@clubcapra/assets/media/members/PHILIPPE_DESBIENS.jpg';
 import denisTurk from '@clubcapra/assets/media/members/DENIS_TURK.jpg';
-import christianBourget from '@clubcapra/assets/media/members/CHRISTIAN_BOURGET.jpg';
 import emileLacroix from '@clubcapra/assets/media/members/EMILE_LACROIX.jpg';
-import samuelBarbeau from '@clubcapra/assets/media/members/SAMUEL_BARBEAU.jpg';
 import etienneTardif from '@clubcapra/assets/media/members/ETIENNE_TARDIF.jpg';
 import yanniHaddar from '@clubcapra/assets/media/members/YANNI_HADDAR.jpg';
 import julesLachapelle from '@clubcapra/assets/media/members/JULES_LACHAPELLE.jpg';
@@ -37,12 +34,6 @@ const ÉtienneLG: Member = {
   title: 'title_captain',
   img: etienneLeGuerrier,
   link: 'https://www.linkedin.com/in/%C3%A9tienne-le-guerrier-4544b515a/',
-};
-
-const KevinL: Member = {
-  name: 'Kevin Larochelle',
-  program: 'engineering_gpa',
-  img: kevinLarochelle,
 };
 
 const AntonyA: Member = {
@@ -78,14 +69,8 @@ const GuyPhilippeN: Member = {
 const DenisT: Member = {
   name: 'Denis Turk',
   program: 'engineering_software',
-  title: 'title_event_manager',
   img: denisTurk,
   link: 'https://www.linkedin.com/in/denisturk/',
-};
-
-const WilliamJ: Member = {
-  name: 'William Jarry',
-  program: 'engineering_software',
 };
 
 const EtienneT: Member = {
@@ -169,11 +154,6 @@ const WilliamC: Member = {
   program: 'engineering_software',
 };
 
-const KoffiK: Member = {
-  name: 'Koffi Kpoka',
-  program: 'engineering_electrical',
-};
-
 const AlexisGA: Member = {
   name: 'Alexis Gabriel Aubut',
   program: 'engineering_electrical',
@@ -244,14 +224,12 @@ const MiguelDSR: Member = {
 export default {
   NathanGT,
   ÉtienneLG,
-  KevinL,
   AntonyA,
   AntoineM,
   PhilippeD,
   ÉmileL,
   GuyPhilippeN,
   DenisT,
-  WilliamJ,
   EtienneT,
   AngeOliveDN,
   YanniH,
@@ -265,7 +243,6 @@ export default {
   RobertoL,
   GhanaisM,
   WilliamC,
-  KoffiK,
   AlexisGA,
   MarieJeanneB,
   HugoB,

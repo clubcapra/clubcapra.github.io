@@ -49,7 +49,7 @@ const administrationTeam: UnManagedTeam = {
   name: 'team_administration_title',
   description: 'team_administration_description',
   showTitles: true,
-  members: [m.JulesL, m.ÉmileL, m.DenisT, m.GhanaisM, m.ZackaryB, m.BenjaminT],
+  members: [m.JulesL, m.ÉmileL, m.GhanaisM, m.ZackaryB, m.BenjaminT],
 };
 
 const RoboguardTeam: ProjectTeam = {
@@ -72,7 +72,7 @@ const OvisTeam: ProjectTeam = {
 
 const CommunicationTeam: ProjectTeam = {
   project: Communication,
-  leader: m.DenisT,
+  leader: m.YanniH,
   members: [m.ÉmileL],
 };
 
@@ -109,7 +109,7 @@ const TelemetrieTeam: ProjectTeam = {
 const BatterieTeam: ProjectTeam = {
   project: Batterie,
   leader: m.AntonyA,
-  members: [m.KoffiK],
+  members: [],
 };
 
 const TopBoxTeam: ProjectTeam = {
@@ -126,7 +126,6 @@ const MaintenanceTeam: UnManagedTeam = {
     m.JulesL,
     m.EtienneT,
     m.ÉtienneLG,
-    m.DenisT,
     m.AntoineM,
     m.PhilippeD,
     m.AntonyA,
