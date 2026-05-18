@@ -4,7 +4,6 @@ import { useI18n } from 'vue-i18n';
 import MemberItemComponent from '@clubcapra/components/MemberItemComponent.vue';
 
 // Media
-import defaultAvatar from '@clubcapra/assets/media/members/avatar.png';
 import { teams } from '@clubcapra/data/teams';
 
 const { t } = useI18n();
@@ -46,25 +45,19 @@ const { t } = useI18n();
           <div class="flex flex-wrap justify-center items-center">
             <MemberItemComponent
               v-if="'leader' in team && team.leader"
-              :name="team.leader.name"
-              :img="team.leader.img ?? defaultAvatar"
-              :program="$t(team.leader.program)"
+              :member="team.leader"
               :title="$t('title_project_manager')"
-              :link="team.leader.link"
             />
             <MemberItemComponent
               v-for="(member, j) in team.members"
               :key="j"
-              :name="member.name"
-              :img="member.img ?? defaultAvatar"
-              :program="$t(member.program)"
+              :member="member"
               :title="
                 'leader' in team ||
                 ('showTitles' in team && team.showTitles == false)
                   ? $t('team_member')
                   : $t(member.title ?? 'team_member')
               "
-              :link="member.link"
             />
           </div>
         </template>
