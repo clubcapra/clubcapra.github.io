@@ -31,3 +31,7 @@ interface Window {
     push: (args: string[]) => void;
   };
 }
+
+declare global {
+  function require(path: string): string;
+}
