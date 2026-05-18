@@ -8,6 +8,7 @@ import {
   Carthographie,
   RoboticArm,
   Roboguard,
+  ArtificialIntelligence,
   StackEle,
   GUI,
   Telemetry,
@@ -48,7 +49,7 @@ const administrationTeam: UnManagedTeam = {
   name: 'team_administration_title',
   description: 'team_administration_description',
   showTitles: true,
-  members: [m.JulesL, m.ÉmileL, m.GhanaisM, m.ZackaryB, m.LolaH, m.MayaB],
+  members: [m.JulesL, m.ÉmileL, m.GhanaisM, m.ZackaryB, m.BenjaminT],
 };
 
 const RoboguardTeam: ProjectTeam = {
@@ -60,13 +61,13 @@ const RoboguardTeam: ProjectTeam = {
 const StackEleTeam: ProjectTeam = {
   project: StackEle,
   leader: m.AntoineM,
-  members: [m.ThomasRS, m.AlexisGA, m.JulesL],
+  members: [m.ThomasRS, m.AlexisGA],
 };
 
 const OvisTeam: ProjectTeam = {
   project: RoboticArm,
   leader: m.WilliamT,
-  members: [m.EtienneT, m.IlianaDC],
+  members: [m.EtienneT, m.RobertoL],
 };
 
 const CommunicationTeam: ProjectTeam = {
@@ -84,7 +85,13 @@ const CarthographieTeam: ProjectTeam = {
 const ControlTeam: ProjectTeam = {
   project: ControleBaseMobile,
   leader: m.IlianaDC,
-  members: [m.EtienneT, m.SamuelKB],
+  members: [m.RodrigoATP, m.SamuelKB],
+};
+
+const ShepperdTeam: ProjectTeam = {
+  project: ArtificialIntelligence,
+  leader: m.EtienneT,
+  members: [],
 };
 
 const GUITeam: ProjectTeam = {
@@ -108,7 +115,7 @@ const BatterieTeam: ProjectTeam = {
 const TopBoxTeam: ProjectTeam = {
   project: TopBox,
   leader: m.GhanaisM,
-  members: [m.ClementDJ, m.MiguelDSR],
+  members: [m.ClementDJ, m.MarieJeanneB, m.TommyV, m.YoanP, m.MiguelDSR],
 };
 
 const MaintenanceTeam: UnManagedTeam = {
@@ -123,7 +130,6 @@ const MaintenanceTeam: UnManagedTeam = {
     m.PhilippeD,
     m.AntonyA,
     m.IlianaDC,
-    m.NathanGT,
   ],
 };
 
@@ -136,6 +142,7 @@ const definedTeams: (ProjectTeam | UnManagedTeam)[] = [
   CommunicationTeam,
   CarthographieTeam,
   ControlTeam,
+  ShepperdTeam,
   GUITeam,
   TelemetrieTeam,
   BatterieTeam,
