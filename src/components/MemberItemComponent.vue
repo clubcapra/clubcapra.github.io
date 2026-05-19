@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { Member } from '@clubcapra/data/members';
 import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n();
 import defaultAvatar from '@clubcapra/assets/media/members/avatar.png';
 
 const props = defineProps<{
@@ -77,7 +79,7 @@ image.onload = () => {
         <h4 class="text-lg font-medium mb-0">{{ props.member.name }}</h4>
         <small>{{ props.title }}</small>
         <br />
-        <small class="text-muted">{{ props.member.program }}</small>
+        <small class="text-muted">{{ t(props.member.program) }}</small>
       </div>
     </div>
   </div>

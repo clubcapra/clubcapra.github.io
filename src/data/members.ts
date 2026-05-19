@@ -168,6 +168,7 @@ const MiguelDSR: Member = {
 const LolaH: Member = {
   name: 'Lola Hornsperger',
   program: 'engineering_gpa',
+  title: 'title_logistics_helper',
   link: 'https://www.linkedin.com/in/lola-hornsperger-372353298/',
   img: require('@clubcapra/assets/media/members/LOLA_HORNSPERGER.jpg'),
   crazy: require('@clubcapra/assets/media/members/LOLA_HORNSPERGER-crazy.jpg'),
@@ -176,6 +177,7 @@ const LolaH: Member = {
 const MayaB: Member = {
   name: 'Maya Boubekri',
   program: 'engineering_electrical',
+  title: 'title_logistics_helper',
   link: 'https://www.linkedin.com/in/maya-boubekri-guezout/',
   img: require('@clubcapra/assets/media/members/MAYA_BOUBEKRI.jpg'),
   crazy: require('@clubcapra/assets/media/members/MAYA_BOUBEKRI-crazy.jpg'),
