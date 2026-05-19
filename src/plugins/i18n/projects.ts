@@ -9,7 +9,7 @@ export default {
   },
   project_stackele_title: {
     en: 'Electrical Stack',
-    fr: 'Pile Électrique',
+    fr: 'Batterie',
   },
   project_stackele_description: {
     en: 'Electrical components of the mobile base. It is used for power management and motor control.',
@@ -41,7 +41,7 @@ export default {
   },
   project_gripper_title: {
     en: 'Gripper',
-    fr: 'Pince Robotique',
+    fr: 'Pince robotique',
   },
   project_gripper_description: {
     en: 'Gripper installed on the robotic arm. It is used to grasp objects such as valves or door handles. It is installed at the end of the robotic arm.',
@@ -57,7 +57,7 @@ export default {
   },
   project_web_title: {
     en: 'Website',
-    fr: 'Site Web',
+    fr: 'Site web',
   },
   project_web_description: {
     en: 'The team website. It is used to share information about the club and projects.',
@@ -65,14 +65,14 @@ export default {
   },
   project_topbox_title: {
     en: 'Top Box',
-    fr: 'Boite Supérieure',
+    fr: 'Boîte extérieure',
   },
   project_topbox_description: {
-    fr: "Boite supérieure du robot. Elle est utilisée pour protégé les composantes électroniques de capteurs d'environnement et de caméra.",
+    fr: "Boîte extérieure du robot. Elle est utilisée pour protéger les composantes électroniques de capteurs d'environnement et de caméra.",
   },
   project_mobile_base_title: {
     en: 'Mobile Base',
-    fr: 'Base Mobile',
+    fr: 'Base mobile',
   },
   project_mobile_base_description: {
     en: 'Mobile base of the robot. It is used for the movement of the robot.',
@@ -88,11 +88,11 @@ export default {
   },
   project_crate_title: {
     en: 'Crate',
-    fr: 'Boite de transport',
+    fr: 'Boîte de transport',
   },
   project_crate_description: {
     en: 'Transport box of the robot with compartments for tools',
-    fr: 'Boite de transport du robot avec des compartiments pour les outils',
+    fr: 'Boîte de transport du robot avec des compartiments pour les outils',
   },
   project_control_board_title: {
     en: 'Controle Board',
@@ -128,7 +128,7 @@ export default {
   },
   project_artificial_intelligence_title: {
     en: 'Artificial Intelligence',
-    fr: 'Intelligence Artificielle',
+    fr: 'Intelligence artificielle',
   },
   project_artificial_intelligence_description: {
     en: 'Artificial intelligence of the robot. It is used for autonomous navigation and object detection.',

@@ -123,11 +123,6 @@ const IlianaDC: Member = {
   link: 'https://www.linkedin.com/in/iliana-de-carufel-855182193/',
 };
 
-const WilliamT: Member = {
-  name: 'William Tremblay',
-  program: 'engineering_gpa_master',
-};
-
 const ClementDJ: Member = {
   name: 'Clément Desmarais-Jadin',
   program: 'engineering_mechanical',
@@ -214,7 +209,6 @@ export default {
   JulesL,
   ZackaryB,
   IlianaDC,
-  WilliamT,
   ClementDJ,
   GhanaisM,
   WilliamC,

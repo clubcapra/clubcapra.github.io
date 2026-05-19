@@ -81,7 +81,7 @@ export default {
   },
   electrical_stack_title: {
     en: 'Electrical Stack',
-    fr: 'Pile Électrique',
+    fr: 'Batterie',
   },
   electrical_stack_content: {
     en: 'Our robots are equipped with a wide range of electrical components such as motor drivers to power supplies. We therefore have an electric stack that allows our robots to be reliable and robust in their operations while being safe.',
