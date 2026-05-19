@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig, type UserConfig } from 'vite';
 import { checker } from 'vite-plugin-checker';
+import vitePluginRequire from "vite-plugin-require";
 
 /**
  * Vite Configure
@@ -20,6 +21,8 @@ export default defineConfig(async ({ mode, command }): Promise<UserConfig> => {
       vue({
         template: {},
       }),
+
+      vitePluginRequire.default(),
       // vite-plugin-checker
       // https://github.com/fi3ework/vite-plugin-checker
       checker({
