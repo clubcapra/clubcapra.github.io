@@ -3,6 +3,10 @@ export default {
     en: 'Our Team',
     fr: 'Notre équipe',
   },
+  our_members_title: {
+    en: 'Our Members',
+    fr: 'Nos membres',
+  },
   team_captain_title: {
     en: 'Captaincy',
     fr: 'Capitainerie',

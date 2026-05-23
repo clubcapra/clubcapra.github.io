@@ -103,4 +103,12 @@ export default {
     en: 'During our competitions, our robots must be capable of making autonomous decisions. To achieve this, they are equipped with 3D mapping, path planning and autonomy systems that allow them to navigate difficult terrain.',
     fr: "Durant nos compétitions, nos robots doivent être capables de prendre des décisions autonomes. Afin de réaliser cela, ils sont équipés de systèmes de cartographie 3D, de planification de trajectoires et d'autonomie qui leur permettent de naviguer dans des terrains difficiles.",
   },
+  team: {
+    en: 'Team',
+    fr: 'Équipe',
+  },
+  team_history: {
+    en: 'Team History',
+    fr: 'Historique de notre club',
+  },
 };

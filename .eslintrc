@@ -46,6 +46,12 @@
     "jsdoc/require-returns": "off",
     "tsdoc/syntax": "warn",
     "jsdoc/tag-lines": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "vue/html-self-closing": [
       "error",
       {

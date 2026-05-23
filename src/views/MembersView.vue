@@ -14,7 +14,7 @@ const { t } = useI18n();
     <div class="container mx-auto px-4 pt-10 pb-20">
       <div class="pt-20 pb-10">
         <h2 class="text-5xl font-bold font-sans text-center">
-          {{ t('our_team_title') }}
+          {{ t('our_members_title') }}
         </h2>
       </div>
       <div class="flex flex-col gap-8 items-center">
