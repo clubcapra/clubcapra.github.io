@@ -3,7 +3,9 @@ import { watch, onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
 import DescriptiveContentComponent from '@clubcapra/components/DescriptiveContentComponent.vue';
+import TeamHistoryCarousel from '@clubcapra/components/TeamHistoryCarouselComponent.vue';
 
+import { teamPhotosHistory } from '@clubcapra/data/team-history';
 import voyage from '@clubcapra/assets/media/team/voyage.jpg';
 import customDesign from '@clubcapra/assets/media/team/custom_design.jpg';
 import eleWorking from '@clubcapra/assets/media/team/ele_working.jpg';
@@ -13,7 +15,6 @@ import newArm from '@clubcapra/assets/media/team/new_arm.jpg';
 import pcbWorking from '@clubcapra/assets/media/team/pcb_working.jpg';
 import poseDetection from '@clubcapra/assets/media/team/pose_detection.mp4';
 import pizza from '@clubcapra/assets/media/team/pizza.png';
-import { nextCompetition } from '@clubcapra/data/competitions';
 
 const { t, locale } = useI18n();
 const route = useRoute();
@@ -65,6 +66,9 @@ function updateDateTimeStr() {
     hour: 'numeric',
   });
 }
+
+const latestTeamPhoto = teamPhotosHistory.at(-1);
+const currentYear = new Date().getFullYear();
 </script>
 
 <template>
@@ -72,6 +76,21 @@ function updateDateTimeStr() {
     <h2 class="text-5xl md:text-6xl font-bold font-sans text-center pt-10">
       <a href="#TEAM">{{ t('our_team_title') }}</a>
     </h2>
+  </section>
+  <section class="container mx-auto px-4 -py-10">
+    <DescriptiveContentComponent :image-right="false" :centered="true">
+      <template #title>{{ $t('team') }} {{ currentYear }}</template>
+      <template #image>
+        <img
+          v-if="latestTeamPhoto"
+          :src="latestTeamPhoto.imgSrc"
+          :alt="`Team photo ${latestTeamPhoto.year}`"
+          class="rounded-lg w-2/3 mr-auto ml-auto"
+        />
+      </template>
+    </DescriptiveContentComponent>
+  </section>
+  <section>
     <DescriptiveContentComponent :image-right="true">
       <template #title>
         {{ $t('passionate_students_title') }}
@@ -317,25 +336,12 @@ function updateDateTimeStr() {
     </div>
   </section>
 
-  <section id="COMPETITION" class="container mx-auto px-4 pt-10">
-    <h2 class="text-5xl md:text-6xl font-bold font-sans text-center pt-10">
-      <a href="#COMPETITION">{{ t('our_next_competition') }}</a>
+  <section id="COMPETITION" class="container mx-auto px-4">
+    <h2 class="text-5xl md:text-6xl font-bold font-sans text-center py-10">
+      {{ t('team_history') }}
     </h2>
-    <DescriptiveContentComponent :image-right="true">
-      <template #title>
-        {{ $t(nextCompetition.title) }} {{ nextCompetition.year }}
-      </template>
-      <template #content1>
-        {{ $t('next_competition_content') }}
-      </template>
-      <template #image>
-        <img
-          :src="nextCompetition.image"
-          alt="scenario field"
-          class="rounded-lg w-full"
-        />
-      </template>
-    </DescriptiveContentComponent>
+    <TeamHistoryCarousel />
+    <br />
   </section>
 
   <section

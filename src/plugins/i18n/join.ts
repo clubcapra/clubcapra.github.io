@@ -81,7 +81,7 @@ export default {
   },
   electrical_stack_title: {
     en: 'Electrical Stack',
-    fr: 'Pile Électrique',
+    fr: 'Batterie',
   },
   electrical_stack_content: {
     en: 'Our robots are equipped with a wide range of electrical components such as motor drivers to power supplies. We therefore have an electric stack that allows our robots to be reliable and robust in their operations while being safe.',
@@ -102,5 +102,13 @@ export default {
   mapping_content: {
     en: 'During our competitions, our robots must be capable of making autonomous decisions. To achieve this, they are equipped with 3D mapping, path planning and autonomy systems that allow them to navigate difficult terrain.',
     fr: "Durant nos compétitions, nos robots doivent être capables de prendre des décisions autonomes. Afin de réaliser cela, ils sont équipés de systèmes de cartographie 3D, de planification de trajectoires et d'autonomie qui leur permettent de naviguer dans des terrains difficiles.",
+  },
+  team: {
+    en: 'Team',
+    fr: 'Équipe',
+  },
+  team_history: {
+    en: 'Team History',
+    fr: 'Historique de notre club',
   },
 };

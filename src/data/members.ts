@@ -1,21 +1,10 @@
-// Members pictures
-
-import nathanGueissazTeufel from '@clubcapra/assets/media/members/NATHAN_GUEISSAZ-TEUFEL.jpg';
-import etienneLeGuerrier from '@clubcapra/assets/media/members/ETIENNE_LE_GUERRIER.jpg';
-import antoineMaltais from '@clubcapra/assets/media/members/ANTOINE_MALTAIS.jpg';
-import philippeDesbiens from '@clubcapra/assets/media/members/PHILIPPE_DESBIENS.jpg';
-import denisTurk from '@clubcapra/assets/media/members/DENIS_TURK.jpg';
-import emileLacroix from '@clubcapra/assets/media/members/EMILE_LACROIX.jpg';
-import etienneTardif from '@clubcapra/assets/media/members/ETIENNE_TARDIF.jpg';
-import yanniHaddar from '@clubcapra/assets/media/members/YANNI_HADDAR.jpg';
-import julesLachapelle from '@clubcapra/assets/media/members/JULES_LACHAPELLE.jpg';
-import thommasRousseauSenecal from '@clubcapra/assets/media/members/THOMMAS_ROUSSEAU-SENECAL.jpg';
-import ilianaDeCarufel from '@clubcapra/assets/media/members/ILIANA_DE_CARUFEL.jpg';
+const basePath = '@clubcapra/assets/media/members/';
 
 export interface Member {
   name: string;
   program: string;
   img?: string; // Default to defaultAvatars
+  crazy?: string; // Default to img
   link?: string;
   title?: string; // Default to 'Membre'
 }
@@ -24,7 +13,8 @@ const NathanGT: Member = {
   name: 'Nathan Gueissaz-Teufel',
   program: 'engineering_software',
   title: 'title_co_captain',
-  img: nathanGueissazTeufel,
+  img: require('@clubcapra/assets/media/members/NATHAN_GUEISSAZ-TEUFEL.jpg'),
+  crazy: require('@clubcapra/assets/media/members/NATHAN_GUEISSAZ-TEUFEL-crazy.jpg'),
   link: 'https://www.linkedin.com/in/nathan-gueissaz-teufel-04655b1ab/',
 };
 
@@ -32,33 +22,38 @@ const ÉtienneLG: Member = {
   name: 'Étienne Le Guerrier',
   program: 'engineering_electrical',
   title: 'title_captain',
-  img: etienneLeGuerrier,
+  img: require('@clubcapra/assets/media/members/ETIENNE_LE_GUERRIER.jpg'),
+  crazy: require('@clubcapra/assets/media/members/ETIENNE_LE_GUERRIER-crazy.jpg'),
   link: 'https://www.linkedin.com/in/%C3%A9tienne-le-guerrier-4544b515a/',
 };
 
 const AntonyA: Member = {
   name: 'Antony Afif',
   program: 'engineering_electrical',
+  img: require('@clubcapra/assets/media/members/ANTHONY_AFIF.jpg'),
+  crazy: require('@clubcapra/assets/media/members/ANTHONY_AFIF-crazy.jpg'),
 };
 
 const AntoineM: Member = {
   name: 'Antoine Maltais',
   program: 'engineering_electrical',
-  img: antoineMaltais,
+  img: require('@clubcapra/assets/media/members/ANTOINE_MALTAIS.jpg'),
+  crazy: require('@clubcapra/assets/media/members/ANTOINE_MALTAIS-crazy.jpg'),
   link: 'https://www.linkedin.com/in/antoine-maltais-72923017a/',
 };
 
 const PhilippeD: Member = {
   name: 'Philippe Desbiens',
   program: 'engineering_electrical',
-  img: philippeDesbiens,
+  img: require('@clubcapra/assets/media/members/PHILIPPE_DESBIENS.jpg'),
 };
 
 const ÉmileL: Member = {
   name: 'Émile Lacroix',
   program: 'engineering_electrical',
   title: 'title_treasury',
-  img: emileLacroix,
+  img: require('@clubcapra/assets/media/members/EMILE_LACROIX.jpg'),
+  crazy: require('@clubcapra/assets/media/members/EMILE_LACROIX-crazy.jpg'),
 };
 
 const GuyPhilippeN: Member = {
@@ -69,7 +64,7 @@ const GuyPhilippeN: Member = {
 const DenisT: Member = {
   name: 'Denis Turk',
   program: 'engineering_software',
-  img: denisTurk,
+  img: require('@clubcapra/assets/media/members/DENIS_TURK.jpg'),
   link: 'https://www.linkedin.com/in/denisturk/',
 };
 
@@ -77,39 +72,29 @@ const EtienneT: Member = {
   name: 'Etienne Tardif',
   program: 'engineering_software',
   title: 'title_co_captain',
-  img: etienneTardif,
+  img: require('@clubcapra/assets/media/members/ETIENNE_TARDIF.jpg'),
   link: 'https://www.linkedin.com/in/etienne-tardif-57b164222/',
-};
-
-const AngeOliveDN: Member = {
-  name: 'Ange Olive Dagang Nyappa',
-  program: 'engineering_software',
 };
 
 const YanniH: Member = {
   name: 'Yanni Haddar',
   program: 'engineering_software',
-  img: yanniHaddar,
+  img: require('@clubcapra/assets/media/members/YANNI_HADDAR.jpg'),
 };
 
 const ThomasRS: Member = {
   name: 'Thomas Rousseau-Sénécal',
   program: 'engineering_gpa',
-  img: thommasRousseauSenecal,
+  img: require('@clubcapra/assets/media/members/THOMAS_ROUSSEAU-SENECAL.jpg'),
   link: 'https://www.linkedin.com/in/thomas-rousseau-sénécal-14723b346/',
-};
-
-const JaniceB: Member = {
-  name: 'Janice Bessard',
-  program: 'engineering_software',
-  link: 'https://www.linkedin.com/in/janice-b-858122331/',
 };
 
 const JulesL: Member = {
   name: 'Jules Lachapelle',
   program: 'engineering_gpa',
   title: 'title_technical_director',
-  img: julesLachapelle,
+  img: require('@clubcapra/assets/media/members/JULES_LACHAPELLE.jpg'),
+  crazy: require('@clubcapra/assets/media/members/JULES_LACHAPELLE-crazy.jpg'),
 };
 
 const ZackaryB: Member = {
@@ -122,24 +107,15 @@ const ZackaryB: Member = {
 const IlianaDC: Member = {
   name: 'Iliana De Carufel',
   program: 'engineering_gpa',
-  img: ilianaDeCarufel,
+  img: require('@clubcapra/assets/media/members/ILIANA_DE_CARUFEL.jpg'),
   link: 'https://www.linkedin.com/in/iliana-de-carufel-855182193/',
-};
-
-const WilliamT: Member = {
-  name: 'William Tremblay',
-  program: 'engineering_gpa_master',
 };
 
 const ClementDJ: Member = {
   name: 'Clément Desmarais-Jadin',
   program: 'engineering_mechanical',
-};
-
-const RobertoL: Member = {
-  name: 'Roberto Laframboise',
-  program: 'engineering_gpa',
-  link: 'https://www.linkedin.com/in/roberto-laframboise-974b31326/',
+  img: require('@clubcapra/assets/media/members/CLEMENT_DESMARAIS-JADIN.jpg'),
+  crazy: require('@clubcapra/assets/media/members/CLEMENT_DESMARAIS-JADIN-crazy.jpg'),
 };
 
 const GhanaisM: Member = {
@@ -147,22 +123,15 @@ const GhanaisM: Member = {
   program: 'engineering_gpa',
   title: 'title_social_coordinator',
   link: 'https://www.linkedin.com/in/ghanais',
-};
-
-const WilliamC: Member = {
-  name: 'William Caouette',
-  program: 'engineering_software',
+  img: require('@clubcapra/assets/media/members/GHANAIS_MUNIANDY.jpg'),
+  crazy: require('@clubcapra/assets/media/members/GHANAIS_MUNIANDY-crazy.jpg'),
 };
 
 const AlexisGA: Member = {
   name: 'Alexis Gabriel Aubut',
   program: 'engineering_electrical',
   link: 'www.linkedin.com/in/alexis-gabriel-aubut-03b821342',
-};
-
-const MarieJeanneB: Member = {
-  name: 'Marie-Jeanne Bazinet',
-  program: 'engineering_electrical',
+  img: require('@clubcapra/assets/media/members/ALEXIS_AUBUT.jpg'),
 };
 
 const HugoB: Member = {
@@ -174,36 +143,9 @@ const HugoB: Member = {
 const FelixT: Member = {
   name: 'Félix Thériault',
   program: 'engineering_software',
-};
-
-const TommyV: Member = {
-  name: 'Tommy Vallée',
-  program: 'engineering_gpa',
-  link: 'https://www.linkedin.com/in/tommy-vallee-gpa/',
-};
-
-const YoanP: Member = {
-  name: 'Yoan Paradis',
-  program: 'engineering_electrical',
-  link: 'https://www.linkedin.com/in/yoan-paradis-56a657325',
-};
-
-const RodrigoATP: Member = {
-  name: 'Rodrigo Angel Torres Pérez',
-  program: 'engineering_gpa',
-  link: 'https://github.com/RodriTP, https://ca.linkedin.com/in/rodrigo-angel-torres-p%C3%A9rez-8b38332b4',
-};
-
-const BenjaminT: Member = {
-  name: 'Benjamin Theriault',
-  program: 'engineering_software',
-  title: 'title_partnership_manager',
-  link: 'https://github.com/BenjaminT02',
-};
-
-const LouisSimonL: Member = {
-  name: 'Louis-Simon Leclerc',
-  program: 'engineering_software',
+  link: 'https://www.linkedin.com/in/f%C3%A9lix-th%C3%A9riault-849b2b339/',
+  img: require('@clubcapra/assets/media/members/FELIX_THERIAULT.jpg'),
+  crazy: require('@clubcapra/assets/media/members/FELIX_THERIAULT-crazy.jpg'),
 };
 
 const AudreyCMN: Member = {
@@ -214,11 +156,38 @@ const AudreyCMN: Member = {
 const SamuelKB: Member = {
   name: 'Samuel Klein-bichain',
   program: 'engineering_software',
+  link: 'https://www.linkedin.com/in/samuel-klein-bichain/',
 };
 
 const MiguelDSR: Member = {
   name: 'Miguel Da Silva Rhodes',
   program: 'engineering_mechanical',
+  link: 'https://www.linkedin.com/in/miguel-da-silva-4305a43b1/',
+};
+
+const LolaH: Member = {
+  name: 'Lola Hornsperger',
+  program: 'engineering_gpa',
+  title: 'title_logistics_helper',
+  link: 'https://www.linkedin.com/in/lola-hornsperger-372353298/',
+  img: require('@clubcapra/assets/media/members/LOLA_HORNSPERGER.jpg'),
+  crazy: require('@clubcapra/assets/media/members/LOLA_HORNSPERGER-crazy.jpg'),
+};
+
+const MayaB: Member = {
+  name: 'Maya Boubekri',
+  program: 'engineering_electrical',
+  title: 'title_logistics_helper',
+  link: 'https://www.linkedin.com/in/maya-boubekri-guezout/',
+  img: require('@clubcapra/assets/media/members/MAYA_BOUBEKRI.jpg'),
+  crazy: require('@clubcapra/assets/media/members/MAYA_BOUBEKRI-crazy.jpg'),
+};
+
+const WilliamC: Member = {
+  name: 'Wiliam Caouette',
+  program: 'engineering_software',
+  link: 'https://www.linkedin.com/in/william-caouette-979725185/',
+  img: require('@clubcapra/assets/media/members/WILLIAM_CAOUETTE.jpg'),
 };
 
 export default {
@@ -231,28 +200,20 @@ export default {
   GuyPhilippeN,
   DenisT,
   EtienneT,
-  AngeOliveDN,
   YanniH,
   ThomasRS,
-  JaniceB,
   JulesL,
   ZackaryB,
   IlianaDC,
-  WilliamT,
   ClementDJ,
-  RobertoL,
   GhanaisM,
   WilliamC,
   AlexisGA,
-  MarieJeanneB,
   HugoB,
   FelixT,
-  TommyV,
-  YoanP,
-  RodrigoATP,
-  BenjaminT,
-  LouisSimonL,
   AudreyCMN,
   SamuelKB,
   MiguelDSR,
+  LolaH,
+  MayaB,
 };

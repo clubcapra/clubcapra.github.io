@@ -11,6 +11,10 @@ export default {
     en: 'Treasury',
     fr: 'Trésorerie',
   },
+  title_logistics_helper: {
+    en: 'Logistics Helper',
+    fr: 'Aide à la logistique',
+  },
   title_logistics_manager: {
     en: 'Logistics Manager',
     fr: 'Responsable Logistique',
