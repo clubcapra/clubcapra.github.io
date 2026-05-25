@@ -65,8 +65,8 @@ const StackEleTeam: ProjectTeam = {
 
 const OvisTeam: ProjectTeam = {
   project: RoboticArm,
-  leader: m.WilliamT,
-  members: [m.EtienneT, m.IlianaDC],
+  leader: m.EtienneT,
+  members: [m.IlianaDC],
 };
 
 const CommunicationTeam: ProjectTeam = {
@@ -81,10 +81,11 @@ const CarthographieTeam: ProjectTeam = {
   members: [m.HugoB, m.FelixT, m.AudreyCMN],
 };
 
-const ControlTeam: ProjectTeam = {
-  project: ControleBaseMobile,
-  leader: m.IlianaDC,
-  members: [m.EtienneT, m.SamuelKB],
+const ControlTeam: UnManagedTeam = {
+  name: ControleBaseMobile.name,
+  description: ControleBaseMobile.description,
+  showTitles: false,
+  members: [m.IlianaDC, m.EtienneT, m.SamuelKB],
 };
 
 const GUITeam: ProjectTeam = {
