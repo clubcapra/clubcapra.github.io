@@ -159,12 +159,6 @@ const SamuelKB: Member = {
   link: 'https://www.linkedin.com/in/samuel-klein-bichain/',
 };
 
-const MiguelDSR: Member = {
-  name: 'Miguel Da Silva Rhodes',
-  program: 'engineering_mechanical',
-  link: 'https://www.linkedin.com/in/miguel-da-silva-4305a43b1/',
-};
-
 const LolaH: Member = {
   name: 'Lola Hornsperger',
   program: 'engineering_gpa',
@@ -213,7 +207,6 @@ export default {
   FelixT,
   AudreyCMN,
   SamuelKB,
-  MiguelDSR,
   LolaH,
   MayaB,
 };
