@@ -20,6 +20,7 @@ import rei from '@clubcapra/assets/media/partners/rei.png';
 import usinageLR from '@clubcapra/assets/media/partners/usinage_LR.svg';
 import harting from '@clubcapra/assets/media/partners/harting.svg';
 import aseq from '@clubcapra/assets/media/partners/aseq.svg';
+import sogenix from '@clubcapra/assets/media/partners/sogenix.png';
 
 interface Partner {
   name: string;
@@ -88,6 +89,11 @@ export const goldPartners: Partner[] = [
     name: 'Systemex',
     img: systemex,
     url: 'https://www.systemex.com',
+    confirmed: true,
+  },{
+    name: 'Sogenix',
+    img: sogenix,
+    url: 'https://www.sogenix.com',
     confirmed: true,
   },
 ];
